@@ -83,7 +83,7 @@ cp -R ~/examen-grado/skills/examen-grado ~/.claude/skills/
 }
 ```
 
-La carpeta también es un plugin de Claude Code (`.claude-plugin/plugin.json` y `.mcp.json`).
+La carpeta también es un plugin de Claude Code (`.claude-plugin/plugin.json`). Abierta como proyecto en Claude Code, `.mcp.json` levanta el servidor y `.claude/skills` expone la skill.
 
 ## Privacidad y derechos de autor
 

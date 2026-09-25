@@ -3,5 +3,11 @@
   "version": "0.1.0",
   "description": "Preparador del examen de grado de Derecho en Chile (Civil y Procesal): clases, repaso espaciado, simulacros de comisión y material, adaptado al cedulario de cada universidad, con normas verificadas en Ley Chile.",
   "author": { "name": "Joaquín Larraín Guimoye" },
-  "keywords": ["derecho", "chile", "examen de grado", "licenciatura", "cedulario", "estudio"]
+  "keywords": ["derecho", "chile", "examen de grado", "licenciatura", "cedulario", "estudio"],
+  "mcpServers": {
+    "examen-grado": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/src/index.mjs"]
+    }
+  }
 }
