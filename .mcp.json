@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "examen-grado": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/src/index.mjs"]
+    }
+  }
+}

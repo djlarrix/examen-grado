@@ -1,0 +1,76 @@
+# Cedulario de Derecho Procesal (pregrado) — Universidad Diego Portales, 24-01-2014, "vigente".
+# https://derecho.udp.cl/cms/wp-content/uploads/2024/01/Cedulario-Examen-de-Grado-Procesal-caso-24.01.14-vigente.pdf
+#
+# Sólo procesal civil: el proceso penal no forma parte de este examen.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: Cedulario de Derecho Procesal
+    subseccion: Curso
+    tema: Introducción al Derecho Procesal
+    contenido: |
+      I. Los presupuestos procesales.
+      II. Principios formativos.
+      III. La acción y reacción: concepto; características y condiciones; clasificación; las actitudes del demandado.
+      IV. Las partes: concepto; condiciones; clasificación; pluralidad de partes o litisconsorcio.
+      V. Los tribunales: concepto; clasificación; Corte Suprema, cortes de apelaciones y jueces de letras.
+      VI. La competencia: concepto y clasificación; reglas generales; competencia absoluta y relativa, reglas especiales; reglas de distribución de causas.
+    excluidas: |
+      Fuentes del Derecho Procesal; la ley procesal y sus efectos. Bases de la administración de justicia. Magistrados judiciales; subrogación e integración. Auxiliares de la administración de justicia. Acción de protección. Elementos de la jurisdicción; conflictos de jurisdicción. Funcionamiento de tribunales unipersonales y colegiados. Características de la competencia absoluta y relativa. La jurisdicción (concepto, características, momentos; jurisdicción contenciosa, no contenciosa, conservadora, disciplinaria y económica). El proceso (concepto, elementos). El procedimiento (concepto, clasificación, estructura básica).
+    bibliografia: |
+      Casarino, Mario. Manual de Derecho Procesal, tomos I y II. Editorial Jurídica, 6.ª ed., 2010.
+      Díaz, Claudio. Curso de Derecho Procesal Civil, tomo I. Conosur, 2004.
+      Romero Seguel, Alejandro. Curso de Derecho Procesal Civil, tomo II. Editorial Jurídica de Chile, 2011.
+      Orellana Torres, Fernando. Manual de Derecho Procesal. Derecho Procesal Orgánico, tomo I. Librotecnia, 5.ª ed., 2010.
+  - numero: 2
+    seccion: Cedulario de Derecho Procesal
+    subseccion: Curso
+    tema: Instituciones comunes a todo procedimiento
+    contenido: |
+      I. Mandato judicial y comparecencia: mandato judicial (concepto, características, facultades, constitución y extinción, responsabilidad legal del mandatario); patrocinio (concepto, características, constitución y extinción); comparecencia en juicio en la Ley 18.120.
+      II. Los plazos: concepto; clasificación y cómputo.
+      III. Las notificaciones: personal y sustitutiva del art. 44 CPC; por cédula; por el estado diario y por avisos; tácita y ficta.
+      IV. Las resoluciones judiciales: concepto; clasificación; requisitos; efectos (la cosa juzgada y el desasimiento); cumplimiento de resoluciones de tribunales chilenos (requisitos, procedimiento, reglas para el cumplimiento contra terceros).
+      V. Los incidentes: el incidente ordinario (concepto, tramitación, oportunidad); incidentes especiales (desistimiento de la demanda, abandono del procedimiento, acumulación de autos).
+      VI. La nulidad procesal: concepto y características; formas de hacerla valer y sus efectos; la nulidad de oficio.
+      VII. Teoría general de la prueba: concepto; objeto; los medios de prueba en general; carga de la prueba; sistemas de valoración.
+    excluidas: |
+      Actos jurídicos procesales (requisitos, eficacia, validez). Ejecución de resoluciones de tribunales extranjeros (requisitos, exequátur). Características y clasificación de los incidentes. Cuestiones de competencia. Implicancias y recusaciones. Privilegio de pobreza; regulación de costas. Generalidades, fundamento, naturaleza jurídica, principios y clasificación de la nulidad procesal; sus relaciones con la casación.
+    bibliografia: |
+      Casarino, Mario. Manual de Derecho Procesal, tomo III. Editorial Jurídica, 6.ª ed., 2010.
+      Stoehrel, Carlos. De las disposiciones comunes a todo procedimiento. Editorial Jurídica, 6.ª ed., 2010.
+      Romero, Alejandro. La cosa juzgada en el proceso civil chileno. Editorial Jurídica, 2008.
+      Salas Vivaldi, Julio. Los incidentes y en especial de la nulidad procesal en el proceso civil, penal y laboral. Editorial Jurídica, 2000.
+      Díaz, Claudio. Curso de Derecho Procesal Civil, tomo I. Conosur, 2004.
+  - numero: 3
+    seccion: Cedulario de Derecho Procesal
+    subseccion: Curso
+    tema: Procedimientos civiles y vías de impugnación
+    contenido: |
+      I. Procedimiento declarativo ordinario: demanda; emplazamiento; actitudes del demandado (excepciones dilatorias, contestación, reconvención); réplica y dúplica; conciliación; término probatorio y su clasificación; medios de prueba en el CPC (instrumentos, testigos, confesional, peritos, inspección personal del tribunal, presunciones: clasificación, oportunidad y forma, valor probatorio, impugnación y tachas; apreciación comparativa); trámites posteriores a la prueba (citación para oír sentencia, observaciones a la prueba, medidas para mejor resolver); sentencia y otras formas de poner término al proceso.
+      II. Las vías de impugnación: concepto, elementos, características, clasificación.
+         Ordinarias: aclaración, interpretación, rectificación o enmienda; reposición; apelación (concepto, objeto y fundamentos, resoluciones apelables, legitimación, plazos, interposición, efectos de la concesión, tramitación en primera y segunda instancia, admisibilidad, vista, extinción: sentencia, deserción, prescripción, desistimiento); recurso de hecho.
+         Extraordinarias: la casación (concepto y fundamento, características); casación en la forma (resoluciones, causales, preparación, plazo, legitimación, admisibilidad, efectos, tramitación, vista, sentencia, extinción); casación de oficio; casación en el fondo (ídem).
+    excluidas: |
+      Divisibilidad e indivisibilidad y retractación de la confesión. En la apelación: decreto en autos en relación, comparecencia, adhesión, prueba en segunda instancia. La consulta. La queja y el recurso de queja.
+    bibliografia: |
+      Casarino, Mario. Manual de Derecho Procesal, tomos IV y V. Editorial Jurídica, 6.ª ed., 2010.
+      Rodríguez Papic, Ignacio. Procedimiento civil. Juicio ordinario de mayor cuantía. Editorial Jurídica, 2009.
+      Caroca, Alex. Manual de Derecho Procesal. LexisNexis, 2003.
+      Maturana, Cristián, y Mosquera, Mario. Recursos Procesales. Editorial Jurídica, 2010.
+  - numero: 4
+    seccion: Cedulario de Derecho Procesal
+    subseccion: Curso
+    tema: Procedimientos especiales
+    contenido: |
+      II. Procedimientos cautelares: medidas prejudiciales (concepto, características, requisitos, clasificación); medidas precautorias (concepto, características, requisitos, procedimiento).
+      III. Procedimiento sumario: características y particularidades; casos en que procede; tramitación (demanda, audiencia, término probatorio, incidentes y recursos).
+      IV. Procedimiento ejecutivo ordinario: título ejecutivo (concepto y requisitos; gestiones preparatorias de la vía ejecutiva); obligaciones de dar (cuaderno ejecutivo: demanda y notificación, excepciones, admisibilidad, término probatorio, sentencia y cosa juzgada, renovación de la acción, reserva de derechos y acciones; cuaderno de apremio: mandamiento de ejecución y embargo, requerimiento de pago, embargo, administración, subasta, pago; tercerías de dominio, posesión, prelación y pago); obligaciones de hacer.
+      V. Procedimiento de los Tribunales de Familia: estructura general; principios formativos; audiencia preparatoria, audiencia de juicio y fallo; sistema probatorio.
+      VI. Procedimiento de arrendamiento de predios urbanos: estructura general; requerimiento de pago; particularidades.
+    excluidas: |
+      Lo no contencioso (fundamento, finalidad, naturaleza jurídica; tramitación, normas comunes, oposición, sentencia, medios de impugnación). Procedimiento ejecutivo de obligaciones de no hacer.
+    bibliografia: |
+      Marín, Juan Carlos. Las medidas cautelares en el proceso civil. Editorial Jurídica, 2004.
+      Espinosa, Raúl. Manual de procedimiento civil. El juicio ejecutivo. Editorial Jurídica, 2010.
+      Jara, Eduardo. Derecho Procesal de Familia. Editorial Jurídica, 2011.

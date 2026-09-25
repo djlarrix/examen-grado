@@ -1,0 +1,72 @@
+# Perfil del examen de grado — Universidad Diego Portales.
+# Cada afirmación lleva su fuente. Lo no verificado va en `por_confirmar`.
+id: udp
+nombre: Universidad Diego Portales
+sigla: UDP
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de Grado
+  modalidad: escrita
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Prueba escrita de Derecho Civil
+      detalle: >-
+        Preguntas específicas sobre un caso ficticio que se entrega al alumno. El alumno
+        debe redactar un informe dentro del plazo y condiciones del reglamento.
+      fuente: Cedulario de Derecho Civil (introducción)
+    - titulo: Prueba escrita de Derecho Procesal Civil
+      detalle: Mismo formato, sobre materias de Derecho Procesal Civil.
+      fuente: Cedulario de Derecho Procesal (introducción); sitio de la Facultad
+  objetivos: >-
+    Identificar el o los problemas jurídicos presentados; elaborar propuestas para
+    resolverlos; fundamentar debidamente las soluciones escogidas; y utilizar
+    correctamente la información jurídica. No exige memorizar normas: los alumnos
+    tienen libre acceso a ellas durante la prueba.
+  fuente_objetivos: Sitio de la Facultad y cedularios
+  uso_de_codigos: >-
+    Se pueden usar códigos de editorial (que sólo incluyan normas: sin doctrina ni
+    jurisprudencia) y leyes. Se admiten concordancias con números de artículos (sin
+    palabras ni títulos), subrayados, destacados y "banderitas" con los títulos impresos
+    del código. Infringir estas reglas suspende la prueba y abre un procedimiento ético.
+  fuente_codigos: Manual Informativo Examen de Grado 2025
+  calendario: >-
+    Cuatro fechas al año. Se puede rendir las veces que se quiera dentro de 2 años desde
+    la aprobación de la última asignatura (egreso). Arancel de 8 UF la primera vez y 2 UF
+    las siguientes.
+  notas_y_recorreccion: >-
+    Notas en 15 días hábiles, junto con la pauta de corrección. Recorrección dentro de 3
+    días hábiles desde la publicación, por un docente distinto; admisibilidad e
+    inapelabilidad según el manual.
+  fuente_calendario: Manual Informativo Examen de Grado 2025
+estilo_comision:
+  # En un examen escrito no hay comisión que repregunte: esto guía la corrección y la
+  # construcción de casos de práctica.
+  - El caso es ficticio y cruza materias; las preguntas son específicas sobre él.
+  - Se premia identificar TODOS los problemas jurídicos del caso antes de resolver.
+  - La respuesta debe fundamentarse en normas (el alumno tiene los códigos): citar el artículo pertinente es parte de la respuesta.
+  - Se evalúa aplicación y razonamiento, no memoria. Definir sin aplicar no basta.
+  - Informe ordenado por pregunta, con conclusión clara en cada una.
+  - No se resuelven dudas sobre el caso durante la prueba.
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    El cedulario de la UDP no está dividido en cédulas numeradas sino en cursos, cada uno
+    con materias incluidas y excluidas. La numeración 1, 2, 3… es nuestra, para poder
+    referirse a cada curso. Una materia excluida como tema autónomo igual debe conocerse
+    si integra una materia incluida (así lo dice el propio cedulario).
+por_confirmar:
+  - Duración de cada prueba y si ambas se rinden el mismo día.
+  - Nota mínima de aprobación y forma de calificar el informe.
+  - Los cedularios publicados están fechados en 2013 (Civil) y 2014 (Procesal) y la Facultad los rotula "vigente"; confirmar que no haya una versión posterior.
+fuentes:
+  - titulo: Examen de Grado — Facultad de Derecho UDP
+    url: https://derecho.udp.cl/facultad/examen-de-grado/
+  - titulo: Cedulario Examen de Grado Civil (28-11-2013, vigente)
+    url: https://derecho.udp.cl/cms/wp-content/uploads/2024/01/Cedulario-Examen-de-Grado-Civil-caso-28.11.13-vigente.pdf
+  - titulo: Cedulario Examen de Grado Procesal (24-01-2014, vigente)
+    url: https://derecho.udp.cl/cms/wp-content/uploads/2024/01/Cedulario-Examen-de-Grado-Procesal-caso-24.01.14-vigente.pdf
+  - titulo: Manual Informativo Examen de Grado 2025
+    url: https://derecho.udp.cl/cms/wp-content/uploads/2025/05/Manual-Informativo-Examen-de-Grado-2025-1.pdf
+revisado: 2026-09-25

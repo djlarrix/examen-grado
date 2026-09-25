@@ -1,0 +1,1955 @@
+# Cedulario oficial de Derecho Civil — Facultad de Derecho, Universidad de Chile.
+# "Cédulas obligatorias", transcrito del PDF escaneado que publica la Facultad:
+# https://weblex.derecho.uchile.cl/FTP/comunicaciones/documentos/Sec_estudio/8_Cedulario_Pregrado.pdf
+#
+# Transcripción fiel: número, tema y contenido tal como aparecen en el cedulario.
+# `conceptos` enlaza cada cédula con el temario canónico (datos/temario/), que es
+# donde se lleva el progreso del estudiante.
+ramo: civil
+cedulas:
+  # I. INTRODUCCIÓN AL DERECHO CIVIL — 1. Fuentes del Derecho Civil
+  - numero: 1
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Concepto de Derecho Privado y sus Fuentes
+    contenido: |
+      A. Concepto de Derecho Privado y paralelo con Derecho Público.
+      B. Materias que comprende el Derecho Civil
+      C. Características del Derecho Civil
+         Derecho común, general y supletorio
+      D. Fuentes del Derecho Privado
+         Fuentes formales y materiales
+  - numero: 2
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Costumbre en Derecho Privado
+    contenido: |
+      A. Concepto
+      B. Clasificación
+      C. Valor de la costumbre en materia civil
+      D. Prueba de la costumbre en materia civil
+  - numero: 3
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Principios del Derecho Civil
+    contenido: |
+      A. Concepto de principio
+      B. Valor e importancia de los principios
+      C. Enunciación de los principios
+         (i) Autonomía de la voluntad
+         (ii) Buena fe
+         (iii) Responsabilidad
+         (iv) Prohibición del enriquecimiento injustificado
+         (v) Abuso de derecho
+         (vi) Libre circulación de los bienes
+         (vii) Libertad
+         (viii) Igualdad
+         (ix) Defensa de la propiedad individual
+  - numero: 4
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Principio de la responsabilidad
+    contenido: |
+      A. Concepto jurídico de responsabilidad civil
+      B. Discusión sobre estatuto único de responsabilidad
+         Fundamento jurídico de la responsabilidad
+      C. Fuentes de los ilícitos civiles
+         (i) Incumplimiento de la obligación contractual: responsabilidad contractual
+         (ii) Delito o cuasidelito civil: responsabilidad extracontractual
+         (iii) Cuasidelito e incumplimiento de obligaciones legales: régimen aplicable
+      D. Causales de exculpación
+      E. Cúmulo, opción o concurrencia de responsabilidades
+  - numero: 5
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Principio de la autonomía de la voluntad
+    contenido: |
+      A. Concepto
+      B. Sub principios
+         (i) Consensualismo
+         (ii) Fuerza obligatoria de los contratos
+         (iii) Libertad contractual
+         (iv) Efecto relativo de los contratos
+         (v) Efecto absoluto o expansivo de los contratos
+  - numero: 6
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Principio de la buena fe
+    contenido: |
+      A. Concepto de buena fe
+      B. Buena fe objetiva
+         (i) Regulación en el Código Civil
+         (ii) Expresión durante el íter precontractual, contractual y postcontractual
+      C. Buena fe subjetiva
+         (i) Regulación en el Código Civil
+         (ii) Presunción
+         (iii) Excepciones
+  - numero: 7
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Principio que prohíbe el enriquecimiento injustificado
+    contenido: |
+      A. Concepto de enriquecimiento injustificado
+      B. Tratamiento de la materia en el ordenamiento jurídico e importancia de su regulación
+      C. Manifestaciones en el Código Civil (v. gr., los cuasicontratos)
+  - numero: 8
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Principio de la libre circulación de bienes
+    contenido: |
+      A. Conceptualización del principio
+      B. Tratamiento de la materia en el ordenamiento jurídico e importancia de su regulación
+      C. Excepciones o declinaciones en el ordenamiento jurídico
+  - numero: 9
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Principio de la igualdad
+    contenido: |
+      A. Conceptualización del principio
+      B. Tratamiento de la materia en el ordenamiento jurídico e importancia de su regulación
+      C. Excepciones o declinaciones en el ordenamiento jurídico
+  - numero: 10
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 1. Fuentes del Derecho Civil
+    tema: Principio de libertad
+    contenido: |
+      A. Conceptualización del principio
+      B. Tratamiento de la materia en el ordenamiento jurídico e importancia de su regulación
+      C. Excepciones o declinaciones en el ordenamiento jurídico
+  # 2. Relación jurídica y derechos subjetivos
+  - numero: 11
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 2. Relación jurídica y derechos subjetivos
+    tema: Relación jurídica y derecho subjetivo
+    contenido: |
+      A. Concepto y elementos de la relación jurídica de Derecho Privado
+         (i) Sujetos
+         (ii) Deber jurídico
+         (iii) Derechos subjetivos
+      B. Concepto de derecho subjetivo
+         (i) Derechos absolutos y relativos
+         (ii) Derechos privados y públicos
+         (iii) Adquisición, transferencia y pérdida de los derechos subjetivos
+         (iv) Límite de los derechos subjetivos privados
+              Teoría de los actos propios
+      C. Clasificación
+  - numero: 12
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 2. Relación jurídica y derechos subjetivos
+    tema: Teoría del abuso del derecho
+    contenido: |
+      A. Concepto de abuso del derecho
+      B. Concepto de derecho subjetivo y derecho objetivo
+      C. Fines económicos y sociales del derecho
+  - numero: 13
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 2. Relación jurídica y derechos subjetivos
+    tema: Dolo y mala fe
+    contenido: |
+      A. Concepto de dolo
+         (i) Regulación de la materia en el Código Civil
+         (ii) Consecuencias del dolo
+      B. Concepto de buena y mala fe
+         (i) Casos en que no se presume buena fe
+         (ii) Consecuencias de la mala fe
+  - numero: 14
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 2. Relación jurídica y derechos subjetivos
+    tema: Protección de la confianza y apariencia en el derecho privado y protección de los terceros de buena fe en el Código Civil
+    contenido: |
+      A. Concepto de buena fe
+         Relación con la confianza
+      B. Efectos de un acto entre las partes y con terceros
+         Sanción de inoponibilidad
+      C. Manifestación de la confianza y teoría de la apariencia en el Código Civil
+         (i) Elementos que estructuran la teoría de la apariencia
+         (ii) Teoría del acto simulado
+      D. Concepto de error común
+  - numero: 15
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 2. Relación jurídica y derechos subjetivos
+    tema: Efectos jurídicos del tiempo en el ordenamiento
+    contenido: |
+      A. Concepto de efecto jurídico
+         (i) Adquisición
+         (ii) Modificación
+         (iii) Extinción
+      B. Hechos jurídicos
+         Tiempo como hecho jurídico natural
+  - numero: 16
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 2. Relación jurídica y derechos subjetivos
+    tema: La relación jurídica y los efectos de la ley en el tiempo
+    contenido: |
+      A. Efectos de la ley en el tiempo
+         (i) Principio de la irretroactividad de la ley
+         (ii) Ley sobre los efectos retroactivos de las leyes
+      B. Teorías sobre la aplicación de la ley retroactivamente
+         (i) Teoría de los derechos adquiridos
+             Concepto de derecho adquirido
+         (ii) Teoría de la situación jurídica
+  - numero: 17
+    seccion: I. Introducción al Derecho Civil
+    subseccion: 2. Relación jurídica y derechos subjetivos
+    tema: Distinción entre derechos personales y reales
+    contenido: |
+      A. Concepto y naturaleza de derecho real
+         (i) Derechos reales consagrados en el Código Civil
+         (ii) Derechos reales consagrados en otros cuerpos normativos
+      B. Concepto y naturaleza de derecho personal
+      C. Diferencias entre ambos tipos de derecho: Relevancia de la distinción
+  # II. TEORÍA DEL ACTO JURÍDICO Y EL CONTRATO — 1. Teoría del acto jurídico y del contrato
+  - numero: 18
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Teoría del acto jurídico
+    contenido: |
+      A. Concepto de acto jurídico
+      B. Elementos del acto jurídico
+      C. Requisitos de existencia
+      D. Requisitos de validez
+      E. Efectos del acto jurídico
+  - numero: 19
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Principios generales de la contratación
+    contenido: |
+      A. Principio de la autonomía de la voluntad
+         (i) Consensualismo
+             Atenuante y excepciones
+         (ii) Libertad de contratación
+              Limitaciones: orden público, buenas costumbres y ley
+         (iii) Fuerza obligatoria de los contratos
+               Pacta sunt servanda
+               - Frente al legislador, al juez y a las partes
+         (iv) Efecto relativo
+              - Excepción al efecto relativo
+              - Efecto absoluto o expansivo
+      B. Principio de buena fe
+         (i) Buena fe subjetiva en relación a los contratos
+         (ii) Buena fe objetiva
+      C. Principio de igualdad
+      D. Principio de responsabilidad contractual
+  - numero: 20
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Elementos del acto jurídico
+    contenido: |
+      A. Elementos de existencia
+         (i) Voluntad
+         (ii) Causa
+         (iii) Objeto
+         (iv) Solemnidades
+      B. Elementos de validez
+         (i) Voluntad exenta de vicios
+         (ii) Causa lícita
+         (iii) Objeto lícito
+         (iv) Capacidad
+         (v) Solemnidades
+      C. Diferenciar entre elementos esenciales, naturales y accidentales
+  - numero: 21
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Manifestación de la voluntad
+    contenido: |
+      A. Voluntad como requisito de existencia del acto jurídico
+      B. Requisitos
+         (i) Manifiesta
+             - Expresa
+             - Tácita
+             - Valor del silencio
+         (ii) Seria
+  - numero: 22
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Formación del consentimiento
+    contenido: |
+      A. Voluntad en los actos jurídicos bilaterales:
+         Concepto de consentimiento
+      B. Elementos de la formación del consentimiento
+         (i) Oferta
+             - Completa
+         (ii) Aceptación
+             - Pura y simple
+             - Término oportuno
+             - Mientras oferta se encuentre vigente
+      C. Momento en que se forma el consentimiento
+      D. Lugar donde se forma el consentimiento
+  - numero: 23
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Consensualismo
+    contenido: |
+      A. Relación entre consensualismo y autonomía de la voluntad
+         (i) Suficiencia de la sola voluntad para perfeccionar el acto jurídico
+         (ii) Importancia que la voluntad se baste a sí misma
+      B. Excepciones
+         (i) Solemnidades de existencia
+         (ii) Contratos reales
+      C. Atenuantes
+         (i) Solemnidades de validez
+         (ii) Formalidad habilitante
+         (iii) Formalidad de publicidad
+         (iv) Formalidad de prueba
+  - numero: 24
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Vicios del consentimiento
+    contenido: |
+      A. Concepto de vicio del consentimiento
+         (i) Manifestación de voluntad no coincide con la voluntad real
+         (ii) Vicios en la voluntad unilateral
+      B. Vicios del consentimiento
+         (i) Error
+         (ii) Fuerza
+         (iii) Dolo
+      C. Requisito general: vicio determinante
+  - numero: 25
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Error como vicio del consentimiento
+    contenido: |
+      A. Concepto de error
+         (i) Error de Derecho
+         (ii) Error de Hecho
+              - Error esencial/obstáculo
+              - Error sustancial
+              - Error en las calidades accidentales
+         (iii) Error en la persona
+         (iv) Error común
+      B. Requisitos para que vicie consentimiento
+      C. Sanciones aplicables a cada caso.
+  - numero: 26
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Dolo como vicio del consentimiento
+    contenido: |
+      A. Concepto de dolo
+      B. Concepto de dolo como vicio del consentimiento
+         (i) Requisitos del dolo como vicio del consentimiento
+             Concepto de dolo incidental
+         (ii) Sanción
+      C. Manifestaciones de dolo en el Código Civil
+  - numero: 27
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Fuerza como vicio del consentimiento
+    contenido: |
+      A. Concepto de fuerza
+      B. Clasificación
+         (i) Fuerza física
+         (ii) Fuerza moral
+      C. Requisitos de la fuerza como vicio del consentimiento
+      D. Sanción a la fuerza como vicio del consentimiento
+  - numero: 28
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Responsabilidad precontractual
+    contenido: |
+      A. Régimen aplicable
+      B. Deberes precontractuales
+         Periodo que comprende
+      C. Casos
+         (i) Ruptura injustificada
+         (ii) Infracción u omisión a los deberes de información
+      D. Sanción por infracción
+         (i) Indemnización de perjuicios
+         (ii) Otras sanciones civiles
+      E. Fundamento responsabilidad precontractual
+  - numero: 29
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Negociación de un contrato
+    contenido: |
+      A. Poder de negociación
+      B. Deberes de negociación
+  - numero: 30
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Teoría del objeto
+    contenido: |
+      A. Regulación del objeto en el Código Civil
+      B. Diferenciar entre objeto del contrato, objeto de la obligación y objeto de la prestación
+      C. Requisitos del objeto cosa
+      D. Requisitos del objeto hecho
+      E. Sanción por falta de objeto
+  - numero: 31
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Objeto ilícito
+    contenido: |
+      A. Falta de definición legal
+         Discusión sobre su definición
+      B. Casos regulados en la ley
+      C. Sanciones
+  - numero: 32
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Teoría de la causa
+    contenido: |
+      A. Regulación en el Código Civil
+         (i) Causa real
+         (ii) Causa lícita
+      B. Principales doctrinas sobre la causa
+         (i) Doctrina tradicional
+             Falta de causa
+         (ii) Doctrina del móvil
+      C. Sanciones por causa ilícita
+  - numero: 33
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Simulación y fraude a la ley
+    contenido: |
+      A. Concepto de simulación
+         (i) Regulación en el Código Civil
+         (ii) Clasificación
+         (iii) Efectos
+               - Entre las partes
+               - Respecto de terceros
+                 Acción de simulación
+               - Sanciones de ineficacia
+      B. Concepto de fraude a la ley
+         Sanción
+  - numero: 34
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Buenas costumbres y orden público
+    contenido: |
+      A. Concepto de buenas costumbres
+         Normas que hagan alusión a las buenas costumbres
+      B. Concepto de orden público
+         Normas de orden público
+      C. Sanción a contravención
+      D. Evolución de los conceptos
+  - numero: 35
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Formalidades en el acto jurídico y el contrato
+    contenido: |
+      A. Requisitos externos
+      B. Formalidades propiamente tales
+         (i) Solemnidades de existencia
+         (ii) Solemnidades de validez
+      C. Formalidades habilitantes
+      D. Formalidades de prueba
+      E. Formalidades de publicidad
+  - numero: 36
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Representación
+    contenido: |
+      A. Representación como acto jurídico
+      B. Clases de representación
+         (i) Convencional
+         (ii) Legal
+         (iii) Judicial
+      C. Requisitos de operación
+      D. Teorías que explican su naturaleza
+         (i) Ficción de la ley
+         (ii) Modalidad
+      E. Comparación con el mandato.
+  - numero: 37
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 1. Teoría del acto jurídico y del contrato
+    tema: Manifestación de la renuncia en el Código Civil
+    contenido: |
+      A. Regulación de la renuncia en el Código Civil
+      B. Requisitos
+         (i) Interés individual
+         (ii) No prohibida
+      C. Principios
+         (i) Normas de orden público
+         (ii) Normas de orden privado
+      D. Casos de renuncia en el Código Civil
+  # 2. Sanciones de ineficacia
+  - numero: 38
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 2. Sanciones de ineficacia
+    tema: Teoría de la inexistencia
+    contenido: |
+      A. Sanción de inexistencia
+      B. Características
+      C. Diferencias con nulidad
+      D. Argumentos a favor y en contra de su procedencia
+  - numero: 39
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 2. Sanciones de ineficacia
+    tema: Nulidad absoluta
+    contenido: |
+      A. Concepto de nulidad absoluta
+      B. Regulación en el Código Civil
+      C. Causales
+      D. Legitimidad activa
+      E. Saneamiento
+      F. Efectos declaración nulidad
+         (i) Entre partes: prestaciones mutuas
+             Excepciones
+         (ii) Respecto terceros
+              Excepciones
+      G. Diferencias con la nulidad relativa
+  - numero: 40
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 2. Sanciones de ineficacia
+    tema: Nulidad relativa
+    contenido: |
+      A. Concepto de nulidad relativa
+      B. Regulación en el Código Civil
+      C. Causales
+      D. Legitimidad activa
+      E. Saneamiento
+      F. Efectos declaración nulidad
+         (i) Entre partes: prestaciones mutuas
+             Excepciones
+         (ii) Respecto terceros
+              Excepciones
+      G. Diferencias con la nulidad absoluta
+  # 3. Clasificación de los actos jurídicos y del contrato
+  - numero: 41
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Clasificación de los actos jurídicos y los contratos
+    contenido: |
+      A. Clasificación de los actos jurídicos
+         (i) Unilateral o bilateral
+         (ii) Entre vivos o por causa de muerte
+         (iii) A título gratuito u oneroso
+         (iv) Puro y simple o sujeto a modalidad
+         (v) De familia o patrimoniales
+         (vi) Principal o accesorio
+         (vii) Solemnes o no solemnes
+         (viii) Nominado o innominado
+      B. Clasificación de los contratos
+         (i) Según el Código Civil
+             - Unilateral o bilateral
+             - Gratuito u oneroso
+             - Conmutativo o aleatorio
+             - Principal o accesorio
+             - Consensual, real o solemne
+         (ii) Clasificación fuera del Código Civil
+              - Nominado o innominado
+              - Ejecución instantánea, diferida o de tracto sucesivo
+              - Individual o colectivo
+              - Libre o por adhesión
+  - numero: 42
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Contratos unilaterales y bilaterales
+    contenido: |
+      A. Clasificación según quien resulta obligado
+         Momento en que se define
+      B. Concepto de contrato unilateral
+      C. Concepto de contrato bilateral
+      D. Importancia de la distinción
+         (i) Efectos asociados a los contratos bilaterales
+             - Condición resolutoria tácita
+             - Excepción de contrato no cumplido
+             - Teoría de los riesgos
+      E. Concepto de contrato sinalagmático imperfecto
+         Discusión sobre si se les aplican los efectos propios de un contrato bilateral
+      F. Noción de contrato plurilateral
+  - numero: 43
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Manifestación de la interdependencia de las obligaciones
+    contenido: |
+      A. Contrato bilateral
+      B. Concepto de interdependencia de las obligaciones
+      C. Excepción de contrato no cumplido
+         (i) Procedencia
+         (ii) Requisitos
+         (iii) Efectos
+               Discusión sobre sus efectos
+      D. Resolución por incumplimiento
+         (i) Procedencia
+         (ii) Requisitos
+         (iii) Efectos
+               Discusión sobre sus efectos
+  - numero: 44
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Teoría de los riesgos
+    contenido: |
+      A. Regulación en el Código Civil
+         (i) Procedencia en relación a una obligación de dar una especie o cuerpo cierto
+         (ii) Requisitos
+              - Cumplimiento de obligación pendiente
+              - Causa inimputable al deudor
+              - Imposibilidad de cumplir (irresistible)
+              - Imprevisibilidad al momento de celebrar el contrato
+                Concepto de caso fortuito
+         (iii) Excepciones a su aplicación
+         (iv) Efectos
+              - Concepto de riesgo
+              - Pérdida de la cosa que se debe como modo de extinguir las obligaciones
+                Distinción entre pérdida por caso fortuito y culpa
+         (v) Cláusula modificatoria de riesgos
+      B. Origen histórico
+         Críticas a la regulación nacional
+      C. Discusión sobre su aplicación en las obligaciones de hacer o no hacer
+  - numero: 45
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Excepción de contrato no cumplido
+    contenido: |
+      A. Concepto de mora
+      B. Incumplimiento de una obligación
+      C. Regulación de la excepción de contrato no cumplido
+         (i) Procedencia
+             - Manifestación de la interdependencia de las obligaciones
+         (ii) Requisitos:
+             - Obligación actualmente exigible
+             - Demandante no haya cumplido o no se encuentre llano a cumplir
+         (iii) Efectos
+             - Discusión acerca de los efectos
+  - numero: 46
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Contratos gratuitos y onerosos
+    contenido: |
+      A. Clasificación según la utilidad para las partes
+      B. Contrato gratuito
+      C. Contrato oneroso
+         (i) Clasificación según la equivalencia de las prestaciones
+             - Contrato conmutativo
+             - Contrato aleatorio
+             - Importancia de la clasificación: procedencia de la teoría de la imprevisión y la lesión enorme
+             - Crítica a la clasificación
+         (ii) Crítica a la utilización del vocablo prestación en plural
+         (iii) Importancia de la clasificación en relación a otros conceptos jurídicos
+  - numero: 47
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Contratos de ejecución instantánea, de tracto sucesivo y de ejecución diferida
+    contenido: |
+      A. Contrato de ejecución instantánea
+      B. Contrato de ejecución diferida
+         (i) Plazo expreso o tácito
+      C. Contrato de tracto sucesivo
+      D. Importancia de distinción
+         (i) Procedencia de la teoría de la imprevisión
+         (ii) Efectos ante nulidad
+         (iii) Aplicación de la teoría de los riesgos
+         (iv) Procedencia de la terminación unilateral
+  - numero: 48
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Contratos reales
+    contenido: |
+      A. Clasificación según el perfeccionamiento del contrato
+      B. Voluntad acompañada de tradición
+         (i) Crítica a la utilización del vocablo "tradición"
+         (ii) Contratos reales que implican transferencia de dominio y contratos reales de mera tenencia
+      C. Características generales de los contratos reales
+         (i) Unilateral
+             - Obligación de restituir
+             - Concepto de contrato sinalagmático imperfecto
+               Contrato real bilateral
+         (ii) Gratuito
+             - Contrato real oneroso
+      D. Nociones generales del contrato de comodato
+      E. Nociones generales del contrato de depósito
+      F. Nociones generales del contrato de mutuo
+  - numero: 49
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 3. Clasificación de los actos jurídicos y del contrato
+    tema: Contratos de adhesión
+    contenido: |
+      A. Clasificación según el poder negociador
+         (i) Contrato libremente discutido
+         (ii) Contrato de adhesión
+      B. Características del contrato de adhesión
+         Características de la oferta y la aceptación
+      C. Posibles abusos
+         Mecanismos de control
+      D. Función económica del contrato
+  # 4. Efectos de los contratos
+  - numero: 50
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 4. Efectos de los contratos
+    tema: Efectos de los contratos
+    contenido: |
+      A. Contrato como fuente de las obligaciones
+      B. Fuerza obligatoria
+         (i) Pacta sunt servanda
+         (ii) Frente al legislador
+         (iii) Frente al juez
+         (iv) Frente a las partes
+      C. Efecto relativo
+         (i) Excepción al efecto
+             - Contrato colectivo
+             - Estipulación a favor de otro
+         (ii) Efecto expansivo
+              Sanción de inoponibilidad
+  - numero: 51
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 4. Efectos de los contratos
+    tema: Fuerza obligatoria del contrato y sus fundamentos
+    contenido: |
+      A. Teorías sobre la fuerza obligatoria de los contratos
+      B. Frente al legislador
+         Crítica a la posición privilegiada
+      C. Frente al juez
+         Revisión judicial
+      D. Frente a las partes
+         Cláusulas de dureza o hardship
+      E. Terminación del contrato
+  - numero: 52
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 4. Efectos de los contratos
+    tema: Teoría de la imprevisión
+    contenido: |
+      A. Concepto teoría de la imprevisión
+         Concepto de riesgo
+      B. Procedencia
+         (i) Contrato de ejecución diferida o de tracto sucesivo
+         (ii) Circunstancia inimputable
+         (iii) Circunstancia imprevisible
+         (iv) Desequilibrio patrimonial (excesiva onerosidad sobreviniente)
+      C. Regulación en el Código Civil
+         (i) Ausencia de una regulación orgánica
+         (ii) Casos en que acepta la teoría
+         (iii) Casos en que niega la teoría
+         (iv) Construcción doctrinal
+      D. Principios que interactúan:
+         (i) Principio de la conservación del contrato
+         (ii) Principio de la fuerza obligatoria del contrato
+         (iii) Principio de buena fe
+  - numero: 53
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 4. Efectos de los contratos
+    tema: Efecto relativo de los contratos
+    contenido: |
+      A. Concepto de efecto relativo
+      B. Concepto de partes
+      C. Excepción al efecto
+         (i) Contrato colectivo
+         (ii) Estipulación a favor de otro
+      D. Efecto expansivo
+         Sanción de inoponibilidad
+  - numero: 54
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 4. Efectos de los contratos
+    tema: Ineficacia del contrato
+    contenido: |
+      A. Concepto de ineficacia
+      B. Tipos de ineficacia
+         (i) Resciliación
+         (ii) Revocación
+         (iii) Resolución
+         (iv) Inexistencia
+         (v) Nulidad
+             - Nulidad total
+             - Nulidad parcial
+         (vi) Inoponibilidad
+      C. Origen de la ineficacia
+         (i) Intrínseca
+         (ii) Extrínseca
+  - numero: 55
+    seccion: II. Teoría del acto jurídico y el contrato
+    subseccion: 4. Efectos de los contratos
+    tema: Interpretación de los contratos e integración
+    contenido: |
+      A. Concepto de interpretación
+      B. Regulación de la interpretación en el Código Civil
+         Interpretación subjetiva
+      C. Reglas de interpretación judicial
+         (i) Intrínsecas al contrato
+         (ii) Extrínsecas al contrato
+         (iii) Subsidiarias
+      D. Concepto de integración
+         Medios de integración
+      E. Diferenciar entre interpretar e integrar
+  # III. RÉGIMEN GENERAL DE LAS OBLIGACIONES — 1. Concepto, fuentes y clasificación
+  - numero: 56
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Concepto de obligaciones y sus fuentes
+    contenido: |
+      A. Concepto de obligaciones
+      B. Elementos de la obligación
+      C. Características de la obligación
+      D. Relación entre los derechos reales y personales
+      E. Fuentes de las obligaciones
+         (i) Fuentes remotas
+         (ii) Fuentes próximas
+         (iii) Crítica a la clasificación tradicional de fuentes de las obligaciones
+  - numero: 57
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones civiles y naturales
+    contenido: |
+      A. Clasificación según su eficacia
+         (i) Concepto de obligación civil.
+         (ii) Concepto de obligación natural.
+         (iii) Diferencias.
+      B. Obligaciones naturales
+         (i) Características de las obligaciones naturales.
+         (ii) Obligaciones naturales comprendidas en el artículo 1470.
+  - numero: 58
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones de dar
+    contenido: |
+      A. Clasificación según prestación
+      B. Concepto de obligación de dar
+         (i) Alcance de la obligación de dar
+         (ii) Alcance de la obligación de entregar
+      C. Consecuencias de la clasificación
+  - numero: 59
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones de hacer
+    contenido: |
+      A. Clasificación según prestación
+      B. Concepto de obligación de hacer
+      C. Consecuencias de la clasificación
+      D. Régimen de sanciones ante su incumplimiento
+  - numero: 60
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones de no hacer
+    contenido: |
+      A. Clasificación según prestación
+      B. Concepto de obligación de no hacer
+      C. Consecuencias de la clasificación
+      D. Régimen de sanciones ante su incumplimiento
+  - numero: 61
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones de cuerpo cierto y de género
+    contenido: |
+      A. Clasificación de la obligación de dar según la determinación de su objeto
+      B. Concepto de obligación cuerpo cierto
+      C. Concepto de obligación de género
+         (i) Concepto de obligación de dinero
+         (ii) Concepto de operación de crédito de dinero
+      D. Consecuencias de la clasificación
+         Teoría de los riesgos
+  - numero: 62
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones de medio y de resultado
+    contenido: |
+      A. Clasificación según el alcance de la obligación
+      B. Concepto de obligación de medio
+      C. Concepto de obligación de resultado
+      D. Consecuencias de la clasificación
+      E. Régimen de sanciones ante su incumplimiento
+  - numero: 63
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones solidarias
+    contenido: |
+      A. Clasificación según los sujetos
+      B. Obligaciones con pluralidad de sujetos
+         (i) Concepto de obligación mancomunada o simplemente conjunta
+      C. Concepto de obligación solidaria
+         (i) Concepto de solidaridad pasiva
+         (ii) Características
+         (iii) Relaciones internas y externas
+         (iv) Diferencias generales respecto a la obligación con pluralidad de sujetos indivisible
+  - numero: 64
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones indivisibles
+    contenido: |
+      A. Clasificación según los sujetos
+      B. Obligaciones con pluralidad de sujetos
+      C. Concepto de obligación indivisible
+         (i) Características
+         (ii) Relaciones internas y externas
+         (iii) Noción general de los casos regulados en Código Civil
+         (iv) Diferencias generales respecto a las obligaciones solidarias
+  - numero: 65
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones de dinero
+    contenido: |
+      A. Concepto de obligación de género
+      B. Concepto de obligación de dinero
+      C. Diferencia conceptual respecto a la obligación de valor
+      D. Ejemplos de obligaciones de dinero reguladas en el Código Civil
+      E. Régimen de sanciones ante incumplimiento
+  - numero: 66
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones sujetas a modalidades
+    contenido: |
+      A. Clasificación según sus efectos
+      B. Concepto de obligación pura y simple
+      C. Concepto de obligación sujeta a modalidad
+         (i) Obligación sujeta a condición
+         (ii) Obligación sujeta a plazo
+         (iii) Obligación sujeta a modo
+         (iv) Otras modalidades reguladas en el Código Civil
+  - numero: 67
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Obligaciones condicionales
+    contenido: |
+      A. Concepto de obligación sujeta a modalidad
+         (i) Obligación sujeta a condición
+             - Características
+             - Clasificación
+      B. Condición ordinaria
+         (i) Condición ordinaria suspensiva
+         (ii) Condición ordinaria resolutoria
+      C. Condición resolutoria tácita
+         (i) Características
+         (ii) Procedencia
+         (iii) Efectos
+  - numero: 68
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 1. Concepto, fuentes y clasificación de las obligaciones
+    tema: Resolución por incumplimiento contractual
+    contenido: |
+      A. Concepto de incumplimiento contractual
+      B. Condición resolutoria tácita
+         (i) Características
+         (ii) Procedencia
+         (iii) Requisitos
+         (iv) Efectos
+      C. Pacto comisorio
+      D. Acción resolutoria
+  # 2. Modos de extinguir las obligaciones
+  - numero: 69
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 2. Modos de extinguir las obligaciones
+    tema: Modos de extinguir las obligaciones (generalidades)
+    contenido: |
+      A. Concepto de modo de extinguir
+      B. Clasificación de los modos de extinguir según si es satisfactorio o no para el acreedor
+      C. Modos no mencionados en el artículo 1567
+  - numero: 70
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 2. Modos de extinguir las obligaciones
+    tema: El pago como modo de extinguir las obligaciones
+    contenido: |
+      A. Concepto de pago efectivo
+      B. Características del pago
+      C. Por quién debe hacerse el pago
+      D. A quién se debe hacer el pago
+      E. Pago de la obligación de dar
+      F. Generalidades sobre las modalidades del pago
+  - numero: 71
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 2. Modos de extinguir las obligaciones
+    tema: Novación y dación en pago
+    contenido: |
+      A. Concepto de novación
+         (i) Requisitos
+         (ii) Efectos
+      B. Concepto de dación en pago
+         (i) Requisitos
+         (ii) Efectos
+      C. Diferencias generales entre los modos de extinguir las obligaciones
+  - numero: 72
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 2. Modos de extinguir las obligaciones
+    tema: Prescripción extintiva
+    contenido: |
+      A. Concepto de prescripción
+         Concepto de prescripción extintiva
+      B. Requisitos de procedencia
+      C. Efectos
+  - numero: 73
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 2. Modos de extinguir las obligaciones
+    tema: Transacción
+    contenido: |
+      A. Concepto de transacción
+      B. Características
+      C. Procedencia
+      D. Efectos
+  - numero: 74
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 2. Modos de extinguir las obligaciones
+    tema: Imposibilidad y pérdida de la cosa que se debe
+    contenido: |
+      A. Concepto como modo de extinguir las obligaciones
+         Distinción entre obligaciones de dar, hacer y no hacer
+      B. Requisitos
+         Situación en que falta alguno de los requisitos
+      C. Efectos
+  - numero: 75
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 2. Modos de extinguir las obligaciones
+    tema: Cesión de contratos, de créditos o derechos personales y de obligaciones
+    contenido: |
+      A. Casos de modificación de las obligaciones
+      B. Conceptos de cesión de contrato, de créditos o derechos personales y obligaciones
+      C. Transmisibilidad de las obligaciones
+  - numero: 76
+    seccion: III. Régimen general de las obligaciones
+    subseccion: 2. Modos de extinguir las obligaciones
+    tema: Caducidad, preclusión y prescripción
+    contenido: |
+      A. Concepto de caducidad
+      B. Concepto de preclusión
+      C. Concepto de prescripción extintiva
+      D. Ejemplos en el Código Civil
+      E. Diferencias generales entre los conceptos
+  # IV. DERECHO DE BIENES — 1. Introducción a la propiedad y clasificación de los bienes
+  - numero: 77
+    seccion: IV. Derecho de bienes
+    subseccion: 1. Introducción a la propiedad y clasificación de los bienes
+    tema: Principios del derecho de propiedad
+    contenido: |
+      A. Principio de la protección a la propiedad individual
+      B. Principio de la libre circulación de bienes
+      C. Principio de la igualdad en la adquisición y goce de la propiedad
+      D. Principio de la irretroactividad de las leyes
+  - numero: 78
+    seccion: IV. Derecho de bienes
+    subseccion: 1. Introducción a la propiedad y clasificación de los bienes
+    tema: Concepto de derecho de propiedad y sus fundamentos
+    contenido: |
+      A. Derecho real de dominio
+      B. Fundamentos
+      C. Características
+      D. Facultades o atributos del dominio
+      E. Tipos de propiedad
+      F. Constitucionalización del derecho de propiedad
+  - numero: 79
+    seccion: IV. Derecho de bienes
+    subseccion: 1. Introducción a la propiedad y clasificación de los bienes
+    tema: Clasificación de los bienes (generalidades)
+    contenido: |
+      A. Concepto de cosa
+         Clasificación entre cosas apropiables e inapropiables
+      B. Concepto de bien
+         Clasificación de los bienes
+      C. Nuevas categorías de bienes
+  # 2. Modos de adquirir la propiedad y concepto de posesión
+  - numero: 80
+    seccion: IV. Derecho de bienes
+    subseccion: 2. Modos de adquirir la propiedad y concepto de posesión
+    tema: Modos de adquirir la propiedad (generalidades)
+    contenido: |
+      A. Concepto de modo de adquirir
+      B. Enunciación
+      C. Clasificaciones
+      D. Discusión sobre la exigencia de un título
+  - numero: 81
+    seccion: IV. Derecho de bienes
+    subseccion: 2. Modos de adquirir la propiedad y concepto de posesión
+    tema: Tradición
+    contenido: |
+      A. Concepto e importancia
+      B. Características
+      C. Requisitos
+      D. Efectos
+         (i) Si el tradente es dueño de la cosa
+         (ii) Si el tradente no es dueño de la cosa
+      E. Diversas especies de tradición
+      F. Diferencia entre entrega y tradición
+  - numero: 82
+    seccion: IV. Derecho de bienes
+    subseccion: 2. Modos de adquirir la propiedad y concepto de posesión
+    tema: Mera tenencia y precario
+    contenido: |
+      A. Concepto de mera tenencia
+         (i) Características
+         (ii) Procedencia
+      B. Concepto de precario
+         Concepto de título
+  - numero: 83
+    seccion: IV. Derecho de bienes
+    subseccion: 2. Modos de adquirir la propiedad y concepto de posesión
+    tema: La posesión
+    contenido: |
+      A. Concepto y elementos
+      B. Fundamento de su protección
+      C. Cosas susceptibles de posesión
+      D. Diversas clases de posesión
+  - numero: 84
+    seccion: IV. Derecho de bienes
+    subseccion: 2. Modos de adquirir la propiedad y concepto de posesión
+    tema: Posesiones viciosas
+    contenido: |
+      A. Concepto de posesión viciosa
+         Discusión sobre su idoneidad para adquirir por prescripción
+      B. Concepto y características de la posesión violenta
+      C. Concepto y características de la posesión clandestina
+  - numero: 85
+    seccion: IV. Derecho de bienes
+    subseccion: 2. Modos de adquirir la propiedad y concepto de posesión
+    tema: Teoría de la posesión inscrita
+    contenido: |
+      A. Adquisición, conservación y pérdida de la posesión
+         (i) Bienes muebles
+         (ii) Bienes inmuebles
+      B. Inscripción como requisito de adquisición
+      C. Inscripción como prueba
+      D. Inscripción como garantía
+  - numero: 86
+    seccion: IV. Derecho de bienes
+    subseccion: 2. Modos de adquirir la propiedad y concepto de posesión
+    tema: Decreto Ley N° 2695 e implicancias en el régimen de posesión de bienes inmuebles
+    contenido: |
+      A. Conocimiento básico del Decreto Ley N° 2695
+      B. Importancia de su dictación respecto a la teoría de la posesión inscrita
+  - numero: 87
+    seccion: IV. Derecho de bienes
+    subseccion: 2. Modos de adquirir la propiedad y concepto de posesión
+    tema: Prescripción adquisitiva
+    contenido: |
+      A. Concepto
+      B. Requisitos y elementos
+         Concepto de interrupción natural y civil
+      C. Clases de prescripción
+      D. Efectos
+  # 3. Acción reivindicatoria y acciones posesorias
+  - numero: 88
+    seccion: IV. Derecho de bienes
+    subseccion: 3. Acción reivindicatoria y acciones posesorias
+    tema: Acción reivindicatoria
+    contenido: |
+      A. Concepto y características
+      B. Requisitos de procedencia
+         Acción publiciana
+      C. Contra quién se dirige la acción
+      D. Prestaciones mutuas
+  - numero: 89
+    seccion: IV. Derecho de bienes
+    subseccion: 3. Acción reivindicatoria y acciones posesorias
+    tema: Prestaciones mutuas
+    contenido: |
+      A. Concepto de prestación mutua
+      B. Fundamento de su regulación
+      C. Regulación de las prestaciones mutuas en la acción reivindicatoria
+      D. Regulación de las prestaciones mutuas en la acción resolutoria
+  - numero: 90
+    seccion: IV. Derecho de bienes
+    subseccion: 3. Acción reivindicatoria y acciones posesorias
+    tema: Acciones posesorias
+    contenido: |
+      A. Concepto, clasificación y características de las acciones posesorias
+      B. Fundamento de su regulación
+      C. Requisitos de procedencia
+      D. Efectos
+  # 4. Limitaciones al dominio
+  - numero: 91
+    seccion: IV. Derecho de bienes
+    subseccion: 4. Limitaciones al dominio
+    tema: Limitaciones civiles al dominio
+    contenido: |
+      A. Limitaciones al dominio por ley
+      B. Limitaciones al dominio por derecho ajeno
+         (i) Enunciación
+         (ii) Características principales de los derechos reales de desmembramiento
+  - numero: 92
+    seccion: IV. Derecho de bienes
+    subseccion: 4. Limitaciones al dominio
+    tema: Limitaciones al dominio de interés público
+    contenido: |
+      A. Limitaciones al dominio por ley
+      B. Requisitos
+      C. Reparación legal
+         Avance jurisprudencial
+  - numero: 93
+    seccion: IV. Derecho de bienes
+    subseccion: 4. Limitaciones al dominio
+    tema: Servidumbres
+    contenido: |
+      A. Concepto
+      B. Características
+      C. Clasificación
+      D. Extinción
+  # V. RESPONSABILIDAD CIVIL — 1. Responsabilidad civil contractual
+  - numero: 94
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Responsabilidad civil
+    contenido: |
+      A. Concepto
+      B. Clases de responsabilidad
+  - numero: 95
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Responsabilidad contractual
+    contenido: |
+      A. Noción y fundamento
+         Efecto de las obligaciones
+      B. Elementos
+      C. Concepto de incumplimiento contractual
+      D. Discusión sobre la existencia de un estatuto único de responsabilidad
+  - numero: 96
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Acciones frente al incumplimiento contractual
+    contenido: |
+      A. Concepto de incumplimiento contractual
+         (i) Tipos de incumplimiento
+         (ii) Prueba del incumplimiento
+      B. Acción de ejecución forzosa
+      C. Acción de indemnización de perjuicios
+      D. Acción de resolución por incumplimiento
+      E. Discusión sobre el orden de prelación de las acciones
+  - numero: 97
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Derecho de prenda general y derechos auxiliares del acreedor
+    contenido: |
+      A. Concepto de derecho de prenda general
+      B. Derechos auxiliares del acreedor: Enunciación, características y fundamento
+      C. Acción oblicua o subrogatoria
+      D. Acción pauliana o revocatoria
+  - numero: 98
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Incumplimiento contractual
+    contenido: |
+      A. Concepto de incumplimiento contractual
+      C. Tipos de incumplimiento
+      D. Prueba del incumplimiento
+  - numero: 99
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Mora del deudor
+    contenido: |
+      A. Concepto jurídico de mora
+         Función en el derecho de las obligaciones
+      B. Exigibilidad de la obligación
+      C. Requisitos
+      D. Efectos
+      E. Mora del acreedor
+  - numero: 100
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Culpa contractual
+    contenido: |
+      A. Concepto jurídico de culpa contractual
+      B. Gradación de culpa
+         (i) Culpa por la cual se responde
+         (ii) Pactos modificatorios de responsabilidad
+         (iii) Equivalencia de la culpa grave al dolo
+      C. Presunciones de culpa
+         Culpa contractual por el hecho ajeno
+  - numero: 101
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Dolo contractual
+    contenido: |
+      A. Concepto jurídico de dolo
+         (i) Ámbitos en que incide el dolo
+         (ii) Discusión sobre el estatuto unitario del dolo
+      B. Prueba del dolo
+         Discusión sobre la necesidad de probar o no la culpa grave
+      C. Efectos del dolo
+  - numero: 102
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Caso fortuito
+    contenido: |
+      A. Concepto
+      B. Elementos
+      C. Efectos
+         (i) Excepciones al efecto liberatorio
+         (ii) Teoría de los riesgos
+  - numero: 103
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Eximentes de responsabilidad
+    contenido: |
+      A. Concepto de eximente de responsabilidad
+      B. Generalidades sobre el caso fortuito o fuerza mayor
+      C. Ausencia de culpa
+      D. Estado de necesidad
+      E. Hecho o culpa del acreedor
+      F. Imprevisión y revisión del contrato
+  - numero: 104
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Previsibilidad en responsabilidad contractual
+    contenido: |
+      A. Previsibilidad como límite a la responsabilidad
+         (i) Determinación de los daños previsibles
+         (ii) Concepto de riesgo en un contrato
+      B. Incumplimiento contractual con culpa
+      C. Incumplimiento contractual con dolo
+  - numero: 105
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Daño en responsabilidad contractual
+    contenido: |
+      A. Concepto de daño
+      B. Clasificación
+      C. Requisitos para su reparación
+         (i) Previsibilidad del daño
+         (ii) Causalidad del daño
+         (iii) Prueba y certeza del daño
+               Pérdida de una chance
+      D. Avaluación de los perjuicios
+         (i) Avaluación legal
+         (ii) Avaluación judicial
+         (iii) Avaluación convencional
+  - numero: 106
+    seccion: V. Responsabilidad civil
+    subseccion: 1. Responsabilidad civil contractual
+    tema: Discusión sobre la autonomía o accesoriedad de la acción indemnizatoria en responsabilidad contractual
+    contenido: |
+      A. Discusión sobre la procedencia de la acción de indemnización de perjuicios
+         Argumentos de cada postura
+      B. Fundamento de las acciones de ejecución forzada, resolución del contrato e indemnización de perjuicios
+      C. Consecuencias de la discusión
+  # 2. Responsabilidad civil extracontractual
+  - numero: 107
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Responsabilidad civil extracontractual (generalidades)
+    contenido: |
+      A. Noción de responsabilidad extracontractual
+      B. Funciones
+         (i) Justicia
+         (ii) Eficiencia
+      C. Modelos de atribución
+         Elementos
+  - numero: 108
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Capacidad en responsabilidad extracontractual
+    contenido: |
+      A. Régimen de capacidad
+         (i) Incapacidad del demente
+         (ii) Incapacidad del menor de 7 años
+              Presunción de capacidad del mayor de 7 y menor de 16 años
+         (iii) Capacidad de la persona jurídica
+      B. Responsabilidad del incapaz
+         Responsabilidad del representante del incapaz
+  - numero: 109
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Culpa en la responsabilidad extracontractual
+    contenido: |
+      A. Concepto de culpa en responsabilidad extracontractual
+         Discusión sobre la procedencia de la gradación de la culpa
+      B. Juicio objetivo de ilicitud
+         (i) Lo abstracto y lo concreto en la determinación de la diligencia
+         (ii) Rol de la previsibilidad
+      C. Determinación del estándar del cuidado debido
+         (i) Determinación por ley: culpa infraccional
+         (ii) Determinación según usos normativos
+         (iii) Determinación prudencial del juez
+      D. Culpa por omisión
+  - numero: 110
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: El dolo en la responsabilidad civil extracontractual
+    contenido: |
+      A. Concepto de dolo en la responsabilidad civil extracontractual
+         Discusión sobre la distinción entre dolo directo y eventual
+      B. Efectos del dolo en la responsabilidad civil extracontractual
+         Discusión sobre la consecuencia de la equivalencia de la culpa grave al dolo
+  - numero: 111
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Causales eximentes de responsabilidad civil extracontractual
+    contenido: |
+      A. Concepto de causal de exención
+      B. Enunciación de las causales y juicio de ilicitud
+      C. Prueba de las causales
+      D. Efectos
+  - numero: 112
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Daño en la responsabilidad extracontractual
+    contenido: |
+      A. Concepto jurídico de daño
+      B. Clasificación del daño
+      C. Principios que rigen la reparación del daño
+  - numero: 113
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Daños patrimoniales
+    contenido: |
+      A. Concepto de daño patrimonial
+         Distinción con el daño extrapatrimonial
+      B. Distinción entre daño emergente y lucro cesante
+  - numero: 114
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Daños extrapatrimoniales
+    contenido: |
+      A. Concepto de daño extrapatrimonial
+         Distinción con el daño patrimonial
+      B. Procedencia de su indemnización
+      C. Determinación de su avaluación
+  - numero: 115
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Causalidad en responsabilidad civil extracontractual
+    contenido: |
+      A. Noción de causalidad
+      B. Elementos
+         (i) Elemento natural
+         (ii) Elemento normativo
+              Teorías para determinar consecuencias relevantes
+      C. Prueba de la relación causal
+      D. Pluralidad de causas
+         (i) Varios responsables
+         (ii) Causa difusa
+         (iii) Concurrencia de la culpa de la víctima
+  - numero: 116
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Responsabilidad extracontractual por el hecho ajeno
+    contenido: |
+      A. Noción de responsabilidad por el hecho ajeno
+      B. Elementos y requisitos
+         Presunción de culpa
+      C. Efectos y contribución a la deuda
+  - numero: 117
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Responsabilidad del empresario
+    contenido: |
+      A. Estatuto jurídico
+         (i) Elementos que la configuran
+         (ii) Regulación en el Código Civil
+      B. Presunción de culpa por el hecho de sus dependientes
+         Tendencia hacia la responsabilidad estricta
+      C. Culpa por el hecho propio
+         Responsabilidad por actos de órganos y representantes
+  - numero: 118
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Responsabilidad extracontractual por el hecho de las cosas
+    contenido: |
+      A. Estatuto aplicable
+      B. Presunciones de culpa
+         Casos de responsabilidad estricta
+  - numero: 119
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Responsabilidad estricta
+    contenido: |
+      A. Noción de responsabilidad estricta
+      B. Fundamento del modelo de atribución
+      C. Elementos
+      D. Casos de responsabilidad estricta en el derecho chileno
+  - numero: 120
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Acciones que emanan de la responsabilidad extracontractual
+    contenido: |
+      A. Acción de reparación en naturaleza
+      B. Acción de indemnización de perjuicios
+         (i) Sujeto activo
+         (ii) Sujeto pasivo
+         (iii) Extinción de la acción
+  - numero: 121
+    seccion: V. Responsabilidad civil
+    subseccion: 2. Responsabilidad civil extracontractual
+    tema: Relaciones entre responsabilidad contractual y extracontractual. Concurso y cúmulo de responsabilidades
+    contenido: |
+      A. Estatutos de responsabilidad
+         Crítica a la diferenciación entre estatutos
+      B. Principales diferencias y semejanzas
+      C. Fronteras entre los estatutos
+      D. Concurso o cúmulo de responsabilidades contractual y extracontractual
+  # VI. DERECHO DE FAMILIA Y DERECHOS DE LA PERSONA — 1. Derechos de la persona
+  - numero: 122
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 1. Derechos de la persona
+    tema: Persona natural
+    contenido: |
+      A. Definición persona natural
+         (i) Existencia natural
+             Formas de protección nasciturus y tratamiento civil.
+         (ii) Existencia legal
+              Concepto nacimiento y teorías relacionadas
+         (iii) Fin de la existencia
+              - Concepto de muerte natural
+              - Concepto de comprobación judicial de la muerte
+              - Concepto de muerte presunta
+              - Efectos jurídicos de la muerte
+      B. Diferencias básicas con persona jurídica
+  - numero: 123
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 1. Derechos de la persona
+    tema: Capacidad
+    contenido: |
+      A. Concepto de capacidad
+      B. Capacidad de goce
+      C. Capacidad de ejercicio
+         (i) Incapacidad absoluta
+         (ii) Incapacidad relativa
+      D. Incapacidad especial o prohibiciones: discusión sobre su naturaleza
+      E. Sanción por falta de capacidad
+  - numero: 124
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 1. Derechos de la persona
+    tema: Patrimonio
+    contenido: |
+      A. Concepto de patrimonio
+         Utilidad del concepto patrimonio para explicar otras instituciones jurídicas
+      B. Teorías respecto al patrimonio
+         (i) Teorías subjetivas
+         (ii) Teorías objetivas
+  - numero: 125
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 1. Derechos de la persona
+    tema: Atributos de la personalidad y derechos de la personalidad
+    contenido: |
+      A. Concepto de atributo de la personalidad
+         Enunciación de los atributos de la personalidad
+         - Nombre
+         - Domicilio
+         - Nacionalidad
+         - Patrimonio
+         - Capacidad
+         - Estado Civil
+      B. Concepto de derechos de la personalidad
+         Protección Constitucional
+  # 2. Derecho de familia
+  - numero: 126
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Principios del Derecho de familia
+    contenido: |
+      A. Principio de igualdad
+      B. Principio de la secularización
+      C. Principio de la libre investigación de la filiación
+      D. Principio del interés superior del niño, niña y adolescente.
+      E. Principio de la protección al cónyuge más débil
+  - numero: 127
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Principio de igualdad
+    contenido: |
+      A. Principio de igualdad entre cónyuges
+         (i) Reformas a la sociedad conyugal
+         (ii) Protección al cónyuge más débil
+      B. Principio de igualdad entre padre y madre
+         Derechos y obligaciones entre padre y madre e hijos
+      C. Principio de igualdad entre hijos
+         Reformas en derecho sucesorio
+  - numero: 128
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Principio del interés superior del niño, niña y adolescente
+    contenido: |
+      A. Noción del principio
+         Ámbito de aplicación
+      B. Convención sobre los Derechos del Niño
+      C. Regulación nacional
+  - numero: 129
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Principio de la corresponsabilidad parental
+    contenido: |
+      A. Ley N° 20.680 sobre derechos y obligaciones entre padre y madre e hijos
+         Evolución de los derechos y obligaciones entre padre y madre e hijos
+      B. Concepto de cuidado personal
+         Determinación de quien ostenta el cuidado personal
+      C. Concepto de relación directa y regular
+  - numero: 130
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Concepto de familias
+    contenido: |
+      A. Evolución del concepto de familia
+      B. Regulación constitucional
+      C. Ausencia de definición legal
+      D. Estatuto jurídico
+      E. Formas de familia
+      F. Vínculos familiares
+         Parentesco y sus efectos
+  - numero: 131
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Acuerdo de Unión Civil
+    contenido: |
+      A. Definición y concepto de acuerdo de unión civil
+      B. Requisitos
+      C. Efectos
+      D. Terminación
+  - numero: 132
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Matrimonio
+    contenido: |
+      A. Definición y concepto de matrimonio
+      B. Ley de matrimonio civil
+      C. Requisitos del matrimonio
+         (i) Requisitos de existencia
+         (ii) Requisitos de validez
+             - Capacidad de los contrayentes
+             - Consentimiento libre y espontáneo
+  - numero: 133
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Efectos del matrimonio
+    contenido: |
+      A. Relaciones personales de los cónyuges
+      B. Filiación matrimonial
+      C. Derechos hereditarios
+      D. Regímenes patrimoniales
+  - numero: 134
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Regímenes patrimoniales del matrimonio y del acuerdo de unión civil
+    contenido: |
+      A. Concepto de régimen patrimonial
+         Concepto de ganancial
+      B. Regímenes patrimoniales del matrimonio
+      C. Regímenes patrimoniales del acuerdo de unión civil
+  - numero: 135
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Sociedad conyugal (generalidades)
+    contenido: |
+      A. Concepto de sociedad conyugal
+         Características y naturaleza jurídica
+      B. Teoría de los haberes en la sociedad conyugal
+         (i) Características principales de los haberes
+         (ii) Patrimonio reservado de la mujer
+      C. Disolución
+  - numero: 136
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Administración de la sociedad conyugal
+    contenido: |
+      A. Administración ordinaria
+         (i) Administración de los bienes sociales y propios
+         (ii) Limitaciones a la administración del marido
+      B. Administración extraordinaria
+  - numero: 137
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Causales de término del matrimonio (causales y efectos)
+    contenido: |
+      A. Muerte natural
+      B. Declaración de nulidad de matrimonio
+         (i) Características de la nulidad
+         (ii) Causales y acción de nulidad
+         (iii) Efectos
+      C. Divorcio vincular
+  - numero: 138
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Divorcio
+    contenido: |
+      A. Concepto de divorcio
+      B. Causales
+         (i) Divorcio por cese de convivencia
+         (ii) Divorcio por culpa
+      C. Acción de divorcio y sus características
+      D. Efectos
+  - numero: 139
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Compensación económica
+    contenido: |
+      A. Concepto de compensación económica
+      B. Ámbito de aplicación
+      C. Discusión sobre su naturaleza jurídica
+      D. Procedencia y fijación
+      E. Forma de pago
+  - numero: 140
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Filiación
+    contenido: |
+      A. Evolución legislativa del estatuto filiativo
+         Principios fundamentales del nuevo estatuto de filiación
+      B. Fuentes de la filiación
+         (i) Natural
+         (ii) Adoptiva
+         (iii) Por aplicación de las técnicas de reproducción asistida
+      C. Determinación de la filiación
+  - numero: 141
+    seccion: VI. Derecho de familia y derechos de la persona
+    subseccion: 2. Derecho de familia
+    tema: Acciones de filiación
+    contenido: |
+      A. Principios que inspiran las acciones
+      B. Clases de acciones
+         (i) Acción de reclamación
+         (ii) Acción de impugnación
+         (iii) Acción de desconocimiento
+      C. Efectos de cada acción
+  # VII. CONTRATOS PARTE ESPECIAL — 1. Contratos preparatorios y de intercambio
+  - numero: 142
+    seccion: VII. Contratos parte especial
+    subseccion: 1. Contratos preparatorios y de intercambio
+    tema: Contrato de promesa
+    contenido: |
+      A. Concepto de contrato de promesa
+      B. Aplicación de la clasificación de los contratos
+      C. Requisitos
+      D. Efectos, cumplimiento y extinción
+      E. Diferencia con la opción.
+  - numero: 143
+    seccion: VII. Contratos parte especial
+    subseccion: 1. Contratos preparatorios y de intercambio
+    tema: Contrato de compraventa
+    contenido: |
+      A. Concepto y características de contrato de compraventa
+      B. Requisitos y elementos de la compraventa
+      C. Formalidades
+      D. Capacidad para celebrar una compraventa
+  - numero: 144
+    seccion: VII. Contratos parte especial
+    subseccion: 1. Contratos preparatorios y de intercambio
+    tema: Efectos de la compraventa
+    contenido: |
+      A. Obligaciones del comprador
+         (i) Obligación de recibir la cosa
+         (ii) Obligación de pagar el precio
+      B. Obligaciones del vendedor
+         (i) Obligación de dar y de entregar
+         (ii) Obligación de saneamiento
+      C. Resolución por incumplimiento
+  - numero: 145
+    seccion: VII. Contratos parte especial
+    subseccion: 1. Contratos preparatorios y de intercambio
+    tema: Obligaciones de saneamiento de la compraventa
+    contenido: |
+      A. Concepto y características de la obligación de saneamiento
+         Fundamento y ámbito de protección
+      B. Obligación de saneamiento de la evicción
+      C. Obligación de saneamiento de los vicios redhibitorios
+  - numero: 146
+    seccion: VII. Contratos parte especial
+    subseccion: 1. Contratos preparatorios y de intercambio
+    tema: Lesión
+    contenido: |
+      A. Concepto y fundamento de la lesión
+      B. Procedencia
+      C. Efectos
+  - numero: 147
+    seccion: VII. Contratos parte especial
+    subseccion: 1. Contratos preparatorios y de intercambio
+    tema: Compraventa de cosa ajena
+    contenido: |
+      A. Requisitos de la cosa
+      B. Efectos de la compraventa sobre cosa ajena
+         (i) Relación entre vendedor y dueño de la cosa
+         (ii) Relación entre vendedor y comprador
+  # 2. Contratos de servicio y de colaboración
+  - numero: 148
+    seccion: VII. Contratos parte especial
+    subseccion: 2. Contratos de servicio y de colaboración
+    tema: Contrato de arriendo
+    contenido: |
+      A. Concepto y características del arriendo
+      B. Arriendo de cosas
+         (i) Elementos
+         (ii) Efectos
+         (iii) Terminación
+      C. Arriendo de predios urbanos (generalidades)
+  - numero: 149
+    seccion: VII. Contratos parte especial
+    subseccion: 2. Contratos de servicio y de colaboración
+    tema: Contrato de mandato
+    contenido: |
+      A. Concepto y características del mandato
+      B. Las partes en el mandato
+      C. Ejecución del mandato
+         (i) Mandato con representación
+         (ii) Mandato a nombre propio
+      D. Administración
+         (i) Extralimitación
+         (ii) Delegación del mandato
+  - numero: 150
+    seccion: VII. Contratos parte especial
+    subseccion: 2. Contratos de servicio y de colaboración
+    tema: Efectos del mandato
+    contenido: |
+      A. Relación interna
+         (i) Obligaciones del mandante
+         (ii) Obligaciones del mandatario
+              Obligación de ejecutar el encargo
+      B. Relación externa
+         (i) Relaciones entre mandante y terceros
+         (ii) Relaciones entre mandatario y terceros
+  - numero: 151
+    seccion: VII. Contratos parte especial
+    subseccion: 2. Contratos de servicio y de colaboración
+    tema: Término del mandato
+    contenido: |
+      A. Causales
+         Procedencia de la revocación y renuncia
+  # 3. Contratos de garantía
+  - numero: 152
+    seccion: VII. Contratos parte especial
+    subseccion: 3. Contratos de garantía
+    tema: Garantías y cauciones. Generalidades.
+    contenido: |
+      A. Concepto de garantía
+         (i) Garantías personales
+         (ii) Garantías reales
+      B. Concepto de caución
+         (i) Caución personal
+         (ii) Caución real
+  - numero: 153
+    seccion: VII. Contratos parte especial
+    subseccion: 3. Contratos de garantía
+    tema: Hipoteca
+    contenido: |
+      A. Concepto de derecho real de hipoteca
+         Características y funciones
+      B. Concepto de contrato de hipoteca
+         (i) Características y requisitos
+         (ii) Efectos
+         (iii) Extinción
+  - numero: 154
+    seccion: VII. Contratos parte especial
+    subseccion: 3. Contratos de garantía
+    tema: Prenda
+    contenido: |
+      A. Concepto de prenda
+      B. Clasificación de las prendas
+      C. Efectos del contrato de prenda
+      D. Extinción de la prenda
+  - numero: 155
+    seccion: VII. Contratos parte especial
+    subseccion: 3. Contratos de garantía
+    tema: Fianza
+    contenido: |
+      A. Concepto y características de la fianza
+      B. Requisitos
+      C. Efectos de la fianza
+         (i) Entre fiador y acreedor
+         (ii) Entre fiador y deudor
+      D. Extinción
+  - numero: 156
+    seccion: VII. Contratos parte especial
+    subseccion: 3. Contratos de garantía
+    tema: Cláusula penal
+    contenido: |
+      A. Concepto y características de la cláusula penal
+      B. Requisitos para su ejecución
+         Extensión
+  # 4. Cuasicontratos
+  - numero: 157
+    seccion: VII. Contratos parte especial
+    subseccion: 4. Cuasicontratos
+    tema: Cuasicontratos
+    contenido: |
+      A. Concepto de cuasicontrato
+         Ideas subyacentes
+      B. Agencia oficiosa
+      C. Comunidad
+      D. Pago de lo no debido
+  # VIII. DERECHO SUCESORIO Y PARTICIÓN DE BIENES — 1. Derecho sucesorio
+  - numero: 158
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Principios del derecho sucesorio
+    contenido: |
+      A. Principio de igualdad
+      B. Principio de libertad para testar
+      C. Principio de la protección a las asignaciones forzosas
+  - numero: 159
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Muerte y sus efectos
+    contenido: |
+      A. Apertura de la sucesión
+         Importancia del momento y del lugar en que se produce
+      B. Delación
+      C. Pronunciamiento
+  - numero: 160
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Derecho real de herencia
+    contenido: |
+      A. Concepto y características del derecho real de herencia
+      B. Modos de adquirir el derecho real de herencia
+         (i) Sucesión por causa de muerte
+             Concepto, procedencia y características
+         (ii) Tradición
+              Requisitos y procedencia
+         (iii) Prescripción adquisitiva
+               Requisitos y procedencia
+  - numero: 161
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Asignatarios
+    contenido: |
+      A. Definición de asignatario
+         (i) Asignaciones a título universal
+         (ii) Asignaciones a título singular
+      B. Requisitos para ser asignatario
+         (i) Sucesión testada
+         (ii) Sucesión intestada
+  - numero: 162
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Derecho de representación, acrecer, transmisión y sustitución
+    contenido: |
+      A. Derecho de representación
+      B. Derecho de transmisión
+      C. Derecho de acrecer
+      D. Derecho de sustitución
+      E. Ámbito de procedencia de cada uno de ellos
+      F. Preferencia entre ellos
+  - numero: 163
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Teoría de los acervos
+    contenido: |
+      A. Noción de la teoría de los acervos
+      B. Acervo común
+      C. Acervo ilíquido
+      D. Acervo líquido
+      E. Referencia a los acervos imaginarios
+  - numero: 164
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Sucesión intestada
+    contenido: |
+      A. Concepto de sucesión intestada
+      B. Casos de aplicación
+      C. Personas llamadas a suceder
+      D. Formas de suceder
+         (i) Personalmente
+         (ii) Por derecho de representación
+      E. Órdenes de sucesión
+  - numero: 165
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Sucesión testada
+    contenido: |
+      A. Concepto de sucesión testada
+      B. Definición y características del testamento
+      C. Asignaciones testamentarias
+      D. Derechos que concurren en la sucesión testada
+  - numero: 166
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Asignaciones forzosas y su protección
+    contenido: |
+      A. Concepto de asignación forzosa
+      B. Enunciación
+         (i) Asignación alimenticia forzosa
+         (ii) Legítima
+         (iii) Cuarta de mejoras
+      C. Medios de protección
+         Fundamento de su protección
+  - numero: 167
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 1. Derecho sucesorio
+    tema: Deudas hereditarias y testamentarias
+    contenido: |
+      A. Concepto de beneficio de inventario
+      B. Deudas hereditarias
+         (i) Responsabilidad del heredero
+         (ii) Responsabilidad del legatario
+      C. Cargas testamentarias
+      D. Beneficio de separación
+  # 2. Partición de bienes
+  - numero: 168
+    seccion: VIII. Derecho sucesorio y partición de bienes
+    subseccion: 2. Partición de bienes
+    tema: Partición
+    contenido: |
+      A. Concepto de partición de bienes
+         Fundamento
+      B. Acción de partición
+      C. Modos de efectuar la partición
+      D. Liquidación y distribución de los bienes comunes
+      E. Efectos de la partición y adjudicación.

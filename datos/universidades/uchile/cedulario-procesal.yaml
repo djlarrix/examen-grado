@@ -1,0 +1,673 @@
+# Cedulario oficial de Derecho Procesal — Facultad de Derecho, Universidad de Chile.
+# "Cédulas obligatorias", transcrito del PDF escaneado que publica la Facultad:
+# https://weblex.derecho.uchile.cl/FTP/comunicaciones/documentos/Sec_estudio/8_Cedulario_Pregrado.pdf
+#
+# Incluye procesal orgánico, civil y penal: el cedulario de la Chile no los separa
+# en ramos distintos.
+ramo: procesal
+cedulas:
+  # I. LAS INSTITUCIONES DEL DERECHO PROCESAL — 1. Introducción y fuentes
+  - numero: 1
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 1. Introducción y fuentes
+    tema: El Derecho procesal y sus instituciones fundamentales. Concepto, contenido y sistema de fuentes
+    contenido: |
+      A. El conflicto y sus formas de solución civil y penal. Autotutela, heterotutela y autocomposición. Mirada general a las soluciones alternativas del conflicto civil y penal.
+      B. Concepto, contenido, finalidad, e instituciones fundamentales del derecho procesal.
+      C. Fuentes directas e indirectas.
+  - numero: 2
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 1. Introducción y fuentes
+    tema: La Constitución Política de la República y los tratados internacionales como fuente del derecho procesal
+    contenido: |
+      A. Los principios y garantías constitucionales de carácter procesal y su contenido esencial en la Constitución Política de la República y en tratados internacionales ratificados por Chile que se encuentren vigentes.
+      B. Órganos contemplados con rango Constitucional y misión de ellos.
+  - numero: 3
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 1. Introducción y fuentes
+    tema: La ley procesal y los auto acordados como fuente del derecho procesal. Otras fuentes
+    contenido: |
+      A. La Ley procesal.
+         (i) Concepto y naturaleza
+         (ii) Clasificación y objetivos de estas leyes y análisis de los principales textos que las contienen
+         (iii) Interpretación e integración
+         (iv) Eficacia en el tiempo y en el espacio
+      B. Los autoacordados
+      C. Otras fuentes: la doctrina y la jurisprudencia
+      D. Unidad o diversidad del derecho procesal
+  # 2. La jurisdicción
+  - numero: 4
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 2. La jurisdicción
+    tema: Concepto, clasificación, características y límites de la jurisdicción
+    contenido: |
+      A. Examen del art. 76 de la CPR
+      B. Concepto y acepciones del vocablo.
+      C. Jurisdicción de derecho y de equidad.
+      D. Características
+      E. Límites.
+  - numero: 5
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 2. La jurisdicción
+    tema: Los momentos y los equivalentes jurisdiccionales
+    contenido: |
+      A. Los momentos jurisdiccionales.
+         (i) Los tipos de tutela jurisdiccional
+         (ii) La sentencia como acto jurisdiccional y sus características
+         (iii) La ejecución
+      B. Los equivalentes jurisdiccionales unilaterales y bilaterales, en particular:
+         (i) Transacción
+         (ii) Avenimiento
+         (iii) Conciliación
+         (iv) Mediación
+  - numero: 6
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 2. La jurisdicción
+    tema: Actos judiciales no contenciosos
+    contenido: |
+      Actos judiciales no contenciosos. Concepto y elementos. Requisitos y comparación con los actos contenciosos.
+  # 3. La competencia
+  - numero: 7
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 3. La competencia
+    tema: Concepto de competencia, elementos que la determinan y clasificaciones
+    contenido: |
+      A. Concepto legal y crítica procesal
+      B. Elementos que la determinan
+      C. Principales clasificaciones
+  - numero: 8
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 3. La competencia
+    tema: Las reglas generales de la competencia
+    contenido: |
+      A. Concepto, características y sanción en caso de infracción
+      B. Examen de cada una de las reglas en materia civil y penal: radicación; extensión; prevención o inexcusabilidad, jerarquía o grado y ejecución
+  - numero: 9
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 3. La competencia
+    tema: Concepto y reglas que determinan la competencia absoluta
+    contenido: |
+      A. Materia
+      B. Fuero
+      C. Cuantía
+      D. Tiempo
+  - numero: 10
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 3. La competencia
+    tema: Concepto y reglas que determinan la competencia relativa. Reglas sobre distribución de causas.
+    contenido: |
+      A. Elementos y características
+      B. La prórroga de la competencia
+      C. Reglas en materia civil y penal
+  - numero: 11
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 3. La competencia
+    tema: Cuestiones y contiendas de competencia
+    contenido: |
+      A. Concepto
+      B. Forma de promoverse
+  # 4. Los órganos jurisdiccionales
+  - numero: 12
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 4. Los órganos jurisdiccionales
+    tema: Los órganos jurisdiccionales en general
+    contenido: |
+      A. Concepto y clasificaciones
+      B. El sistema judicial chileno y su organización. El principio de unidad de jurisdicción y la especialización de los órganos jurisdiccionales
+  - numero: 13
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 4. Los órganos jurisdiccionales
+    tema: Bases del ejercicio de la jurisdicción
+    contenido: |
+      A. Legalidad
+      B. Independencia e imparcialidad. En especial las implicancias y recusaciones
+      C. Inamovilidad
+      D. Responsabilidad
+      E. Territorialidad
+      F. Jerarquía o grado
+      G. Publicidad
+      H. Sedentariedad
+      I. Pasividad
+      J. Competencia común
+      K. Inavocabilidad
+      L. Inexcusabilidad
+      M. Gratuidad. En particular el privilegio de pobreza y en materia penal en relación con el imputado.
+      N. Continuatividad. Subrogación e integración
+  - numero: 14
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 4. Los órganos jurisdiccionales
+    tema: Estudio en particular de los tribunales ordinarios de justicia. Concepto, principales características y atribuciones
+    contenido: |
+      A. Los juzgados de letras
+      B. Los jueces de garantía y los Tribunales de Juicio Oral en lo Penal
+      C. Las Cortes de Apelaciones
+      D. La Corte Suprema
+  - numero: 15
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 4. Los órganos jurisdiccionales
+    tema: Los árbitros
+    contenido: |
+      A. Concepto, características y clasificaciones
+      B. Paralelo entre árbitros de derecho, mixtos y arbitradores
+      C. Principales características del procedimiento arbitral
+      D. Asuntos de arbitraje forzoso, facultativo y prohibido.
+  # 5. La acción y la defensa
+  - numero: 16
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 5. La acción y la defensa
+    tema: El derecho de acción o a la tutela jurisdiccional
+    contenido: |
+      A. Naturaleza del derecho de acción.
+      B. Concepto de las acciones civil y penal
+      C. Conflicto, acción, pretensión y demanda.
+      D. Clasificaciones.
+      E. Pretensiones múltiples. La acumulación inicial y sobrevenida de acciones.
+      F. La acción o la pretensión como objeto del proceso y su delimitación.
+  - numero: 17
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 5. La acción y la defensa
+    tema: El derecho de contradicción o defensa
+    contenido: |
+      A. Concepto de defensa.
+      B. Clasificaciones.
+      C. Excepciones y alegaciones o defensas.
+      D. La rebeldía
+      E. La reconvención.
+      F. El allanamiento.
+  # 6. El proceso y sus presupuestos, procedimiento, actos y actuaciones procesales
+  - numero: 18
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 6. El proceso y sus presupuestos, procedimiento, actos y actuaciones procesales
+    tema: El proceso civil y penal
+    contenido: |
+      A. Concepto.
+      B. Objetivos
+      C. Naturaleza jurídica.
+      D. Elementos subjetivos y objetivos del proceso civil y penal.
+         (i) Los sujetos procesales en materia civil.
+             - Partes y terceros y su intervención en el proceso.
+             - Capacidad para ser parte, capacidad procesal, ius postulandi y legitimación procesal.
+             - Pluralidad de partes o litisconsorcio. Tipos.
+             - Substitución y sucesión procesal.
+         (ii) Los sujetos procesales e intervinientes en materia penal.
+         (iii) El objeto:
+             - El objeto del proceso penal. Delimitación.
+             - El objeto del proceso civil. Su contenido, elementos, límites e importancia.
+  - numero: 19
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 6. El proceso y sus presupuestos, procedimiento, actos y actuaciones procesales
+    tema: Los presupuestos procesales
+    contenido: |
+      A. Presupuestos procesales de existencia
+      B. Presupuestos procesales de validez
+      C. Presupuestos procesales de eficacia.
+      D. Sanciones por incumplimiento o no concurrencia de los presupuestos procesales.
+  - numero: 20
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 6. El proceso y sus presupuestos, procedimiento, actos y actuaciones procesales
+    tema: El procedimiento
+    contenido: |
+      A. Concepto y elementos
+      B. Clasificación o tipos de procedimientos
+      C. Generalidades sobre el impulso procesal
+      D. Suspensión, paralización y extinción del procedimiento.
+  - numero: 21
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 6. El proceso y sus presupuestos, procedimiento, actos y actuaciones procesales
+    tema: Los actos y actuaciones procesales. Los actos jurídicos procesales
+    contenido: |
+      A. Hechos y actos procesales.
+      B. Concepto, y características.
+      C. Elementos.
+      D. Clasificaciones
+  - numero: 22
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 6. El proceso y sus presupuestos, procedimiento, actos y actuaciones procesales
+    tema: Los actos y actuaciones procesales. Los actos del tribunal
+    contenido: |
+      A. Las resoluciones judiciales y sus efectos
+      B. Desasimiento
+  - numero: 23
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 6. El proceso y sus presupuestos, procedimiento, actos y actuaciones procesales
+    tema: Los actos y actuaciones procesales. Los actos de partes y terceros
+    contenido: |
+      A. Los actos de las partes y terceros
+      B. Representación procesal. Mandato y Patrocinio
+  - numero: 24
+    seccion: I. Las instituciones del derecho procesal
+    subseccion: 6. El proceso y sus presupuestos, procedimiento, actos y actuaciones procesales
+    tema: Efectos y eficacia y de los actos procesales
+    contenido: |
+      A. La ineficacia de los actos procesales
+      B. La inexistencia
+      C. La nulidad procesal y su tratamiento
+      D. La inoponibilidad
+  # II. EL PROCESO CIVIL — 1. Las disposiciones comunes a todo procedimiento
+  - numero: 25
+    seccion: II. El proceso civil
+    subseccion: 1. Las disposiciones comunes a todo procedimiento
+    tema: Reglas comunes a todo procedimiento
+    contenido: |
+      A. Concepto, características e importancia
+      B. La formación del proceso, los plazos y las actuaciones judiciales
+  - numero: 26
+    seccion: II. El proceso civil
+    subseccion: 1. Las disposiciones comunes a todo procedimiento
+    tema: Las notificaciones
+    contenido: |
+      A. Concepto, importancia, objetivo y efectos
+      B. La notificación personal y la personal subsidiaria del art. 44 CPC
+      C. La notificación por aviso
+      D. La notificación por cédula
+      E. La notificación por el estado diario
+      F. La notificación ficta y la tácita
+  - numero: 27
+    seccion: II. El proceso civil
+    subseccion: 1. Las disposiciones comunes a todo procedimiento
+    tema: Las resoluciones judiciales
+    contenido: |
+      A. Concepto y clasificaciones
+      B. Las resoluciones judiciales según su naturaleza
+  - numero: 28
+    seccion: II. El proceso civil
+    subseccion: 1. Las disposiciones comunes a todo procedimiento
+    tema: Los principios formativos del procedimiento
+    contenido: |
+      A. Dispositivo – Inquisitivo
+      B. Impulso de partes – Impulso de tribunal
+      C. Unilateralidad de la audiencia – Bilateralidad de la audiencia.
+      D. Orden consecutivo legal; orden consecutivo discrecional y orden consecutivo convencional
+      E. Concentración
+      F. Continuidad.
+      G. Preclusión
+      H. Publicidad – secreto
+      I. Oralidad – Escrituración – Protocolización
+      J. Mediación – Inmediación
+      K. Probidad
+      L. Protección
+      M. Economía procesal
+      N. Adquisición procesal
+      O. Prueba Legal, Prueba Racional, y Sana Crítica
+  # 2. Los procedimientos de cognición
+  - numero: 29
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: El Juicio ordinario civil de mayor cuantía. Estructura y etapas de desarrollo. En particular el período de discusión y conciliación
+    contenido: |
+      A. Concepto, características, estructura e importancia
+      B. Período de discusión.
+         (i) La demanda. Concepto, requisitos, providencia que recae sobre ella y efectos de su interposición
+         (ii) El emplazamiento. Elementos en única, primera y segunda instancia e importancia
+         (iii) Efectos de la notificación válida de la demanda
+         (iv) El término de emplazamiento
+         (v) La defensa del demandado. Actitudes del demandado
+         (vi) La réplica y la dúplica
+      C. Período de conciliación. Oportunidad, requisitos y procedencia
+  - numero: 30
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Juicio ordinario civil y la prueba. El período de prueba
+    contenido: |
+      A. El período de prueba
+      B. La recepción de la causa a prueba
+      C. La ampliación de la prueba
+      D. El término probatorio. Concepto, características y tipos. Principales términos probatorios especiales. Término probatorio extraordinario.
+      E. Las observaciones a la prueba
+  - numero: 31
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Aspectos generales de la prueba
+    contenido: |
+      A. Concepto de la prueba.
+      B. Los grados de conocimiento y la prueba: la ignorancia, la credibilidad, la probabilidad, la certeza y la convicción.
+      C. La Certeza: Naturaleza y especies.
+      D. Certeza y convicción. Control de la convicción: motivación de la sentencia.
+      E. La prueba y las resoluciones judiciales.
+  - numero: 32
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Los principios formativos del procedimiento y su aplicación en materia probatoria
+    contenido: |
+      A. Concepto y aplicación de los principios formativos en materia probatoria civil.
+  - numero: 33
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: El objeto de la prueba
+    contenido: |
+      A. Noción de hechos para efectos probatorios.
+      B. Prueba de los hechos y del derecho.
+      C. Los hechos notorios y evidentes
+      D. El hecho negativo.
+      E. Prueba ilícita.
+  - numero: 34
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: La carga de la prueba y su distribución
+    contenido: |
+      A. Concepto
+      B. Sujetos procesales que soportan la carga de la prueba en el Derecho Procesal Chileno.
+      C. Los hechos presumidos
+      D. La convicción en relación con la carga de la prueba.
+  - numero: 35
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Los sistemas de admisibilidad y valoración de la prueba
+    contenido: |
+      A. El sistema de prueba legal o tasada
+      B. La sana crítica
+      C. Libre convicción
+      D. Sistemas vigentes en Chile
+  - numero: 36
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Las limitaciones a la prueba
+    contenido: ""
+  - numero: 37
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Los medios de prueba en particular, en materia civil
+    contenido: |
+      A. Concepto y clasificación de los medios de prueba.
+      B. Los instrumentos.
+      C. Los Testigos.
+      D. La confesión
+      E. La prueba pericial
+      F. La inspección personal del tribunal
+      G. Las presunciones
+      H. Otros medios de prueba
+  - numero: 38
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: El período de sentencia en el Juicio ordinario civil
+    contenido: |
+      A. La citación para oír sentencia
+      B. Las medidas para mejor resolver
+      C. La sentencia definitiva.
+  - numero: 39
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Los procedimientos preparatorios
+    contenido: |
+      A. Medidas prejudiciales preparatorias
+      B. Medidas prejudiciales probatorias
+      C. Medidas prejudiciales precautorias.
+  - numero: 40
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Los procedimientos cautelares
+    contenido: |
+      A. Las medidas cautelares en general. Concepto, fundamento, elementos diferenciadores y clasificación
+      B. Las medidas precautorias. Concepto, características, clasificación, requisitos generales o comunes y las medidas específicas contempladas en el CPC.
+  - numero: 41
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Los incidentes
+    contenido: |
+      A. Ordinarios. Concepto y carácter supletorio.
+      B. Especiales. En particular la acumulación de procesos, el desistimiento de la demanda y el abandono del procedimiento.
+  - numero: 42
+    seccion: II. El proceso civil
+    subseccion: 2. Los procedimientos de cognición
+    tema: Otros procedimientos civiles de cognición
+    contenido: |
+      Juicio sumario
+  # 3. Los procedimientos ejecutivos y otros especiales
+  - numero: 43
+    seccion: II. El proceso civil
+    subseccion: 3. Los procedimientos ejecutivos y otros especiales
+    tema: Procedimiento ejecutivo por obligación de dar, hacer o no hacer
+    contenido: |
+      A. Título ejecutivo
+      B. Gestión preparatoria de la vía ejecutiva
+      C. Juicio ejecutivo por obligación de dar
+         Estructura general
+         Presupuestos
+         Tramitación en el cuaderno ejecutivo y de apremio
+         Las tercerías
+      D. Juicio ejecutivo por obligación de hacer y no hacer. Principales requisitos y tramitación
+  - numero: 44
+    seccion: II. El proceso civil
+    subseccion: 3. Los procedimientos ejecutivos y otros especiales
+    tema: Procedimiento incidental de cumplimiento de sentencias y procedimientos supletorios
+    contenido: ""
+  - numero: 45
+    seccion: II. El proceso civil
+    subseccion: 3. Los procedimientos ejecutivos y otros especiales
+    tema: Cumplimiento de resoluciones dictadas por tribunales extranjeros
+    contenido: |
+      A. Exhorto
+      B. Exequátur
+  - numero: 46
+    seccion: II. El proceso civil
+    subseccion: 3. Los procedimientos ejecutivos y otros especiales
+    tema: Juicio de Hacienda
+    contenido: |
+      A. Peculiaridades
+      B. Consulta
+      C. Agravio
+  # III. EL PROCESO PENAL
+  - numero: 47
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: El proceso penal como vía de solución del conflicto penal
+    contenido: |
+      A. Los sistemas procesales penales
+      B. Los principios y garantías del sistema procesal penal.
+  - numero: 48
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: Aplicación de las instituciones y disposiciones comunes del procedimiento civil en el procedimiento penal
+    contenido: ""
+  - numero: 49
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: La acción en el proceso penal
+    contenido: |
+      A. La acción penal, concepto, clasificación y características.
+      B. La acción civil en el proceso penal y su tratamiento
+  - numero: 50
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: Los sujetos procesales en el proceso penal
+    contenido: |
+      A. El tribunal
+         (i) Jueces de garantía
+         (ii) Tribunales de juicio oral
+      B. El ministerio público
+      C. La policía
+      D. El imputado
+      E. El defensor
+      F. La víctima
+      G. El querellante
+      H. El actor civil
+  - numero: 51
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: Los procedimientos en el Código Procesal Penal
+    contenido: |
+      A. Concepto
+      B. Clasificaciones
+      C. Aplicación
+  - numero: 52
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: Las medidas cautelares en el proceso penal
+    contenido: |
+      A. Las medidas cautelares personales
+         (i) La citación
+         (ii) La detención
+         (iii) La prisión preventiva
+         (iv) Otras medidas cautelares
+      B. Las medidas cautelares reales
+  - numero: 53
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: El procedimiento ordinario penal. La etapa de investigación
+    contenido: |
+      A. Formas de iniciar el procedimiento. Iniciativa de fiscales, denuncia y querella.
+      B. La facultad de no iniciar la investigación y el archivo provisional.
+      C. El principio de oportunidad
+      D. La formalización de la investigación
+      E. Las diligencias de investigación y su control por parte del juez de garantía
+      F. Los mecanismos de aceleración de la investigación: juicio inmediato y procedimiento abreviado.
+      G. Las salidas alternativas: suspensión condicional del procedimiento y acuerdos reparatorios.
+      H. Conclusión de la investigación: cierre de la investigación, sobreseimiento y decisión del ministerio público de no perseverar en el procedimiento.
+  - numero: 54
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: El procedimiento ordinario penal. La etapa intermedia
+    contenido: |
+      A. La acusación
+      B. Audiencia de preparación del juicio oral
+  - numero: 55
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: El procedimiento ordinario penal. El juicio oral
+    contenido: |
+      A. Dirección y disciplina
+      B. Desarrollo y registro del juicio oral. Principios formativos que lo informan.
+      C. Los medios de prueba en particular, forma de rendir y el sistema de valoración de la prueba.
+      D. Sentencia definitiva condenatoria, absolutoria y estándar probatorio exigido.
+  - numero: 56
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: El procedimiento abreviado
+    contenido: |
+      A. Concepto
+      B. Características
+  - numero: 57
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: El procedimiento simplificado
+    contenido: |
+      A. Monitorio
+      B. Simplificado ordinario
+  - numero: 58
+    seccion: III. El proceso penal
+    subseccion: El proceso penal
+    tema: Procedimiento de acción penal privada
+    contenido: |
+      A. Concepto
+      B. Características
+  # IV. LOS RECURSOS PROCESALES EN MATERIA CIVIL Y PENAL Y LA COSA JUZGADA
+  - numero: 59
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: Teoría general de la impugnación
+    contenido: |
+      A. Concepto de impugnación.
+      B. El derecho a la impugnación. Concepto y naturaleza jurídica.
+      C. Concepto de recurso
+      D. Características, clasificación y fundamento de los recursos.
+      E. Los sujetos del recurso
+      F. El agravio
+      G. Formalidad de las resoluciones.
+      H. La ineficacia y las diversas formas en que se manifiesta respecto de las resoluciones judiciales.
+      I. Los vicios de las resoluciones y la preclusión de los medios de impugnación.
+      J. La inexistencia, inoponibilidad, nulidad, irregularidad y otras formas de ineficacia de las resoluciones. Medios específicos de impugnación de ellas.
+      K. Efectos de los recursos respecto de la resolución impugnada.
+  - numero: 60
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: El medio de impugnación de aclaración o interpretación y de rectificación o enmienda y el recurso de reposición
+    contenido: |
+      Conceptos, clasificaciones, sujetos legitimados, tramitación, y vinculación con otros recursos.
+  - numero: 61
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: El recurso de apelación
+    contenido: |
+      A. La instancia y sus características. Ventajas e inconvenientes de la instancia única y de la doble instancia.
+      B. Función del recurso de apelación.
+      C. Resoluciones apelables.
+      D. Legitimación para obrar.
+      E. Plazo para apelar.
+      F. Interposición de recursos.
+      G. Tribunales que intervienen.
+      H. Efectos de la apelación; suspensivo y devolutivo. Casos en que debe concederse sólo con efecto devolutivo.
+      I. Tramitación posterior a la concesión del recurso, en primera y segunda instancia.
+      J. Adhesión a la apelación.
+      K. Incidentes en segunda instancia, principios que lo rigen, tramitación y fallo.
+      L. La tramitación y terminación de la apelación.
+      M. Orden de no innovar
+  - numero: 62
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: El recurso de hecho
+    contenido: |
+      A. Concepto
+      B. Características
+  - numero: 63
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: El recurso de casación en la forma
+    contenido: |
+      A. Concepto y objetivo del recurso.
+      B. Tribunales que intervienen.
+      C. La casación y la nulidad procesal.
+      D. Características.
+      E. Resoluciones en contra de las cuales procede.
+      F. Tramitación.
+      G. Forma de terminación del recurso.
+  - numero: 64
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: El recurso de casación en el fondo
+    contenido: |
+      A. Concepto y objetivo del recurso.
+      B. Tribunales que intervienen.
+      C. Características. Resoluciones en contra de las cuales procede.
+      D. La infracción de la ley como causal de la casación en el fondo.
+      E. Tramitación. Forma de terminar el recurso.
+      F. Casación de oficio
+  - numero: 65
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: El recurso de nulidad
+    contenido: |
+      A. Concepto y objetivo del recurso.
+      B. Procedencia y causales.
+      C. Características.
+      D. Tramitación y tribunales competentes para su conocimiento.
+      E. Forma de terminación del recurso.
+      F. Paralelo con el recurso de casación.
+  - numero: 66
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: El recurso de queja y la queja. La revisión
+    contenido: |
+      A. Recurso de queja y queja: Generalidades y tramitación
+      B. La revisión: Naturaleza jurídica, procedencia y tramitación en materia civil y penal.
+      C. Efectos de la sentencia que la acoge o rechaza.
+  - numero: 67
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: Las acciones constitucionales
+    contenido: |
+      A. El amparo: Generalidades y tramitación.
+      B. La protección de garantías constitucionales. Generalidades y tramitación.
+      C. La inaplicabilidad y declaración de inconstitucionalidad de la ley: generalidades, tramitación, diferencias entre ellas y efectos de la sentencia del Tribunal Constitucional que la acoge o rechaza.
+  - numero: 68
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: La cosa juzgada. Nociones previas, clases y límites de la cosa juzgada
+    contenido: |
+      A. Concepto y justificación
+      B. Cosa juzgada y resoluciones judiciales.
+      C. Cosa juzgada y preclusión.
+      D. Clases de cosa juzgada.
+      E. Los límites de la cosa juzgada
+         (i) Subjetivos
+         (ii) Objetivos
+         (iii) Efecto reflejo de la sentencia
+  - numero: 69
+    seccion: IV. Los recursos procesales en materia civil y penal y la cosa juzgada
+    subseccion: Recursos y cosa juzgada
+    tema: Resoluciones que producen cosa juzgada. La acción y excepción de cosa juzgada
+    contenido: |
+      A. Resoluciones que producen cosa juzgada.
+      B. Acción de Cosa Juzgada.
+      C. Excepción de Cosa Juzgada
+      D. Diferencias entre la acción y excepción de cosa juzgada.
+      E. Influencia recíproca de la cosa juzgada en materia civil y penal.

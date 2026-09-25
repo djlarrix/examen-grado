@@ -1,0 +1,380 @@
+# Temario canónico de Derecho Procesal (orgánico, civil y penal).
+# Mismos campos y reglas que civil.yaml.
+rama: procesal
+titulo: Derecho Procesal
+unidades:
+  - id: procesal.intro
+    titulo: Introducción y fuentes
+    temas:
+      - id: procesal.intro.conflicto
+        titulo: El conflicto y sus formas de solución. Autotutela, autocomposición y heterocomposición
+        articulos: [CPR 76]
+        relacionados: [procesal.jurisdiccion.equivalentes]
+      - id: procesal.intro.garantias
+        titulo: Garantías constitucionales del proceso. Debido proceso
+        articulos: [CPR 5, CPR 19, CPR 76-77]
+      - id: procesal.intro.ley_procesal
+        titulo: La ley procesal. Interpretación y eficacia en el tiempo y en el espacio
+        articulos: [LERL 24, CC 9]
+        relacionados: [civil.fuentes.ley_tiempo]
+      - id: procesal.intro.autoacordados
+        titulo: Los autos acordados y otras fuentes
+        articulos: [CPR 82, COT 96]
+
+  - id: procesal.jurisdiccion
+    titulo: La jurisdicción
+    temas:
+      - id: procesal.jurisdiccion.concepto
+        titulo: Jurisdicción. Concepto, características y límites
+        articulos: [CPR 76, COT 1, COT 5]
+      - id: procesal.jurisdiccion.momentos
+        titulo: Momentos jurisdiccionales. Conocimiento, juzgamiento y ejecución
+        articulos: [CPR 76, COT 1]
+        requiere: [procesal.jurisdiccion.concepto]
+      - id: procesal.jurisdiccion.equivalentes
+        titulo: Equivalentes jurisdiccionales (transacción, avenimiento, conciliación, mediación)
+        articulos: [CC 2446, CPC 262-268, CPC 434]
+        relacionados: [civil.contratos_esp.transaccion]
+      - id: procesal.jurisdiccion.no_contencioso
+        titulo: Actos judiciales no contenciosos
+        articulos: [COT 2, CPC 817-828]
+
+  - id: procesal.competencia
+    titulo: La competencia
+    temas:
+      - id: procesal.competencia.concepto
+        titulo: Competencia. Concepto, elementos y clasificaciones
+        articulos: [COT 108]
+        requiere: [procesal.jurisdiccion.concepto]
+      - id: procesal.competencia.reglas_generales
+        titulo: Reglas generales de la competencia
+        articulos: [COT 109-114]
+        requiere: [procesal.competencia.concepto]
+      - id: procesal.competencia.absoluta
+        titulo: Competencia absoluta (materia, cuantía, fuero)
+        articulos: [COT 115-133]
+        requiere: [procesal.competencia.concepto]
+      - id: procesal.competencia.relativa
+        titulo: Competencia relativa, prórroga y distribución de causas
+        articulos: [COT 134-149, COT 175-187]
+        requiere: [procesal.competencia.concepto]
+      - id: procesal.competencia.cuestiones
+        titulo: Cuestiones y contiendas de competencia
+        articulos: [CPC 101-112, COT 190-193]
+        requiere: [procesal.competencia.absoluta, procesal.competencia.relativa]
+
+  - id: procesal.organica
+    titulo: Organización judicial
+    temas:
+      - id: procesal.organica.organizacion
+        titulo: Órganos jurisdiccionales. El sistema judicial chileno
+        articulos: [COT 5, CPR 76-82]
+      - id: procesal.organica.bases
+        titulo: Bases del ejercicio de la jurisdicción
+        articulos: [COT 1-13, CPR 79-80]
+      - id: procesal.organica.implicancias
+        titulo: Implicancias y recusaciones
+        articulos: [COT 194-205, CPC 113-128]
+        requiere: [procesal.organica.bases]
+      - id: procesal.organica.tribunales_ordinarios
+        titulo: Tribunales ordinarios (juzgados de letras, garantía, orales en lo penal, Cortes)
+        articulos: [COT 14-21, COT 27-48, COT 54-68, COT 93-107]
+        requiere: [procesal.organica.organizacion]
+      - id: procesal.organica.arbitros
+        titulo: Los árbitros
+        articulos: [COT 222-243, CPC 628-644]
+        relacionados: [civil.suc.particion]
+      - id: procesal.organica.auxiliares
+        titulo: Auxiliares de la administración de justicia
+        articulos: [COT 350, COT 372, COT 379, COT 390, COT 399, COT 446]
+
+  - id: procesal.accion
+    titulo: La acción y la defensa
+    temas:
+      - id: procesal.accion.accion
+        titulo: La acción. Naturaleza, clasificación y acumulación
+        articulos: [CPC 17-19, CPC 254]
+      - id: procesal.accion.defensa
+        titulo: La defensa. Excepciones, rebeldía, reconvención y allanamiento
+        articulos: [CPC 78, CPC 303-317]
+        requiere: [procesal.accion.accion]
+
+  - id: procesal.proceso
+    titulo: El proceso y los actos procesales
+    temas:
+      - id: procesal.proceso.proceso_partes
+        titulo: El proceso. Partes, terceros y litisconsorcio
+        articulos: [CPC 18-24]
+      - id: procesal.proceso.presupuestos
+        titulo: Presupuestos procesales
+        articulos: [CPC 83, CPC 84, CPC 256, CPC 303]
+        requiere: [procesal.proceso.proceso_partes]
+      - id: procesal.proceso.procedimiento
+        titulo: El procedimiento. Clasificación, impulso y extinción
+        articulos: [CPC 1-3, CPC 152-157]
+      - id: procesal.proceso.actos
+        titulo: Actos y actuaciones procesales
+        articulos: [CPC 59-77]
+      - id: procesal.proceso.resoluciones
+        titulo: Resoluciones judiciales. Clasificación, requisitos, efectos y desasimiento
+        articulos: [CPC 158-182]
+        requiere: [procesal.proceso.actos]
+      - id: procesal.proceso.representacion
+        titulo: Comparecencia en juicio. Mandato judicial y patrocinio
+        articulos: [CPC 4-7, L18120 1, L18120 2]
+        relacionados: [civil.contratos_esp.mandato]
+      - id: procesal.proceso.ineficacia
+        titulo: Ineficacia de los actos procesales. Nulidad procesal
+        articulos: [CPC 79-84]
+        requiere: [procesal.proceso.actos]
+        relacionados: [civil.acto.nulidad_absoluta, procesal.recursos.casacion_forma]
+
+  - id: procesal.comunes
+    titulo: Disposiciones comunes a todo procedimiento
+    temas:
+      - id: procesal.comunes.reglas_comunes
+        titulo: Formación del proceso, plazos y actuaciones judiciales
+        articulos: [CPC 1-3, CPC 29-37, CPC 64-68]
+        relacionados: [civil.fuentes.tiempo]
+      - id: procesal.comunes.notificaciones
+        titulo: Notificaciones
+        articulos: [CPC 38-58]
+      - id: procesal.comunes.principios_formativos
+        titulo: Principios formativos del procedimiento
+        articulos: []
+      - id: procesal.comunes.incidentes
+        titulo: Incidentes ordinarios y especiales (acumulación, desistimiento, abandono)
+        articulos: [CPC 82-100, CPC 148-157]
+      - id: procesal.comunes.pobreza_costas
+        titulo: Privilegio de pobreza y costas
+        articulos: [CPC 129-147]
+
+  - id: procesal.ordinario
+    titulo: Juicio ordinario civil
+    temas:
+      - id: procesal.ordinario.discusion
+        titulo: Juicio ordinario. Estructura y período de discusión
+        articulos: [CPC 253-261, CPC 303-317]
+        requiere: [procesal.comunes.notificaciones]
+      - id: procesal.ordinario.conciliacion
+        titulo: Conciliación
+        articulos: [CPC 262-268]
+        requiere: [procesal.ordinario.discusion]
+      - id: procesal.ordinario.periodo_prueba
+        titulo: Período de prueba. Recepción a prueba y término probatorio
+        articulos: [CPC 318-340]
+        requiere: [procesal.ordinario.discusion]
+      - id: procesal.ordinario.sentencia
+        titulo: Período de sentencia. Citación para oír sentencia, medidas para mejor resolver y sentencia definitiva
+        articulos: [CPC 159, CPC 170, CPC 432, CPC 433]
+        requiere: [procesal.ordinario.periodo_prueba]
+      - id: procesal.ordinario.prejudiciales
+        titulo: Medidas prejudiciales
+        articulos: [CPC 273-289]
+
+  - id: procesal.prueba
+    titulo: La prueba
+    temas:
+      - id: procesal.prueba.general
+        titulo: La prueba. Concepto, grados de conocimiento y convicción
+        articulos: [CPC 341]
+      - id: procesal.prueba.objeto
+        titulo: Objeto de la prueba. Hechos notorios, hecho negativo y prueba ilícita
+        articulos: [CPC 318, CPP 276]
+        requiere: [procesal.prueba.general]
+      - id: procesal.prueba.carga
+        titulo: Carga de la prueba y presunciones legales
+        articulos: [CC 47, CC 1698]
+        requiere: [procesal.prueba.general]
+        relacionados: [civil.oblig.prueba]
+      - id: procesal.prueba.sistemas
+        titulo: Sistemas de valoración. Prueba legal, sana crítica y libre convicción
+        articulos: [CPC 384, CPC 425, CPC 428, CPP 297]
+        requiere: [procesal.prueba.general]
+      - id: procesal.prueba.limitaciones
+        titulo: Limitaciones a la prueba
+        articulos: [CC 1708-1711]
+        requiere: [procesal.prueba.general]
+        relacionados: [civil.acto.formalidades]
+      - id: procesal.prueba.medios
+        titulo: Medios de prueba en materia civil (clasificación)
+        articulos: [CPC 341]
+        requiere: [procesal.prueba.general]
+      - id: procesal.prueba.instrumentos
+        titulo: Prueba instrumental
+        articulos: [CPC 342-355, CC 1699-1706]
+        requiere: [procesal.prueba.medios]
+      - id: procesal.prueba.testigos
+        titulo: Prueba testimonial
+        articulos: [CPC 356-384]
+        requiere: [procesal.prueba.medios]
+      - id: procesal.prueba.confesion
+        titulo: Confesión en juicio
+        articulos: [CPC 385-402, CC 1713]
+        requiere: [procesal.prueba.medios]
+      - id: procesal.prueba.otros_medios
+        titulo: Inspección personal, informe de peritos y presunciones
+        articulos: [CPC 403-427, CC 1712]
+        requiere: [procesal.prueba.medios]
+
+  - id: procesal.cautelares
+    titulo: Medidas cautelares civiles
+    temas:
+      - id: procesal.cautelares.precautorias
+        titulo: Medidas cautelares y precautorias
+        articulos: [CPC 290-302]
+        relacionados: [civil.oblig.prenda_general, civil.acto.objeto_ilicito]
+
+  - id: procesal.especiales
+    titulo: Otros procedimientos civiles
+    temas:
+      - id: procesal.especiales.sumario
+        titulo: Juicio sumario
+        articulos: [CPC 680-692]
+      - id: procesal.especiales.cumplimiento_incidental
+        titulo: Cumplimiento incidental de las sentencias
+        articulos: [CPC 231-241]
+      - id: procesal.especiales.exequatur
+        titulo: Cumplimiento de resoluciones extranjeras. Exhorto y exequátur
+        articulos: [CPC 76, CPC 242-251]
+      - id: procesal.especiales.hacienda
+        titulo: Juicio de Hacienda
+        articulos: [CPC 748-752]
+      - id: procesal.especiales.familia
+        titulo: Procedimiento ante los Tribunales de Familia
+        articulos: [L19968 9, L19968 55-67]
+        relacionados: [civil.familia.divorcio, civil.familia.compensacion_economica]
+      - id: procesal.especiales.arrendamiento
+        titulo: Procedimiento de arrendamiento de predios urbanos
+        articulos: [L18101 7, L18101 8]
+        relacionados: [civil.contratos_esp.arrendamiento]
+
+  - id: procesal.ejecutivo
+    titulo: Juicio ejecutivo
+    temas:
+      - id: procesal.ejecutivo.titulo
+        titulo: Título ejecutivo y gestiones preparatorias de la vía ejecutiva
+        articulos: [CPC 434-443]
+        relacionados: [civil.resp.acciones_incumplimiento]
+      - id: procesal.ejecutivo.dar
+        titulo: Juicio ejecutivo por obligación de dar. Cuaderno ejecutivo, de apremio y tercerías
+        articulos: [CPC 437-529]
+        requiere: [procesal.ejecutivo.titulo]
+        relacionados: [civil.oblig.prenda_general]
+      - id: procesal.ejecutivo.hacer_no_hacer
+        titulo: Juicio ejecutivo por obligaciones de hacer y no hacer
+        articulos: [CPC 530-544]
+        requiere: [procesal.ejecutivo.titulo]
+        relacionados: [civil.oblig.hacer, civil.oblig.no_hacer]
+
+  - id: procesal.penal
+    titulo: Proceso penal
+    temas:
+      - id: procesal.penal.principios
+        titulo: Sistemas procesales penales. Principios y garantías
+        articulos: [CPP 1-12]
+      - id: procesal.penal.supletoriedad
+        titulo: Aplicación supletoria de las normas comunes del procedimiento civil
+        articulos: [CPP 52]
+      - id: procesal.penal.accion
+        titulo: Acción penal y acción civil en el proceso penal
+        articulos: [CPP 53-68]
+        relacionados: [civil.resp.acciones_extra]
+      - id: procesal.penal.sujetos
+        titulo: Sujetos procesales e intervinientes
+        articulos: [CPP 69-121]
+      - id: procesal.penal.cautelares
+        titulo: Medidas cautelares personales y reales
+        articulos: [CPP 122-157]
+      - id: procesal.penal.procedimientos
+        titulo: Los procedimientos del Código Procesal Penal (clasificación)
+        articulos: [CPP 388, CPP 400, CPP 406]
+      - id: procesal.penal.inicio_investigacion
+        titulo: Inicio de la investigación. Denuncia, querella, archivo provisional y principio de oportunidad
+        articulos: [CPP 166-179]
+        requiere: [procesal.penal.sujetos]
+      - id: procesal.penal.diligencias
+        titulo: Diligencias de investigación y control judicial
+        articulos: [CPP 180-228]
+        requiere: [procesal.penal.inicio_investigacion]
+      - id: procesal.penal.formalizacion
+        titulo: Formalización de la investigación y juicio inmediato
+        articulos: [CPP 229-236]
+        requiere: [procesal.penal.inicio_investigacion]
+      - id: procesal.penal.salidas_alternativas
+        titulo: Salidas alternativas (suspensión condicional y acuerdos reparatorios)
+        articulos: [CPP 237-246]
+        requiere: [procesal.penal.formalizacion]
+      - id: procesal.penal.cierre
+        titulo: Cierre de la investigación, sobreseimiento y decisión de no perseverar
+        articulos: [CPP 247-258]
+        requiere: [procesal.penal.formalizacion]
+      - id: procesal.penal.intermedia
+        titulo: Etapa intermedia. Acusación y audiencia de preparación del juicio oral
+        articulos: [CPP 259-280]
+        requiere: [procesal.penal.cierre]
+      - id: procesal.penal.juicio_oral
+        titulo: Juicio oral y sentencia definitiva
+        articulos: [CPP 281-351]
+        requiere: [procesal.penal.intermedia]
+      - id: procesal.penal.abreviado
+        titulo: Procedimiento abreviado
+        articulos: [CPP 406-415]
+        requiere: [procesal.penal.procedimientos]
+      - id: procesal.penal.simplificado
+        titulo: Procedimiento simplificado y monitorio
+        articulos: [CPP 388-399]
+        requiere: [procesal.penal.procedimientos]
+      - id: procesal.penal.accion_privada
+        titulo: Procedimiento por delito de acción penal privada
+        articulos: [CPP 400-405]
+        requiere: [procesal.penal.procedimientos]
+
+  - id: procesal.recursos
+    titulo: Recursos y cosa juzgada
+    temas:
+      - id: procesal.recursos.teoria
+        titulo: Teoría general de la impugnación
+        articulos: [CPP 352-361]
+      - id: procesal.recursos.reposicion
+        titulo: Aclaración, rectificación o enmienda y recurso de reposición
+        articulos: [CPC 181-185, CPP 362, CPP 363]
+        requiere: [procesal.recursos.teoria]
+      - id: procesal.recursos.apelacion
+        titulo: Recurso de apelación
+        articulos: [CPC 186-230, CPP 364-371]
+        requiere: [procesal.recursos.teoria]
+      - id: procesal.recursos.hecho
+        titulo: Recurso de hecho
+        articulos: [CPC 196, CPC 203-206]
+        requiere: [procesal.recursos.apelacion]
+      - id: procesal.recursos.casacion_forma
+        titulo: Recurso de casación en la forma
+        articulos: [CPC 764-771, CPC 775]
+        requiere: [procesal.recursos.teoria]
+        relacionados: [procesal.proceso.ineficacia]
+      - id: procesal.recursos.casacion_fondo
+        titulo: Recurso de casación en el fondo
+        articulos: [CPC 767, CPC 772, CPC 785]
+        requiere: [procesal.recursos.teoria]
+        relacionados: [civil.contratos.interpretacion]
+      - id: procesal.recursos.nulidad_penal
+        titulo: Recurso de nulidad (proceso penal)
+        articulos: [CPP 372-387]
+        requiere: [procesal.recursos.teoria]
+        relacionados: [procesal.recursos.casacion_forma]
+      - id: procesal.recursos.queja_revision
+        titulo: Recurso de queja, queja disciplinaria y revisión
+        articulos: [COT 545-551, CPC 810-816, CPP 473-480]
+        requiere: [procesal.recursos.teoria]
+      - id: procesal.recursos.acciones_constitucionales
+        titulo: Acciones constitucionales (amparo, protección, inaplicabilidad)
+        articulos: [CPR 20, CPR 21, CPR 93]
+        relacionados: [civil.personas.derechos_personalidad]
+      - id: procesal.recursos.cosa_juzgada
+        titulo: Cosa juzgada. Concepto, clases y límites
+        articulos: [CPC 174-180]
+      - id: procesal.recursos.accion_excepcion_cj
+        titulo: Acción y excepción de cosa juzgada
+        articulos: [CPC 175-180]
+        requiere: [procesal.recursos.cosa_juzgada]

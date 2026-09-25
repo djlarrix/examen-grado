@@ -1,0 +1,782 @@
+# Temario canónico de Derecho Civil.
+#
+# Es independiente de la universidad: cada cedulario (datos/universidades/*)
+# enlaza sus cédulas con estos temas, y el progreso del estudiante se lleva por
+# tema. Así, quien se cambia de universidad o estudia con el cedulario de otra no
+# pierde lo avanzado.
+#
+# Campos:
+#   id           identificador estable. NO cambiarlo: el progreso guardado lo usa.
+#   titulo       nombre del tema tal como se dice en clases.
+#   articulos    normas de apoyo. Formato "SIGLA art, art-art". Siglas en
+#                src/fuentes/normas.mjs. `npm run verificar-articulos` comprueba
+#                contra Ley Chile que cada artículo exista y no esté derogado.
+#   requiere     temas que conviene dominar antes (aprendizaje por dominio).
+#   relacionados temas con los que la comisión suele pedir relacionar, incluso
+#                de Procesal. Son el material de las "preguntas de relación".
+rama: civil
+titulo: Derecho Civil
+unidades:
+  - id: civil.fuentes
+    titulo: Introducción al Derecho Civil
+    temas:
+      - id: civil.fuentes.derecho_privado
+        titulo: Derecho privado, Derecho civil y sus fuentes
+        articulos: [CC 1-4]
+      - id: civil.fuentes.costumbre
+        titulo: La costumbre en Derecho privado
+        articulos: [CC 2, CCOM 4-6]
+        relacionados: [procesal.prueba.objeto]
+      - id: civil.fuentes.principios
+        titulo: Principios del Derecho Civil
+        articulos: [CC 12, CC 707, CC 1545, CC 1546, CC 2314]
+      - id: civil.fuentes.principio_responsabilidad
+        titulo: Principio de responsabilidad
+        articulos: [CC 1547, CC 2314, CC 2329]
+        relacionados: [civil.resp.general, civil.resp.cumulo]
+      - id: civil.fuentes.buena_fe
+        titulo: Principio de la buena fe (objetiva y subjetiva)
+        articulos: [CC 706, CC 707, CC 1546]
+        relacionados: [civil.contratos.precontractual, civil.bienes.posesion]
+      - id: civil.fuentes.enriquecimiento_injustificado
+        titulo: Prohibición del enriquecimiento injustificado
+        articulos: [CC 1688, CC 2284, CC 2295]
+        relacionados: [civil.cuasicontratos.generalidades, civil.cuasicontratos.pago_no_debido]
+      - id: civil.fuentes.libre_circulacion
+        titulo: Principio de libre circulación de los bienes
+        articulos: [CC 745, CC 769, CC 1126, CC 1464, CC 2415]
+      - id: civil.fuentes.igualdad_libertad
+        titulo: Principios de igualdad y de libertad
+        articulos: [CC 33, CC 55, CC 57]
+      - id: civil.fuentes.relacion_juridica
+        titulo: Relación jurídica y derecho subjetivo
+        articulos: []
+      - id: civil.fuentes.abuso_derecho
+        titulo: Teoría del abuso del derecho
+        articulos: []
+        requiere: [civil.fuentes.relacion_juridica]
+      - id: civil.fuentes.dolo_mala_fe
+        titulo: Dolo y mala fe en el Código Civil
+        articulos: [CC 44, CC 706, CC 707, CC 1459, CC 1465]
+        relacionados: [civil.acto.dolo, civil.resp.dolo_contractual]
+      - id: civil.fuentes.apariencia
+        titulo: Protección de la confianza, apariencia y error común
+        articulos: [CC 1013, CC 1576, CC 1707, CC 2058, CC 2173]
+        relacionados: [civil.acto.inoponibilidad, civil.acto.simulacion]
+      - id: civil.fuentes.tiempo
+        titulo: Efectos jurídicos del tiempo. Cómputo de plazos
+        articulos: [CC 48-50]
+        relacionados: [civil.oblig.prescripcion_extintiva, procesal.comunes.reglas_comunes]
+      - id: civil.fuentes.ley_tiempo
+        titulo: Efectos de la ley en el tiempo. Irretroactividad
+        articulos: [CC 9, LERL 1, LERL 12, LERL 22, LERL 24, LERL 25]
+        relacionados: [procesal.intro.ley_procesal]
+      - id: civil.fuentes.ley_espacio
+        titulo: Efectos de la ley en el espacio
+        articulos: [CC 14-18]
+      - id: civil.fuentes.interpretacion_ley
+        titulo: Interpretación de la ley
+        articulos: [CC 3, CC 19-24]
+        relacionados: [civil.contratos.interpretacion]
+      - id: civil.fuentes.derechos_reales_personales
+        titulo: Derechos reales y derechos personales
+        articulos: [CC 576-581]
+        relacionados: [civil.oblig.concepto_fuentes, civil.bienes.dominio]
+      - id: civil.fuentes.renuncia
+        titulo: La renuncia de derechos en el Código Civil
+        articulos: [CC 12]
+        relacionados: [civil.acto.orden_publico]
+
+  - id: civil.personas
+    titulo: Personas
+    temas:
+      - id: civil.personas.persona_natural
+        titulo: Persona natural. Existencia y fin
+        articulos: [CC 54, CC 55, CC 74-79, CC 95-97]
+      - id: civil.personas.muerte_presunta
+        titulo: Muerte presunta
+        articulos: [CC 80-94]
+        requiere: [civil.personas.persona_natural]
+      - id: civil.personas.capacidad
+        titulo: Capacidad de goce y de ejercicio. Incapacidades
+        articulos: [CC 26, CC 1445-1447]
+        relacionados: [civil.acto.nulidad_relativa, civil.acto.nulidad_absoluta]
+      - id: civil.personas.atributos
+        titulo: Atributos de la personalidad
+        articulos: [CC 56, CC 59-73, CC 304]
+      - id: civil.personas.patrimonio
+        titulo: El patrimonio
+        articulos: [CC 549, CC 1097, CC 2465]
+        relacionados: [civil.oblig.prenda_general]
+      - id: civil.personas.derechos_personalidad
+        titulo: Derechos de la personalidad
+        articulos: [CPR 19, CPR 20]
+        relacionados: [procesal.recursos.acciones_constitucionales]
+      - id: civil.personas.personas_juridicas
+        titulo: Personas jurídicas
+        articulos: [CC 545-564]
+
+  - id: civil.acto
+    titulo: Teoría del acto jurídico
+    temas:
+      - id: civil.acto.teoria_general
+        titulo: Teoría del acto jurídico. Concepto y requisitos
+        articulos: [CC 1444, CC 1445]
+      - id: civil.acto.elementos
+        titulo: Elementos del acto jurídico (esencia, naturaleza, accidentales)
+        articulos: [CC 1444, CC 1445]
+        requiere: [civil.acto.teoria_general]
+      - id: civil.acto.clasificacion
+        titulo: Clasificación de los actos jurídicos y de los contratos
+        articulos: [CC 999, CC 1439-1443]
+        requiere: [civil.acto.teoria_general]
+      - id: civil.acto.voluntad
+        titulo: Manifestación de la voluntad. Silencio
+        articulos: [CC 1445, CC 1241, CC 2125]
+        requiere: [civil.acto.teoria_general]
+      - id: civil.acto.formacion_consentimiento
+        titulo: Formación del consentimiento. Oferta y aceptación
+        articulos: [CCOM 97-106]
+        requiere: [civil.acto.voluntad]
+        relacionados: [civil.contratos.precontractual]
+      - id: civil.acto.vicios
+        titulo: Vicios del consentimiento (generalidades)
+        articulos: [CC 1451]
+        requiere: [civil.acto.voluntad]
+      - id: civil.acto.error
+        titulo: El error
+        articulos: [CC 1452-1455]
+        requiere: [civil.acto.vicios]
+      - id: civil.acto.fuerza
+        titulo: La fuerza
+        articulos: [CC 1456, CC 1457]
+        requiere: [civil.acto.vicios]
+      - id: civil.acto.dolo
+        titulo: El dolo como vicio del consentimiento
+        articulos: [CC 44, CC 1458, CC 1459]
+        requiere: [civil.acto.vicios]
+        relacionados: [civil.fuentes.dolo_mala_fe, civil.resp.dolo_contractual]
+      - id: civil.acto.objeto
+        titulo: Teoría del objeto
+        articulos: [CC 1460, CC 1461]
+        requiere: [civil.acto.teoria_general]
+      - id: civil.acto.objeto_ilicito
+        titulo: Objeto ilícito
+        articulos: [CC 1462-1466]
+        requiere: [civil.acto.objeto]
+        relacionados: [civil.acto.nulidad_absoluta, procesal.ejecutivo.dar]
+      - id: civil.acto.causa
+        titulo: Teoría de la causa
+        articulos: [CC 1467, CC 1468]
+        requiere: [civil.acto.teoria_general]
+      - id: civil.acto.simulacion
+        titulo: Simulación y fraude a la ley
+        articulos: [CC 1707]
+        requiere: [civil.acto.voluntad]
+        relacionados: [civil.acto.inoponibilidad]
+      - id: civil.acto.orden_publico
+        titulo: Orden público y buenas costumbres
+        articulos: [CC 10, CC 1461, CC 1467, CC 1475]
+      - id: civil.acto.formalidades
+        titulo: Formalidades del acto jurídico
+        articulos: [CC 1443, CC 1701, CC 1708, CC 1709]
+        relacionados: [procesal.prueba.limitaciones, procesal.prueba.instrumentos]
+      - id: civil.acto.representacion
+        titulo: La representación
+        articulos: [CC 43, CC 1448, CC 2151]
+        relacionados: [civil.contratos_esp.mandato, procesal.proceso.representacion]
+      - id: civil.acto.inexistencia
+        titulo: Teoría de la inexistencia
+        articulos: [CC 1444, CC 1681, CC 1682]
+        requiere: [civil.acto.elementos]
+        relacionados: [procesal.proceso.ineficacia]
+      - id: civil.acto.nulidad_absoluta
+        titulo: Nulidad absoluta
+        articulos: [CC 1681-1683, CC 1687-1689]
+        requiere: [civil.acto.elementos]
+        relacionados: [civil.acto.nulidad_relativa, civil.bienes.prestaciones_mutuas, procesal.proceso.ineficacia]
+      - id: civil.acto.nulidad_relativa
+        titulo: Nulidad relativa
+        articulos: [CC 1682, CC 1684-1697]
+        requiere: [civil.acto.elementos]
+        relacionados: [civil.acto.nulidad_absoluta, civil.personas.capacidad]
+      - id: civil.acto.inoponibilidad
+        titulo: Inoponibilidad
+        articulos: [CC 1707, CC 1815, CC 1902, CC 2173]
+        relacionados: [civil.contratos.efecto_relativo]
+      - id: civil.acto.ineficacia
+        titulo: Ineficacia del contrato (resciliación, revocación, resolución, nulidad)
+        articulos: [CC 1489, CC 1567, CC 1681]
+        relacionados: [civil.acto.nulidad_absoluta, civil.oblig.resolucion]
+
+  - id: civil.contratos
+    titulo: Teoría general del contrato
+    temas:
+      - id: civil.contratos.principios
+        titulo: Principios de la contratación. Autonomía de la voluntad
+        articulos: [CC 1545, CC 1546, CC 12]
+      - id: civil.contratos.consensualismo
+        titulo: Consensualismo y sus excepciones
+        articulos: [CC 1443]
+        relacionados: [civil.acto.formalidades]
+      - id: civil.contratos.precontractual
+        titulo: Responsabilidad precontractual y negociación
+        articulos: [CCOM 98, CCOM 100, CC 1546]
+        requiere: [civil.acto.formacion_consentimiento]
+      - id: civil.contratos.bilaterales
+        titulo: Contratos unilaterales y bilaterales. Sinalagmáticos imperfectos
+        articulos: [CC 1439, CC 1489, CC 1550, CC 1552]
+        requiere: [civil.acto.clasificacion]
+      - id: civil.contratos.interdependencia
+        titulo: Interdependencia de las obligaciones en los contratos bilaterales
+        articulos: [CC 1489, CC 1552]
+        requiere: [civil.contratos.bilaterales]
+      - id: civil.contratos.excepcion_no_cumplido
+        titulo: Excepción de contrato no cumplido
+        articulos: [CC 1552]
+        requiere: [civil.contratos.interdependencia]
+        relacionados: [civil.oblig.mora, procesal.accion.defensa]
+      - id: civil.contratos.riesgos
+        titulo: Teoría de los riesgos
+        articulos: [CC 1550, CC 1820, CC 1672]
+        requiere: [civil.contratos.bilaterales]
+        relacionados: [civil.oblig.perdida_cosa, civil.resp.caso_fortuito]
+      - id: civil.contratos.gratuitos_onerosos
+        titulo: Contratos gratuitos y onerosos. Conmutativos y aleatorios
+        articulos: [CC 1440, CC 1441]
+        requiere: [civil.acto.clasificacion]
+        relacionados: [civil.contratos_esp.lesion]
+      - id: civil.contratos.tracto_sucesivo
+        titulo: Contratos de ejecución instantánea, diferida y de tracto sucesivo
+        articulos: []
+        requiere: [civil.acto.clasificacion]
+        relacionados: [civil.contratos.imprevision]
+      - id: civil.contratos.reales
+        titulo: Contratos reales
+        articulos: [CC 1443, CC 2174, CC 2196, CC 2211]
+        relacionados: [civil.contratos_esp.prestamos_deposito]
+      - id: civil.contratos.adhesion
+        titulo: Contratos de adhesión
+        articulos: [LPC 16, LPC 17]
+      - id: civil.contratos.efectos
+        titulo: Efectos de los contratos
+        articulos: [CC 1545, CC 1449, CC 1450]
+      - id: civil.contratos.fuerza_obligatoria
+        titulo: Fuerza obligatoria del contrato
+        articulos: [CC 1545]
+        relacionados: [civil.contratos.imprevision]
+      - id: civil.contratos.imprevision
+        titulo: Teoría de la imprevisión
+        articulos: [CC 1545, CC 1546, CC 1983, CC 2003, CC 2180, CC 2227]
+        requiere: [civil.contratos.fuerza_obligatoria]
+      - id: civil.contratos.efecto_relativo
+        titulo: Efecto relativo. Estipulación a favor de otro y promesa de hecho ajeno
+        articulos: [CC 1449, CC 1450, CC 1545]
+        relacionados: [civil.acto.inoponibilidad]
+      - id: civil.contratos.interpretacion
+        titulo: Interpretación e integración de los contratos
+        articulos: [CC 1560-1566]
+        relacionados: [civil.fuentes.interpretacion_ley, procesal.recursos.casacion_fondo]
+
+  - id: civil.oblig
+    titulo: Obligaciones
+    temas:
+      - id: civil.oblig.concepto_fuentes
+        titulo: Concepto de obligación y sus fuentes
+        articulos: [CC 578, CC 1437, CC 2284, CC 2314]
+      - id: civil.oblig.naturales
+        titulo: Obligaciones civiles y naturales
+        articulos: [CC 1470-1472]
+      - id: civil.oblig.dar
+        titulo: Obligaciones de dar y de entregar
+        articulos: [CC 1548, CC 1824]
+      - id: civil.oblig.hacer
+        titulo: Obligaciones de hacer
+        articulos: [CC 1553]
+        relacionados: [procesal.ejecutivo.hacer_no_hacer]
+      - id: civil.oblig.no_hacer
+        titulo: Obligaciones de no hacer
+        articulos: [CC 1555]
+        relacionados: [procesal.ejecutivo.hacer_no_hacer]
+      - id: civil.oblig.especie_genero
+        titulo: Obligaciones de especie o cuerpo cierto y de género
+        articulos: [CC 1508-1510, CC 1548-1550]
+        relacionados: [civil.contratos.riesgos]
+      - id: civil.oblig.dinero
+        titulo: Obligaciones de dinero y operaciones de crédito de dinero
+        articulos: [CC 1559, L18010 1]
+      - id: civil.oblig.medio_resultado
+        titulo: Obligaciones de medio y de resultado
+        articulos: [CC 1547]
+      - id: civil.oblig.alternativas_facultativas
+        titulo: Obligaciones alternativas y facultativas
+        articulos: [CC 1499-1507]
+      - id: civil.oblig.solidarias
+        titulo: Obligaciones solidarias
+        articulos: [CC 1511-1523]
+        relacionados: [civil.resp.causalidad]
+      - id: civil.oblig.indivisibles
+        titulo: Obligaciones indivisibles
+        articulos: [CC 1524-1534]
+        requiere: [civil.oblig.solidarias]
+      - id: civil.oblig.modalidades
+        titulo: Obligaciones sujetas a modalidad (generalidades)
+        articulos: [CC 1473, CC 1494, CC 1089]
+      - id: civil.oblig.condicionales
+        titulo: Obligaciones condicionales
+        articulos: [CC 1473-1493]
+        requiere: [civil.oblig.modalidades]
+      - id: civil.oblig.plazo
+        titulo: Obligaciones a plazo
+        articulos: [CC 1494-1498]
+        requiere: [civil.oblig.modalidades]
+      - id: civil.oblig.modo
+        titulo: Asignaciones modales (el modo)
+        articulos: [CC 1089-1096]
+        requiere: [civil.oblig.modalidades]
+      - id: civil.oblig.resolucion
+        titulo: Resolución por incumplimiento. Condición resolutoria tácita y pacto comisorio
+        articulos: [CC 1487, CC 1489, CC 1873, CC 1877-1880]
+        requiere: [civil.oblig.condicionales, civil.contratos.bilaterales]
+        relacionados: [civil.bienes.prestaciones_mutuas, civil.resp.acciones_incumplimiento]
+      - id: civil.oblig.mora
+        titulo: Mora del deudor y mora del acreedor
+        articulos: [CC 1551, CC 1552, CC 1557, CC 1680]
+        relacionados: [civil.contratos.excepcion_no_cumplido]
+      - id: civil.oblig.prenda_general
+        titulo: Derecho de prenda general y derechos auxiliares del acreedor
+        articulos: [CC 2465, CC 2466, CC 2468, CC 1238]
+        relacionados: [civil.personas.patrimonio, procesal.cautelares.precautorias, procesal.ejecutivo.dar]
+      - id: civil.oblig.modos_extinguir
+        titulo: Modos de extinguir las obligaciones (generalidades)
+        articulos: [CC 1567]
+      - id: civil.oblig.pago
+        titulo: El pago efectivo
+        articulos: [CC 1568-1598]
+        requiere: [civil.oblig.modos_extinguir]
+      - id: civil.oblig.modalidades_pago
+        titulo: Modalidades del pago (consignación, subrogación, cesión de bienes, beneficio de competencia)
+        articulos: [CC 1599-1627]
+        requiere: [civil.oblig.pago]
+      - id: civil.oblig.novacion_dacion
+        titulo: Novación y dación en pago
+        articulos: [CC 1628-1651]
+        requiere: [civil.oblig.modos_extinguir]
+      - id: civil.oblig.compensacion_remision_confusion
+        titulo: Remisión, compensación y confusión
+        articulos: [CC 1652-1669]
+        requiere: [civil.oblig.modos_extinguir]
+      - id: civil.oblig.perdida_cosa
+        titulo: Imposibilidad y pérdida de la cosa que se debe
+        articulos: [CC 1670-1680]
+        relacionados: [civil.contratos.riesgos, civil.resp.caso_fortuito]
+      - id: civil.oblig.prescripcion_extintiva
+        titulo: Prescripción extintiva
+        articulos: [CC 2492-2497, CC 2514-2524]
+        relacionados: [civil.bienes.prescripcion_adquisitiva, procesal.accion.defensa]
+      - id: civil.oblig.caducidad
+        titulo: Caducidad, preclusión y prescripción
+        articulos: [CC 2492, CC 2514]
+        requiere: [civil.oblig.prescripcion_extintiva]
+        relacionados: [procesal.comunes.reglas_comunes]
+      - id: civil.oblig.cesion
+        titulo: Cesión de créditos, de contratos y de deudas
+        articulos: [CC 1901-1909]
+      - id: civil.oblig.prueba
+        titulo: Prueba de las obligaciones en el Código Civil
+        articulos: [CC 1698-1714]
+        relacionados: [procesal.prueba.carga, procesal.prueba.medios]
+
+  - id: civil.bienes
+    titulo: Bienes
+    temas:
+      - id: civil.bienes.principios_propiedad
+        titulo: Principios del derecho de propiedad
+        articulos: [CC 582, CPR 19]
+      - id: civil.bienes.dominio
+        titulo: El dominio. Concepto, caracteres, facultades
+        articulos: [CC 582-584]
+      - id: civil.bienes.clasificacion
+        titulo: Clasificación de los bienes
+        articulos: [CC 565-581]
+      - id: civil.bienes.modos_adquirir
+        titulo: Modos de adquirir (generalidades). Teoría del título y el modo
+        articulos: [CC 588, CC 675, CC 703]
+      - id: civil.bienes.ocupacion
+        titulo: La ocupación
+        articulos: [CC 606-642]
+        requiere: [civil.bienes.modos_adquirir]
+      - id: civil.bienes.accesion
+        titulo: La accesión
+        articulos: [CC 643-669]
+        requiere: [civil.bienes.modos_adquirir]
+      - id: civil.bienes.tradicion
+        titulo: La tradición
+        articulos: [CC 670-699]
+        requiere: [civil.bienes.modos_adquirir]
+      - id: civil.bienes.posesion
+        titulo: La posesión. Concepto, elementos y clases
+        articulos: [CC 700-718]
+      - id: civil.bienes.posesiones_viciosas
+        titulo: Posesiones viciosas
+        articulos: [CC 709-711]
+        requiere: [civil.bienes.posesion]
+      - id: civil.bienes.mera_tenencia
+        titulo: Mera tenencia y precario
+        articulos: [CC 714, CC 719, CC 730, CC 2195]
+        requiere: [civil.bienes.posesion]
+        relacionados: [civil.contratos_esp.prestamos_deposito]
+      - id: civil.bienes.posesion_inscrita
+        titulo: Teoría de la posesión inscrita
+        articulos: [CC 686, CC 696, CC 724, CC 728, CC 730, CC 924, CC 2505]
+        requiere: [civil.bienes.posesion, civil.bienes.tradicion]
+      - id: civil.bienes.dl_2695
+        titulo: Decreto Ley N° 2.695 y régimen de la posesión inscrita
+        articulos: [DL2695 1, DL2695 15]
+        requiere: [civil.bienes.posesion_inscrita]
+      - id: civil.bienes.prescripcion_adquisitiva
+        titulo: Prescripción adquisitiva
+        articulos: [CC 2492-2513]
+        requiere: [civil.bienes.posesion]
+        relacionados: [civil.oblig.prescripcion_extintiva]
+      - id: civil.bienes.reivindicatoria
+        titulo: Acción reivindicatoria
+        articulos: [CC 889-915]
+        requiere: [civil.bienes.dominio, civil.bienes.posesion]
+        relacionados: [procesal.cautelares.precautorias, procesal.ordinario.discusion]
+      - id: civil.bienes.prestaciones_mutuas
+        titulo: Prestaciones mutuas
+        articulos: [CC 904-915, CC 1687]
+        relacionados: [civil.acto.nulidad_absoluta, civil.oblig.resolucion]
+      - id: civil.bienes.posesorias
+        titulo: Acciones posesorias
+        articulos: [CC 916-950, CPC 549-583]
+        requiere: [civil.bienes.posesion]
+      - id: civil.bienes.limitaciones
+        titulo: Limitaciones al dominio (civiles y de interés público)
+        articulos: [CC 732, CC 764, CC 811, CC 820, CPR 19]
+      - id: civil.bienes.propiedad_fiduciaria
+        titulo: Propiedad fiduciaria
+        articulos: [CC 732-763]
+      - id: civil.bienes.usufructo
+        titulo: Usufructo, uso y habitación
+        articulos: [CC 764-819]
+      - id: civil.bienes.servidumbres
+        titulo: Servidumbres
+        articulos: [CC 820-888]
+
+  - id: civil.resp
+    titulo: Responsabilidad civil
+    temas:
+      - id: civil.resp.general
+        titulo: Responsabilidad civil. Concepto y estatutos
+        articulos: [CC 1437, CC 1547, CC 1556, CC 2314]
+      - id: civil.resp.contractual
+        titulo: Responsabilidad contractual. Noción, fundamento y elementos
+        articulos: [CC 1545, CC 1547, CC 1556, CC 1558]
+        requiere: [civil.resp.general]
+      - id: civil.resp.incumplimiento
+        titulo: El incumplimiento contractual y su prueba
+        articulos: [CC 1547, CC 1556, CC 1698]
+        requiere: [civil.resp.contractual]
+      - id: civil.resp.acciones_incumplimiento
+        titulo: Acciones del acreedor frente al incumplimiento
+        articulos: [CC 1489, CC 1553, CC 1555, CC 1556]
+        requiere: [civil.resp.incumplimiento]
+        relacionados: [civil.oblig.resolucion, procesal.ejecutivo.titulo]
+      - id: civil.resp.culpa_contractual
+        titulo: Culpa contractual y su gradación
+        articulos: [CC 44, CC 1547, CC 1679]
+        requiere: [civil.resp.contractual]
+      - id: civil.resp.dolo_contractual
+        titulo: Dolo contractual
+        articulos: [CC 44, CC 1465, CC 1558]
+        requiere: [civil.resp.contractual]
+        relacionados: [civil.acto.dolo]
+      - id: civil.resp.caso_fortuito
+        titulo: Caso fortuito o fuerza mayor y demás eximentes
+        articulos: [CC 45, CC 1547, CC 1558, CC 1674]
+        relacionados: [civil.contratos.riesgos, civil.oblig.perdida_cosa]
+      - id: civil.resp.previsibilidad
+        titulo: Previsibilidad y daño en la responsabilidad contractual
+        articulos: [CC 1556-1559]
+        requiere: [civil.resp.contractual]
+      - id: civil.resp.clausula_penal
+        titulo: Cláusula penal
+        articulos: [CC 1535-1544]
+        relacionados: [civil.resp.previsibilidad]
+      - id: civil.resp.extracontractual
+        titulo: Responsabilidad extracontractual (generalidades y elementos)
+        articulos: [CC 2284, CC 2314, CC 2329]
+        requiere: [civil.resp.general]
+      - id: civil.resp.capacidad_extra
+        titulo: Capacidad delictual y cuasidelictual
+        articulos: [CC 2319]
+        requiere: [civil.resp.extracontractual]
+      - id: civil.resp.culpa_extra
+        titulo: Culpa y dolo en la responsabilidad extracontractual
+        articulos: [CC 44, CC 2284, CC 2314, CC 2329]
+        requiere: [civil.resp.extracontractual]
+      - id: civil.resp.eximentes_extra
+        titulo: Causales de exención de responsabilidad extracontractual
+        articulos: [CC 45, CC 2330]
+        requiere: [civil.resp.extracontractual]
+      - id: civil.resp.dano
+        titulo: El daño. Daño patrimonial (emergente y lucro cesante)
+        articulos: [CC 1556, CC 2314, CC 2329]
+        requiere: [civil.resp.extracontractual]
+      - id: civil.resp.dano_moral
+        titulo: Daño extrapatrimonial o moral
+        articulos: [CC 2329, CC 2331]
+        requiere: [civil.resp.dano]
+      - id: civil.resp.causalidad
+        titulo: Relación de causalidad. Pluralidad de causas y culpa de la víctima
+        articulos: [CC 2314, CC 2317, CC 2329, CC 2330]
+        requiere: [civil.resp.extracontractual]
+      - id: civil.resp.hecho_ajeno
+        titulo: Responsabilidad por el hecho ajeno y del empresario
+        articulos: [CC 2320-2322, CC 2325]
+        requiere: [civil.resp.extracontractual]
+      - id: civil.resp.hecho_cosas
+        titulo: Responsabilidad por el hecho de las cosas
+        articulos: [CC 2323-2328]
+        requiere: [civil.resp.extracontractual]
+      - id: civil.resp.estricta
+        titulo: Responsabilidad estricta u objetiva
+        articulos: [CC 2327, CC 2328]
+        requiere: [civil.resp.extracontractual]
+      - id: civil.resp.acciones_extra
+        titulo: Acciones de la responsabilidad extracontractual. Prescripción
+        articulos: [CC 2315-2318, CC 2332, CC 2333]
+        requiere: [civil.resp.extracontractual]
+        relacionados: [procesal.penal.accion]
+      - id: civil.resp.cumulo
+        titulo: Relaciones entre ambos estatutos. Cúmulo u opción de responsabilidades
+        articulos: [CC 1556, CC 2314]
+        requiere: [civil.resp.contractual, civil.resp.extracontractual]
+
+  - id: civil.familia
+    titulo: Derecho de familia
+    temas:
+      - id: civil.familia.principios
+        titulo: Principios del Derecho de familia
+        articulos: [CC 222, CC 242, L19968 16]
+      - id: civil.familia.igualdad
+        titulo: Principio de igualdad (cónyuges, padres, hijos)
+        articulos: [CC 33, CC 224]
+        requiere: [civil.familia.principios]
+      - id: civil.familia.interes_superior
+        titulo: Interés superior del niño, niña y adolescente
+        articulos: [CC 222, CC 242, L19968 16]
+        requiere: [civil.familia.principios]
+      - id: civil.familia.corresponsabilidad
+        titulo: Corresponsabilidad parental. Cuidado personal y relación directa y regular
+        articulos: [CC 224, CC 225, CC 229]
+        requiere: [civil.familia.principios]
+      - id: civil.familia.familia_parentesco
+        titulo: Concepto de familia. Parentesco
+        articulos: [CPR 1, CC 27, CC 28, CC 31]
+      - id: civil.familia.auc
+        titulo: Acuerdo de Unión Civil
+        articulos: [L20830 1, L20830 15]
+      - id: civil.familia.matrimonio
+        titulo: Matrimonio. Concepto y requisitos
+        articulos: [CC 102, LMC 4-8]
+      - id: civil.familia.efectos_matrimonio
+        titulo: Efectos del matrimonio. Deberes y derechos de los cónyuges
+        articulos: [CC 131-136]
+        requiere: [civil.familia.matrimonio]
+      - id: civil.familia.regimenes
+        titulo: Regímenes patrimoniales del matrimonio y del AUC
+        articulos: [CC 135, CC 1715, CC 1718, CC 1723, L20830 15]
+        requiere: [civil.familia.matrimonio]
+      - id: civil.familia.sociedad_conyugal
+        titulo: Sociedad conyugal. Haberes, pasivo y disolución
+        articulos: [CC 1718, CC 1725, CC 1726, CC 1740, CC 1764]
+        requiere: [civil.familia.regimenes]
+      - id: civil.familia.administracion_sc
+        titulo: Administración de la sociedad conyugal
+        articulos: [CC 1749-1763]
+        requiere: [civil.familia.sociedad_conyugal]
+      - id: civil.familia.patrimonio_reservado
+        titulo: Patrimonio reservado de la mujer casada
+        articulos: [CC 150]
+        requiere: [civil.familia.sociedad_conyugal]
+      - id: civil.familia.separacion_participacion
+        titulo: Separación de bienes y participación en los gananciales
+        articulos: [CC 152-163, CC 1792-1, CC 1792-2]
+        requiere: [civil.familia.regimenes]
+      - id: civil.familia.bienes_familiares
+        titulo: Bienes familiares
+        articulos: [CC 141-149]
+        requiere: [civil.familia.regimenes]
+      - id: civil.familia.termino_nulidad
+        titulo: Terminación del matrimonio. Nulidad matrimonial
+        articulos: [LMC 42, LMC 44-52]
+        requiere: [civil.familia.matrimonio]
+      - id: civil.familia.divorcio
+        titulo: Divorcio
+        articulos: [LMC 53-60]
+        requiere: [civil.familia.matrimonio]
+      - id: civil.familia.compensacion_economica
+        titulo: Compensación económica
+        articulos: [LMC 61-66]
+        requiere: [civil.familia.divorcio]
+      - id: civil.familia.filiacion
+        titulo: Filiación. Fuentes y determinación
+        articulos: [CC 179-194]
+      - id: civil.familia.acciones_filiacion
+        titulo: Acciones de filiación
+        articulos: [CC 195-221]
+        requiere: [civil.familia.filiacion]
+      - id: civil.familia.alimentos
+        titulo: Derecho de alimentos
+        articulos: [CC 321-337]
+
+  - id: civil.contratos_esp
+    titulo: Contratos en particular
+    temas:
+      - id: civil.contratos_esp.promesa
+        titulo: Contrato de promesa
+        articulos: [CC 1554]
+        relacionados: [civil.oblig.hacer, procesal.ejecutivo.hacer_no_hacer]
+      - id: civil.contratos_esp.compraventa
+        titulo: Compraventa. Concepto, requisitos, formalidades y capacidad
+        articulos: [CC 1793-1814]
+      - id: civil.contratos_esp.efectos_compraventa
+        titulo: Efectos de la compraventa. Obligaciones de las partes
+        articulos: [CC 1824-1836, CC 1871-1880]
+        requiere: [civil.contratos_esp.compraventa]
+        relacionados: [civil.oblig.resolucion]
+      - id: civil.contratos_esp.saneamiento
+        titulo: Obligación de saneamiento (evicción y vicios redhibitorios)
+        articulos: [CC 1837-1870]
+        requiere: [civil.contratos_esp.efectos_compraventa]
+      - id: civil.contratos_esp.lesion
+        titulo: Lesión enorme
+        articulos: [CC 1888-1896]
+        requiere: [civil.contratos_esp.compraventa]
+        relacionados: [civil.contratos.gratuitos_onerosos]
+      - id: civil.contratos_esp.cosa_ajena
+        titulo: Compraventa de cosa ajena
+        articulos: [CC 1815-1819]
+        requiere: [civil.contratos_esp.compraventa]
+        relacionados: [civil.acto.inoponibilidad, civil.bienes.tradicion]
+      - id: civil.contratos_esp.permuta
+        titulo: Permuta
+        articulos: [CC 1897-1900]
+      - id: civil.contratos_esp.arrendamiento
+        titulo: Arrendamiento
+        articulos: [CC 1915-1929, CC 1950, L18101 1]
+      - id: civil.contratos_esp.mandato
+        titulo: Mandato. Concepto, partes y ejecución
+        articulos: [CC 2116-2130]
+        relacionados: [civil.acto.representacion, procesal.proceso.representacion]
+      - id: civil.contratos_esp.efectos_mandato
+        titulo: Efectos del mandato
+        articulos: [CC 2131-2162]
+        requiere: [civil.contratos_esp.mandato]
+      - id: civil.contratos_esp.termino_mandato
+        titulo: Término del mandato
+        articulos: [CC 2163-2173]
+        requiere: [civil.contratos_esp.mandato]
+      - id: civil.contratos_esp.sociedad
+        titulo: Sociedad
+        articulos: [CC 2053-2115]
+      - id: civil.contratos_esp.prestamos_deposito
+        titulo: Comodato, mutuo y depósito
+        articulos: [CC 2174-2257]
+        relacionados: [civil.contratos.reales]
+      - id: civil.contratos_esp.transaccion
+        titulo: Transacción
+        articulos: [CC 2446-2464]
+        relacionados: [procesal.jurisdiccion.equivalentes]
+      - id: civil.contratos_esp.donacion
+        titulo: Donaciones entre vivos
+        articulos: [CC 1386-1436]
+      - id: civil.contratos_esp.garantias
+        titulo: Garantías y cauciones (generalidades)
+        articulos: [CC 46]
+      - id: civil.contratos_esp.hipoteca
+        titulo: Hipoteca
+        articulos: [CC 2407-2434]
+        requiere: [civil.contratos_esp.garantias]
+      - id: civil.contratos_esp.prenda
+        titulo: Prenda
+        articulos: [CC 2384-2406]
+        requiere: [civil.contratos_esp.garantias]
+      - id: civil.contratos_esp.fianza
+        titulo: Fianza
+        articulos: [CC 2335-2383]
+        requiere: [civil.contratos_esp.garantias]
+
+  - id: civil.cuasicontratos
+    titulo: Cuasicontratos
+    temas:
+      - id: civil.cuasicontratos.generalidades
+        titulo: Cuasicontratos (concepto e ideas subyacentes)
+        articulos: [CC 2284, CC 2285]
+        relacionados: [civil.fuentes.enriquecimiento_injustificado]
+      - id: civil.cuasicontratos.agencia_oficiosa
+        titulo: Agencia oficiosa
+        articulos: [CC 2286-2294]
+        requiere: [civil.cuasicontratos.generalidades]
+      - id: civil.cuasicontratos.pago_no_debido
+        titulo: Pago de lo no debido
+        articulos: [CC 2295-2303]
+        requiere: [civil.cuasicontratos.generalidades]
+      - id: civil.cuasicontratos.comunidad
+        titulo: Cuasicontrato de comunidad
+        articulos: [CC 2304-2313]
+        requiere: [civil.cuasicontratos.generalidades]
+        relacionados: [civil.suc.particion]
+
+  - id: civil.suc
+    titulo: Derecho sucesorio
+    temas:
+      - id: civil.suc.principios
+        titulo: Principios del derecho sucesorio
+        articulos: [CC 999, CC 1167, CC 1181]
+      - id: civil.suc.apertura_delacion
+        titulo: Apertura de la sucesión, delación y derecho de opción
+        articulos: [CC 955-957]
+      - id: civil.suc.derecho_herencia
+        titulo: Derecho real de herencia y acción de petición de herencia
+        articulos: [CC 951, CC 688, CC 1264-1269, CC 1909, CC 2512]
+        relacionados: [civil.bienes.tradicion, civil.bienes.prescripcion_adquisitiva]
+      - id: civil.suc.asignatarios
+        titulo: Asignatarios. Capacidad y dignidad para suceder
+        articulos: [CC 954, CC 961-979]
+      - id: civil.suc.representacion_transmision_acrecimiento
+        titulo: Derecho de representación, transmisión, acrecimiento y sustitución
+        articulos: [CC 957, CC 984-987, CC 1147-1166]
+        requiere: [civil.suc.apertura_delacion]
+      - id: civil.suc.acervos
+        titulo: Teoría de los acervos
+        articulos: [CC 959, CC 1185, CC 1186]
+      - id: civil.suc.intestada
+        titulo: Sucesión intestada. Órdenes de sucesión
+        articulos: [CC 980-998]
+        requiere: [civil.suc.representacion_transmision_acrecimiento]
+      - id: civil.suc.testamento
+        titulo: Sucesión testada. El testamento y sus solemnidades
+        articulos: [CC 999-1055]
+      - id: civil.suc.asignaciones_testamentarias
+        titulo: Asignaciones testamentarias
+        articulos: [CC 1056-1146]
+        requiere: [civil.suc.testamento]
+      - id: civil.suc.asignaciones_forzosas
+        titulo: Asignaciones forzosas y su protección
+        articulos: [CC 1167-1211, CC 1216-1220]
+        requiere: [civil.suc.acervos]
+      - id: civil.suc.aceptacion_repudiacion
+        titulo: Aceptación y repudiación de asignaciones
+        articulos: [CC 1225-1246]
+      - id: civil.suc.deudas
+        titulo: Deudas hereditarias y testamentarias. Beneficio de inventario y de separación
+        articulos: [CC 1247-1263, CC 1354-1385]
+        relacionados: [civil.personas.patrimonio]
+      - id: civil.suc.particion
+        titulo: Partición de bienes
+        articulos: [CC 1317-1353]
+        relacionados: [civil.cuasicontratos.comunidad, procesal.organica.arbitros]

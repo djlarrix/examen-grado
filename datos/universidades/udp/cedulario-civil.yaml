@@ -1,0 +1,192 @@
+# Cedulario de Derecho Civil (alumnos de pregrado) — Universidad Diego Portales, 28-11-2013, "vigente".
+# https://derecho.udp.cl/cms/wp-content/uploads/2024/01/Cedulario-Examen-de-Grado-Civil-caso-28.11.13-vigente.pdf
+#
+# Organizado por cursos, no por cédulas: `numero` es nuestro. `contenido` son las
+# "Materias incluidas"; `excluidas` y `bibliografia`, las otras dos columnas.
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: Cedulario de Derecho Civil
+    subseccion: Curso
+    tema: Introducción al Derecho Privado
+    contenido: |
+      I. Aspectos generales:
+         A. Principios que informan el derecho privado chileno.
+         B. Interpretación de la ley (normas Código Civil).
+         C. Ley sobre efecto retroactivo de las leyes.
+      II. Teoría general del contrato:
+         A. El contrato:
+            1. Derechos reales y derechos personales. Principales diferencias
+            2. Del acto jurídico al contrato
+            3. Concepto de acto jurídico
+            4. Efectos personales y efectos reales en el contrato
+            5. El contrato y su estructura legal: elementos de la esencia, de la naturaleza y accidentales; relación entre elementos accidentales y de la naturaleza
+         B. Clasificación del contrato:
+            1. Clasificaciones legales: bilaterales y unilaterales; onerosos y gratuitos; conmutativos y aleatorios; principales y accesorios; consensuales, reales y solemnes (las formalidades: solemnidades, formalidades habilitantes, por vía de prueba, por vía de publicidad)
+            2. Clasificaciones doctrinales: nominados e innominados; de ejecución instantánea, diferida y de tracto sucesivo; de libre discusión y de adhesión; preparatorios y definitivos
+         C. Principios generales de la contratación:
+            1. Autonomía de la voluntad
+            2. Libertad contractual
+            3. Intangibilidad contractual
+            4. Efecto relativo de los contratos: las partes; los terceros; efecto relativo y efecto absoluto, la inoponibilidad; estipulación a favor de un tercero; promesa de hecho ajeno
+            5. La buena fe: buena fe subjetiva y objetiva; la doctrina de la apariencia; la doctrina de los actos propios
+         D. Teoría del consentimiento:
+            1. Capacidad contractual
+            2. Formación del consentimiento
+            3. La representación
+            4. Vicios del consentimiento: error, fuerza, dolo y lesión
+            5. Teoría de la simulación
+         E. El objeto y la causa en los contratos
+         F. Interpretación de los contratos: reglas del Código Civil
+         G. Ineficacia contractual:
+            1. Ineficacia intrínseca y extrínseca
+            2. Teoría de la inexistencia y su aceptación en el Código Civil
+            3. Teoría de la nulidad: concepto y clases; nulidad relativa; nulidad absoluta; efectos de la declaración de nulidad
+            4. Otras formas de ineficacia
+            5. Resciliación y revocación
+      III. Los sujetos del derecho:
+         A. Persona natural y persona jurídica
+         B. Las personas jurídicas: concepto, clasificación, administración
+    excluidas: |
+      Concepto y evolución del Derecho Privado; codificación; efectos de la ley en el espacio.
+      El contrato como sistema de asignación de riesgos; contrato por persona a nombrar; por cuenta de quien corresponda.
+      Categorías contractuales: contrato dirigido, forzoso, tipo, subcontrato, autocontrato.
+      Personas naturales: principio y existencia, extinción y muerte, muerte presunta, atributos de la personalidad, derechos de la personalidad.
+      Reglamentación específica de corporaciones y fundaciones.
+    bibliografia: |
+      López Santa María, Jorge. Los Contratos. Parte General. Editorial Jurídica de Chile, 2005.
+      Vial del Río, Víctor. Acto jurídico y Personas. Ediciones Universidad Católica, 2000.
+      Domínguez Águila, Ramón. Teoría general del Negocio Jurídico. Editorial Jurídica de Chile, 2012.
+  - numero: 2
+    seccion: Cedulario de Derecho Civil
+    subseccion: Curso
+    tema: Derecho de las Obligaciones
+    contenido: |
+      I. Los derechos personales u obligaciones:
+         A. Concepto
+         B. Clasificaciones: civiles y naturales; de dar, hacer o no hacer; de especie o cuerpo cierto y de género; principales y accesorias; de ejecución instantánea y sucesiva; con unidad y pluralidad de sujetos (simplemente conjuntas, solidarias, indivisibles); puras y simples y sujetas a modalidades (condición resolutoria tácita y pacto comisorio; acción resolutoria); de medio y de resultado; obligaciones de dinero
+         C. Enumeración y breve concepto de cada fuente: contrato, cuasicontrato, delito, cuasidelito, ley, declaración unilateral de voluntad, enriquecimiento sin causa
+         D. Extinción de las obligaciones: pago, novación, prescripción, compensación, resciliación, imposibilidad de ejecución (teoría de los riesgos; imprevisión)
+      II. Otras fuentes de las obligaciones:
+         A. La ley como fuente de las obligaciones. Concepto y fundamento
+         B. Cuasicontratos. Concepto: el enriquecimiento sin causa; efectos de los principales cuasicontratos (agencia oficiosa, pago de lo no debido, comunidad)
+    excluidas: |
+      Clasificaciones: positivas y negativas; de sujeto singular y plural; de simple objeto, objeto múltiple, alternativas y facultativas.
+      Extinción: pago por consignación, confusión, remisión.
+    bibliografia: |
+      Ramos Pazos, René. Manual de Derecho Civil. De las Obligaciones. LexisNexis, 2004.
+      Abeliuk Manasevich, René. De las Obligaciones. Editorial Jurídica, 2008.
+      Peñailillo Arévalo, Daniel. Obligaciones. Editorial Jurídica, 2003.
+  - numero: 3
+    seccion: Cedulario de Derecho Civil
+    subseccion: Curso
+    tema: Derechos Reales
+    contenido: |
+      I. Los bienes:
+         A. Los bienes y sus clasificaciones: concepto de cosa y bien; clasificación de los bienes
+         B. Referencia a una teoría general del patrimonio
+         C. Concepto de derechos reales y personales. Enumeración
+      II. El derecho de dominio:
+         A. Concepto y clases
+         B. Modos de adquirir el dominio y demás derechos reales: tradición (el título y el modo; requisitos; tradición de bienes muebles); prescripción (concepto, clases, requisitos); posesión
+         C. Acción reivindicatoria e interdictos posesorios
+         D. Derechos reales limitados. Concepto y enumeración: usufructo; servidumbres legales
+    excluidas: |
+      Modos de adquirir: ocupación, accesión; Registro Conservador de Bienes Raíces.
+      Derechos reales limitados: propiedad fiduciaria, uso y habitación, otros tipos de servidumbres.
+    bibliografia: |
+      Peñailillo Arévalo, Daniel. Los Bienes. La propiedad y otros derechos reales. Editorial Jurídica de Chile, 2006.
+      Barcia Lehmann, Rodrigo. Lecciones de derecho civil. De los bienes. Editorial Jurídica, 2007.
+  - numero: 4
+    seccion: Cedulario de Derecho Civil
+    subseccion: Curso
+    tema: Responsabilidad civil
+    contenido: |
+      I. Parte general:
+         A. Sistemas de responsabilidad
+         B. Elementos de la responsabilidad contractual y extracontractual
+         C. Cúmulo u opción de responsabilidad
+      II. Responsabilidad civil contractual:
+         A. Efectos del incumplimiento de las obligaciones: ejecución forzada; indemnización de perjuicios (concepto, requisitos y clases); elementos de la responsabilidad contractual (incumplimiento, daño, imputabilidad y mora); evaluación de los perjuicios: convencional (cláusula penal), legal (intereses, referencia a la reajustabilidad) y judicial
+         B. Derechos auxiliares. Concepto. Acción pauliana
+      III. Responsabilidad civil extracontractual:
+         A. Delitos y cuasidelitos: hecho ilícito (delito y cuasidelito civil y penal); diferencias con la responsabilidad contractual; elementos (capacidad, acto humano, antijuridicidad, daño, nexo causal, imputabilidad); presunciones de responsabilidad; eximentes y atenuantes; acción de responsabilidad
+    excluidas: |
+      Derechos auxiliares: medidas conservativas, acción subrogatoria, beneficio de separación de patrimonios.
+    bibliografia: |
+      Ramos Pazos, René. Manual de Derecho Civil. De las Obligaciones. LexisNexis, 2004.
+      Abeliuk Manasevich, René. De las Obligaciones. Editorial Jurídica, 2008.
+      Corral Talciani, Hernán. Lecciones de responsabilidad civil extracontractual. Editorial Jurídica, 2003.
+  - numero: 5
+    seccion: Cedulario de Derecho Civil
+    subseccion: Curso
+    tema: Derecho sucesorio y partición de bienes
+    contenido: |
+      I. Derecho sucesorio:
+         A. Conceptos fundamentales: la sucesión; derechos reales y modos de adquirir en juego; la sucesión por causa de muerte
+         B. Derecho real de herencia: otros modos de adquirirlo (tradición —cesión de derechos hereditarios—, prescripción); la posesión de la herencia (legal y material); inscripciones hereditarias (art. 688 CC); asignaciones por causa de muerte; asignatarios
+         C. Apertura de la sucesión y delación: aceptación y repudiación; beneficio de inventario; teoría de los acervos
+         D. Sucesión intestada
+         E. Sucesión testada. Testamento: concepto y características; requisitos internos; interpretación; asignaciones testamentarias (concepto, requisitos subjetivos y objetivos, clases); derechos que concurren (transmisión, representación, acrecimiento, sustitución)
+         F. Sucesión mixta
+         G. Asignaciones forzosas: concepto, enunciación y medios de protección; asignaciones alimenticias forzosas; legítimas; mejoras
+         H. Entero y pago de las legítimas y mejoras
+         I. Desheredamiento
+         J. Revocación y reforma del testamento
+         K. Pago de deudas hereditarias y testamentarias
+         L. Acción de petición de herencia y acción de reforma del testamento
+      II. Partición de bienes:
+         A. Generalidades: ámbito de aplicación; formas de poner término a la indivisión; hechos que obstan a la partición
+         B. Pacto de indivisión
+         C. Acción de partición
+         D. Modos de efectuar la partición
+         E. Liquidación y distribución de los bienes comunes
+         F. Efectos de la partición
+    excluidas: |
+      Medidas de seguridad en la apertura; guarda y aposición de sellos; testamentos solemnes y menos solemnes (formas de otorgarlos); posesión efectiva; herencia yacente y vacante; facción de inventario; beneficio de separación; asignaciones sujetas a modalidad (condicionales, a día, modales); donaciones revocables; acervos imaginarios; incapacidades e indignidades para suceder; albaceas; donaciones entre vivos.
+    bibliografia: |
+      Ramos Pazos, René. Manual de Derecho Sucesorio. Editorial Jurídica, 2008.
+      Somarriva Undurraga, Manuel. Derecho Sucesorio. Editorial Jurídica, 6.ª ed., 2002 en adelante.
+  - numero: 6
+    seccion: Cedulario de Derecho Civil
+    subseccion: Curso
+    tema: Contratos en particular
+    contenido: |
+      I. Promesa
+      II. Compraventa
+      III. Arrendamiento de cosas del Código Civil y de bienes raíces urbanos
+      IV. Cesión de créditos. Nociones generales
+      V. Mandato
+      VI. Contratos reales. Nociones generales: mutuo (operaciones de crédito de dinero, Ley 18.010); comodato
+      VII. Contratos de garantía: hipoteca (concepto, elementos, efectos y extinción); fianza (concepto, elementos, efectos y extinción)
+      VIII. Transacción
+    excluidas: |
+      Otros arrendamientos; sociedad; depósito; prenda.
+    bibliografia: |
+      Barcia, Rodrigo. De las fuentes de las obligaciones. Editorial Jurídica.
+      Meza Barros, Ramón. Fuentes de las obligaciones. Editorial Jurídica, última edición.
+  - numero: 7
+    seccion: Cedulario de Derecho Civil
+    subseccion: Curso
+    tema: Derecho de Familia
+    contenido: |
+      I. Principios rectores del Derecho de Familia: interés superior del niño; derecho a la identidad; derecho del niño a ser oído; derecho a la igualdad
+      II. El matrimonio:
+         A. Noción y requisitos
+         B. Ley de Matrimonio Civil: ámbito de aplicación; principios fundamentales
+         C. Requisitos: de existencia y de validez
+         Efectos del matrimonio: relaciones personales de los cónyuges; filiación matrimonial; derechos hereditarios; regímenes patrimoniales (concepto, denominación y clasificación)
+         Convenciones matrimoniales:
+            a. Sociedad conyugal: concepto y características; naturaleza jurídica; haberes (patrimonio reservado de la mujer casada); pasivo (obligación a la deuda y contribución a la deuda); recompensas; administración; disolución, liquidación y renuncia a los gananciales
+            b. Separación de bienes: clases; legal, judicial y convencional
+            c. Bienes familiares
+            d. Suspensión de la vida conyugal
+            e. Disolución o término del matrimonio
+            f. Declaración de nulidad de matrimonio
+            g. Divorcio vincular
+            h. Compensación económica
+    excluidas: |
+      Régimen de participación en los gananciales; filiación adoptiva; deberes de los hijos; patria potestad (derecho legal de goce y administración); derecho de alimentos; uniones de hecho; guardas; estado civil; impedimentos impedientes.
+      Filiación: determinación de la maternidad y de la filiación matrimonial y no matrimonial, reconocimiento, acciones de filiación y sus efectos, técnicas de reproducción asistida; efectos de la filiación (autoridad paterna, patria potestad, cuidado personal y relación directa y regular).
+    bibliografia: |
+      Ramos Pazos, René. Derecho de Familia. Editorial Jurídica de Chile, 5.ª ed., 2005, 2 tomos.

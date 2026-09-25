@@ -1,0 +1,76 @@
+# Perfil del examen de grado — Universidad de Chile.
+# Cada afirmación lleva su fuente. Lo que no está en una fuente oficial va en
+# `por_confirmar`, y el tutor lo trata como tal frente al estudiante.
+id: uchile
+nombre: Universidad de Chile
+sigla: U. de Chile
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de Licenciatura
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Primera parte — exposición de cédula
+      detalle: >-
+        Exposición sobre la cédula sorteada por el postulante, de una asignatura del
+        cedulario, de no menos de 10 minutos, seguida de una interrogación sobre
+        cualquiera de los temas de esa asignatura, de máximo 15 minutos.
+      fuente: Reglamento, art. 15
+    - titulo: Segunda parte — interrogación de Civil y Procesal
+      detalle: >-
+        Interrogación sobre Derecho Civil y Derecho Procesal, de 20 a 40 minutos en
+        conjunto. Versa sobre los principios fundamentales de las instituciones de
+        cada asignatura y busca evaluar comprensión, análisis y síntesis; debe
+        evitarse exigir detalles meramente reglamentarios o formales.
+      fuente: Reglamento, art. 16
+  comision: >-
+    Presidida por el Decano (o quien la presida según la resolución del Decano),
+    integrada por un profesor de Derecho Civil, uno de Derecho Procesal y uno de la
+    asignatura sorteada. Quórum de 3. La integración se sortea en la Secretaría de
+    Estudios. Cada comisión examina hasta cuatro postulantes en la jornada.
+  fuentes_comision: [Reglamento, art. 18, Resolución 755 de 2015, art. 2 letra d]
+  sorteo: El postulante sortea la cédula en la Secretaría el día anterior al examen (Reglamento, art. 21).
+  calificacion: >-
+    Nota de 1 a 7 por mayoría de votos de la comisión; en empate prevalece el
+    Presidente. Mínimo de aprobación, 4. Las fases se aprecian en conjunto
+    (Reglamento, art. 25).
+  reprobacion: >-
+    Quien reprueba puede volver a rendir después de 3 meses; si reprueba otra vez,
+    después de 6 meses, y ésa es la tercera y última oportunidad (Reglamento, art. 24).
+  nota_final: >-
+    (nota del examen × 3 + promedio de la carrera + nota de la memoria) ÷ 5
+    (Reglamento, art. 28).
+estilo_comision:
+  # Cómo debe comportarse la comisión simulada. Derivado del art. 16: se evalúa
+  # comprensión, análisis y síntesis de los principios, no la memoria de detalles.
+  - Pregunta por el concepto y pide construirlo con sus elementos, no recitarlo.
+  - Repregunta sobre la respuesta del propio estudiante ("¿y por qué?", "¿qué pasa si…?").
+  - Pide relacionar instituciones, incluso entre Civil y Procesal.
+  - Plantea casos breves para ver si el estudiante aplica, no sólo si define.
+  - Pide el fundamento normativo cuando es central, sin exigir números de artículos reglamentarios.
+  - No interrumpe la exposición inicial de la cédula; interroga después.
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  electivas: >-
+    El cedulario incluye además cédulas electivas de otras asignaturas (Filosofía
+    moral, Derecho romano, Derecho administrativo, Derecho internacional, Derecho del
+    trabajo, Derecho económico, entre otras). Esta versión cubre sólo Civil y Procesal.
+por_confirmar:
+  - >-
+    El Reglamento (1976) habla de una sola cédula sorteada; el cedulario vigente
+    distingue cédulas obligatorias de Civil y de Procesal y cédulas electivas. Cómo
+    se combinan hoy en el sorteo conviene confirmarlo con la Secretaría de Estudios
+    o con egresados recientes.
+  - Duración real habitual del examen y extensión de las repreguntas.
+fuentes:
+  - titulo: Reglamento para optar al grado de Licenciado en Ciencias Jurídicas y Sociales (D.U. 2441 de 1976 y modificaciones)
+    url: https://weblex.derecho.uchile.cl/FTP/comunicaciones/documentos/Sec_estudio/6_ReglamentoParaOptarAlGrado.pdf
+  - titulo: Cedulario de pregrado (cédulas obligatorias y electivas)
+    url: https://weblex.derecho.uchile.cl/FTP/comunicaciones/documentos/Sec_estudio/8_Cedulario_Pregrado.pdf
+  - titulo: Resolución N° 755 de 2015, instructivo sobre asignación de fechas de examen de licenciatura
+    url: https://weblex.derecho.uchile.cl/FTP/comunicaciones/documentos/Sec_estudio/Resol_755_Instructivo_Licenciaturas.pdf
+  - titulo: Unidad de Grados Académicos — Facultad de Derecho
+    url: https://derecho.uchile.cl/estudiantes/secretaria-de-estudios/Unidad-de-Grados-Acad-micos-y-Revalidaci-n-de-T-tulo-Profesional
+revisado: 2026-09-25
