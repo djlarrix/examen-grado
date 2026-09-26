@@ -1,0 +1,53 @@
+# Perfil del examen de grado — Universidad de Santiago de Chile.
+id: usach
+nombre: Universidad de Santiago de Chile
+sigla: USACH
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de Licenciatura en Ciencias Jurídicas y Sociales
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Interrogación de Derecho Civil, Derecho Procesal y una cédula electiva
+      detalle: >-
+        Evaluación solemne, oral y pública: interrogación sobre los ciclos de Derecho Civil y
+        de Derecho Procesal y una cédula elegida por el estudiante (Político, Constitucional,
+        Administrativo, Historia, Romano, Filosofía, Internacional Público y Privado,
+        Económico, Comercial, Trabajo, Seguridad Social, Medio Ambiente, Propiedad
+        Intelectual, Penal, Tributario, Minero o Derechos Humanos). Las preguntas versan sobre
+        los principios fundamentales de las instituciones, para evaluar comprensión, análisis y
+        síntesis.
+      fuente: Reglamento sobre egreso y obtención del grado (julio 2022), arts. 4 y 5
+  comision: >-
+    Un profesor de Derecho Civil, uno de Derecho Procesal y los de las cédulas elegidas,
+    sorteados públicamente; quórum de tres, presidida por el Decano o el académico de más alta
+    jerarquía. Hasta cuatro egresados por sesión.
+  calificacion: >-
+    Nota de 1 a 7 por mayoría de votos (en empate prevalece el Presidente); mínimo 4. Las fases
+    se aprecian en conjunto. Nota final del grado: examen × 0,4 + promedio de la carrera × 0,6.
+  reprobacion: >-
+    Tras reprobar, se puede rendir después de 3 meses; la segunda reprobación obliga a esperar
+    6 meses, y ésa es la tercera y última oportunidad. No presentarse equivale a reprobar.
+  fuente_general: Reglamento sobre egreso y obtención del grado académico de Licenciatura (Facultad de Derecho USACH, julio 2022)
+estilo_comision:
+  - Oral, con repreguntas, sobre los principios fundamentales de cada institución (comprensión, análisis y síntesis).
+  - El cedulario de Civil sigue el de la U. de Chile, cédula por cédula; el de Procesal es propio e incluye proceso penal.
+  - Pide relacionar Civil y Procesal.
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  electivas: El cedulario electivo no está cubierto en esta versión.
+por_confirmar:
+  - Duración habitual del examen.
+  - Vigencia del cedulario (el reglamento prevé actualizarlo cada dos años).
+fuentes:
+  - titulo: Reglamento Examen de Licenciatura (julio 2022)
+    url: https://derecho.usach.cl/wp-content/uploads/2023/10/REGLAMENTO-EXAMEN-DE-LICENCIATURA-Julio-2022.pdf
+  - titulo: Cedulario Derecho Civil
+    url: https://derecho.usach.cl/wp-content/uploads/2023/10/Cedulario-Derecho-Civil.pdf
+  - titulo: Cedulario Derecho Procesal
+    url: https://derecho.usach.cl/wp-content/uploads/2023/10/Cedulario-Derecho-Procesal.pdf
+  - titulo: Reglamento y protocolo — Facultad de Derecho USACH
+    url: https://derecho.usach.cl/reglamento-y-protocolo/
+revisado: 2026-09-25

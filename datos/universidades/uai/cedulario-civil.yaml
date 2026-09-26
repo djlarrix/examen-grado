@@ -1,0 +1,719 @@
+# Cedulario de Licenciatura Derecho Civil — Facultad de Derecho, Universidad Adolfo Ibáñez (copia aportada por el usuario; documento institucional).
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "uai") y revisada.
+# La numeración es nuestra cuando el documento no numera cédulas.
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: Persona y Negocio Jurídico
+    subseccion: ""
+    tema: Introducción al derecho civil
+    contenido: |-
+      1. El derecho civil. Naturaleza y objeto del derecho civil. El derecho civil en la
+      división entre derecho público y derecho privado. Evolución histórica del derecho civil
+      (Remisión al Curso de Historia del Derecho). El Código Civil como base fundamental
+      del derecho civil. Su origen, principios inspiradores, espíritu. y contenido.
+      Complementación del Código Civil por otras leyes y fuentes del Derecho civil.
+      2. Doctrina de la relación jurídica. Relaciones sociales y relaciones jurídicas. Sentido
+      y alcance de la relación jurídica.
+      3. Noción de derecho subjetivo: clasificación, tipos y límites.
+  - numero: 2
+    seccion: Persona y Negocio Jurídico
+    subseccion: ""
+    tema: Teoría general del negocio jurídico
+    contenido: |-
+      1. Hechos materiales y hechos jurídicos. El acto jurídico. El negocio jurídico
+      2. Los negocios jurídicos. Clasificaciones e interés de ellas.
+      3. Los elementos del negocio jurídico: esenciales, naturales y accidentales.
+      Requisitos de existencia y de validez. Estudio particular.
+      A. El elemento voluntad. Voluntad y consentimiento. Condiciones para la eficacia
+      de la voluntad: seriedad, sinceridad, libertad. La manifestación de la voluntad
+      (expresa, tácita, presunta). Valor jurídico del silencio. La formación del
+      consentimiento en las convenciones. La simulación de los negocios jurídicos. Los
+      vicios de la voluntad. La lesión. Referencia al principio de la autonomía de la
+      voluntad y sus límites (sin perjuicio de su ulterior desarrollo a propósito de la
+      Teoría del Contrato).
+      B. El elemento capacidad. Capacidad de goce y capacidad de ejercicio. Las
+      incapacidades: absolutas, relativas y especiales.
+      C. El objeto. Concepto. Requisitos. Los objetos ilícitos en el Código Civil.
+      D. La causa. Principales doctrinas sobre la causa. Anticausalismo y
+      neocausalismo. La causa en el Código Civil y la cuestión sobre el tipo de causa que
+      recepciona. La causa ilícita como elemento moralizador de los actos jurídicos.
+      E. El elemento formal. Formalidades en general y sus tipos o especies:
+      constitutivas o solemnidades, habilitantes o de protección, probatorias y de
+      publicidad. Formalidades convencionales. Formalidades atípicas. El fenómeno del
+      formalismo en el Derecho, su evolución y pugna con el consensualismo.
+      4. Referencia a los efectos de los actos jurídicos: principios del efecto relativo y de la
+      fuerza obligatoria (El desarrollo de esta materia se hará, a propósito de la Teoría del
+      Contrato).
+      5. La ineficacia de los actos jurídicos.
+      A. La doctrina de la inexistencia. Situación en Chile.
+      B. Referencia a la nulidad de pleno derecho.
+      C. La nulidad civil. Concepto. Rasgos comunes a toda nulidad civil. La nulidad
+      absoluta y la nulidad relativa. Causales, características, régimen jurídico de
+      cada una. Los efectos de la nulidad: internos o entre las partes y respecto de
+      terceros. El principio de la conservación de los actos jurídicos: a) nulidad
+      parcial, b) el fenómeno de la conversión de los actos jurídicos nulos.
+      D. La inoponibilidad.
+      E. La simulación.
+      F. Referencia a otras formas de ineficacia de los negocios jurídicos.
+      6. La representación en los negocios jurídicos.
+  - numero: 3
+    seccion: Persona y Negocio Jurídico
+    subseccion: ""
+    tema: Las personas
+    contenido: |-
+      1. Las personas en el Derecho civil. Concepto y noción de persona. Clases de personas:
+      personas naturales y personas jurídicas.
+      2. Personas naturales. Principio de la existencia de las personas naturales
+      (concepción, nacimiento). La existencia natural. Principales hitos de la vida humana:
+      infancia, impubertad, pubertad, mayoría de edad. Fin de la personalidad natural y
+      muerte presunta y la Ley 20.577. Atributos de las personas naturales: Capacidad,
+      nombre, nacionalidad, estado civil, domicilio, patrimonio. Derechos de la
+      personalidad.
+      3. Personas jurídicas. Generalidades e ideas fundamentales. Clasificación de las
+      personas jurídicas. Personas jurídicas de derecho público. Personas jurídicas de
+      derecho privado. Sociedades. Corporaciones y asociaciones o fundaciones. Atributos
+      de las personas jurídicas.
+  - numero: 4
+    seccion: Derecho de las Obligaciones
+    subseccion: ""
+    tema: Introducción al derecho de las obligaciones
+    contenido: |-
+      1. Ubicación del derecho de obligaciones en el Derecho civil
+      A. Persona y patrimonio.
+      B. Derechos reales y derechos personales.
+      C. Derecho personal: estructura, elementos y características.
+      2. La relación obligatoria
+      A. Concepto de obligación.
+      B. Características y elementos constitutivos de la obligación.
+      C. Estructura lógica de la relación obligatoria.
+      D. Naturaleza patrimonial o no de la relación obligatoria.
+      3. Fuentes de las obligaciones.
+      A. Breve referencia a los antecedentes históricos.
+      B. Clasificación legal: contrato, cuasicontrato, delito, cuasidelito, ley.
+      C. Otras fuentes y crítica a la clasificación legal.
+  - numero: 5
+    seccion: Derecho de las Obligaciones
+    subseccion: ""
+    tema: Clasificación de las obligaciones
+    contenido: |-
+      1. Clasificaciones legales y doctrinarias.
+      A. Clasificaciones legales.
+      B. Clasificaciones doctrinales y comparadas.
+      2. Clases de obligación en atención a la eficacia: obligaciones civiles y obligaciones
+      naturales.
+      A. Concepto, origen y naturaleza.
+      B. Las obligaciones naturales en el derecho chileno.
+      C. Efectos de la obligación natural.
+      3. Clases de obligaciones en atención a la prestación.
+      A. En atención a la conducta debida.
+      B. Obligaciones positivas y negativas.
+      C. Obligaciones de dar, hacer y no hacer.
+      D. Obligación de dar una suma de dinero.
+      4. Clases de obligaciones en atención al objeto de la prestación.
+      A. Obligaciones de especie o cuerpo cierto y obligaciones de género.
+      B. Obligaciones de objeto singular y obligaciones con objeto plural.
+      C. Obligaciones de medio y obligaciones de resultado.
+      5. Clases de obligaciones en atención a la unida o pluralidad de sujetos.
+      A. Obligaciones simplemente conjuntas o mancomunadas.
+      B. Obligaciones solidarias.
+      a. Solidaridad en general.
+      b. Solidaridad activa.
+      c. Solidaridad pasiva.
+      C. Obligaciones divisibles e indivisibles.
+      a. Indivisibilidad en general.
+      b. Indivisibilidad activa.
+      c. Indivisibilidad pasiva
+      d. Excepciones a la divisibilidad
+      6. Obligaciones sujetas a modalidad
+      A. Obligaciones condicionales
+      a. Concepto, elementos y reglamentación
+      b. Clases de condiciones.
+      c. Reglas comunes a las condiciones (estado, cumplimiento, caducidad,
+      retroactividad, riesgos).
+      d. Efectos de las condiciones: efectos de la condición suspensiva y efectos de la
+      condición resolutoria (condición resolutoria ordinaria, condición resolutoria
+      tácita, pacto comisorio).
+      e. Acción resolutoria.
+      2. Obligaciones a plazo.
+      A. Concepto, elementos y reglamentación.
+      B. Clases de plazo.
+      C. Efectos del plazo.
+      D. Extinción de plazo.
+      3. Obligaciones modales (Remisión al curso de Derecho sucesorio).
+  - numero: 6
+    seccion: Derecho de las Obligaciones
+    subseccion: ""
+    tema: Efectos de las obligaciones
+    contenido: |-
+      1. El efecto normal: cumplimiento voluntario o pago
+      2. Estudio particular del pago efectivo. La subrogación en general y el pago con
+      subrogación. El pago por consignación. La dación en pago. El pago de lo no debido.
+      3. Los efectos anormales. El derecho de prenda general de los acreedores y la
+      prelación de créditos.
+      4. La ejecución forzada y sus formas.
+      A. La ejecución forzada en general. Evolución de la responsabilidad civil: desde la
+      manus injectio a la responsabilidad puramente patrimonial. La prisión por deudas.
+      Otros mecanismos para compeler al pago. Referencia a las cauciones (Remisión al
+      curso de contratos).
+      B. Ejecución forzada in natura . Ejecución individual y ejecución universal.
+      Referencia al juicio ejecutivo y a la ejecución por vía incidental.
+      C. Referencia a la Ejecución forzada por equivalencia (Remisión al curso de
+      Responsabilidad Civil).
+      D. Los derechos auxiliares del acreedor.
+  - numero: 7
+    seccion: Derecho de las Obligaciones
+    subseccion: ""
+    tema: Transferencia, transmisión y extinción de las obligaciones
+    contenido: |-
+      1. Transferencia inter vivos. Referencia a la cesión de créditos y a la asunción de
+      deudas.
+      2. Transmisión mortis causa . Transmisibilidad de créditos y débitos. Casos de
+      intransmisibilidad. Referencia al beneficio del inventario.
+      3. La extinción de la obligación por modo diverso al pago. Clasificación de los modos
+      extintivos. Resciliación o mutuo disenso, novación y prescripción extintiva. Aspectos
+      generales de la compensación, confusión, remisión e imposibilidad de ejecución.
+  - numero: 8
+    seccion: Derechos Reales
+    subseccion: ""
+    tema: Introducción a los derechos reales
+    contenido: |-
+      1. El patrimonio. Concepciones y su aplicación en instituciones características.
+      2. Cosa y bien. Categorías de cosas: corporales e incorporales. Agrupamiento de las
+      cosas corporales. Clasificaciones de los muebles y de los inmuebles. Otras
+      clasificaciones legales y doctrinarias sobre los bienes. La regulación de los bienes
+      nacionales en el Código Civil (Remisión al curso de Derecho Administrativo).
+      3. Las cosas incorporales. Conceptos y paralelo entre derechos personales y reales.
+      Noción de derecho real. Concepción clásica y obligacionista. La estructura del derecho
+      real. Conceptos, enunciación y clasificación de los derechos reales. La cuestión de la
+      taxatividad de la enumeración legal. Referencia al problema de la propietarización de
+      los derechos.
+  - numero: 9
+    seccion: Derechos Reales
+    subseccion: ""
+    tema: Dominio o propiedad
+    contenido: |-
+      1. Concepto. Estatuto constitucional de la propiedad en Chile (Remisión al programa
+      de Derecho Constitucional). Delimitación de la superficie y del volumen sobre los
+      cuales recae la propiedad inmobiliaria. Características clásicas del dominio. Contenido
+      del derecho de propiedad.
+      2. La propiedad como poder: facultades que confiere. El principio de la libre
+      disposición y las cláusulas de no enajenar.
+      3. La comunidad o copropiedad. Concepciones y su recepción en el Código Civil.
+  - numero: 10
+    seccion: Derechos Reales
+    subseccion: ""
+    tema: Modos de adquisición de los derechos reales
+    contenido: |-
+      1. La adquisición del dominio y de los demás derechos reales. Sistema romano y
+      sistema francés. Situación en nuestro Código Civil. Clasificación de los modos de
+      adquirir. Ámbito de aplicación de cada uno.
+      2. La ocupación y la accesión (aspectos fundamentales).
+      3. La tradición. Características. Importancia. Elementos de la tradición: personal,
+      consensual, jurídico (título traslaticio válido) y formal o entrega. Requisitos. Formas
+      que reviste el elemento entrega en los diversos tipos de tradición: bienes muebles,
+      bienes inmuebles, servidumbres, herencia, derechos personales (cesión de créditos y
+      derechos litigiosos). Efectos de la tradición.
+      4. Estudio crítico del sistema registral inmobiliario chileno. El Conservador de
+      Bienes Raíces. Objetivos o funciones de las inscripciones.
+  - numero: 11
+    seccion: Derechos Reales
+    subseccion: ""
+    tema: La posesión
+    contenido: |-
+      1. Posesión en general. Concepto. Elementos, relación con la mera tenencia y el
+      dominio. Naturaleza jurídica. Ventajas de la posesión y fundamento de su protección.
+      Ámbito de operatividad: cosas corporales y dificultades respecto de cosas
+      incorporales
+      2. Clases de posesión. Estudio particular de la posesión regular: el justo título y los
+      títulos injustos; la buena fe y la tradición. Posesiones viciosas.
+      3. Adquisición, conservación y pérdida de la posesión de bienes muebles e
+      inmuebles (no inscritos e inscritos). Las dobles inscripciones. Teoría sobre la posesión
+      inscrita. Regímenes especiales de regularización de la posesión inscrita y de
+      saneamiento de títulos: alusión al Decreto Ley Nº 2.695
+      4. Mera tenencia. Naturaleza jurídica y características. Mutación de la mera tenencia.
+  - numero: 12
+    seccion: Derechos Reales
+    subseccion: ""
+    tema: La prescripción adquisitiva
+    contenido: |-
+      1. Usucapión o prescripción adquisitiva. Los tipos de prescripción, fundamento,
+      reglas comunes a toda prescripción. Importancia práctica de la prescripción
+      adquisitiva en Chile y la situación en el Derecho Comparado.
+      2. Elementos. La agregación de posesiones. Interrupción y suspensión. Prescripción
+      ordinaria y extraordinaria. La usucapión como modo de probar el dominio (estudio de
+      títulos).
+      3. Prescripción contra título inscrito. Prescripción de los demás derechos reales
+      distintos del dominio.
+  - numero: 13
+    seccion: Derechos Reales
+    subseccion: ""
+    tema: Derechos reales limitados o desmembraciones del dominio
+    contenido: |-
+      1. Los derechos reales como suma de facultades.
+      2. Nociones generales sobre propiedad fiduciaria, usufructo, uso o habitación,
+      servidumbres y los otros derechos reales (Remisión al curso de Contratos con relación
+      a la prenda e hipoteca).
+  - numero: 14
+    seccion: Derechos Reales
+    subseccion: ""
+    tema: Medidas generales de protección del dominio
+    contenido: |-
+      1. La protección de la propiedad en general: Perspectiva constitucional y referencias
+      básicas a la protección penal, procesal y en el Derecho Privado.
+      2. Derecho Privado: acciones reales y personales de protección.
+      3. La acción reivindicatoria.
+      A. Concepto y fundamento.
+      B. Requisitos
+      a. Cosas que pueden ser reivindicadas.
+      b. Quién puede reivindicar.
+      c. Contra quién se puede reivindicar.
+      C. Prueba del dominio.
+      D. Prestaciones mutuas
+      a. Prestaciones del poseedor vencido.
+      b. Prestaciones del reivindicador.
+      4. Las acciones o querellas posesorias: amparo, restitución y restablecimiento.
+      A. Concepto, fundamento y clasificación.
+      B. Requisitos.
+      a. Posesión.
+      b. Objeto susceptible de acción posesoria.
+      c. Interposición en tiempo oportuno.
+      C. Prueba de la posesión.
+      D. Análisis particular.
+      a. Querella de amparo.
+      b. Querella de restitución.
+      c. Querella de restablecimiento.
+      5. La acción de precario: su relevancia práctica.
+  - numero: 15
+    seccion: Contratos
+    subseccion: ""
+    tema: Los contratos. parte general
+    contenido: |-
+      1. Teoría general del contrato.
+      2. Clasificaciones contractuales: Código Civil y otras clasificaciones.
+      3. Categorías contractuales.
+      4. Principios contractuales.
+      5. La interpretación de los contratos.
+  - numero: 16
+    seccion: Contratos
+    subseccion: ""
+    tema: Estudio particular de algunos contratos
+    contenido: |-
+      1. El contrato de promesa.
+      A. Concepto y clasificación.
+      B. Requisitos.
+      C. Efectos, cumplimiento y extinción.
+      2. Referencia al contrato de opción.
+      3. La compraventa.
+      A. Concepto, características y relevancia de este contrato.
+      B. Requisitos.
+      C. Formalidades: regla general, excepciones y sanciones.
+      D. Capacidad para celebrarlo: regla general e incapacidades especiales.
+      E. Elementos.
+      a. Precio: requisitos y estudio de la lesión enorme.
+      b. Cosa: requisitos, venta de cosa ajena y teoría de los riesgos.
+      F. Efectos.
+      a. Obligaciones del comprador.
+      b. Obligaciones del vendedor: dar y entregar, saneamiento (evicción y vicios
+      redhibitorios).
+      c. Resolución por incumplimiento (Remisión a Derecho de obligaciones).
+      G. Pactos accesorios al contrato de compraventa.
+      H. Referencia a la permuta y a la cesión de derechos.
+      4. El arrendamiento.
+      A. Concepto y características.
+      B. Tipos de arrendamiento.
+      C. Arrendamiento de cosas.
+      a. Concepto y elementos.
+      b. Obligaciones del arrendador.
+      c. Obligaciones del arrendatario.
+      d. Terminación del contrato. En particular del desahucio.
+      D. Arrendamiento de predios urbanos.
+      E. Arrendamiento para la confección de obra material. Contrato de construcción
+      de edificios.
+      F. Arrendamiento de servicios inmateriales.
+      5. El mandato.
+      A. Concepto y elementos.
+      B. Las partes del mandato.
+      C. Objeto del mandato.
+      D. Administración y ejecución del mandato
+      F. Efectos.
+      a. Relaciones internas.
+      b. Relaciones externas.
+      G. Extinción.
+      6. La fianza.
+      A. Concepto, clasificación y requisitos.
+      B. Características.
+      C. Efectos.
+      D. Extinción.
+      7. La hipoteca.
+      A. Concepto, clasificación y requisitos.
+      B. Características.
+      C. Efectos.
+      D. Extinción.
+      8. La prenda y en especial la de sin desplazamiento.
+      A. Concepto, clasificación y requisitos.
+      B. Características.
+      C. Efectos.
+      D. Extinción.
+      9. Aspectos generales de otros contratos: mutuo, comodato, depósito y transacción.
+  - numero: 17
+    seccion: Responsabilidad Civil
+    subseccion: ""
+    tema: La responsabilidad civil contractual o indemnización de perjuicios en sede contractual
+    contenido: |-
+      1. Efectos de las obligaciones desde la perspectiva del incumplimiento.
+      Responsabilidad patrimonial del deudor. Sistema de remedios contractuales.
+      2. La ejecución forzada y sus clases (Remisión al curso de Obligaciones).
+      3. La ejecución por equivalencia. Objetivo y clases de indemnización, acumulación,
+      opción entre acciones indemnizatorias y de cumplimiento.
+      4. Requisitos de la indemnización de perjuicios en sede contractual.
+      A. La imputabilidad: la culpa y el dolo. Las eximentes de responsabilidad: caso
+      fortuito y la teoría del riesgo, ausencia de culpa, estado de necesidad. La
+      responsabilidad indirecta o por el hecho de terceros.
+      B. La mora: exigibilidad y retardo, requisitos de la mora. Efectos. Mora del
+      acreedor. La excepción de incumplimiento contractual.
+      C. El daño. Daños patrimoniales y extrapatrimoniales. La situación del daño
+      extrapatrimonial. Clases de perjuicios. La determinación del monto de la
+      indemnización: avaluaciones judicial, legal y convencional. La avaluación legal
+      en la Ley n° 18.010. La reajustabilidad de las indemnizaciones contractuales.
+      5. Las cláusulas de modificación de responsabilidad contractual.
+      6. Los derechos auxiliares del acreedor (Remisión al curso de Obligaciones).
+  - numero: 18
+    seccion: Responsabilidad Civil
+    subseccion: ""
+    tema: La responsabilidad extracontractual
+    contenido: |-
+      1. Denominaciones, importancia y auge de la responsabilidad extracontractual.
+      Funciones y fundamentos.
+      2. Sistemas de atribución de daños: Responsabilidad por culpa o negligencia.
+      Responsabilidad estricta u objetiva.
+      3. Responsabilidad por culpa o negligencia. Presupuesto y elementos de la
+      responsabilidad extracontractual (capacidad delictual, factores de atribución de
+      responsabilidad: culpa y dolo, daño y relación de causalidad). Eximentes y atenuantes
+      de responsabilidad civil.
+      4. ¿Es la antijuricidad un requisito de la responsabilidad civil?
+      5. Clases de responsabilidad: simple o por el hecho propio y responsabilidad
+      compleja.
+      6. Presunciones de responsabilidad extracontractual.
+      A. Presunciones de responsabilidad por el hecho propio.
+      B. Presunciones de responsabilidad por el hecho ajeno.
+      C. Presunciones de responsabilidad por daños ocasionados por las cosas.
+      7. Responsabilidad estricta u objetiva. Fundamentos. Requisitos. Clases:
+      responsabilidad estricta simple y responsabilidad estricta calificada.
+      A. Su posible aplicación en el Código Civil.
+      B. Referencias a la legislación especial.
+      8. La reparación
+      A . La acción indemnizatoria.
+      B. La extensión de la reparación.
+      C. La reajustabilidad de las indemnizaciones.
+      9. Las personas jurídicas como legitimados activos y pasivos de responsabilidad.
+      10. El abuso de los derechos.
+      11. Referencia a la responsabilidad del Estado (Remisión al curso de Derecho
+      Administrativo).
+  - numero: 19
+    seccion: Responsabilidad Civil
+    subseccion: ""
+    tema: Los problemas de la dualidad de regímenes de responsabilidad civil
+    contenido: |-
+      1. Responsabilidad civil contractual y extracontractual. ¿Unidad o dualidad de
+      responsabilidades?
+      2. Situación en el derecho nacional. Paralelo entre ambos tipos de responsabilidad.
+      3. ¿Cuándo se aplica uno u otro régimen? Las zonas fronterizas de responsabilidad.
+      4. La responsabilidad de derecho común.
+      5. El problema del cúmulo u opción de responsabilidades.
+  - numero: 20
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: Introducción
+    contenido: |-
+      1. Concepto y caracterización del Derecho de Familia. Régimen constitucional de la
+      familia (Remisión al curso de Derecho Constitucional). Breve evolución del Derecho
+      de Familia en Chile.
+      2. El parentesco. Concepto. Clasificaciones. Efectos.
+      3. Los esponsales. Concepto y efectos.
+  - numero: 21
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: El matrimonio
+    contenido: |-
+      1. Definición y características.
+      2. Condiciones de existencia y de validez del matrimonio. Estudio particularizado.
+      3. Matrimonio celebrado en el extranjero. Eficacia en Chile. Situación del chileno que
+      se casa en el exterior.
+      4. El cese de la convivencia: la separación de los cónyuges. Separación de hecho y
+      separación judicial de los cónyuges. La reanudación de la vida en común.
+      5. Terminación del matrimonio. Causales: inexistencia, nulidad y divorcio.
+      6. Disolución de los matrimonios celebrados en el extranjero.
+      7. Reglas comunes a ciertos casos de separación, nulidad y divorcio
+      8. Breve referencia a los juicios de separación, nulidad de matrimonio y de divorcio.
+      9. Efectos del matrimonio en cuanto a la persona de los cónyuges. Sanción por
+      incumplimiento.
+  - numero: 22
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: Los regímenes matrimoniales
+    contenido: |-
+      1. Concepto. Clasificaciones. Regímenes matrimoniales en Chile.
+      2. Los bienes familiares. Concepto. Fundamento. Ámbito de aplicación. Bienes que
+      pueden ser declarados familiares. Titulares. Efectos de la declaración. Beneficio de
+      excusión. Desafectación.
+      3. Aspectos generales acerca de las capitulaciones matrimoniales.
+  - numero: 23
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: La sociedad conyugal
+    contenido: |-
+      1. Concepto. Características. Naturaleza jurídica.
+      2. Haberes y pasivos de la sociedad conyugal.
+      3. Administración ordinaria de la sociedad conyugal. Facultades del marido sobre
+      los bienes sociales. Responsabilidad del marido respecto de terceros. Responsabilidad
+      de la mujer respecto de terceros. Administración de los bienes propios de la mujer.
+      Extensión y límites de las facultades del marido.
+      4. Administración extraordinaria.
+      5. Sanciones por incumplimiento de las exigencias legales.
+      6. Disolución de la sociedad conyugal. Causales de disolución. Efectos.
+      7. Liquidación de la sociedad conyugal. Operaciones que comprende. Las
+      recompensas y sus clases. 8. Beneficio de emolumento. La renuncia de gananciales
+      como derecho opcional de la mujer. Características. Oportunidad. Efectos.
+      8. El patrimonio reservado de la mujer casada.
+  - numero: 24
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: La separación de bienes
+    contenido: |-
+      1. Concepto. Características. Clases.
+      2. La separación judicial. Causales, efectos. Irreversibilidad.
+      3. Separación legal. Clases. Casos.
+      4. Separación convencional. Clases. Oportunidad en que puede pactarse.
+      5. Separación total durante el matrimonio y situación de los terceros.
+  - numero: 25
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: La participación en los gananciales
+    contenido: |-
+      1. Concepto. Características. Oportunidad para pactarlo.
+      2. Administración del patrimonio de los cónyuges
+      3. Determinación y cálculo de los gananciales. Patrimonio originario y patrimonio
+      final. Concepto. Composición. Prueba. Valoración.
+      4. El crédito de participación en los gananciales. Características. Preferencia.
+      Extinción.
+      5. Causales de término del régimen de participación en los gananciales.
+  - numero: 26
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: La familia no matrimonial
+    contenido: |-
+      1. Supuestos. Concepto. Efectos: entre las partes y respecto de terceros.
+      2. Situación en el Derecho Chileno.
+      3. Convivientes civiles: análisis de la Ley 20830 de AUC.
+  - numero: 27
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: La filiación
+    contenido: |-
+      1. Concepto. Breve evolución del Código Civil, con especial referencia la ley Nº 19.585
+      y a su régimen transitorio.
+      2. Clases de filiación.
+      3. La filiación por naturaleza. La filiación matrimonial y sus elementos. La filiación no
+      matrimonial y sus elementos.
+      4. Determinación de la maternidad.
+      5. Determinación de la filiación matrimonial. Las presunciones de paternidad.
+      6. Determinación de la filiación no matrimonial.
+      A. El reconocimiento del hijo y sus formas.
+      B. Determinación judicial de la filiación.
+      C. Los hijos de filiación no determinada.
+      7. Las acciones de filiación. Acciones de reclamación y de impugnación de la filiación.
+      La acción de desconocimiento de la paternidad.
+      8. Efectos de la filiación por naturaleza.
+      A. La autoridad paterna.
+      B. La patria potestad.
+      C. La emancipación del hijo.
+      9. Breve referencia a la filiación adoptiva en la ley Nº 19.620.
+  - numero: 28
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: El derecho de alimentos
+    contenido: |-
+      1. Concepto y clases de alimentos.
+      2. Los alimentos voluntarios.
+      3. Alimentos legales. Clases. Características del derecho de alimentos legales.
+      Situación de los alimentos ya devengados.
+      4. Los sujetos de la relación alimenticia: titulares del derecho y obligados a
+      suministrarlos, prelación entre ellos.
+      5. Cuantía de los alimentos.
+      6. Breve referencia al juicio de alimentos.
+      7. Reducción y extinción del derecho de alimentos.
+  - numero: 29
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: Las guardas (Aspectos generales)
+    contenido: ""
+  - numero: 30
+    seccion: Derecho de Familia
+    subseccion: ""
+    tema: El estado civil
+    contenido: |-
+      1. Concepto, características, fuentes y efectos del estado civil.
+      2. La prueba del estado civil. Medios principales y medios supletorios.
+  - numero: 31
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: Introducción
+    contenido: |-
+      1. El problema de la muerte. Diversos planos. Los efectos de la muerte frente al
+      Derecho.
+      2. La sucesión por causa de muerte como efecto fundamental. Concepto.
+      Fundamentos.
+      3. Los intereses que concurren en la sucesión: el del propio causante (la disposición
+      de bienes por testamento o por acto entre vivos), el interés familiar, el interés social.
+      4. La sucesión en cuanto modo de adquirir. Concepto. Caracterización como modo
+      adquisitivo.
+      5. Los adquirentes o asignatarios por causa de muerte. Concepto y clasificaciones: los
+      herederos y sus tipos (universales, de cuota y del remanente). Los legatarios y sus
+      tipos: de especie y de género.
+      6. Las asignaciones por causa de muerte. Concepto y clasificaciones.
+      7. Los requisitos para suceder: subjetivos (capacidad y dignidad) y objetivos.
+      8. Origen de la sucesión: testamentaria, legal o intestada, convencional.
+      9. La teoría de los acervos. Las bajas generales.
+  - numero: 32
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: Apertura de la sucesión, delación, aceptación y repudiación de las asignaciones
+    contenido: |-
+      1. La apertura de la sucesión. Concepto. Momento en que se produce. Importancia de
+      su determinación. Lugar en que se produce e importancia de su determinación.
+      2. Ley que regula la sucesión. Regla general y excepciones.
+      3. La delación de las asignaciones.
+      4. Aceptación y repudiación de las asignaciones.
+      5. Transmisibilidad de la delación: El derecho de transmisión.
+  - numero: 33
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: El derecho real de herencia
+    contenido: |-
+      1. Concepto. Características. Naturaleza jurídica.
+      2. Adquisición del derecho real de herencia. Enunciación de los modos a través de los
+      cuales puede adquirirse.
+      A. La sucesión por causa de muerte como modo de adquirir. Contenido
+      adquisitivo. La posesión de la herencia. Clases: posesión legal, posesión real o
+      material y posesión efectiva de la herencia. Las inscripciones conservatorias a
+      propósito de la herencia.
+      B. La tradición como modo de adquirir el derecho de herencia. La cesión de
+      derechos hereditarios.
+      C. La prescripción como modo de adquirir el derecho de herencia.
+  - numero: 34
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: La sucesión intestada
+    contenido: |-
+      1. Concepto. Ámbito de aplicación.
+      2. Los herederos abintestato.
+      3. Las formas de suceder abintestato: por derecho personal y por derecho de
+      representación. La representación, concepto, fundamentos, requisitos, efectos.
+      Diferencias con el derecho de transmisión.
+      4. Concurrencia de los herederos abintestato. Los órdenes de sucesión. Análisis de
+      cada uno de ellos (con especial referencia a la modificación de que fueron objeto por
+      ley Nº 19.585 y a su régimen transitorio).
+      A. Los derechos hereditarios abintestato del cónyuge sobreviviente. Situación
+      del cónyuge divorciado por su culpa.
+      B. Nulidad del matrimonio posterior a la apertura de la sucesión.
+  - numero: 35
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: La sucesión testada
+    contenido: |-
+      1. Concepto. Aplicación. La libertad de testar.
+      2. El testamento en general. Definición, características, requisitos, clasificación.
+      3. Estudio particular del testamento solemne, abierto y cerrado, otorgado en Chile.
+      4. Referencia al testamento solemne otorgado en el extranjero: a) conforme a la ley
+      extranjera; y b) conforme a la ley chilena.
+      5. Los testamentos menos solemnes o privilegiados: testamento verbal. Referencia a
+      los testamentos militar y marítimo.
+      6. La interpretación del testamento.
+      7. La revocación del testamento.
+      8. Las asignaciones testamentarias. Concepto, requisitos, clases.
+      9. Aspectos generales sobre las asignaciones testamentarias sujetas o modalidades.
+      Estudio particular del modo.
+      10. Asignaciones a título universal (herencias) y a título singular (legados). Concepto,
+      clases y efectos en cada caso.
+      11. Aspectos generales acerca de las donaciones revocables y las donaciones
+      irrevocables.
+      12. Los derechos de acrecimiento y de sustitución. Concepto, requisitos, caracteres y
+      efectos. Relación con los derechos de representación y de transmisión.
+  - numero: 36
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: La sucesión mixta
+    contenido: |-
+      1. Concepto y campo de aplicación.
+      2. Formas de dividir la herencia.
+      3. Situación de los que suceden a la vez por testamento y abintestato.
+  - numero: 37
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: Las asignaciones forzosas
+    contenido: |-
+      1. Concepto. Fundamento. Su ámbito de aplicación. Breve evolución del Código Civil
+      en esta materia, con especial referencia a la ley Nº 19.585, a su régimen transitorio y a
+      la porción conyugal. Protección legal de las asignaciones forzosas (medios directos e
+      indirectos).
+      2. Los alimentos forzosos o que se deben por ley.
+      3. Las legítimas. Concepto y características. Los legitimarios. Reglas a que está sujeta
+      la división de la mitad legitimaria. Clasificación de las legítimas.
+      4. La legítima rigorosa. Concepto, características. Forma como resulta.
+      5. La legítima efectiva. Concepto. Casos en que tiene lugar su formación (relacionar
+      con sucesión parte testada e intestada).
+      6. La cuarta de mejoras. Concepto, características, beneficiarios. Pacto sobre mejoras
+      en una sucesión futura.
+      7. Las acumulaciones al acervo líquido o acervos imaginarios. Concepto,
+      fundamentos, clases.
+      A. La colación o primer acervo imaginario. Concepto. Objetivos. Requisitos.
+      Beneficiarios.
+      B. El segundo acervo imaginario. Concepto. Objetivos. Requisitos. Beneficiarios. La
+      acción de inoficiosa donación.
+      8. Forma en que se pagan las legítimas. Cosas que deben y no deben imputarse a la
+      legítima. Situaciones que pueden presentarse.
+      9. El desheredamiento. Concepto, requisitos, efectos.
+      10. La acción de reforma del testamento. Concepto, características, objeto. La
+      preterición.
+  - numero: 38
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: La protección de los bienes hereditarios
+    contenido: |-
+      1. Medidas de seguridad de los bienes hereditarios
+      A. La guarda y aposición de sellos
+      B. El beneficio de inventario
+      C. La herencia yacente
+      2. La acción de petición de herencia. Concepto, fundamento, características,
+      elementos, efectos, prescripción. Paralelo con la acción de reforma del testamento.
+      3. La acción reivindicatoria del heredero contra el tercero.
+  - numero: 39
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: Los albaceas o ejecutores testamentarios (Aspectos generales)
+    contenido: ""
+  - numero: 40
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: El pago de las deudas hereditarias y testamentarias
+    contenido: |-
+      1. Las deudas hereditarias. Forma en que se dividen entre los herederos. Excepciones.
+      Responsabilidad de los legatarios por las deudas de la herencia.
+      2. Las deudas testamentarias. Obligados al pago de los legados. Oportunidad y forma
+      en que se pagan los legados.
+      3. El beneficio de separación. Objeto. Requisitos, efectos. Diferencias con el beneficio
+      de inventario.
+  - numero: 41
+    seccion: Derecho Sucesorio
+    subseccion: ""
+    tema: Aspectos civiles de la partición de bienes
+    contenido: |-
+      1. Acción de partición. Tipos de indivisiones. Clases de particiones.
+      2. Efectos de la partición. El efecto declarativo de la partición o efecto declarativo de
+      la adjudicación. La obligación de garantía entre los comuneros o saneamiento de la
+      evicción en la partición.
+      3. Referencia a la nulidad, rescisión y resolución de las particiones. Rescisión de la
+      partición por causa de lesión. La inoponibilidad de la partición.
+      4. El derecho de adjudicación preferente del cónyuge sobreviviente. Derechos de
+      habitación y de uso.

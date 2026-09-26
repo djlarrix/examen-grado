@@ -1,0 +1,86 @@
+# Cedulario de Derecho Procesal — Universidad de Concepción, Facultad de Ciencias Jurídicas y Sociales.
+# Resolución N° 2023-006 (27 de febrero de 2023), vigente para los exámenes de Licenciatura desde el 1 de julio de 2023.
+# https://jur.udec.cl/sites/default/files/Resoluci%C3%B3n%20N%C2%B0%202023-006%20nueva%20versi%C3%B3n%20Cedulario%20de%20Derecho%20Procesal.pdf
+# Transcripción literal del documento escaneado. Cada unidad (I a VII) es una cédula; los capítulos van en el contenido.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: Cedulario Derecho Procesal
+    subseccion: ""
+    tema: Fundamentos del Derecho Procesal
+    contenido: |
+      Capítulo I. Acción, Jurisdicción y Proceso.
+      Capítulo II. Garantías Constitucionales del Proceso.
+      Capítulo III. Estructura de los Órganos Jurisdiccionales.
+  - numero: 2
+    seccion: Cedulario Derecho Procesal
+    subseccion: ""
+    tema: Derecho Procesal Orgánico
+    contenido: |
+      Capítulo I. Los órganos del poder judicial.
+        1. Principios Fundamentales.
+        2. Tribunales Ordinarios.
+      Capítulo II. Competencia.
+      Capítulo III. Los Abogados.
+    excluidas: Implicancias y recusaciones, subrogación e integración y los auxiliares de la administración de justicia.
+  - numero: 3
+    seccion: Cedulario Derecho Procesal
+    subseccion: ""
+    tema: Normas Comunes a Todo Procedimiento
+    contenido: |
+      Capítulo I. El Acto Jurídico Procesal.
+        1. Reglas Generales.
+        2. Los Actos Procesales.
+        3. Las Resoluciones Judiciales.
+        4. Los Efectos de las Resoluciones Judiciales.
+        5. Las Notificaciones.
+        6. Las partes del Proceso.
+        7. Comparecencia y Representación de las Partes.
+  - numero: 4
+    seccion: Cedulario Derecho Procesal
+    subseccion: ""
+    tema: Procedimientos Declarativos Comunes
+    contenido: |
+      Capítulo I. Juicio Ordinario de Mayor Cuantía.
+      Capítulo II. Juicio Sumario.
+      Capítulo III. Procedimiento Incidental.
+  - numero: 5
+    seccion: Cedulario Derecho Procesal
+    subseccion: ""
+    tema: Medios de Impugnación
+    contenido: |
+      Capítulo I. Reglas Generales.
+      Capítulo II. Recursos Ordinarios.
+        1. Recurso de aclaración, rectificación o enmienda.
+        2. Recurso de reposición.
+        3. Recurso de apelación y recurso de hecho.
+      Capítulo III. Recursos Extraordinarios.
+        Recurso de casación.
+      Capítulo IV. La Nulidad Procesal.
+    excluidas: El recurso de queja.
+  - numero: 6
+    seccion: Cedulario Derecho Procesal
+    subseccion: ""
+    tema: Ejecución y Procedimientos Especiales
+    contenido: |
+      Capítulo I. Juicio ejecutivo de obligaciones de dar.
+      Capítulo II. Cumplimiento de resoluciones judiciales dictadas por tribunales chilenos.
+      Capítulo III. Tutela cautelar.
+      Capítulo IV. Justicia arbitral.
+        Los tribunales arbitrales. Parte orgánica.
+      Capítulo V. Procedimientos especiales.
+        1. Juicios de arrendamiento de predios urbanos.
+        2. Procedimiento ordinario ante los Tribunales de Familia.
+      Capítulo VI. Actos judiciales no contenciosos.
+    excluidas: Procedimiento ante los tribunales arbitrales y cumplimiento de resoluciones dictadas por tribunales extranjeros.
+  - numero: 7
+    seccion: Cedulario Derecho Procesal
+    subseccion: ""
+    tema: Proceso Penal
+    contenido: |
+      Capítulo I. Conceptos y Principios Generales.
+      Capítulo II. Sujetos Procesales.
+      Capítulo III. Investigación.
+      Capítulo IV. Procedimiento Ordinario.
+      Capítulo V. Medidas Cautelares.
+      Capítulo VI. Recursos.

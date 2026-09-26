@@ -1,0 +1,414 @@
+# Temario Examen de Licenciatura 2025: Derecho Procesal — Facultad de Ciencias Jurídicas y Sociales, Universidad Austral de Chile. https://www.derecho.uach.cl/index.php/archivos/563/temariosde-exclusion-malla-semestral-2025/1104/TEMARIO-EXAMEN-DE-LICENCIATURA-2025---DERECHO-PROCESAL.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "uach") y revisada.
+# La numeración es nuestra cuando el documento no numera cédulas.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: I. JURISDICCIÓN
+    subseccion: ""
+    tema: La jurisdicción
+    contenido: |-
+      A) Del Estado absoluto al Estado de derecho contemporáneo.
+      B) Función de la jurisdicción y teorías sobre la función judicial
+      C) Bases constitucionales de la organización y administración de la jurisdicción chilena
+      1) Caracteres: Unidad, exclusividad e independencia (imparcialidad)
+      2) Sistema chileno de garantías de la independencia judicial
+      3) Sistema de generación de los jueces en el Derecho chileno
+      D) Las atribuciones o facultades de la jurisdicción en el derecho chileno
+      1) Facultades jurisdiccionales (art. 1º COT)
+      2) Facultades no contenciosas (art. 2º COT)
+      3) Facultades conservadoras, disciplinarias y económicas (art. 3º COT)
+      E) El Gobierno o administración de la judicatura y la responsabilidad de los jueces
+      chilenos
+      1) Gobierno o administración de la judicatura
+      2) La responsabilidad como presupuesto de la independencia
+      3) Responsabilidad política, civil, penal y disciplinaria
+  - numero: 2
+    seccion: I. JURISDICCIÓN
+    subseccion: ""
+    tema: Alternativas a la jurisdicción
+    contenido: |-
+      A) Autotutela
+      B) Autocomposición
+      C) Heterocomposición
+  - numero: 3
+    seccion: I. JURISDICCIÓN
+    subseccion: ""
+    tema: Los derechos fundamentales de las personas frente a la jurisdicción
+    contenido: |-
+      A) El derecho a la tutela judicial o de acción
+      B) El derecho a un debido proceso
+  - numero: 4
+    seccion: I. JURISDICCIÓN
+    subseccion: ""
+    tema: Los tribunales de justicia chilenos. Bases generales de la organización judicial
+    contenido: |-
+      chilena: los principios informadores
+      A) ¿Qué ha de entenderse por tribunal de justicia en derecho chileno?
+      B) Principios que rigen la organización de los tribunales en Chile
+      C) Clasificación de los tribunales
+      D) Tribunales ordinarios: composición y atribuciones
+      E) Los árbitros. Situación de los árbitros en el derecho chileno: ¿son tribunales de
+      justicia?
+      F) Tipos de árbitros. De derecho, mixto y arbitrador
+      G) Tipos de arbitraje. Obligatorio, permitido y prohibido
+  - numero: 5
+    seccion: I. JURISDICCIÓN
+    subseccion: ""
+    tema: "Personal de los tribunales de justicia chilenos: Los jueces"
+    contenido: |-
+      A) Los jueces. Requisitos para ser juez
+      B) Derechos y deberes de los jueces
+      C) Auxiliares y colaboradores de la Administración de Justicia.
+  - numero: 6
+    seccion: I. JURISDICCIÓN
+    subseccion: ""
+    tema: La competencia de los tribunales de justicia chilenos
+    contenido: |-
+      A) Concepto y clasificación.
+      B) Competencia y jurisdicción
+      C) Clases de competencia
+      D) Reglas generales de la competencia
+      E) Reglas específicas de la competencia: absoluta y relativa
+      F) Concepto de prórroga de la competencia
+      G) Requisitos de la prórroga de la competencia
+      H) Contiendas de competencia: concepto y quién los resuelve
+      I) Implicancias y recusaciones; subrogación e integración. Concepto
+      J) Análisis de las hipótesis legales
+      K) Tramitación
+  - numero: 7
+    seccion: II. PROCESO CIVIL ORDINARIO
+    subseccion: ""
+    tema: Acción, jurisdicción y proceso
+    contenido: |-
+      A) Derecho Fundamental de acción
+      B) Elementos comunes a todo proceso.
+      C) Proceso y procedimiento
+  - numero: 8
+    seccion: II. PROCESO CIVIL ORDINARIO
+    subseccion: ""
+    tema: Normas comunes a todo procedimiento
+    contenido: |-
+      A) Actuaciones judiciales
+      B) Plazos y rebeldías
+      C) Notificaciones
+      D) Resoluciones judiciales
+      E) Incidentes
+      F) Comparecencia en juicio
+      G) Partes y capacidad procesal
+  - numero: 9
+    seccion: II. PROCESO CIVIL ORDINARIO
+    subseccion: ""
+    tema: Las medidas prejudiciales y cautelares
+    contenido: |-
+      A) Concepto de medidas prejudiciales
+      B) Clases
+      C) Elementos comunes
+      D) Requisitos específicos
+      E) Las medidas cautelares
+  - numero: 10
+    seccion: II. PROCESO CIVIL ORDINARIO
+    subseccion: ""
+    tema: Juicio ordinario de mayor cuantía. Periodo de discusión y conciliación
+    contenido: ""
+  - numero: 11
+    seccion: II. PROCESO CIVIL ORDINARIO
+    subseccion: ""
+    tema: Juicio ordinario de mayor cuantía. Procedimiento probatorio
+    contenido: ""
+  - numero: 12
+    seccion: III. PROCEDIMIENTOS ESPECIALES Y RECURSOS CIVILES
+    subseccion: ""
+    tema: El procedimiento sumario
+    contenido: |-
+      A) Concepto
+      B) Características
+      C) Ámbito de aplicación como procedimiento general y especial
+      D) Tramitación: iniciación, audiencia, sustitución del procedimiento, aceptación
+      provisional de la demanda
+      E) Incidentes
+      F) Término probatorio y prueba
+      G) Sentencia y reglas especiales en el sistema de recursos
+  - numero: 13
+    seccion: III. PROCEDIMIENTOS ESPECIALES Y RECURSOS CIVILES
+    subseccion: ""
+    tema: Procedimientos ejecutivos
+    contenido: |-
+      A) Concepto, características, clasificación finalidad. Predominio del imperio judicial en
+      estos procedimientos
+      B) El procedimiento ejecutivo ordinario. Procedimiento ejecutivo en las obligaciones
+      de dar
+      1) Iniciación y trámites previos
+      2) Los títulos ejecutivos
+      3) Preparación de algunos títulos ejecutivos
+      4) Examen de admisibilidad
+      5) Mandamiento de ejecución y embargo
+      6) Emplazamiento
+      7) Fase de discusión: estudio de las excepciones, plazo y tramitación
+      8) Fase probatoria: término probatorio
+      9) Fase de sentencia: clases, condenación en costas
+      10) El cuaderno de apremio, embargo de bienes, retiro de especies, remate,
+      liquidación y pago
+      11) Tercerías: concepto de terceros. Clases de tercerías. Dominio; posesión;
+      prelación y pago. Tramitación. Efectos en el curso del procedimiento principal.
+      Conclusión
+  - numero: 14
+    seccion: III. PROCEDIMIENTOS ESPECIALES Y RECURSOS CIVILES
+    subseccion: ""
+    tema: Medios de impugnación
+    contenido: |-
+      A) Concepto y fundamentos
+      B) Enumeración de los recursos en nuestro derecho
+      C) Clasificación de los recursos
+      1) Ordinarios o extraordinarios
+      2) Vía retracto y superior jerárquico
+      D) Características de los recursos
+      E) Elementos de los recursos
+      F) Recurso de aclaración, agregación, rectificación o enmienda (Art. 182)
+      1) Concepto
+      2) Resoluciones que son susceptibles de este recurso
+      3) Forma y plazo de hacer valer este recurso
+      4) Tramitación
+      5) Efectos del recurso
+      6) Recursos que proceden en contra de la resolución que falle el recurso
+      G) Recurso de reposición. Art. 181
+      1) Concepto
+      2) Clasificación
+      3) Resoluciones contra de las cuales procede
+      4) Plazo para interponer el recurso
+      5) Tramitación del recurso
+      6) Recursos en contra de la resolución que se pronuncia sobre la reposición.
+      7) Efectos del recurso
+      H) Recurso de apelación
+      1) Concepto y finalidad
+      2) Características
+      3) Resoluciones apelables
+      4) Titulares del recurso de apelación
+      5) Plazo para la interposición del recurso
+      6) Forma de interponer el recurso
+      7) Efectos del recurso de apelación
+      a) Generalidades
+      b) Efecto devolutivo
+      c) Efecto suspensivo
+      d) El CPC y los efectos de la apelación
+      e) Extensión del efecto devolutivo
+      f) Extensión del efecto suspensivo
+      g) Formas de conceder el recurso de apelación
+      8) Tramitación del recurso de apelación
+      9) Adhesión de la apelación
+      10) Prueba en segunda instancia
+      11) Prescripción de la apelación
+      I) Recurso de hecho
+      1) Concepto y regulación
+      2) Casos en que es procedente el recurso de hecho
+      3) Recurso de hecho legítimo o verdadero
+      4) Falso recurso de hecho
+      J) Recurso de casación
+      1) Generalidades
+      2) Concepto
+      3) Recurso de casación en la forma
+      a) Concepto y regulación
+      b) Características del recurso
+      c) Resoluciones impugnables con el recurso
+      d) Causales que autorizan la interposición del recurso
+      e) Preparación del recurso
+      f) Prueba ante el tribunal ad quem
+      g) Fallo del recurso
+      h) Casación en la forma de oficio
+      i) Tramitación de la casación de oficio
+      j) Efectos de la casación de oficio
+      4) Recurso de casación en el fondo
+      a) Definición
+      b) Características del recurso
+      c) Resoluciones en contra de las cuales procede. Art. 767 del CPC
+      d) Causal que autoriza la interposición del recurso
+      e) ¿Qué clase de leyes deben infringirse para que sea procedente el recurso de
+      casación?
+      f) ¿Es posible modificar los hechos a través del recurso de casación?
+      g) Interposición del recurso
+      h) Tramitación del recurso
+      i) Fallo del recurso
+      j) Casación en el fondo de oficio
+  - numero: 15
+    seccion: IV. DERECHO PROBATORIO
+    subseccion: ""
+    tema: ¿De qué hablamos cuando hablamos de prueba en el derecho?
+    contenido: |-
+      A) Probar en contextos no-jurídicos / Probar en contextos jurídicos
+      B) Varios sentidos de la expresión prueba en el derecho
+      C) Concepto y concepciones de la prueba jurídica
+  - numero: 16
+    seccion: IV. DERECHO PROBATORIO
+    subseccion: ""
+    tema: La regulación jurídica de la prueba
+    contenido: |-
+      A) La justificación de las normas jurídicas sobre la prueba
+      1) Procesos judiciales, prueba y verdad
+      2) Minimización y asignación equitativa del riesgo de error
+      3) Fines extra-epistémicos y normas probatorias
+      B) Tipología de las normas jurídicas sobre la prueba
+      C) Modelos de derecho probatorio
+      D) La prueba en el proceso civil chileno
+  - numero: 17
+    seccion: IV. DERECHO PROBATORIO
+    subseccion: ""
+    tema: ¿Qué es lo que se prueba?
+    contenido: |-
+      A) ¿Hechos, proposiciones, relatos?
+      B) ¿Cuáles? Relevancia jurídica y controversia
+      C) ¿Cómo se determinan en el proceso? Alegaciones de las partes, delimitación judicial
+      del objeto de proceso, declaración de hechos probados en la sentencia
+      D) Tipología de hechos que pueden ser objeto de prueba
+      E) La identificación del objeto de la prueba en el proceso civil chileno
+  - numero: 18
+    seccion: IV. DERECHO PROBATORIO
+    subseccion: ""
+    tema: ¿Quién prueba?
+    contenido: |-
+      A) La iniciativa probatoria.
+      B) La carga de la prueba.
+      1) Carga formal / carga material
+      2) Reglas generales
+      3) Reglas especiales: inversiones y presunciones
+      4) El “principio de adquisición procesal”
+      C) Iniciativa y carga de la prueba en el proceso civil chileno
+  - numero: 19
+    seccion: IV. DERECHO PROBATORIO
+    subseccion: ""
+    tema: ¿Con qué se prueba?
+    contenido: |-
+      A) Tipología de los medios de prueba:
+      1) Prueba testimonial
+      2) Prueba documental
+      3) Pruebas reales
+      4) Prueba pericial
+      B) Relevancia y admisibilidad de las pruebas
+      1) Relevancia directa e indirecta
+      2) Admisibilidad y reglas de exclusión
+      C) Admisibilidad de las pruebas en el proceso civil chileno
+  - numero: 20
+    seccion: IV. DERECHO PROBATORIO
+    subseccion: ""
+    tema: ¿Cómo se practican las pruebas?
+    contenido: |-
+      A) Término probatorio / audiencia de prueba
+      B) Debido proceso y contradicción
+      C) La práctica de las pruebas en el proceso civil chileno
+      D) La prueba anticipada y el aseguramiento de las pruebas
+  - numero: 21
+    seccion: IV. DERECHO PROBATORIO
+    subseccion: ""
+    tema: ¿Cómo se valoran las pruebas?
+    contenido: |-
+      A) Modelos de regulación de la valoración de la prueba
+      B) Tipología de las reglas de valoración
+      C) Momentos de la valoración de la prueba
+      1) La valoración individual de las pruebas
+      a) La credibilidad de las pruebas
+      b) La determinación de la fuerza probatoria individual
+      2) La valoración conjunta de las pruebas. La distinción conceptual entre
+      valoración y decisión acerca de la prueba.
+      D) El papel de las generalizaciones empíricas en el razonamiento probatorio
+      1) Generalizaciones científicas
+      2) Máximas de experiencia
+      E) La valoración de las pruebas en el proceso civil chileno
+  - numero: 22
+    seccion: IV. DERECHO PROBATORIO
+    subseccion: ""
+    tema: ¿Cómo se decide acerca de la prueba?
+    contenido: |-
+      A) Incertidumbre y decisión
+      B) Las reglas de decisión sobre la prueba
+      1) Reglas de prueba legal
+      2) Estándares de prueba
+      3) Reglas de carga de la prueba como reglas residuales de decisión
+      4) La regulación de la decisión sobre la prueba en el proceso civil chileno
+      C) Decisión y convicción judicial
+      D) La fundamentación de la decisión probatoria
+      E) El control de la decisión sobre la prueba a través de recursos procesales
+  - numero: 23
+    seccion: V. PROCESO PENAL
+    subseccion: ""
+    tema: Los principios del nuevo proceso penal.
+    contenido: |-
+      A) Juicio oral y público
+      B) Principio de la persecución única
+      C) Principio del juez natural
+      D) Principio de exclusividad investigativa del Ministerio Público
+      E) Principio de presunción de inocencia
+      F) Principio de legalidad de las medidas restrictivas de libertad
+      G) Principio de protección a la víctima
+      H) El derecho a defensa y los derechos del imputados
+  - numero: 24
+    seccion: V. PROCESO PENAL
+    subseccion: ""
+    tema: Intervinientes en el enjuiciamiento penal
+    contenido: |-
+      A) El Ministerio Público
+      B) La defensa
+      C) El imputado
+      D) La víctima
+      E) El querellante
+      F) El actor civil
+      G) Los terceros
+  - numero: 25
+    seccion: V. PROCESO PENAL
+    subseccion: ""
+    tema: Etapa de investigación desformalizada del proceso penal
+    contenido: |-
+      A) Formas de inicio del proceso penal
+      B) Etapa de investigación: el Ministerio Público y la persecución penal pública
+      C) Archivo provisional
+      D) Principio de oportunidad
+      E) Diligencias de investigación reguladas en el Código procesal penal con o sin
+      autorización judicial
+  - numero: 26
+    seccion: V. PROCESO PENAL
+    subseccion: ""
+    tema: Etapa de investigación formalizada del proceso penal
+    contenido: |-
+      A) Formalización de la investigación
+      B) Medidas cautelares personales y reales
+      C) Suspensión condicional del procedimiento
+      D) Acuerdos reparatorios
+  - numero: 27
+    seccion: V. PROCESO PENAL
+    subseccion: ""
+    tema: Etapa intermedia de proceso penal
+    contenido: |-
+      A) Etapa intermedia decisional y etapa intermedia preparatoria
+      B) Término de la investigación
+      C) Acusación
+      D) Audiencia de preparación del juicio oral
+      E) Reglas de exclusión probatoria en la APJO
+      F) Auto de apertura del juicio oral
+  - numero: 28
+    seccion: V. PROCESO PENAL
+    subseccion: ""
+    tema: Juicio oral y procedimientos especiales
+    contenido: |-
+      A) Etapa de juicio oral
+      1) Principios del juicio oral
+      2) Desarrollo del juicio oral
+      3) Intervenciones de los sujetos en el juicio oral
+      4) La prueba en el juicio oral
+      5) La sentencia definitiva y sus límites
+      B) Procedimientos especiales
+      1) El procedimiento simplificado
+      2) El procedimiento abreviado
+  - numero: 29
+    seccion: V. PROCESO PENAL
+    subseccion: ""
+    tema: Medios de impugnación
+    contenido: |-
+      A) Medios de impugnación de las resoluciones judiciales
+      1) El amparo ante el Juez de Garantía
+      2) Las nulidades procesales
+      3) Los recursos procesales penales. Disposiciones generales.
+      4) El recurso de apelación
+      5) El recurso de revisión
+      B) Recurso de nulidad
+      1) Régimen recursivo general del proceso pena chileno
+      2) Requisitos de interposición
+      3) Exigencia de preparación del recurso
+      4) Fallo y efectos del fallo del recurso

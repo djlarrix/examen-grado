@@ -18,14 +18,14 @@ import { raizProyecto } from './lib/rutas.mjs';
 
 const INSTRUCCIONES = `Preparador del examen de grado de Derecho en Chile (Civil y Procesal).
 
-Al empezar una conversación sobre el examen de grado, llama a estado_estudiante. Si hay una skill "examen-grado" disponible, síguela; si no, usa los prompts de este servidor (empezar, clase, repaso, simulacro, diagnostico), que traen el método.
+Al empezar una conversación sobre el examen de grado, llama a estado_estudiante. Si hay una skill "examen-grado" disponible, síguela; si no, usa los prompts de este servidor (empezar, clase, repaso, simulacro, diagnostico, mi_examen), que traen el método.
 
 Reglas:
 - El estudiante repetirá lo que digas frente a una comisión. No afirmes el contenido de un artículo sin traerlo con ver_articulo en esta conversación: los códigos cambian y los manuales envejecen.
 - Doctrina atribuida a un autor, sólo desde buscar_en_manuales (con página). Sin manual, explica sin nombres de autores. No cites fallos de memoria.
 - El estudiante recupera, no escucha: pregunta después de cada bloque de explicación y termina cada tema con el estudiante explicándolo solo.
 - Registra cada respuesta evaluable con registrar_respuesta (1 otra vez, 2 difícil, 3 bien, 4 fácil; califica el primer intento y anota el error concreto). Sin registro no hay repaso espaciado.
-- Adapta preguntas y simulacros al formato de su universidad (perfil_examen): oral con repreguntas, o escrito sobre un caso.
+- Adapta preguntas y simulacros al formato de su universidad (perfil_examen): oral con repreguntas, escrito sobre un caso (con pauta al estilo de su universidad y calcular_nota) o mixto. Si su universidad no está cargada, que suba sus documentos (cargar_documento).
 - Español de Chile, de tú, cercano y exigente.`;
 
 const DIR_SKILL = join(raizProyecto(), 'skills', 'examen-grado');
@@ -46,7 +46,12 @@ const PROMPTS = {
     pedido: (a) => `Hazme una clase de: ${a.tema}`,
   },
   repaso: { descripcion: 'Repasar lo que toca hoy.', archivos: ['SKILL.md', 'referencias/rubrica.md', 'referencias/modos/repaso.md'], pedido: () => 'Hagamos los repasos de hoy.' },
-  simulacro: { descripcion: 'Simulacro del examen con la comisión.', archivos: ['SKILL.md', 'referencias/rubrica.md', 'referencias/modos/simulacro.md'], pedido: () => 'Quiero hacer un simulacro del examen.' },
+  simulacro: { descripcion: 'Simulacro del examen (oral con comisión, o caso escrito con pauta).', archivos: ['SKILL.md', 'referencias/fuentes.md', 'referencias/rubrica.md', 'referencias/modos/simulacro.md'], pedido: () => 'Quiero hacer un simulacro del examen.' },
+  mi_examen: {
+    descripcion: 'Adaptar la preparación a mi universidad: subir cedulario, reglamento, exámenes anteriores o pautas.',
+    archivos: ['SKILL.md', 'referencias/modos/mi-examen.md'],
+    pedido: () => 'Quiero que te adaptes a mi examen: te voy a pasar mis documentos.',
+  },
 };
 
 const servidor = new Server({ name: 'examen-grado', version: '0.1.0' }, { capabilities: { tools: {}, prompts: {} }, instructions: INSTRUCCIONES });

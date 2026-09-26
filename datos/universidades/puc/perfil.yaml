@@ -1,0 +1,57 @@
+# Perfil del examen de grado — Pontificia Universidad Católica de Chile.
+id: puc
+nombre: Pontificia Universidad Católica de Chile
+sigla: UC
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de grado (licenciatura)
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Interrogación oral de Derecho Civil y Derecho Procesal, más una cédula electiva
+      detalle: >-
+        Interrogación oral sobre las cédulas de Derecho Civil y Derecho Procesal, y sobre una
+        materia elegida por el estudiante (Constitucional, Penal, Comercial, Administrativo,
+        Canónico, Internacional Público, Trabajo, Tributario, Romano, Natural, Fundamentos
+        Filosóficos o Historia del Derecho). Es un acto único: no se suspende hasta que la
+        comisión haya interrogado en cada cédula.
+      fuente: Examen de grado en preguntas y respuestas (sept. 2026), preg. 1; sitio de la Facultad
+  comision: >-
+    Un profesor de Derecho Civil, uno de Derecho Procesal y uno de la cédula elegida,
+    sorteados en acto público entre los profesores habilitados; preside el de decreto de
+    nombramiento más antiguo. Examen público, con al menos un testigo.
+  calificacion: >-
+    Nota de 1 a 7, que puede ser fraccionada; mínimo 4,0. La comisión delibera soberanamente
+    y califica el examen en su conjunto. Nota final de la licenciatura: 50 % promedio de la
+    carrera y 50 % examen.
+  preguntas_fuera_de_cedula: >-
+    Las preguntas se refieren a los contenidos de las cédulas; si se pregunta una materia
+    excluida, el estudiante puede representarlo a la comisión.
+  reprobacion: Tras la primera reprobación se puede rendir en una fecha posterior a tres meses.
+  plazo: Seis años desde el egreso.
+  fuente_general: Examen de grado en preguntas y respuestas, Escuela de Derecho UC (sept. 2026)
+estilo_comision:
+  - Pregunta sobre los contenidos de la cédula, que son extensos y detallados: la comisión puede bajar a cualquier numeral.
+  - Respeta las exclusiones de cada capítulo ("Excluye:"): no preguntar lo excluido.
+  - Tres profesores, uno por ramo, que se turnan; el de Civil y el de Procesal pueden cruzar materias.
+  - Conceptos precisos, requisitos y efectos, con fundamento en el Código; casos breves para aplicar.
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    La UC organiza cada cédula como un temario por capítulos con sus exclusiones. Cada
+    capítulo es aquí una "cédula" (numeración nuestra) para poder elegirlo y repasarlo.
+  electivas: La cédula electiva (3 a 18 del listado de la Facultad) no está cubierta en esta versión.
+por_confirmar:
+  - Duración habitual del examen y reparto del tiempo entre las tres cédulas.
+fuentes:
+  - titulo: Examen de grado — Facultad de Derecho UC
+    url: https://derecho.uc.cl/carrera-y-programas/carrera-de-derecho/alumnos/examen-de-grado/
+  - titulo: Examen de grado en preguntas y respuestas (septiembre 2026)
+    url: https://derecho.uc.cl/wp-content/uploads/2026/09/Examen-de-grado.-Preguntas-y-respuestas-septiembre-2026-2.pdf
+  - titulo: Cédula de Derecho Civil (vigente desde el 1 de abril de 2021)
+    url: https://derecho.uc.cl/wp-content/uploads/2026/05/Cedula_Derecho_Civil_18.03.2021.pdf
+  - titulo: Cédula de Derecho Procesal (vigente desde el 1 de abril de 2021)
+    url: https://derecho.uc.cl/wp-content/uploads/2026/05/Cedula_Derecho_Procesal_18.03.2021.pdf
+revisado: 2026-09-25

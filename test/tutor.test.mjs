@@ -214,3 +214,41 @@ test('calcular_nota: escala chilena con exigencia', async () => {
   assert.equal((await t.calcular_nota({ puntaje: 50, maximo: 100, exigencia: 0.5 })).nota, 4);
   await assert.rejects(() => t.calcular_nota({ puntaje: 120, maximo: 100 }), ErrorDeUso);
 });
+
+test('UDD mixta: Civil se sortea como caso escrito y Procesal como interrogación oral', async () => {
+  hoy = '2026-10-01';
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'udd', fecha_examen: '2027-03-01' });
+  const s = await t.sortear_cedula();
+  const civil = s.sorteo.find((x) => x.rama === 'civil');
+  const procesal = s.sorteo.find((x) => x.rama === 'procesal');
+  assert.equal(civil.modalidad, 'escrita');
+  assert.equal(civil.temas.length, 3);
+  assert.equal(procesal.modalidad, 'oral');
+  assert.equal(procesal.temas.length, 1);
+});
+
+test('UAI: sin cedulario de Procesal, el plan excluye el proceso penal', async () => {
+  hoy = '2026-10-01';
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'uai', fecha_examen: '2027-01-15', horas_semana: 40 });
+  const plan = await t.plan_estudio();
+  const indice = await t.ver_indice({ rama: 'procesal', vista: 'temario' });
+  assert.ok(indice.temas.filter((l) => l.includes('procesal.penal.')).every((l) => l.includes('fuera de tu cedulario')));
+  const sesion = await t.sesion_de_hoy({ minutos: 2000 });
+  assert.ok(sesion.temas_nuevos.every((n) => !n.id.startsWith('procesal.penal')));
+  assert.ok(plan.temas_en_alcance > 100);
+});
+
+test('todas las universidades cargan su perfil y sortean', async () => {
+  const { universidades } = await (await import('../src/datos.mjs')).contenido();
+  assert.ok(universidades.size >= 10);
+  for (const id of universidades.keys()) {
+    const t = nuevoTutor();
+    await t.configurar_estudiante({ universidad: id });
+    const s = await t.sortear_cedula();
+    assert.equal(s.sorteo.length, 2, id);
+    const p = await t.perfil_examen();
+    assert.ok(p.examen?.modalidad, `${id} sin modalidad`);
+  }
+});

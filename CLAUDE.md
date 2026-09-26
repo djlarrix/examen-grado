@@ -21,11 +21,12 @@ Este material lo van a memorizar estudiantes que rinden ante una comisión. Un e
 
 ## Agregar una universidad
 
-1. Descargar cedulario y reglamento oficiales.
-2. Crear `datos/universidades/<id>/perfil.yaml` (copiar la estructura de `uchile` o `udp`).
-3. Transcribir `cedulario-civil.yaml` y `cedulario-procesal.yaml`.
-4. Enlazar en `mapa-temas.yaml`. Si una cédula trata algo que el temario no tiene, agregar el tema al temario (con artículos verificados), no forzar el enlace.
-5. `npm run validar && npm test && npm run verificar-articulos`.
+1. Descargar cedulario y reglamento oficiales. Extraer el texto (`src/lib/pdf.mjs`); si el PDF es escaneado, leerlo como imagen y transcribir a mano.
+2. Crear `datos/universidades/<id>/perfil.yaml` (copiar la estructura de uno existente: `uchile` oral, `uai` escrito, `udd` mixto). Cada dato con su fuente; lo demás en `por_confirmar`.
+3. Convertir el cedulario con `node scripts/importar-cedulario.mjs <texto.txt> <formato> <rama> <salida.yaml> "<fuente>"`. Formatos: `puc`, `usach_seccion`, `uach`, `utalca`, `uai`, `pucv_civil`, `pucv_procesal`, y `referencia` (para un cedulario que reproduce otro ya cargado: se pasa el YAML de referencia en el último argumento y cada cédula queda con `_referencia` para heredar el mapa). Si ningún formato sirve, agregar uno en `FORMATOS`.
+4. Enlazar en `mapa-temas.yaml` leyendo cada cédula (`node scripts/dev/compacto.mjs <cedulario.yaml>` muestra los ítems; `node scripts/sugerir-mapa.mjs <cedulario.yaml>` propone temas, sólo como pista). Si una cédula trata algo que el temario no tiene, agregar el tema al temario (con artículos verificados), no forzar el enlace.
+5. Si el examen excluye unidades completas y no hay cedulario de ese ramo, usar `alcance_excluye` en el perfil. Si la modalidad cambia por ramo, `examen.modalidad_por_ramo`.
+6. `npm run validar && npm test && npm run verificar-articulos`.
 
 ## Estilo de código
 

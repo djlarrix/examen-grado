@@ -1,0 +1,63 @@
+# Perfil del examen de grado — Universidad Adolfo Ibáñez.
+# Formato tomado de exámenes y pautas oficiales recientes aportados por el usuario
+# (Derecho Civil, octubre 2024; Derecho Procesal Civil, julio 2024 y enero 2025).
+# Esos documentos no se redistribuyen: el estudiante puede cargarlos con cargar_documento.
+id: uai
+nombre: Universidad Adolfo Ibáñez
+sigla: UAI
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de Licenciatura en Ciencias Jurídicas
+  modalidad: escrita
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Sección Derecho Civil — un caso con preguntas
+      detalle: >-
+        Un caso extenso (hechos con fechas, montos, documentos y relaciones de familia y
+        patrimoniales) seguido de preguntas que cruzan varias materias (p. ej. sucesorio,
+        matrimonio, regímenes patrimoniales). Cada pregunta indica su ponderación.
+      duracion_minutos: 210
+      fuente: Examen de Licenciatura, Sección Derecho Civil, octubre 2024 (instrucciones)
+    - titulo: Sección Derecho Procesal Civil — dos casos
+      detalle: >-
+        Dos casos, con 120 minutos para cada uno, sobre juicio civil (p. ej. reivindicación,
+        ejecución, recursos). Se sugiere destinar 15 minutos a leer el caso y las preguntas.
+      duracion_minutos: 240
+      fuente: Examen de Licenciatura, Sección Derecho Procesal Civil, julio 2024 y enero 2025
+  instrucciones: >-
+    Civil: en cada respuesta identificar la hipótesis de resolución, la institución o acción
+    que corresponde, sus requisitos legales y los preceptos en que se funda, y verificar la
+    hipótesis subsumiendo todos los hechos del caso en los requisitos para llegar a la
+    conclusión. Procesal: toda respuesta fundada, identificando los hechos relevantes del caso
+    y señalando en forma expresa el derecho aplicable.
+  formato_pauta: >-
+    Civil: por pregunta (con su % del total), una lista numerada de ítems del tipo
+    "Identifica que … (arts. …)" con su porcentaje (p. ej. 2,5 %); ítems BONUS; y, cuando
+    corresponde, respuestas alternativas aceptadas si están bien fundadas. Procesal: pauta en
+    dos partes, una "respuesta magistral" por pregunta y una planilla de asignación de puntaje.
+  exigencia: 0.6
+estilo_comision:
+  - Los casos son largos y realistas; hay hechos irrelevantes y otros decisivos que hay que detectar.
+  - Se premia identificar la institución exacta y TODOS sus requisitos, con el artículo de cada uno.
+  - La subsunción de los hechos en cada requisito es lo que da puntaje; la definición sola no alcanza.
+  - Se valora mencionar discusiones doctrinales cuando la sanción o solución es debatida (y la pauta acepta ambas si están fundadas).
+  - En Procesal, además del derecho aplicable, se pregunta qué hacer (acción, recurso, plazo, tribunal) en la situación concreta.
+# Sin cedulario de Procesal cargado: el plan usa el temario de procesal sin el proceso penal.
+alcance_excluye: [procesal.penal, procesal.recursos.nulidad_penal]
+cedulario:
+  civil: cedulario-civil.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    Cedulario de Derecho Civil organizado por cursos (Persona y Negocio Jurídico, Obligaciones,
+    Derechos Reales, Contratos, Responsabilidad, Familia, Sucesorio). El de Derecho Procesal
+    Civil no está cargado: el estudiante puede subirlo (cargar_documento) o se usa el temario
+    completo de procesal civil.
+por_confirmar:
+  - Cedulario oficial vigente de Derecho Procesal Civil.
+  - Si ambas secciones se rinden el mismo día y la nota mínima de aprobación de cada sección.
+  - Uso de códigos durante la prueba.
+fuentes:
+  - titulo: Cedulario de Licenciatura Derecho Civil (UAI), copia aportada por el usuario
+  - titulo: Examen de Licenciatura, Sección Derecho Civil (octubre 2024) y su pauta de corrección
+  - titulo: Examen de Licenciatura, Sección Derecho Procesal Civil (julio 2024) y pauta con respuesta magistral (enero 2025)
+revisado: 2026-09-25

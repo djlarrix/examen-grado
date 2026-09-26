@@ -1,0 +1,51 @@
+# Perfil del examen de grado — Universidad de Concepción.
+id: udec
+nombre: Universidad de Concepción
+sigla: UdeC
+facultad: Facultad de Ciencias Jurídicas y Sociales
+examen:
+  nombre: Examen de Licenciatura
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Disertación
+      detalle: >-
+        El examen es público y comienza con una disertación del postulante sobre su Memoria de
+        Prueba o sobre uno de los temas de la asignatura sorteada, de no más de un cuarto de
+        hora; la comisión puede pedir precisiones, aclaraciones o que corrija errores.
+      fuente: Reglamento de Docencia de la Facultad, Título IV (examen de licenciatura)
+    - titulo: Interrogación de Derecho Civil y Derecho Procesal
+      detalle: >-
+        A continuación, interrogación sobre las materias de los ciclos de Derecho Civil y de
+        Derecho Procesal, según los temarios especiales de cada Departamento. La comisión, por
+        unanimidad, puede poner término al examen en cualquier momento por estimarlo insuficiente.
+      fuente: Reglamento de Docencia de la Facultad, Título IV
+  comision: >-
+    Presidida por el Decano e integrada por el profesor de Derecho Civil, el de Derecho Procesal,
+    el profesor guía de la Memoria o el de la asignatura sorteada, y el Vicedecano como Ministro de Fe.
+  calificacion: >-
+    Nota de 1 a 7 (mínimo 4), evaluando exposición e interrogación en conjunto. Nota de
+    presentación: 80 % promedio de la carrera y 20 % Memoria (o sólo el promedio si no hay Memoria).
+estilo_comision:
+  - Oral y público; la comisión puede cortar el examen si lo estima insuficiente.
+  - Tras la disertación, piden precisiones y corrigen errores antes de pasar a Civil y Procesal.
+cedulario:
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    El cedulario de Derecho Civil vigente no está publicado en línea (la Facultad anunció en 2022
+    uno nuevo que incorpora el matrimonio igualitario, controlado desde el 1 de agosto de 2022).
+    El estudiante puede subirlo con cargar_documento; mientras tanto se usa el temario completo de Civil.
+por_confirmar:
+  - Cedulario vigente de Derecho Civil.
+  - Duración total del examen y reglas de reprobación.
+fuentes:
+  - titulo: Documentos — Facultad de Ciencias Jurídicas y Sociales UdeC
+    url: https://jur.udec.cl/content/documentos
+  - titulo: Resolución N° 2023-006, nueva versión del Cedulario de Derecho Procesal
+    url: https://jur.udec.cl/sites/default/files/Resoluci%C3%B3n%20N%C2%B0%202023-006%20nueva%20versi%C3%B3n%20Cedulario%20de%20Derecho%20Procesal.pdf
+  - titulo: Reglamento de Docencia de la Facultad
+    url: https://jur.udec.cl/sites/default/files/Reglamento%20Docencia%20Facultad_0.pdf
+  - titulo: Información a egresados sobre el Cedulario de Derecho Civil (mayo 2022)
+    url: http://juridicasysociales.udec.cl/sites/default/files/Informaci%C3%B3n%20egresados.%20Cedulario%20Derecho%20Civil.pdf
+revisado: 2026-09-25

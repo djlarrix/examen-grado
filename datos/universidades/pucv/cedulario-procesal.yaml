@@ -1,0 +1,753 @@
+# Temario de Derecho Procesal para el Examen de Licenciatura — Resolución N° 24/2016-F, Facultad de Derecho PUCV. https://www.pucv.cl/uuaa/site/docs/20180712/20180712172905/resoluci__n_24_2016f_fija_temario_derecho_procesal.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "pucv_procesal") y revisada.
+# La numeración es nuestra cuando el documento no numera cédulas.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: 1. LA JURISDICCIÓN
+    subseccion: ""
+    tema: La jurisdicción
+    contenido: |-
+      A. GENERALIDADES
+      a) Significado de la jurisdicción
+      b) La función jurisdiccional del Estado
+      c) La justicia privada
+      d) La evolución histórica de la jurisdicción
+      e) La función jurisdiccional y la función legislativa
+      f) La función jurisdiccional y la función ejecutiva
+      g) Límites internos y externos de la jurisdicción
+      h) Atributos de la jurisdicción: 1) El conocimiento, 2) El juzgamiento, 3) El imperio
+      i) Características de la jurisdicción
+      j) La función jurisdiccional como contralora de la legalidad y constitucionalidad de la
+      norma jurídica
+      k) Los equivalentes jurisdiccionales
+      l) Privilegio o inmunidad de jurisdicción (La Convención de Viena)
+      m) Conflictos de jurisdicción
+      B. FINES INMEDIATOS DE LA JURISDICCIÓN
+      a) Fin constitutivo
+      b) Fin de certeza
+      c) Fin ejecutivo o coercitivo
+      d) Fin cautelar
+      e) Fin punitivo
+      C. CLASES Y LIMITES DE LA JURISDICCIÓN
+      a) Jurisdicción contenciosa, voluntaria, facultades especiales
+      b) Jurisdicción ordinaria y especial
+      c) Facultades disciplinarias de los Tribunales de Justicia
+  - numero: 2
+    seccion: 2. LA ORGANIZACIÓN JUDICIAL
+    subseccion: ""
+    tema: La organización judicial
+    contenido: |-
+      a) Bases: Principios fundamentales: Independencia, legalidad, imparcialidad,
+      inamovilidad, responsabilidad, publicidad, gratuidad, pasividad de los tribunales de
+      justicia.
+      b) Estructura de la Organización Judicial Chilena: b1) Tribunales Ordinarios,
+      concepto, características, descripción. b2) tribunales Especiales, concepto,
+      características, clases: Policía Local, Menores, Militares, de Aduana, de Impuestos
+      Internos, Contraloría General de la República. b3) Tribunales Arbítrales,
+      concepto, características, constitución, clases.
+  - numero: 3
+    seccion: 3. JUZGADOS DE LETRAS, CLASIFICACION, ESTRUCTURA, FUNCIONAMIENTO
+    subseccion: ""
+    tema: Juzgados de letras, clasificacion, estructura, funcionamiento
+    contenido: ""
+  - numero: 4
+    seccion: 4. LAS CORTES DE APELACIONES, ESTRUCTURA, FUNCIONAMIENTO, VISTA Y CONOCIMIENTO EN CUENTA DE LAS CAUSAS.
+    subseccion: ""
+    tema: Las cortes de apelaciones, estructura, funcionamiento, vista y conocimiento en cuenta de las causas.
+    contenido: ""
+  - numero: 5
+    seccion: 5. LA CORTE SUPREMA, ESTRUCTURA, FUNCIONAMIENTO, JUSTIFICACIÓN, FUNCIONES PRIVATIVAS.
+    subseccion: ""
+    tema: La corte suprema, estructura, funcionamiento, justificación, funciones privativas.
+    contenido: ""
+  - numero: 6
+    seccion: "6. AGENTES AUXILIARES DE LA ADMINISTRACIÓN DE JUSTICIA:"
+    subseccion: ""
+    tema: "Agentes auxiliares de la administración de justicia:"
+    contenido: |-
+      a) Enunciación de ellos (Notarios, Conservadores, Receptores, Secretarios, Defensor
+      Público, Procuradores, Archivero Judicial, Relatores).
+      b) Funciones principales
+      c) Agentes auxiliares de la administración de justicia que tienen el carácter de Ministro
+      de Fe. Concepto de la Fe pública, utilidad
+      d) Principales Ministros de Fe: Los Notarios, Receptores, Conservador de Bienes
+      Raíces
+      e) La escritura pública, requisitos, características, importancia
+      f) La protocolización, importancia, efectos, formalidades
+  - numero: 7
+    seccion: 7. LA COMPETENCIA
+    subseccion: ""
+    tema: La competencia
+    contenido: |-
+      1) Concepto e importancia
+      2) Jurisdicción y Competencia
+      3) Clases de Competencia
+      4) Competencia absoluta y relativa
+      5) Elementos que la determinan
+      6) Principios fundamentales de la competencia
+      7) Competencia civil de los jueces del Crimen
+      8) El turno y la distribución de causas
+      9) Prórroga de Competencia
+      10) Cuestiones y Contiendas de Competencia
+      11) Nociones sobre implicancias y recusaciones
+  - numero: 8
+    seccion: 8. ACCIÓN – PRETENSIÓN – EXCEPCION
+    subseccion: ""
+    tema: Acción – pretensión – excepcion
+    contenido: |-
+      1) Conceptos
+      2) Evolución histórica
+      3) Esquema general
+      4) Clasificaciones
+      5) Significado Procesal
+  - numero: 9
+    seccion: 9. EL PROCESO CIVIL
+    subseccion: ""
+    tema: El proceso civil
+    contenido: |-
+      1) Proceso: concepto, elementos y naturaleza
+      2) Partes y Terceros: la relación jurídica-procesal, concepto, comparecencia, mandato
+      judicial, agencia oficiosa judicial y patrocinio de abogado
+      3) Proceso, juicio y procedimiento
+      4) Clases de procedimiento : a) Generales y especiales, b) Cognoscitivos, ejecutivos y
+      cautelares, c) Orales y escritos, d) De conocimiento lato o plenario y sumario, e)
+      De mayor, menor y mínima cuantía
+  - numero: 10
+    seccion: 10. PRINCIPIOS REGULADORES DEL PROCEDIMIENTO
+    subseccion: ""
+    tema: Principios reguladores del procedimiento
+    contenido: |-
+      a) Impulso procesal : principio dispositivo e inquisitivo
+      b) Ordenamiento procesal: unidad de visita (discrecional) y de orden consecutivo
+      legal. La preclusión
+      c) Publicidad, reserva y secreto
+      d) Oralidad y escrituración
+      e) Mediación e inmediación
+      f) Concentración y economía procesal
+      g) Contradicción o bilateralidad y unilateralidad
+      h) La adquisición
+  - numero: 11
+    seccion: 11. DE LOS ACTOS PROCESALES
+    subseccion: ""
+    tema: De los actos procesales
+    contenido: |-
+      Concepto, estructura, presupuestos, requisitos, clasificaciones, efectos.
+      12 . DE LAS ACTUACIONES JUDICIALES EN NUESTRO CODIGO DE
+      PROCEDIMIETO CIVIL
+  - numero: 12
+    seccion: 1. DE LAS ACTUACIONES JUDICIALES EN GENERAL
+    subseccion: ""
+    tema: De las actuaciones judiciales en general
+    contenido: |-
+      a) Requisitos, características.
+      b) De los plazos.
+      c) Formas en que pueden ser ordenadas.
+      d) De los exhortos.
+  - numero: 13
+    seccion: 2. DE LAS NOTIFICACIONES
+    subseccion: ""
+    tema: De las notificaciones
+    contenido: |-
+      a) Importancia y generalidades
+      b) Notificación personal
+      c) Notificación por cédula
+      d) Notificación por el estado
+      e) Notificación por avisos
+      f) Notificación tácita
+      g) Notificaciones especiales (concepto)
+  - numero: 14
+    seccion: 2. DE LAS RESOLUCIONES JUDICIALES
+    subseccion: ""
+    tema: De las resoluciones judiciales
+    contenido: |-
+      a) Clasificación, requisitos, importancia
+      b) Sentencias definitivas, sentencias interlocutorias, autos y decretos
+      c) Resoluciones firmes o ejecutoriadas
+      d) Sentencia de término
+      e) Efectos de las resoluciones judiciales. Del desasimiento y sus excepciones. Los
+      autos y decretos
+      f) Teoría de la cosa juzgada: 1) Acción y excepción de cosa juzgada. Conceptos,
+      características, requisitos. 2) Inimpugnabilidad e inmutabilidad de las sentencias
+      judiciales. Cosa juzgada formal y cosa juzgada material. 3) análisis de la triple
+      identidad requerida.
+  - numero: 15
+    seccion: 13. PROCEDIMIENTO ORDINARIO DE MAYOR CUANTIA
+    subseccion: ""
+    tema: Procedimiento ordinario de mayor cuantia
+    contenido: ""
+  - numero: 16
+    seccion: 1. PERIODO DE DISCUSIÓN
+    subseccion: ""
+    tema: Periodo de discusión
+    contenido: |-
+      a) Demanda, requisitos, importancia, efectos de su notificación. Relación de los
+      conceptos, acción, pretensión, demanda.
+      b) Contestación a la demanda, efectos
+      c) Réplica, dúplica
+      d) Reglas Procesales referentes a las excepciones
+      e) Tramitación de las excepciones dilatorias
+      f) Reconvención
+  - numero: 17
+    seccion: 2. PERIODO DE PRUEBA
+    subseccion: ""
+    tema: Periodo de prueba
+    contenido: |-
+      a) ¿Qué es la prueba?
+      b) ¿Qué se prueba? Contenido de la resolución que recibe la causa a prueba
+      c) ¿Quién prueba?
+      d) ¿Cómo se prueba? Análisis de los distintos medios de prueba en nuestra
+      legislación y forma de ofrecerla y producirla
+      e) ¿Qué valor tiene la prueba producida?
+  - numero: 18
+    seccion: 3. PERIODO DE SENTENCIA
+    subseccion: ""
+    tema: Periodo de sentencia
+    contenido: |-
+      a) Citación para oír sentencia
+      b) Requisitos de fondo de la sentencia
+      c) Relaciones de la sentencia con la demanda
+  - numero: 19
+    seccion: 14. DE LOS INCIDENTES
+    subseccion: ""
+    tema: De los incidentes
+    contenido: ""
+  - numero: 20
+    seccion: 1. DE LOS INCIDENTES EN GENERAL
+    subseccion: ""
+    tema: De los incidentes en general
+    contenido: |-
+      a) Concepto, clasificaciones
+      b) Oportunidad para su interposición
+      c) Formas en que pueden ser conocidas
+      d) Tramitación
+  - numero: 21
+    seccion: 2. DE LOS INCIDENTES ESPECIALES
+    subseccion: ""
+    tema: De los incidentes especiales
+    contenido: |-
+      a) Acumulación de autos
+      b) Cuestiones de competencia
+      c) Implicancias y recusaciones
+      d) Privilegio de Pobreza
+      e) Costas
+      f) Desistimiento de la demanda
+      g) Abandono del procedimiento
+  - numero: 22
+    seccion: 15. MEDIDAS PREJUDICIALES Y PRECAUTORIAS
+    subseccion: ""
+    tema: Medidas prejudiciales y precautorias
+    contenido: |-
+      1. Medidas Prejudiciales : Procedencia, requisitos, características
+      2. Medidas Precautorias: Características, requisitos, procedencia.
+  - numero: 23
+    seccion: 16. PROCEDIMIENTO SUMARIO
+    subseccion: ""
+    tema: Procedimiento sumario
+    contenido: Características, procedencia, desarrollo
+  - numero: 24
+    seccion: 17. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: Los recursos procesales
+    contenido: |-
+      FUNDAMENTACION DE LOS RECURSOS
+      a) El error judicial. Justicia y certeza. Agravio, falta o abuso, nulidad procesal
+      b) Clases de recurso
+      1 8. EL RECURSO DE APELACIÓN Y LA CONSULTA
+  - numero: 25
+    seccion: 1. LA APELACIÓN COMO SEGUNDA INSTANCIA DEL PROCESO
+    subseccion: ""
+    tema: La apelación como segunda instancia del proceso
+    contenido: |-
+      a) Concepto de instancia. Instancia y proceso
+      b) La preclusión en la apelación. Significados. Efectos
+      c) La apelación y la segunda instancia. Significados
+      d) Efectos devolutivo y suspensivo
+  - numero: 26
+    seccion: 2. PROCEDIMIENTOS
+    subseccion: ""
+    tema: Procedimientos
+    contenido: |-
+      a) Interposición del recurso; distintas formas de tramitación
+      b) La orden de no innovar
+      c) Prueba en segunda instancia
+      d) Incidencias en segunda instancia
+      e) Adhesión a la apelación en segunda instancia
+  - numero: 27
+    seccion: 3. TERMINACIÓN NORMAL Y ANORMAL DE LA SEGUNDA INSTANCIA
+    subseccion: ""
+    tema: Terminación normal y anormal de la segunda instancia
+    contenido: |-
+      a) Sentencia de segunda instancia. Congruencia de la sentencia con el objeto de la
+      apelación. “Reformatio in pejus”
+      b) Desistimiento. Deserción. Abandono. Prescripción. Transacción. Conciliación.
+  - numero: 28
+    seccion: 4. CUESTIONES EN LA CONCESIÓN DE LA APELACIÓN
+    subseccion: ""
+    tema: Cuestiones en la concesión de la apelación
+    contenido: |-
+      a) El recurso de hecho
+      b) El falso recurso de hecho
+  - numero: 29
+    seccion: 5. LA CONSULTA
+    subseccion: ""
+    tema: La consulta
+    contenido: ""
+  - numero: 30
+    seccion: 19. LA CASACIÓN
+    subseccion: ""
+    tema: La casación
+    contenido: ""
+  - numero: 31
+    seccion: 1. IDEAS FUNDAMENTALES
+    subseccion: ""
+    tema: Ideas fundamentales
+    contenido: |-
+      a) Concepto
+      b) Clases: Casación en el fondo. Casación en la forma
+      c) Características
+      d) Evolución histórica
+  - numero: 32
+    seccion: 2. LA CASACIÓN EN LA FORMA
+    subseccion: ""
+    tema: La casación en la forma
+    contenido: |-
+      a) Concepto
+      b) Presupuestos de admisibilidad
+      b.1 Resoluciones susceptibles del recurso
+      b.2 Causal legal: vicios en la relación procesal; en el desarrollo del proceso y en la
+      resolución. Las causales en los negocios especiales
+      b.3 Preparación del recurso. Excepciones
+      b.4 Plazo, forma y efectos de interposición. La casación en la forma contra la
+      sentencia de primera instancia
+      c) Tramitación del recurso ante los Tribunales a quo y ad quem
+      d) Fallo del recurso
+      e) Terminación anormal del recurso
+      f) La casación de oficio
+  - numero: 33
+    seccion: 3. LA CASACIÓN EN EL FONDO
+    subseccion: ""
+    tema: La casación en el fondo
+    contenido: |-
+      a) Concepto. Leyes decisoria litis y ordenatoria litis
+      b) Resoluciones susceptibles del recurso
+      c) Causal legal:
+      c.1 Formas de infracción
+      c.2 Concepto de ley en la casación
+      c.3 Los hechos en la casación
+      c.4 Interposición
+      c.5 Admisibilidad e inadmisibilidad
+      c.6. Tramitación en segunda instancia
+      c.7 Tramitación ante la Corte Suprema
+      c.8 Fallo. Sentencia de reemplazo
+  - numero: 34
+    seccion: 20. EL RECURSO DE QUEJA Y LA QUEJA DISCIPLINARIA
+    subseccion: ""
+    tema: El recurso de queja y la queja disciplinaria
+    contenido: ""
+  - numero: 35
+    seccion: 1. FUNDAMENTOS E IDEAS GENERALES
+    subseccion: ""
+    tema: Fundamentos e ideas generales
+    contenido: |-
+      a) Origen. Evolución
+      b) Concepto
+      c) Distinciones: Queja. Recurso: Pronunciamiento sobre el fondo. Medidas
+      disciplinarias
+  - numero: 36
+    seccion: 2. CAUSALES Y OBJETO
+    subseccion: ""
+    tema: Causales y objeto
+    contenido: |-
+      a) Faltas y abusos. Concepto
+      b) Finalidades del recurso de queja. Finalidades de la queja
+      c) Actos susceptibles de queja y de recurso de queja. Resoluciones recurribles
+  - numero: 37
+    seccion: 3. PROCEDIMIENTOS
+    subseccion: ""
+    tema: Procedimientos
+    contenido: |-
+      a) Procedimiento del recurso de queja :
+      a.1 Interposición
+      a.2 Admisión
+      a.3 Substanciación
+      a.4 Orden de no innovar
+      a.5 Decisión
+      b) Procedimiento de la queja
+      b.1 Queja oral
+      b.2 Queja escrita. Tramitación
+  - numero: 38
+    seccion: 21. LA NULIDAD PROCESAL
+    subseccion: ""
+    tema: La nulidad procesal
+    contenido: ""
+  - numero: 39
+    seccion: 1. FUNDAMENTOS Y CARACTERÍSTICAS DE LA NULIDAD PROCESAL
+    subseccion: ""
+    tema: Fundamentos y características de la nulidad procesal
+    contenido: |-
+      a) Recapitulación sobre los conceptos de actos procesales, proceso y procedimiento.
+      Requisitos y efectos de los actos procesales
+      b) Inexistencia, nulidad absoluta y nulidad relativa
+      c) Fundamentos de Derecho Positivo
+      d) Efecto extensivo de la nulidad
+      e) Requisitos
+      f) Límites
+      g) Del proceso aparente
+  - numero: 40
+    seccion: 2. MEDIOS O RECURSOS QUE LA LEY CONCEDE PARA OBTENERLA
+    subseccion: ""
+    tema: Medios o recursos que la ley concede para obtenerla
+    contenido: |-
+      NULIDAD PROCESAL
+      a) Declaración de nulidad de oficio
+      b) Del incidente de nulidad
+      c) Recurso de casación en la forma
+  - numero: 41
+    seccion: 3. ACCION ORDINARIA DE NULIDAD
+    subseccion: ""
+    tema: Accion ordinaria de nulidad
+    contenido: ""
+  - numero: 42
+    seccion: 4. NULIDAD PROCESAL Y NULIDAD CIVIL
+    subseccion: ""
+    tema: Nulidad procesal y nulidad civil
+    contenido: ""
+  - numero: 43
+    seccion: 22. LA EJECUCION
+    subseccion: ""
+    tema: La ejecucion
+    contenido: ""
+  - numero: 44
+    seccion: 1. PRESUPUESTOS DE LA EJECICON
+    subseccion: ""
+    tema: Presupuestos de la ejecicon
+    contenido: |-
+      a) La acción ejecutiva
+      b) Los títulos ejecutivos
+      b.1. Concepto
+      b.2 Clases. Análisis
+      c) Gestiones preparatorias de la vía ejecutiva
+      d) Patrimonio ejecutable
+      d.1. Formas de efectuar el embargo
+      d.2 Administración de los bienes embargados
+      d.3 Realización de los bienes embargados
+      d.4 El reembargo
+      e) Lar tercerías
+      e.1 De dominio
+      e.2 De prelación
+      e.3 De pago
+      e.4 De posesión
+  - numero: 45
+    seccion: 2. JUICIO EJECUTIVO EN LAS OBLIGACIONES DE HACER Y NO HACER
+    subseccion: ""
+    tema: Juicio ejecutivo en las obligaciones de hacer y no hacer
+    contenido: |-
+      a) Procedimiento en las obligaciones de hacer
+      a.1 Caso consistente en suscripción de un instrumento o en la constitución de una
+      obligación. Trámites
+      a. 2 Cuando obligación consiste en la ejecución de una obra materia. Trámites
+      b) Procedimiento en las obligaciones de no hacer
+  - numero: 46
+    seccion: 24. LA EJECUCION DE LAS RESOLUCIONES
+    subseccion: ""
+    tema: La ejecucion de las resoluciones
+    contenido: ""
+  - numero: 47
+    seccion: 1. RESOLUCIONES DE LOS TRIBUNALES CHILENOS
+    subseccion: ""
+    tema: Resoluciones de los tribunales chilenos
+    contenido: |-
+      Presupuestos
+      a) Procedimiento
+      b.1 Procedimiento de ejecución
+      b.2 Procedimiento de apremio
+  - numero: 48
+    seccion: 2. RESOLUCIONES DE LOS TRIBUNALES EXTRANJEROS
+    subseccion: ""
+    tema: Resoluciones de los tribunales extranjeros
+    contenido: |-
+      a) Presupuestos
+      b) Procedimiento
+  - numero: 49
+    seccion: 25. EL JUICIO ARBITRAL
+    subseccion: ""
+    tema: El juicio arbitral
+    contenido: |-
+      a) Concepto
+      b) Naturaleza jurídica
+      c) Clases de arbitraje
+      c.1 El arbitraje voluntario. Naturaleza jurídica. El compromiso. Su naturaleza
+      jurídica. Requisitos. La cláusula compromisoria
+      c.2 El arbitraje forzoso. Concepto. Fundamento. Casos. Análisis
+      d) Prohibiciones de arbitraje
+      d.1 Fundamento
+      d.2 Casos. Análisis
+      e) Competencia arbitral. Sus límites, subjetivo, objetivo, funcionales y temporales
+      f) Juicio ante Árbitros Arbitradores
+      f.1 Substanciación
+      f.2 Reglas especiales sobre: Notificaciones, Acciones, Recursos
+      g) Juicio ante Árbitro Arbitradores
+      g.1 Características
+      g.2 Procedimiento
+      g.3 Reglas especiales sobre: Emplazamiento. Notificaciones. Prueba. Sentencia.
+      Recursos
+      h) Juicios ante Árbitros Mixtos
+      h.1 Características
+      h.2 Procedimiento
+  - numero: 50
+    seccion: 26. EL JUICIO DE PARTICION
+    subseccion: ""
+    tema: El juicio de particion
+    contenido: |-
+      a) Características
+      b) Ámbito de aplicación
+      c) Procedimiento
+      d) Sentencia del juicio de partición
+  - numero: 51
+    seccion: 27. DE LOS ACTOS JUDICIALES NO CONTENCIOSO
+    subseccion: ""
+    tema: De los actos judiciales no contencioso
+    contenido: |-
+      1. Generalidades – Características
+      2. La prueba
+      3. Transformación de un asunto voluntario en contencioso
+      4. De la dación de posesión efectiva de la herencia
+      5. Breve referencia a otras gestiones voluntarias
+  - numero: 52
+    seccion: 28. EL SISTEMA INQUISITIVO Y EL SISTEMA ACUSATORIO. PRINCIPIOS
+    subseccion: ""
+    tema: El sistema inquisitivo y el sistema acusatorio. principios
+    contenido: |-
+      DEL SISTEMA ACUSATORIO
+      1. Breve análisis y comparación entre el modelo inquisitivo y el modelo acusatorio.
+      Ubicación del nuevo sistema
+      2. Principios que rigen el sistema acusatorio,
+      - Legalidad y Oportunidad
+      - Separación de funciones
+      - Inmediación
+      - Intercontrol
+      - Publicidad
+      - Oralidad
+      - Única instancia
+      - Libre apreciación de la prueba / sana crítica
+      - Concentración
+      - Contradicción (sistema adversarial)
+  - numero: 53
+    seccion: 29. LAS ACCIONES EN EL PROCESO PENAL
+    subseccion: ""
+    tema: Las acciones en el proceso penal
+    contenido: |-
+      1. La acción penal y la pretensión punitiva
+      a) Concepto y elementos
+      b) Las clases de acciones y su régimen jurídico
+      b.1 La acción penal pública
+      b.2 La acción penal pública previa instancia particular
+      b.3 La acción penal privada
+      2. La acción civil y la pretensión de resarcimiento
+      a) Concepto y elementos
+      b) Oportunidad y formalidades para su interposición
+      c) El sistema restringido de acumulación de acciones
+      d) Acción restitutoria e indemnizatoria
+  - numero: 54
+    seccion: 30. LOS SUJETOS PROCESALES
+    subseccion: ""
+    tema: Los sujetos procesales
+    contenido: |-
+      1. Tribunal
+      a) Fuentes legales
+      b) Concepto
+      c) Enunciación. Competencia penal de las Cortes de Apelaciones y de la Corte
+      Suprema. Ubicación dentro de la estructura de la judicatura ordinaria.
+      d) Los Juzgados de Garantía. Concepto. Titulares de dirección de garantía y
+      jurisdiccionales
+      e) Los Tribunales de Juicio Oral en lo Penal. Concepto. Titulares
+      2. El Ministerio Público
+      a) Fuentes normativas
+      b) Concepto
+      c) Principios que orientan su actuación
+      d) Funciones como titulares del ejercicio de la acción penal pública
+      e) Actuación autónoma, facultades exclusivas en materia de investigación. Actuación
+      previa autorización judicial
+      f) Facultades discrecionales orientadas a descongestionar el sistema
+      f.1 Al inicio de la investigación. Archivo provisional. Facultad de no iniciar la
+      investigación o abandonar la iniciada. Principio de oportunidad.
+      f.2 Una vez formalizada la investigación.- Salidas alternativas
+      f. 3 Al acusar o en la audiencia de preparación del juicio oral. Solicitud de someter
+      el asunto a procedimiento abreviado.
+      g) Estructura orgánica
+      3. La Policía. Su subordinación al Ministerio Público
+      a) Facultades de investigación con y sin orden previa. Funciones autónomas
+      b) Control de identidad
+      4. El imputado
+      a) Derechos y garantías
+      b) El imputado rebelde. Sus efectos
+      5. La defensa
+      a) La Defensoría Penal Pública
+      a.1 Fuentes legales
+      a.2 Finalidad, concepto y sujetos
+      a.3 Funcionamiento del Sistema de Defensoría Penal Pública. Estructura.
+      a.4 Aspectos generales sobre las normas de licitación
+      6. La víctima
+      1. Concepto
+      2. Los derechos de la víctima y su protección
+      7. El querellante
+      1. Concepto
+      2. Legitimados activos
+      3. Oportunidad y formalidades para la interposición de la querella
+      4. El abandono de la querella
+      5. Necesidad de querella para determinados objetivos. Facultad de sustitución de
+      fiscal: sus supuestos.
+  - numero: 55
+    seccion: 31. LAS MEDIDAS CAUTELATES
+    subseccion: ""
+    tema: Las medidas cautelates
+    contenido: |-
+      1. Las medidas cautelares personales. Criterios generales
+      a) La citación
+      b) La detención
+      c) La prisión preventiva
+      d) Otras medidas cautelares
+      2. Las medidas cautelares reales
+      a) Las medidas precautorias del Código de Procediendo Civil
+      b) Procedimiento y recursos
+  - numero: 56
+    seccion: 32. EL PROCEDIMIENTO PENAL ORDINARIO
+    subseccion: ""
+    tema: El procedimiento penal ordinario
+    contenido: |-
+      1. Generalidades
+      a) Ámbito de aplicación
+      b) Estructura y características generales
+      2. La investigación
+      a) Aspectos generales. Dirección, objetivos, principios, límites.
+      b) El inicio de la investigación
+      b.1 Formas
+      b.2 Facultades discrecionales del Ministerio Público. Facultad de no iniciar
+      investigación y archivo provisional. Actuaciones y diligencias previa autorización
+      judicial.
+      b.3 El principio de la oportunidad. Concepto, límites, derechos de la víctima y
+      control.
+      c) La investigación y sus fines. Atribuciones autónomas del fiscal. El rol de la policía.
+      La autorización judicial respecto de la actividad del fiscal.
+      d) La formalización de la investigación
+      d.1 Concepto
+      d.2 Oportunidad y formalidades
+      d.3 Efectos
+      d.4 Facultades del juez
+      d.5 El juicio inmediato
+      e) Salidas alternativas
+      e.1 La suspensión condicional del procedimiento
+      - Concepto
+      - Oportunidad
+      - Requisitos
+      - Condiciones
+      - Efectos vigente la medida
+      - Efectos una vez cumplidas las condiciones
+      e.2 Los acuerdos reparatorios
+      - Conceptos
+      - Oportunidad
+      - Limites
+      - Efectos
+      f) El cierre de la investigación
+      f.1 Plazo
+      f.2 Derechos del imputado
+      f.3 La reapertura de la investigación
+      f.4 Alternativas que puede adoptar el Ministerio Público
+      f.5 Facultad de no preservar en la investigación
+      f.6 El sobreseimiento
+      f.7 Facultades del juez
+      f.8 El forzamiento de la acusación
+      3. La etapa intermedia de preparación del juicio oral
+      a) Características
+      b) Fase preliminar escrita
+      b.1 La acusación del fiscal. Citación y notificación a los intervinientes
+      b.2 La actuación del querellante
+      b.3 La defensa del acusado y las excepciones de previo y especial
+      pronunciamiento.
+      b.4 La contestación de la demanda civil
+      c) La audiencia de preparación del juicio oral
+      c.1 Formalidades
+      c.2 Presencia del fiscal y del defensor. Efectos de su a ausencia
+      c.3. Actuaciones preliminares
+      c.4 Corrección de vicios formales
+      c.5 La resolución de excepciones de previo y especial pronunciamiento
+      c.6 La conciliación de la responsabilidad civil
+      c.7 La preparación de la prueba
+      c.8 Debate
+      c.9 Convenciones probatorias
+      c.10 Exclusión de prueba. Criterios
+      c.11 Causas de suspensión de la audiencia de preparación del juicio oral.
+      d) El auto de apertura del juicio oral. Contenido
+      4 El juicio oral
+      a) Concepto y naturaleza
+      b) Condiciones de validez de la audiencia del juicio oral
+      b.1 Continuidad
+      b.2 Presencia de ciertos sujetos
+      b.3 Publicidad
+      b.4 Oralidad
+      c) Dirección y disciplina durante la audiencia. Facultades del Presidente de la Sala
+      d) Sanciones por infracción a deberes en el desarrollo de la audiencia
+      e) Medios de prueba
+      e.1 Reglas generales
+      e.2 Medios de prueba en particular
+      - Testigos
+      - Peritos
+      - Otros medios de prueba no regulados expresamente
+      f) Desarrollo de la audiencia del juicio oral
+      1.1 Apertura del juicio oral
+      1.2 Exposición de la parte acusadora
+      1.3 Exposición de la defensa
+      1.4 Rendición de prueba
+      1.5 Alegato final
+      1.6 Clausura del debate
+      1.7 Deliberación
+      1.8 Sentencia
+      - Requisitos
+      - Efectos
+      - Recursos
+      1.9 Determinación de la pena
+      1.10 Redacción de la sentencia
+      1.11 Lectura de la sentencia
+  - numero: 57
+    seccion: 33. LOS RECURSOS
+    subseccion: ""
+    tema: Los recursos
+    contenido: |-
+      1. Disposiciones Generales
+      a) Sujetos activos
+      b) Efectos
+      c) Vista en tribunales colegiados
+      2. El recurso de reposición
+      a) Resoluciones susceptibles de impugnación por vía de reposición
+      b) Procedimiento
+      3. El recurso de apelación
+      a) Resoluciones susceptibles de impugnación por vía de apelación
+      b) Interposición y efectos
+      c) El recurso de hecho
+      d) Procedimiento
+      4. El recurso de nulidad
+      a) Tribunales competentes
+      b) Resoluciones susceptibles de impugnación por vía de recurso de nulidad
+      c) Objeto
+      d) Causales. Motivos absolutos
+      e) Interposición y efectos
+      f) Procedimiento
+      g) Posibilidades de contenidos de la sentencia estimatoria
+  - numero: 58
+    seccion: 34. PROCEDIMIENTOS ESPECIALES
+    subseccion: ""
+    tema: Procedimientos especiales
+    contenido: |-
+      1. Procedimiento simplificado y procedimiento monitorio
+      a) Concepto
+      b) Ámbito de aplicación
+      c) Tramitación del procedimiento simplificado
+      d) Tramitación del procedimiento monitorio
+      e) Recursos
+      2. Procedimiento abreviado
+      a) Concepto
+      b) Supuestos
+      c) Tramitación, debate y fallo
+      d) Recursos
+      Publíquese, regístrese, comuníquese y archívese.

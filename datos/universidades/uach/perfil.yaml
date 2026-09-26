@@ -1,0 +1,50 @@
+# Perfil del examen de grado — Universidad Austral de Chile.
+id: uach
+nombre: Universidad Austral de Chile
+sigla: UACh
+facultad: Facultad de Ciencias Jurídicas y Sociales
+examen:
+  nombre: Examen de Licenciatura
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Exposición de la cédula (línea de especialización)
+      detalle: >-
+        Malla semestral: exposición de no más de 10 minutos sobre un tema del temario de
+        líneas de especialización, correspondiente a un curso optativo aprobado. El estudiante
+        debe dominar el tema en toda su extensión, no sólo lo expuesto. Malla anual: exposición
+        de la memoria de prueba.
+      fuente: Preguntas frecuentes, Examen de Grado, Facultad de Derecho UACh
+    - titulo: Evaluación de las asignaturas obligatorias
+      detalle: >-
+        Interrogación sobre los temarios de exclusión de Derecho Civil, Derecho Procesal y
+        Derecho Constitucional (programas de los cursos obligatorios, con las exclusiones de la
+        Resolución 23/2019). Evalúa la comprensión global de las instituciones jurídicas
+        fundamentales estudiadas en la carrera.
+      fuente: Temarios Examen de Licenciatura 2025; sitio de la Facultad
+  plazo: Dos años desde el egreso; tres reprobaciones hacen caducar el derecho a optar al grado (Reglamento Interno, art. 47).
+  temporadas: Malla semestral, temporada obligatoria fijada por resolución; si no se presenta, reprueba. Malla anual, normalmente tres fechas en la última semana de cada mes (salvo diciembre y febrero).
+estilo_comision:
+  - Oral, formal y público; preguntas de comprensión global de las instituciones.
+  - El temario de Procesal pone énfasis en teoría de la prueba (qué, quién, con qué, cómo se prueba y se valora).
+  - Incluye Derecho de familia con su procedimiento ante tribunales de familia.
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    Los "temarios de exclusión" de la UACh siguen los programas de los cursos (Curso > Unidad).
+    Cada unidad es aquí una "cédula" (numeración nuestra). Derecho Constitucional también se
+    examina y no está cubierto en esta versión.
+por_confirmar:
+  - Composición de la comisión, duración y calificación (el reglamento de la Facultad está escaneado y no se transcribió).
+fuentes:
+  - titulo: Examen de Grado — Derecho UACh
+    url: https://www.derecho.uach.cl/index.php/pregrado/examen-de-grado.html
+  - titulo: Temario Examen de Licenciatura 2025 — Derecho Civil
+    url: https://www.derecho.uach.cl/index.php/archivos/563/temariosde-exclusion-malla-semestral-2025/1106/TEMARIO-EXAMEN-DE-LICENCIATURA-2025---DERECHO-CIVIL.pdf
+  - titulo: Temario Examen de Licenciatura 2025 — Derecho Procesal
+    url: https://www.derecho.uach.cl/index.php/archivos/563/temariosde-exclusion-malla-semestral-2025/1104/TEMARIO-EXAMEN-DE-LICENCIATURA-2025---DERECHO-PROCESAL.pdf
+  - titulo: Reglamento para optar al grado de Licenciado en Ciencias Jurídicas UACh
+    url: https://derecho.uach.cl/index.php/archivos/197/ReglamentosPregrado/13/Reglamento-para-optar-al-grado-de-Licenciado-en-Ciencias-Juridicas-UACh.pdf
+revisado: 2026-09-25

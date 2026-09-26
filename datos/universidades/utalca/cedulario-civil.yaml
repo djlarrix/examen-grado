@@ -1,0 +1,200 @@
+# Cedulario Derecho Civil (R.U. 025.2025, marzo 2025) — Examen de Licenciatura, Facultad de Ciencias Jurídicas y Sociales, Universidad de Talca. https://www.juridicasysociales.utalca.cl/wp-content/uploads/2025/04/Cedulario-Derecho-Civil-marzo-2025.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "utalca") y revisada.
+# La numeración es nuestra cuando el documento no numera cédulas.
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: I. NEGOCIO JURÍDICO
+    subseccion: ""
+    tema: Negocio jurídico
+    contenido: |-
+      1. Concepto y clasificaciones.
+      2. Estructura.
+      3. Requisitos de existencia y validez
+      4. La ineficacia del acto jurídico
+      Bibliografía:
+      - Ducci Claro, Carlos, Derecho Civil parte General, reimpresión de la cuarta edición, Santiago de
+      Chile, Editorial Jurídica de Chile, 2015.
+      - Vial del Rio, Víctor, Derecho Civil, Teoría General del Acto Jurídico, Editorial Jurídica de Chile, 5ª
+      edición, 2011.
+      - Corral Talciani, Hernán: Curso de Derecho Civil. Parte General. Santiago de Chile: Editorial
+      Thomson Reuters, 2ª Edición, 2022.
+    excluidas: |-
+      Se excluye la representación como modalidad del negocio jurídico, únicamente de esta cédula,
+      pudiendo preguntarse en otras que también comprenden la institución.
+      Se excluye acto jurídico administrativo.
+  - numero: 2
+    seccion: II. LAS OBLIGACIONES
+    subseccion: ""
+    tema: Las obligaciones
+    contenido: |-
+      1. Las fuentes de las obligaciones en la doctrina.
+      2. La ley y los cuasicontratos como fuente de obligaciones: comunidad (aspectos generales), pago
+      de lo no debido, agencia oficiosa.
+      3. Concepto de obligación y estructura del mismo.
+      4. Clasificaciones de las obligaciones
+      5. Efectos de las obligaciones desde la perspectiva del acreedor: derechos auxiliares del acreedor;
+      cumplimiento e incumplimiento de las obligaciones; cumplimiento forzado (reglas civiles);
+      cumplimiento por equivalencia (indemnización de perjuicios y sus requisitos).
+      6. Modos de extinguir obligaciones.
+      Bibliografía:
+      - Abeliuk Manasevish, René, Las Obligaciones Tomo I y II, Editorial Jurídica de Chile, quinta edición
+      actualizada, 2010.
+      - Peñailillo Arévalo, Daniel, Obligaciones, Teoría General y clasificación. La resolución por
+      incumplimiento, Ed. Jurídica de Chile, 2006.
+      - Ramos Pazos, René, De las Obligaciones, tercera edición, Legal Publishing, 2008.
+  - numero: 3
+    seccion: III. LOS CONTRATOS CIVILES EN GENERAL
+    subseccion: ""
+    tema: Los contratos civiles en general
+    contenido: |-
+      1. Principios de la contratación.
+      2. Clasificaciones de los contratos
+      3. Interpretación de los contratos. Paralelo con interpretación de la ley.
+      Bibliografía:
+      - Ducci Claro, Carlos, Derecho Civil parte General, reimpresión de la cuarta edición, Santiago de
+      Chile, Editorial Jurídica de Chile, 2015.
+      - López Santa María, Jorge, Los Contratos: parte general actualizada por Fabián Elorriaga de Bonis,
+      Abeledo Perrot, Legal Publishing, 2010.
+      - Vodanovic Haklicka, Antonio (2021): Tratado de Derecho Civil. Fuentes de las Obligaciones. Parte
+      General. Basado en las explicaciones de los profesores de la Universidad de Chile Arturo
+      Alessandri Rodríguez y Manuel Somarriva Undurraga. Actualizado para esta edición por Carolina
+      Riveros F., Gonzalo Ruz L. y Luis Vargas S. Santiago de Chile: Ediciones Jurídicas de Santiago, 2ª
+      Edición, Tomo I.
+  - numero: 4
+    seccion: IV. LOS CONTRATOS CIVILES EN PARTICULAR.
+    subseccion: ""
+    tema: Los contratos civiles en particular.
+    contenido: |-
+      1. Contrato de promesa
+      2. Compraventa civil
+      3. Los contratos reales. Se excluye análisis de la Ley N°18.010.
+      4. Mandato civil
+      5. Contratos de garantía.
+      Bibliografía:
+      - Meza Barros, Ramón, De las fuentes de las obligaciones, Editorial Jurídica de Chile, 2009.
+      - Munita Marambio, Renzo (Dir.). Contratos. Parte Especial. Valencia: Editorial Tirant lo Blanch,
+      2023.
+      - Vodanovic Haklicka, Antonio (2021): Tratado de Derecho Civil. Fuentes de las Obligaciones. Parte
+      Especial: De los Contratos Principales en Particular. Basado en las explicaciones de los profesores
+      de la Universidad de Chile Arturo Alessandri Rodríguez y Manuel Somarriva Undurraga.
+      Actualizado para esta edición por Carolina Riveros F., Gonzalo Ruz L. y Luis Vargas S. Santiago de
+      Chile: Ediciones Jurídicas de Santiago, 2ª Edición, Tomo II.
+    excluidas: "Se excluyen los siguientes contratos: Arrendamiento, anticresis, censo, sociedad civil, renta vitalicia."
+  - numero: 5
+    seccion: V. RESPONSABILIDAD CIVIL EXTRACONTRACTUAL
+    subseccion: ""
+    tema: Responsabilidad civil extracontractual
+    contenido: |-
+      1. Concepto de responsabilidad, de responsabilidad civil, de responsabilidad civil contractual y
+      extracontractual y de ilícitos civiles.
+      2. Sistemas de atribución de responsabilidad.
+      3. Elementos de la responsabilidad civil extracontractual. La capacidad delictual civil; la acción u
+      omisión; causalidad; la culpa y el dolo; y los daños indemnizables.
+      4. Las causales de exoneración o reducción de responsabilidad civil.
+      5. Responsabilidad civil y el enriquecimiento ilícito.
+      6. La acción de responsabilidad. Acciones de prevención o remoción del daño y acción
+      indemnizatoria.
+      7. Extinción de la acción de responsabilidad.
+      Bibliografía:
+      - Corral Talciani, Hernán, Lecciones de responsabilidad Civil Extracontractual, Ed. Jurídica de Chile,
+      2003.
+      - Barros Bourie, Enrique, Tratado de responsabilidad Extracontractual, Ed. Jurídica de Chile, 2006.
+      - Abeliuk Manasevish, René, Las Obligaciones Tomo I y II, Editorial Jurídica de Chile, 5ª edición
+      actualizada, 2010.
+      - Rodríguez Grez, Pablo. Responsabilidad Extracontractual, Editorial Jurídica de Chile, reimpresión
+      de la segunda edición, 2009.
+      - Vodanovic Haklicka, Antonio (2021): Tratado de Derecho Civil. Fuentes de las Obligaciones. Parte
+      Especial: De las fuentes no convencionales. Basado en las explicaciones de los profesores de la
+      Universidad de Chile Arturo Alessandri Rodríguez y Manuel Somarriva Undurraga. Actualizado
+      para esta edición por Carolina Riveros F., Gonzalo Ruz L. y Luis Vargas S. Santiago de Chile:
+      Ediciones Jurídicas de Santiago, 2ª Edición, Tomo III.
+    excluidas: |-
+      Se excluyen los regímenes especiales de responsabilidad civil, como el de profesiones liberales, del
+      Estado, del Derecho del consumo, etc.
+  - numero: 6
+    seccion: VI. BIENES Y DERECHOS REALES
+    subseccion: ""
+    tema: Bienes y derechos reales
+    contenido: |-
+      1. Clasificación de los bienes.
+      2. El Derecho Real. Concepto, características y clasificaciones.
+      3. El Dominio. Concepto, evolución, atributos y facultades.
+      4. Modos de adquirir el dominio.
+      5. Derechos Reales limitados: usufructo y servidumbre.
+      6. Posesión y mera tenencia.
+      7. Defensa de la propiedad y de la posesión a través de las acciones reales o personales posibles
+      reguladas en el Código civil. Se excluye la querella de obra nueva y de obra ruinosa.
+      Bibliografía:
+      - Somarriva, Alessandri, Vodanovic, Tratado de los derechos reales, Ed. Jurídica de Chile, 2001.
+      - Peñailillo Arévalo, Daniel, Los bienes, Ed. Jurídica de Chile, 2007.
+      - Rozas Vial, Fernando, Los Bienes, Legal Publishing, 4º edición, 2007.
+    excluidas: |-
+      Se excluye el detalle de uso y habitación y fideicomiso. Los estudiantes deberán saber el concepto
+      y las características de tales derechos reales, en cuanto derechos reales limitativos del dominio.
+  - numero: 7
+    seccion: VII. DERECHO DE FAMILIA
+    subseccion: ""
+    tema: Derecho de familia
+    contenido: |-
+      1. Matrimonio y acuerdo de unión civil. Definiciones legales. Requisitos. Formas de celebración.
+      2. Efectos personales del matrimonio y del acuerdo de unión civil. Se excluye matrimonio religioso.
+      Efectos particulares del matrimonio igualitario en el régimen conyugal y en la filiación (aspectos
+      generales, se excluye el detalle).
+      3. Efectos patrimoniales del matrimonio y del acuerdo de unión civil. Nociones fundamentales de
+      los regímenes patrimoniales (se excluye el detalle de cada uno). Situación legal de la mujer
+      casada.
+      4. Nulidad, divorcio y separación. Efectos de la terminación del matrimonio. La compensación
+      económica y los acuerdos reguladores.
+      5. Terminación del acuerdo de unión civil y sus efectos generales.
+      6. Filiación. Concepto, principios y tipos. Reglas de determinación de la filiación. Efectos de la
+      filiación. Derecho de alimentos solo concepto y características generales en la relación paterna-
+      filial.
+      Bibliografía:
+      - Troncoso Larronde, Hernán, Derecho de familia, Ed. Legal Publishing, 2009.
+      - Del Picó, Jorge, Acuña, Marcela: Derecho Matrimonial, DER ediciones, 2024 (disponible también
+      en los materiales docentes de la Academia Judicial https://academiajudicial.cl/wp-
+      content/uploads/2024/02/MD69-Derecho- matrimonial.pdf).
+    excluidas: Se excluye adopción y secuestro internacional.
+  - numero: 8
+    seccion: VIII. PERSONAS
+    subseccion: ""
+    tema: Personas
+    contenido: |-
+      1. Concepto de persona natural. Clasificación legal. Nociones fundamentales sobre las personas
+      naturales: principio y fin de su existencia. Atributos. Se excluye nacionalidad, también tutelas y
+      curatelas.
+      2. Personas jurídicas: concepto y clasificación, atributos de la personalidad de las personas
+      jurídicas.
+      3. Personas jurídicas sin fines de lucro. Asociaciones o Corporaciones y Fundaciones. Formas de
+      constitución y organización. Extinción.
+      Bibliografía:
+      - Lyon Puelma, Alberto, Personas Juridicas, Ed. Universidad Católica de Chile, 2007
+      - Del Picó Rubio, Jorge, "Génesis y regulación de personas jurídicas derivadas, en el marco previsto
+      por la Ley 19.638. Efectos civiles", Estudios de Derecho Civil IV, Legal Publishing, Santiago de Chile
+      2009, pp. 57-72.
+      - Ducci Claro, Carlos, Derecho Civil parte General, reimpresión de la cuarta edición, Santiago de
+      Chile, Editorial Jurídica de Chile, 2015.
+      - Corral Talciani, Hernán: Curso de Derecho Civil. Parte General. Santiago de Chile: Editorial
+      Thomson Reuters, 2ª Edición, 2022.
+    excluidas: Se excluye personas jurídicas con fines de lucro.
+  - numero: 9
+    seccion: IX. DERECHO SUCESORIO
+    subseccion: ""
+    tema: Derecho sucesorio
+    contenido: |-
+      1. Efectos sucesorios del fin de las personas naturales
+      2. Modo de adquirir sucesión por causa de muerte
+      3. Derecho real de herencia
+      4. Los asignatarios.
+      5. Sucesión testada. Se excluye testamentos privilegiados.
+      6. Sucesión intestada.
+      7. Defensa de las asignaciones.
+      8. Revocación del testamento. Testamento nulo, revocación por causas intrínsecas o extrínsecas al
+      testamento.
+      Bibliografía:
+      - Elorriaga de Bonis, Fabián, Derecho Sucesorio, Editorial LexisNexis, 2010.
+      - Ramos Pazos, René, Sucesión por causa de muerte, Editorial Jurídica de Chile, 2008.
+      - Rodriguez Grez, Pablo, Instituciones de Derecho Sucesorio, segunda edición actualizada, Editorial
+      Jurídica de Chile, Volumen 1 y 2, 2002.
+    excluidas: Se excluye el albaceazgo.

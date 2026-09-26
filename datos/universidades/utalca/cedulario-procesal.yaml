@@ -1,0 +1,158 @@
+# Cedulario de Derecho Procesal (actualización mayo 2023) — Examen de Licenciatura, Universidad de Talca. https://www.juridicasysociales.utalca.cl/wp-content/uploads/2023/10/Cedulario-EL-Derecho-Procesal-2023.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "utalca") y revisada.
+# La numeración es nuestra cuando el documento no numera cédulas.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: 1. DERECHO PROCESAL, FUENTES Y LEY PROCESAL. TRIBUNALES, JURISDICCIÓN Y COMPETENCIA
+    subseccion: ""
+    tema: Derecho procesal, fuentes y ley procesal. tribunales, jurisdicción y competencia
+    contenido: |-
+      1.- El Derecho Procesal, en especial sus fuentes
+      2.- Tribunales de justicia y sus bases constitucionales y legales
+      3.- Atribuciones conservadoras, disciplinarias y económicas
+      4.- Jurisdicción: características, límites, momentos de la jurisdicción y su
+      relación con la competencia. Instituciones relacionadas
+      5.- La competencia: reglas generales, reglas especiales, conflictos y
+      contiendas de competencia e institucionales relacionadas.
+       Este tema no contempla interrogación de tribunales especiales que no
+      integran el P. Judicial. Tampoco la jurisdicción cautelar ni arbitral
+      Bibliografía
+      - Beltrán, Ramón; Contreras, Cristian; Letelier, Enrique. 2023. Derecho
+      Procesal I. Fuentes, jurisdicción y competencia. Editorial Tirant lo Blanch.
+      - Bordalí, Andrés. 2020. Derecho Jurisdiccional. Editorial Tirant lo
+      Blanch.
+      - Bordalí, Andrés; Cortez, Gonzalo; Palomo, Diego. 2014. Proceso civil.
+      Juicio ordinario de mayor cuantía, 2ª edición revisada, ampliada y actualizada.
+      Editorial Thomson Reuters.
+      - Orellana Torres, Fernando. 2022. Manual de Derecho Procesal. Tomo
+      I. Derecho Procesal Orgánico. 7a edición actualizada. Editorial Librotecnia.
+  - numero: 2
+    seccion: 2. PROCESO Y PROCEDIMIENTO
+    subseccion: ""
+    tema: Proceso y procedimiento
+    contenido: |-
+      1.- Proceso: aspectos fundamentales, incluyendo sistemas procesales.
+      2.- Las partes en general, incluyendo terceros (no incluye a los
+      tribunales arbitrales).
+      3.- La acción, la pretensión y la excepción: aspectos centrales y
+      clasificaciones.
+      4.- Disposiciones comunes a todo procedimiento
+      5.- La cosa juzgada y el desasimiento: efectos de las resoluciones judiciales
+      6.- La potestad cautelar: las medidas precautorias, aspectos centrales,
+      clasificaciones, presupuestos y tramitación.
+       Este tema no contempla costas, cuestiones de competencia,
+      implicancias y recusaciones ni privilegio de pobreza. Tampoco incluye
+      este punto las medidas prejudiciales.
+      Bibliografía
+      - Bordalí, Andrés; Cortez, Gonzalo; Palomo, Diego. 2014. Proceso civil.
+      Juicio ordinario de mayor cuantía, 2ª edición revisada, ampliada y actualizada.
+      Editorial Thomson Reuters.
+      - Cortez, Gonzalo; Palomo, Diego. 2018. Proceso civil, normas comunes
+      a todo procedimiento e incidentes. 2018. Editorial Thomson Reuters.
+      - Orellana, Fernando. 2022. Manual de Derecho P rocesal. Tomo II.
+      Procedimientos civiles ordinarios y especiales. 5a edición actualizada. Editorial
+      Librotecnia.
+      - Stoehrel, Carlos. 2020. De las disposiciones comunes a todo
+      procedimiento. 7a edición revisada y actualizada. Editorial Jurídica de Chile.
+  - numero: 3
+    seccion: 3. JUICIO ORDINARIO Y SUMARIO CIVIL
+    subseccion: ""
+    tema: Juicio ordinario y sumario civil
+    contenido: |-
+      1.- El juicio ordinario de mayor cuantía: aspectos fundamentales,
+      incluidas las medidas prejudiciales.
+      2.- El juicio sumario: aspectos fundamentales.
+      3.- La prueba como institución fundamental, incluyendo también la
+      comprensión de los contenidos del derecho a la prueba.
+      4.- Medios de prueba en particular: Concepto, oportunidad y aspectos
+      fundamentales de su naturaleza y procedimiento.
+      Bibliografía
+      - Bordalí, Andrés; Cortez, Gonzalo; Palomo, Diego. 2014. Proceso civil.
+      Juicio ordinario de mayor cuantía, 2ª edición revisada, ampliada y actualizada.
+      Editorial Thomson Reuters.
+      - Rodríguez, Ignacio. 2017. Procedimiento civil: juicio ordinario de
+      mayor cuantía. 8a edición revisada y actualizada. Editorial Jurídica de Chile.
+      - Orellana, Fernando. 2022. Manual de Derecho Procesal Tomo II
+      Procedimientos civiles ordinarios y especiales. 5ª edición. Editorial Librotecnia.
+  - numero: 4
+    seccion: 4. JUICIO EJECUTIVO
+    subseccion: ""
+    tema: Juicio ejecutivo
+    contenido: |-
+      1.- El Juicio ejecutivo y las instituciones fundamentales.
+      2.- Títulos ejecutivos.
+      3.- Tramitación: aspectos fundamentales
+      4.- Particularidades de la sentencia y la cosa juzgada en el juicio
+      ejecutivo
+       Este tema no contempla lo relativo a la realización de bienes en el juicio
+      ejecutivo. Tampoco el juicio ejecutivo de obligaciones de hacer y no hacer, ni
+      las tercerías
+      Bibliografía
+      - Or e ll a n a, F e rn a n d o , 20 22 . Manual de Derecho Procesal Tomo III
+      Procesos de ejecución . 3ª edición. Ed i tor i a l L i b rot e c n i a .
+      - Hidalgo, Carlos. 2022. El Juicio Ejecutivo. Doctrina y Jurisprudencia.
+      2a edición. Editorial Thomson Reuters.
+  - numero: 5
+    seccion: 5. RECURSOS CIVILES
+    subseccion: ""
+    tema: Recursos civiles
+    contenido: |-
+      1.- Los recursos y las resoluciones judiciales
+      2.- Los recursos en general: aspectos fundamentales en cuanto a sus
+      características y tramitación
+      3.- Recurso de apelación: aspectos centrales de su configuración y tramitación.
+      Instituciones relacionadas: recurso de hecho, orden de no innovar, entre otras.
+      4.- Recursos de casación: aspectos centrales de su configuración como
+      recurso extraordinario, tramitación y causales.
+       Este tema no contempla lo relativo al recurso de revisión en específico, ni las
+      acciones constitucionales.
+      Bibliografía
+      - Bordalí, Andrés; Cortez, Gonzalo y Palomo, Diego. 2019. Proceso civil:
+      los recursos y otros medios de impugnación. 2ª edición. Editorial Thomson Reuters.
+      - Mosquera, Mario y Maturana, Cristian. 2010. Los recursos
+      procesales. 3ª edición actualizada. Editorial Jurídica.
+      - Orellana, Fernando, 2022. Manual de Derecho Procesal Tomo IV
+      Recursos procesales. 5ª edición. Editorial Librotecnia.
+  - numero: 6
+    seccion: "6. PROCESO PENAL: ASPECTOS CENTRALES"
+    subseccion: ""
+    tema: "Proceso penal: aspectos centrales"
+    contenido: |-
+      1.- Procedimiento ordinario: sistemas procesales penales, principios,
+      garantías, contenidos y actuaciones centrales de las etapas del
+      procedimiento, sujetos procesales, acciones, medidas cautelares
+      2.- Principio de oportunidad y manifestaciones
+      3.- Salidas alternativas
+      4.- Preparación del juicio oral
+      5.- La prueba, el juicio y la sentencia: aspectos centrales
+       Este tema no contempla los procedimientos especiales
+      Bibliografía
+      - Chahuán, Sabas. 2019. Manual del nuevo procedimiento
+      penal. 8ª edición. Editorial Legal Publishing,
+      - Horvitz, María Inés; López, Julián. 2005. Derecho procesal penal
+      chileno. Ed. Jurídica de Chile.
+      - Maturana, Cristian y Montero Raúl. 2017. Derecho Procesal Penal.
+      3ª edición. Editorial Librotecnia.
+  - numero: 7
+    seccion: "7. PROCESO PENAL: SISTEMA RECURSIVO"
+    subseccion: ""
+    tema: "Proceso penal: sistema recursivo"
+    contenido: |-
+      1.- Aspectos fundamentales (bases) que identifican el régimen recursivo en
+      el CPP
+      2.- Derecho al recurso en materia procesal penal
+      3.- Recurso de apelación: aspectos centrales de su configuración y tramitación
+      4.- Recurso de nulidad: aspectos centrales de su configuración legislativa,
+      legitimación, tramitación y aspectos fundamentales de sus causales o
+      motivos
+       Este tema no contempla la revisión de sentencias condenatorias firmes
+      Bibliografía
+      - Chahuán, Sabas. 2019. Manual del nuevo procedimiento
+      penal. 8ª edición. Editorial Legal Publishing.
+      - Horvitz, María Inés; López Masle, Julián. 2005. Derecho procesal
+      penal chileno. Editorial Jurídica de Chile.
+      - González, Hernán. 2005. El recurso de apelación del Código
+      procesal penal. Editorial LexisNexis.
+      - Mosquera, Mario y Maturana Miquel, Cristian. 2010. Los recursos
+      procesales. 3ª edición. Editorial Jurídica de Chile.

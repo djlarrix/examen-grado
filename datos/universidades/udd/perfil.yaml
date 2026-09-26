@@ -1,0 +1,53 @@
+# Perfil del examen de grado — Universidad del Desarrollo (sede Santiago).
+id: udd
+nombre: Universidad del Desarrollo
+sigla: UDD
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de Grado
+  modalidad: mixta
+  modalidad_por_ramo: { civil: escrita, procesal: oral }
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Disertación (cédula) sobre un área elegida
+      detalle: >-
+        Breve disertación sobre las Bases Constitucionales y principios de un área elegida por el
+        postulante (Derecho de la Empresa, Administrativo, Laboral y Seguridad Social, Penal,
+        Tributario o Principios del Derecho Constitucional). El área se elige 15 días antes y en ese
+        momento se sortea el capítulo de la cédula. Luego se interroga sobre cualquier materia de esa cédula.
+      fuente: Reglamento para obtener el grado de Licenciado en Ciencias Jurídicas (Decreto 70/16), arts. 7 a 9
+    - titulo: Caso escrito de Derecho Civil con interrogación oral
+      detalle: >-
+        Una hora antes del examen se entrega por escrito un caso preparado por la Facultad, sobre las
+        materias del cedulario de Derecho Civil, con al menos cinco preguntas. El postulante puede
+        consultar todas las leyes que estime pertinentes y permanece aislado. Luego es interrogado
+        sobre el caso: se pondera especialmente que inserte el problema en el ordenamiento, las
+        soluciones que proponga, el dominio de las materias del caso y su juicio crítico sobre la
+        jurisprudencia y la doctrina.
+      duracion_minutos: 60
+      fuente: Reglamento, art. 9
+    - titulo: Interrogación de Derecho Procesal
+      detalle: Preguntas sobre cualquier materia comprendida en el cedulario de Derecho Procesal.
+      fuente: Reglamento, art. 9
+  comision: >-
+    Presidida por el Decano (o Vicedecano o Director de Carrera) e integrada por un profesor de cada
+    materia examinada; cinco miembros incluido el Secretario. No puede suspenderse por más de 5 minutos.
+  calificacion: >-
+    Cada asignatura se califica de 1,0 a 7,0 y la nota del examen es el promedio simple; ninguna
+    puede ser inferior a 4,0. Si aprueba la cédula y Civil pero no Procesal, la comisión puede, por
+    unanimidad y excepcionalmente, suspender el examen y reanudarlo entre tres y cinco meses después.
+    Nota final del grado: 60 % promedio de la carrera y 40 % examen.
+  exigencia: 0.6
+estilo_comision:
+  - En Civil el examen parte de un caso escrito con al menos cinco preguntas: identificar el problema, ubicarlo en el ordenamiento, proponer soluciones y fundarlas.
+  - La comisión valora el juicio crítico sobre jurisprudencia y doctrina, no sólo la norma.
+  - En Procesal, interrogación oral tradicional sobre el cedulario.
+por_confirmar:
+  - Cedularios vigentes de Derecho Civil y Procesal (no publicados en línea): el estudiante puede subirlos con cargar_documento.
+  - Vigencia del reglamento de 2016 para la sede Concepción.
+fuentes:
+  - titulo: Reglamento para obtener el grado de Licenciado en Ciencias Jurídicas (sede Santiago), Decreto 70/16
+    url: https://derecho.udd.cl/files/2015/10/REGLAMENTO-PARA-OBTENER-EL-GRADO-DE-LICENCIADO-DE-CIENCIAS-JURIDICAS.pdf
+  - titulo: Facultad de Derecho UDD
+    url: https://derecho.udd.cl/
+revisado: 2026-09-25

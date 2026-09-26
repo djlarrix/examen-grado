@@ -1,0 +1,1173 @@
+# Cédula de Derecho Civil, Temario de Licenciatura — Facultad de Derecho UC (vigente desde el 1 de abril de 2021). https://derecho.uc.cl/wp-content/uploads/2026/05/Cedula_Derecho_Civil_18.03.2021.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "puc") y revisada.
+# La numeración es nuestra cuando el documento no numera cédulas.
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: I. TEORÍA DE LA LEY
+    subseccion: ""
+    tema: Teoría de la ley
+    contenido: |-
+      1. Teoría general de las fuentes del Derecho
+      2. La ley
+      2.1. Definición.
+      2.2. Interpretación de la ley.
+      2.2.1. Sentido de la ley.
+      2.2.1.1. Cuál es el sentido de la ley.
+      2.2.1.2. Cuándo el sentido de la ley no es claro.
+      2.2.2. Necesidad de interpretación de la ley.
+      2.2.3. Elementos de interpretación.
+      2.2.3.1. Elemento gramatical
+      2.2.3.2. Elemento histórico
+      2.2.3.3. Elemento lógico
+      2.2.3.4. Elemento sistemático
+      2.2.3.5. El espíritu general de la legislación y la equidad natural
+      2.3. Presunción o ficción de conocimiento de la ley.
+      2.4. Integración de la ley.
+      2.5. Efectos de la ley.
+      2.5.1. Efectos de la ley en el tiempo.
+      2.5.1.1. Consideraciones generales.
+      2.5.1.2. Efecto retroactivo e inmediato.
+      2.5.1.3. Justificación de la retroactividad.
+      2.5.1.4. Principio de irretroactividad.
+      2.5.1.5. Retroactividad de las leyes interpretativas
+      2.5.1.6. Ley sobre efecto retroactivo de las leyes.
+      2.5.1.6.1. Conceptos de derechos adquiridos y meras expectativas
+      2.5.2. Efectos de la ley en el espacio.
+      2.5.2.1. Territorialidad y extraterritorialidad de la ley.
+      2.5.2.2. Estatuto personal.
+      2.5.2.3. Estatuto real.
+      2.5.2.4. Estatuto de los actos y contratos.
+      3. La costumbre como fuente del Derecho.
+      4. La doctrina como fuente del Derecho.
+      5. La jurisprudencia como fuente del Derecho.
+    excluidas: |-
+      Características de la ley.
+      Constitucionalidad, clasificaciones, formación y derogación de la ley.
+  - numero: 2
+    seccion: II. TEORÍA DEL ACTO JURÍDICO
+    subseccion: ""
+    tema: Principio de autonomía privada
+    contenido: ""
+  - numero: 3
+    seccion: II. TEORÍA DEL ACTO JURÍDICO
+    subseccion: ""
+    tema: El acto jurídico como categoría
+    contenido: |-
+      1. Teoría del acto jurídico.
+      1.1. Los hechos jurídicos. Clasificaciones, consecuencias.
+      1.2. Los hechos jurídicos del hombre.
+      2. Estructura del acto jurídico.
+  - numero: 4
+    seccion: II. TEORÍA DEL ACTO JURÍDICO
+    subseccion: ""
+    tema: Clasificaciones de los actos jurídicos
+    contenido: ""
+  - numero: 5
+    seccion: II. TEORÍA DEL ACTO JURÍDICO
+    subseccion: ""
+    tema: Requisitos de los actos jurídicos
+    contenido: |-
+      1. La voluntad.
+      1.1. La manifestación de voluntad.
+      1.1.1. El silencio.
+      1.1.2. Manifestaciones expresas, tácitas y presuntas.
+      1.2. La voluntad en los actos jurídicos bilaterales.
+      1.2.1. El consentimiento.
+      1.2.2. Formación del consentimiento en los actos jurídicos bilaterales.
+      1.3. Vicios de la voluntad.
+      1.3.1. El error
+      1.3.1.1. Error de derecho
+      1.3.1.2. Error de hecho
+      1.3.1.2.1. Esencial
+      1.3.1.2.2. Sustancial
+      1.3.1.2.3. Accidental
+      1.3.1.2.4. En la persona
+      1.3.1.2.5. Error común
+      1.3.1.2.6. Discusión sobre el error en los motivos
+      1.3.2. La fuerza
+      1.3.3. El dolo
+      1.4. La lesión
+      2. El objeto.
+      2.1. Concepto.
+      2.2. Requisitos del objeto.
+      2.3. Concepto y casos de objeto ilícito.
+      3. La causa.
+      3.1. Concepto.
+      3.2. Doctrinas en relación a la causa y su evolución.
+      3.3. Teoría de la causa en el Derecho civil chileno.
+      3.4. Requisitos de la causa.
+      3.4.1. Real
+      3.4.2. Lícita
+      3.4.2.1. La causa ilícita.
+      4. La capacidad.
+      4.1. Concepto.
+      4.2. Clasificaciones.
+      4.2.1. Capacidad de goce
+      4.2.2. Capacidad de ejercicio
+      4.3. La incapacidad.
+      4.3.1. Casos de incapacidad
+      4.3.2. Incapacidades especiales y prohibiciones
+      4.3.3. Efectos de los actos de los incapaces
+      4.4. Convenciones sobre capacidad.
+      5. Las formalidades.
+      5.1. Conceptos generales.
+      5.2. Solemnidades.
+      5.3. Formalidades habilitantes.
+      5.4. Formalidades por vía de prueba.
+      5.5. Formalidades por vía de publicidad u oponibilidad a terceros.
+  - numero: 6
+    seccion: II. TEORÍA DEL ACTO JURÍDICO
+    subseccion: ""
+    tema: Efectos de los actos jurídicos
+    contenido: ""
+  - numero: 7
+    seccion: II. TEORÍA DEL ACTO JURÍDICO
+    subseccion: ""
+    tema: Ineficacia de los actos jurídicos
+    contenido: |-
+      1. Conceptos generales.
+      2. Clases de ineficacia.
+      2.1. Por omisión de un requisito esencial para su existencia.
+      2.2. Por omisión de un requisito esencial para su validez.
+      3. Ineficacia por inexistencia.
+      3.1. Teoría de la inexistencia.
+      3.2. La inexistencia en el Derecho civil chileno.
+      3.3. Efectos.
+      3.4. Principales diferencias entre inexistencia y nulidad.
+      4. Ineficacia por nulidad.
+      4.1. Concepto.
+      4.2. Clasificación de la nulidad
+      4.2.1. La nulidad absoluta
+      4.2.1.1. Concepto.
+      4.2.1.2. Causales.
+      4.2.1.3. Declaración y legitimación.
+      4.2.1.4. Saneamiento.
+      4.2.2. La nulidad relativa
+      4.2.2.1. Concepto.
+      4.2.2.2. Causales.
+      4.2.2.3. Legitimación.
+      4.2.2.4. Saneamiento.
+      4.2.2.4.1. Saneamiento por el transcurso del tiempo.
+      4.2.2.4.2. Saneamiento por ratificación o confirmación.
+      4.2.3. Diferencias entre nulidad absoluta y relativa.
+      4.3. Nulidad total y parcial.
+      4.4. Efectos de la nulidad.
+      4.4.1. Entre las partes.
+      4.4.2. Respecto de terceros.
+      4.4.3. Excepciones.
+      4.5. Conversión del acto nulo.
+      4.5.1. Conceptos generales.
+      4.5.2. Requisitos.
+      4.5.3. La conversión en el Código Civil.
+  - numero: 8
+    seccion: II. TEORÍA DEL ACTO JURÍDICO
+    subseccion: ""
+    tema: La simulación
+    contenido: |-
+      1. Concepto.
+      2. Clasificación.
+      3. Efectos y sanción.
+  - numero: 9
+    seccion: II. TEORÍA DEL ACTO JURÍDICO
+    subseccion: ""
+    tema: La representación
+    contenido: |-
+      1. Concepto.
+      2. Poder de representación.
+      3. Naturaleza jurídica.
+      4. Requisitos.
+      5. Efectos.
+  - numero: 10
+    seccion: III. PERSONAS
+    subseccion: ""
+    tema: La persona natural
+    contenido: |-
+      1. Introducción
+      1.1. Concepto de persona.
+      1.2. La persona como fundamento del derecho.
+      2. Atributos de la personalidad.
+      2.1. Generalidades, elementos esenciales y atributos, enumeración.
+      2.2. El estado civil.
+      2.3. La nacionalidad.
+      2.4. El nombre
+      2.4.1. Concepto
+      2.4.2. Determinación del nombre
+      2.4.3. Cambio de nombre
+      2.4.4. Derecho al nombre
+      2.4.5. Naturaleza jurídica del derecho al nombre
+      2.5. La Capacidad
+      2.6. El Patrimonio
+      2.6.1. Concepto
+      2.7. El Domicilio
+      2.7.1. Concepto
+      2.7.2. Clasificación
+      2.7.3. Determinación del domicilio por ley
+      2.7.4. Domicilio real
+      2.7.5. Domicilio convencional
+      3. Inicio de la persona.
+      3.1. Estatuto del nasciturus o del embrión
+      3.1.1. Inicio de su protección legal
+      3.1.2. Contenido de su protección
+      3.1.2.1. En materia extrapatrimonial: derecho a la vida del que está por
+      nacer
+      3.1.2.2. En materia patrimonial: derechos deferidos al que está por nacer
+      3.2. El nacimiento
+      4. Término de la persona.
+      4.1. La muerte real
+      4.2. La muerte presunta
+      4.2.1. Concepto y elementos esenciales
+      4.2.2. Efectos de la declaración de muerte presunta
+  - numero: 11
+    seccion: III. PERSONAS
+    subseccion: ""
+    tema: La persona jurídica
+    contenido: |-
+      1. Concepto de persona jurídica
+      1.1. Teorías de la persona jurídica.
+      2. Clasificaciones de las personas jurídicas.
+      2.1. Personas jurídicas de Derecho Público y Derecho Privado.
+      2.2. Personas jurídicas con y sin fines de lucro.
+      2.2.1. Principales diferencias entre corporaciones (asociaciones) y fundaciones.
+    excluidas: |-
+      La persona y el cuerpo humano.
+      Consentimiento informado.
+      Derechos de la personalidad.
+      Causales específicas para la declaración de muerte presunta.
+      Comprobación judicial de la muerte
+      Voluntad y administración de las personas jurídicas.
+  - numero: 12
+    seccion: IV. BIENES
+    subseccion: ""
+    tema: Las cosas y los bienes
+    contenido: |-
+      1. Concepto de los objetos del derecho.
+      2. Nociones jurídicas de cosas y bienes.
+  - numero: 13
+    seccion: IV. BIENES
+    subseccion: ""
+    tema: Clasificación de las cosas
+    contenido: |-
+      1. Cosas corporales e incorporales.
+      1.1. Cosas corporales.
+      1.1.1. Definición
+      1.2. Cosas incorporales
+      1.2.1. Definición
+      1.2.2. Los derechos reales y personales
+      1.2.2.1. Elementos y características de cada uno.
+      1.2.3. Dominio sobre las cosas incorporales.
+      2. Cosas muebles e inmuebles
+      2.1. Cosas corporales muebles e inmuebles.
+      2.1.1. Cosas corporales muebles.
+      2.1.1.1. Muebles por naturaleza.
+      2.1.1.2. Muebles por anticipación.
+      2.1.1.3. Reglas de interpretación legal en materia de bienes muebles.
+      2.1.2. Cosas corporales Inmuebles.
+      2.1.2.1. Inmuebles por naturaleza.
+      2.1.2.2. Inmuebles por adherencia.
+      2.1.2.3. Inmuebles por destinación.
+      2.2. Derechos muebles e inmuebles
+      2.3. Acciones muebles e inmuebles
+      3. Cosas consumibles y no consumibles.
+      4. Cosas fungibles y no fungibles.
+      5. Cosas singulares y universales.
+      5.1. Universalidad de hecho
+      5.2. Universalidad de derecho.
+    excluidas: |-
+      Otras clasificaciones de bienes.
+      Bienes nacionales de uso público.
+      Bienes fiscales.
+  - numero: 14
+    seccion: IV. BIENES
+    subseccion: ""
+    tema: El dominio o propiedad
+    contenido: |-
+      1. Generalidades
+      1.1. Concepto.
+      1.2. Características.
+      1.3. Facultades.
+      1.3.1. Dominio y derecho subjetivo.
+      1.3.2. Facultades de uso, goce y disposición material.
+      1.3.3. Facultades jurídicas. Facultad de disposición.
+      1.3.4. Limitaciones y gravámenes.
+      1.4. Contenido pasivo del derecho de dominio.
+      1.4.1. Las obligaciones reales
+      1.4.2. Las cargas reales
+      1.4.3. Responsabilidad por la propiedad
+      2. La Copropiedad.
+      2.1. Definición y naturaleza jurídica.
+      2.2. Regulación como cuasicontrato.
+      2.3. Indivisión en el Código Civil. El pacto de indivisión.
+      2.4. Administración de la copropiedad.
+      2.5. Derechos, obligaciones y responsabilidad de los copropietarios.
+      2.6. Extinción.
+      3. De los modos de adquirir el dominio
+      3.1. Generalidades
+      3.1.1. Dualidad título y modo.
+      3.1.2. Concepto de modo de adquirir el dominio.
+      3.1.3. Clasificaciones de los modos de adquirir el dominio.
+      3.2. La tradición.
+      3.2.1. Concepto, características, importancia.
+      3.2.2. Requisitos.
+      3.2.2.1. Presencia de dos personas
+      3.2.2.2. Consentimiento del tradente y adquirente
+      3.2.2.3. Existencia de un título traslaticio de dominio
+      3.2.2.4. La entrega de la cosa
+      3.2.3. Efectos de la tradición.
+      3.2.3.1. Efectos de la tradición cuando el tradente es dueño de la cosa.
+      3.2.3.2. Efectos de la tradición cuando el tradente no es dueño de la
+      cosa.
+      3.2.3.3. Otros efectos.
+      3.2.3.4. Tradición bajo condición suspensiva o resolutoria.
+      3.2.4. Diversas especies de tradición.
+      3.2.4.1. De una cosa corporal mueble.
+      3.2.4.2. De los derechos reales sobre una cosa corporal mueble.
+      3.2.4.3. Tradición de los muebles registrados.
+      3.2.4.4. Tradición del derecho de herencia.
+      3.2.4.5. Tradición de los derechos personales.
+      3.2.4.6. Tradición de las servidumbres.
+      3.2.4.7. Tradición de inmuebles.
+      3.2.4.8. Tradición de derechos reales sobre un inmueble.
+      3.3. La prescripción.
+      3.3.1. La posesión.
+      3.3.1.1. Concepto.
+      3.3.1.2. Naturaleza jurídica.
+      3.3.1.3. Elementos.
+      3.3.1.4. Clasificación.
+      3.3.1.4.1. Regular e irregular.
+      3.3.1.4.2. Útil e inútil.
+      3.3.1.4.3. Viciosa o no viciosa.
+      3.3.1.5. Distinción con la mera tenencia.
+      3.3.1.6. La posesión no se trasmite ni se transfiere.
+      3.3.1.7. Adquisición, conservación y pérdida de la posesión.
+      3.3.1.7.1. De los bienes muebles.
+      3.3.1.7.2. De los bienes inmuebles no inscritos.
+      3.3.1.7.3. De los bienes inmuebles inscritos.
+      3.3.1.8. Recuperación de la posesión perdida.
+      3.3.1.9. Prueba de la posesión.
+      3.3.1.9.1. Presunciones para facilitar la prueba de la posesión
+      3.3.2. Definición y características de la prescripción adquisitiva.
+      3.3.3. Normas generales de toda prescripción.
+      3.3.4. Accesión de posesiones.
+      3.3.5. Interrupción de la Prescripción.
+      3.3.5.1. Efectos de la interrupción.
+      3.3.6. Clases de prescripción y requisitos comunes y particulares.
+      3.3.7. Prescripción de los derechos reales que no son el dominio.
+      3.3.8. Efectos de la prescripción.
+      3.3.9. Prescripción contra título inscrito.
+      4. Las limitaciones al dominio.
+      4.1. Concepto.
+      4.2. Derechos reales limitados.
+      4.3. Clasificación.
+      4.3.1. De goce.
+      4.3.1.1. El usufructo.
+      4.3.1.1.1. Concepto.
+      4.3.1.1.2. Características.
+      4.3.1.1.3. Requisitos.
+      4.3.1.1.4. Extinción.
+      4.3.2. De garantía.
+      5. La acción reivindicatoria
+      5.1. Definición y características.
+      5.2. Requisitos.
+      5.3. Legitimación.
+      5.4. Prueba del dominio.
+      5.5. Prestaciones mutuas.
+    excluidas: |-
+      Copropiedad inmobiliaria.
+      Ocupación.
+      Accesión.
+      Estructura y organización del Conservador de Bienes Raíces.
+      La propiedad fiduciaria.
+      El uso y la habitación.
+      Las servidumbres.
+      Las acciones posesorias.
+  - numero: 15
+    seccion: V. OBLIGACIONES
+    subseccion: ""
+    tema: La obligación
+    contenido: |-
+      1. Definición, deber moral, deber de conducta, deber jurídico.
+      2. Elementos de la obligación.
+      2.1. Los sujetos de la obligación.
+      2.2. Objeto de la obligación: La Prestación.
+      2.3. El vínculo jurídico.
+      3. Fuentes de las obligaciones.
+  - numero: 16
+    seccion: V. OBLIGACIONES
+    subseccion: ""
+    tema: Clasificación de las obligaciones
+    contenido: |-
+      1. Obligaciones civiles y naturales.
+      1.1. Concepto.
+      1.1.1. Definición.
+      1.1.2. Obligación civil, natural y deber moral.
+      1.1.3. Distintas concepciones de la obligación natural.
+      1.1.4. Naturaleza jurídica.
+      1.2. Los casos de obligación natural.
+      1.2.1. Obligaciones contraídas por ciertos incapaces.
+      1.2.2. Omisión de solemnidades legales.
+      1.2.3. Obligaciones prescritas.
+      1.2.4. Obligaciones civiles no reconocida por falta de prueba.
+      1.3. Efectos de la obligación natural.
+      1.3.1. Como causa suficiente del pago. Otros modos de extinguir las
+      obligaciones.
+      1.3.2. Novación.
+      1.3.3. Puede ser caucionada.
+      1.3.4. La sentencia que rechaza la acción civil no extingue la obligación natural.
+      1.3.5. Conversión de la obligación natural en civil.
+      2. Obligaciones de Dar, Hacer o No Hacer.
+      2.1. Concepto.
+      2.2. Contenido.
+      2.3. Efectos.
+      3. Obligaciones con Pluralidad de Sujetos.
+      3.1. Obligaciones simplemente conjuntas
+      3.1.1. Concepto.
+      3.1.2. Elementos.
+      3.1.3. Efectos.
+      3.1.4. Excepciones a la conjunción.
+      3.2. Obligaciones solidarias.
+      3.2.1. La solidaridad en general.
+      3.2.1.1. Conceptos.
+      3.2.1.2. Solidaridad, fianza solidaria, codeudoría solidaria.
+      3.2.1.3. Elementos.
+      3.2.1.4. Teorías.
+      3.2.2. La solidaridad activa
+      3.2.2.1. Concepto.
+      3.2.2.2. Efectos.
+      3.2.2.2.1. Entre los acreedores y el deudor.
+      3.2.2.2.2. Entre los coacreedores.
+      3.2.3. La solidaridad pasiva.
+      3.2.3.1. Concepto.
+      3.2.3.2. La solidaridad pasiva como caución y como modalidad.
+      3.2.3.3. Fuentes.
+      3.2.3.4. Solidaridad imperfecta.
+      3.2.3.5. Efectos.
+      3.2.3.5.1. Efectos entre acreedor y deudores.
+      3.2.3.5.1.1. La demanda del acreedor.
+      3.2.3.5.1.2. Extinción de la deuda.
+      3.2.3.5.1.3. Interrupción y mora.
+      3.2.3.5.1.4. Otros efectos.
+      3.2.3.5.1.5. Excepciones del deudor.
+      3.2.3.5.2. Efectos entre los codeudores solidarios extinguida la
+      deuda
+      3.2.3.5.2.1. Contribución a la deuda.
+      3.2.3.5.2.2. Extinción por medios no equivalentes al
+      pago.
+      3.2.3.5.2.3. La solidaridad interesaba a todos los
+      deudores.
+      3.2.3.5.2.4. La solidaridad interesaba a alguno de los
+      deudores.
+      3.2.3.5.2.5. Insolvencia de alguno de los deudores.
+      3.2.3.6. Extinción.
+      3.2.3.6.1. Renuncia del acreedor.
+      3.2.3.6.2. Muerte de un deudor solidario.
+      3.3. Las obligaciones indivisibles.
+      3.3.1. Generalidades.
+      3.3.1.1. Origen y desarrollo.
+      3.3.1.2. Concepto de indivisibilidad jurídica.
+      3.3.1.3. La indivisibilidad en las obligaciones de dar, hacer y no hacer
+      3.3.2. Clasificación.
+      3.3.2.1. La indivisibilidad activa.
+      3.3.2.2. La indivisibilidad pasiva.
+      3.3.2.2.1. Cada deudor está obligado al pago total de la deuda.
+      3.3.2.2.2. Pago efectuado por uno de los codeudores.
+      3.3.2.2.3. Interrupción de la prescripción.
+      3.3.2.2.4. Transmisibilidad de la indivisibilidad.
+      3.3.2.2.5. La obligación de indemnizar perjuicios es divisible.
+      3.3.3. Efectos.
+      3.3.4. Excepciones a la divisibilidad.
+      4. Obligaciones Sujetas a Modalidades.
+      4.1. Las modalidades.
+      4.1.1. Concepto.
+      4.1.2. Características.
+      4.1.3. Enumeración.
+      4.2. Obligaciones a plazo.
+      4.2.1. Concepto.
+      4.2.2. Clasificaciones.
+      4.2.2.1. Plazo expreso y tácito.
+      4.2.2.2. Plazos convencionales, legales y judiciales.
+      4.2.2.3. Plazos suspensivos y extintivo.
+      4.2.3. Efectos.
+      4.2.3.1. Efectos del plazo suspensivo antes de su vencimiento.
+      4.2.3.2. Efectos del plazo suspensivo a de su vencimiento.
+      4.2.3.3. Efectos del plazo extintivo.
+      4.2.4. Extinción.
+      4.2.4.1. Vencimiento del plazo.
+      4.2.4.2. Renuncia del plazo.
+      4.2.4.3. La caducidad del plazo.
+      4.2.4.3.1. Caducidad convencional.
+      4.2.4.3.2. Procedimiento concursal de liquidación o notoria
+      insolvencia.
+      4.2.4.3.3. P é rdida o disminuci ó n de las cauciones.
+      4.3. Obligaciones condicionales.
+      4.3.1. Concepto.
+      4.3.2. Elementos de la condición.
+      4.3.2.1. Incertidumbre.
+      4.3.2.2. Futureidad.
+      4.3.3. Clasificaciones de las obligaciones condicionales.
+      4.3.3.1. Condiciones suspensivas y resolutorias.
+      4.3.3.2. Condiciones positivas y negativas.
+      4.3.3.3. Posibilidad y licitud de las condiciones.
+      4.3.3.3.1. Eficacia de las condiciones positivas imposibles o ilícitas.
+      4.3.3.3.2. Eficacia de las condiciones negativas imposibles o
+      ilícitas.
+      4.3.3.4. Condiciones expresas o tácitas.
+      4.3.3.5. Condiciones determinadas e indeterminadas.
+      4.3.3.5.1. Caducidad de las condiciones indeterminadas.
+      4.3.3.6. Condiciones potestativas, casuales o mixtas.
+      4.3.4. Reglas comunes a las condiciones.
+      4.3.4.1. Estados en que puede encontrarse la condición.
+      4.3.4.1.1. Pendiente.
+      4.3.4.1.2. Cumplida.
+      4.3.4.1.3. Fallida.
+      4.3.4.2. Cómo deben cumplirse las condiciones.
+      4.3.4.3. La retroactividad de la condición cumplida.
+      4.3.4.3.1. Tendencias y doctrinas.
+      4.3.4.3.2. Casos en que el Código la acepta.
+      4.3.4.3.3. Casos en que el Código la rechaza.
+      4.3.4.3.4. Conclusiones.
+      4.3.4.4. Formas de entregar la cosa debida cumplida la condición.
+      4.3.4.4.1. Los aumentos y mejoras pertenecen al acreedor.
+      4.3.4.4.2. Los deterioros y disminuciones los sufre el acreedor.
+      4.3.4.4.3. Los frutos pertenecen al deudor.
+      4.3.4.4.4. Pérdida de la cosa debida bajo condición.
+      4.3.4.4.5. Enajenaciones y gravámenes del deudor condicional.
+      4.3.5. Efectos.
+      4.3.5.1. Efectos de la condición suspensiva.
+      4.3.5.2. Efectos de la condición suspensiva pendiente
+      4.3.5.2.1. Ni el derecho ni la obligación existen
+      4.3.5.2.2. El vínculo jurídico existe
+      4.3.5.2.3. El acreedor tiene una legítima expectativa de llegar a
+      serlo
+      4.3.5.3. Efectos de la condición suspensiva cumplida
+      4.3.5.4. Efectos de la condición resolutoria.
+      4.3.5.4.1. Efectos de la condición resolutoria ordinaria.
+      4.3.5.4.1.1. Pendiente.
+      4.3.5.4.1.2. Cumplida.
+      4.3.5.4.1.3. Fallida. Cómo opera.
+      4.3.5.4.2. Efectos de la condición resolutoria tácita.
+      4.3.5.4.2.1. Concepto.
+      4.3.5.4.2.2. Fundamento de la condición resolutoria
+      tácita.
+      4.3.5.4.2.3. Requisitos de procedencia de la condición
+      resolutoria tácita.
+      4.3.5.4.2.4. Paralelo entre condición resolutoria
+      ordinaria y tácita.
+      4.3.5.4.3. Efectos del pacto comisorio.
+      4.3.5.4.3.1. Concepto.
+      4.3.5.4.3.2. El pacto comisorio es de aplicación general.
+      4.3.5.4.3.3. Clasificación.
+      4.3.5.4.3.4. Simple.
+      4.3.5.4.3.5. Calificado. En la compraventa y
+      en los demás contratos.
+    excluidas: |-
+      Obligaciones con pluralidad de objeto: objeto múltiple, alternativas y facultativas.
+      Otras clasificaciones de las obligaciones.
+      Obligaciones modales.
+  - numero: 17
+    seccion: V. OBLIGACIONES
+    subseccion: ""
+    tema: Efectos y modos de extinguir las obligaciones
+    contenido: |-
+      1. Efectos de las obligaciones.
+      2. Modos de extinguir las obligaciones.
+      2.1. El mutuo consentimiento.
+      2.2. El pago efectivo o solución.
+      2.2.1. Concepto.
+      2.2.2. Por quién debe hacerse.
+      2.2.3. Requisitos del pago en las obligaciones de dar.
+      2.2.4. A quién debe hacerse.
+      2.2.5. Dónde y cuándo debe hacerse.
+      2.2.6. Cómo y de qué forma debe pagarse.
+      2.2.7. Prueba del pago.
+      2.2.8. La imputación del pago.
+      2.2.9. El pago con subrogación.
+      2.3. La dación en pago.
+      2.4. La novación.
+      2.4.1. Requisitos necesarios para que haya novación.
+      2.4.2. La novación por cambio de obligación.
+      2.4.3. La novación por cambio de acreedor.
+      2.4.4. La novación por cambio de deudor.
+      2.4.5. Efectos de la novación.
+      2.4.6. La delegación.
+      2.4.6.1. Requisitos de la delegación perfecta.
+      2.4.6.2. Efectos de la delegación perfecta.
+      2.4.6.3. La delegación imperfecta.
+      2.5. La compensación.
+      2.6. La pérdida de la cosa que se debe.
+      2.7. La prescripción extintiva.
+      2.7.1. Concepto.
+      2.7.2. Reglas comunes a toda prescripción.
+      2.7.3. Requisitos de la prescripción extintiva.
+    excluidas: |-
+      Pago por consignación.
+      Pago por cesión de bienes.
+      Pago con beneficio de competencia.
+      La remisión.
+      La confusión
+      La pérdida de la cosa que se debe (salvo reglas del caso fortuito).
+  - numero: 18
+    seccion: V. OBLIGACIONES
+    subseccion: ""
+    tema: El incumplimiento de las obligaciones
+    contenido: |-
+      1. Concepto.
+      2. Clasificación.
+      3. Prueba del incumplimiento.
+      4. Derechos del acreedor ante el incumplimiento.
+      5. El cumplimiento forzado.
+      5.1. En las obligaciones de dar.
+      5.2. En las obligaciones de hacer.
+      5.3. En las obligaciones de no hacer.
+      6. La resolución del contrato.
+      6.1. Acción Resolutoria.
+      6.1.1. El derecho de opción del acreedor.
+      6.1.2. Concepto de acción resolutoria.
+      6.1.3. Características.
+      6.1.4. Prescripción.
+      6.1.5. La renuncia a la acción resolutoria.
+      6.1.6. Paralelo con la acción comisoria.
+      6.2. Efectos de la Resolución.
+      6.2.1. Restitución de la cosa.
+      6.2.2. La resolución y las enajenaciones y gravámenes a terceros.
+      6.2.3. Cuando se aplican los arts. 1490 y 1491.
+      6.2.3.1. Actos afectados por la resolución.
+      6.2.3.2. Bienes muebles.
+      6.2.3.3. Bienes inmuebles.
+      7. La indemnización de perjuicios o responsabilidad contractual.
+      7.1. Concepto.
+      7.2. Fundamento, principios y evolución.
+      7.3. Clases de indemnización.
+      7.3.1. Compensatoria
+      7.3.2. Moratoria
+      7.4. Requisitos de la indemnización.
+      7.4.1. Incumplimiento.
+      7.4.2. Existencia de perjuicios.
+      7.4.3. Imputabilidad.
+      7.4.3.1. El dolo contractual.
+      7.4.3.1.1. Concepto.
+      7.4.3.1.2. Prueba.
+      7.4.3.1.3. Efectos.
+      7.4.3.2. La culpa contractual.
+      7.4.3.2.1. Concepto.
+      7.4.3.2.2. Graduación.
+      7.4.3.2.3. Presunción.
+      7.4.3.2.4. Efectos.
+      7.4.3.2.5. Culpa por el hecho ajeno.
+      7.4.4. Relación de causalidad.
+      7.4.4.1. Daño eventual e indemnización probabilidades.
+      7.4.4.2. Daño indirecto y doctrinas materiales, normativas y mixtas sobre
+      la causalidad.
+      7.4.5. Mora del deudor.
+      7.4.5.1. Concepto de mora.
+      7.4.5.2. Requisitos de la mora.
+      7.4.5.2.1. Interpelación.
+      7.4.5.2.2. Que el acreedor no esté en mora.
+      7.4.5.3. Efectos de la mora.
+      7.4.5.3.1. Derecho a reclamar indemnización de perjuicios.
+      7.4.5.3.2. Responsabilidad del deudor por caso fortuito.
+      7.4.5.3.3. Riesgo de la especie o cuerpo cierto pasa al deudor.
+      7.4.5.3.4. Efectos de la mora en los contratos bilaterales.
+      7.4.5.4. La mora del acreedor.
+      7.4.5.4.1. Concepto.
+      7.4.5.4.2. Desde cuándo está en mora el acreedor.
+      7.4.5.4.3. Efectos de la mora del acreedor.
+      7.4.5.4.4. Casos de mora del acreedor en el Código Civil.
+      7.5. Avaluación de perjuicios (judicial, legal, convencional).
+      7.5.1. Avaluación Judicial.
+      7.5.1.1. El daño moral en la indemnización contractual.
+      7.5.1.2. El daño emergente y lucro cesante.
+      7.5.1.3. Perjuicios previstos e imprevistos.
+      7.5.1.4. Modificación de las reglas legales por las partes.
+      7.5.2. Avaluación legal de los perjuicios.
+      7.5.2.1. Intereses que debe el deudor.
+      7.5.2.2. Si el acreedor cobra intereses no debe probar perjuicios.
+      7.5.2.3. Anatocismo.
+      7.5.2.4. Rentas, cánones y pensiones periódicas.
+      7.5.3. Avaluación convencional: la cláusula penal.
+      7.5.3.1. Concepto
+      7.5.3.2. Como avaluación anticipada de perjuicios.
+      7.5.3.3. Como caución civil.
+      7.5.3.4. Como pena civil.
+      8. Derechos adicionales del acreedor y efectos de la insolvencia en la obligación.
+      8.1. Derechos auxiliares del acreedor.
+      8.2. Respuestas concursales
+      8.2.1. Procedimiento concursal de liquidación.
+      8.2.2. Cesión de bienes.
+      8.3. La prelación de créditos.
+    excluidas: |-
+      La cesión de bienes.
+      El beneficio de competencia.
+      Las medidas conservativas.
+  - numero: 19
+    seccion: VI. FUENTES DE LAS OBLIGACIONES
+    subseccion: ""
+    tema: La responsabilidad por delito o cuasidelito civil, extracontractual o aquiliana
+    contenido: |-
+      1. Concepto.
+      2. Fundamentos, principios y evolución.
+      3. Diferencias y relación con la responsabilidad penal.
+      4. Diferencias y relación con la responsabilidad civil contractual.
+      5. Requisitos.
+      5.1. La acción u omisión.
+      5.2. El daño.
+      5.2.1. Concepto.
+      5.2.2. Requisitos para que sea indemnizable: certidumbre, daño futuro, daño
+      eventual, pérdida de probabilidades.
+      5.2.3. Clasificaciones.
+      5.2.3.1. Daño emergente.
+      5.2.3.2. Lucro cesante.
+      5.2.3.3. Daño moral.
+      5.2.4. Avaluación del daño.
+      5.2.5. Prueba del daño.
+      5.3. Los factores de atribución (subjetiva y objetiva).
+      5.3.1. Responsabilidad estricta y responsabilidad por culpa.
+      5.3.2. El abuso del derecho o su ejercicio de buena fe.
+      5.3.3. La legítima defensa.
+      5.3.4. El estado de necesidad.
+      5.3.5. Culpabilidad del autor y de la víctima.
+      5.4. La relación de causalidad.
+      5.4.1. Concepto.
+      5.4.2. Teorías. Causalidad natural y causalidad normativa.
+      5.4.3. Pluralidad de causas: Teoría de la equivalencia de las condiciones.
+      5.4.4. Predisposiciones.
+      5.4.5. Daño eventual.
+      5.4.6. Eximentes de responsabilidad.
+      5.5. La capacidad delictual.
+      5.5.1. Reglas.
+      5.5.2. Caso de intoxicados por ebriedad y otras causas.
+      5.5.3. Capacidad de las personas jurídicas.
+      6. Las presunciones de responsabilidad.
+      6.1. Por el hecho propio.
+      6.2. Por el hecho ajeno.
+      6.3. Por el hecho de las cosas.
+      7. Cláusulas modificatorias o eximentes de responsabilidad.
+      8. El problema de la concurrencia de responsabilidades.
+      9. La acción de responsabilidad extracontractual.
+  - numero: 20
+    seccion: VI. FUENTES DE LAS OBLIGACIONES
+    subseccion: ""
+    tema: La teoría general del contrato
+    contenido: |-
+      1. Concepto de contrato.
+      2. Clasificaciones y categorías contractuales.
+      3. Elementos constitutivos del contrato.
+      3.1. Cosas de la esencia.
+      3.2. De la naturaleza.
+      3.3. Accidentales.
+      4. Principios fundamentales de la contratación.
+      4.1. Consensualismo.
+      4.2. Libertad contractual.
+      4.3. Buena fe.
+      5. Efectos generales del contrato.
+      5.1. Fuerza obligatoria.
+      5.2. Efectos relativos.
+      5.2.1. La estipulación por otro.
+      5.2.2. Promesa de hecho ajeno.
+      6. Interpretación de los contratos.
+      6.1. El sistema chileno de interpretación.
+      6.1.1. Aplicación de los términos de un contrato.
+      6.1.2. Interpretación armónica de las cláusulas.
+      6.1.3. La costumbre y las cláusulas de uso común.
+      6.1.4. Aplicación práctica.
+      6.1.5. Interpretación de ejemplos.
+      6.1.6. Interpretación cláusulas ambiguas.
+      6.2. La buena fe como medio para interpretar los contratos.
+      7. Integración del contrato.
+  - numero: 21
+    seccion: VI. FUENTES DE LAS OBLIGACIONES
+    subseccion: ""
+    tema: Los contratos en particular
+    contenido: |-
+      1. Los contratos preparatorios.
+      1.1. Culpa in contrahendo y tratativas preliminares.
+      1.2. Contrato de promesa.
+      2. La compraventa.
+      2.1. Concepto, características, clasificaciones.
+      2.2. De la cosa.
+      2.3. Del precio.
+      2.4. Solemnidades.
+      2.5. Capacidad.
+      2.6. Efectos.
+      2.6.1. Obligaciones del vendedor.
+      2.6.1.1. Entregar o hacer la tradición.
+      2.6.1.2. Saneamiento evicción.
+      2.6.1.3. Saneamiento vicios redhibitorios.
+      2.6.2. Obligaciones del comprador.
+      2.7. Rescisión de la venta por lesión enorme.
+      2.8. Pactos especiales.
+      2.8.1. Pacto comisorio.
+      2.8.2. Pacto de retroventa.
+      2.8.3. Pacto de Retracto.
+      3. El arrendamiento de cosa.
+      3.1. Concepto.
+      3.2. Características.
+      3.3. Requisitos.
+      3.4. Efectos.
+      3.5. Arrendamiento de predios raíces urbanos.
+      4. El mandato.
+      4.1. Definición, elementos, características, diferencia con otras instituciones.
+      4.2. Capacidad de las partes.
+      4.3. Mandato general y especial.
+      4.4. Obligaciones del mandante.
+      4.5. Obligaciones del mandatario.
+      4.6. Extinción del mandato.
+      5. La transacción.
+      6. Los contratos reales.
+      6.1. Enumeración.
+      6.2. Conceptos de los cuatro contratos reales típicos.
+      6.3. Mutuo.
+      6.3.1. Concepto.
+      6.3.2. Características.
+      6.3.3. Requisitos.
+      6.3.4. Efectos.
+      7. Los contratos de garantía.
+      7.1. Conceptos generales.
+      7.2. Cauciones personales.
+      7.2.1. La fianza.
+      7.3. Cauciones reales
+      7.3.1. La prenda.
+      7.3.1.1. Concepto.
+      7.3.1.2. Características.
+      7.3.1.3. Requisitos.
+      7.3.1.4. Efectos.
+      7.3.2. La hipoteca.
+    excluidas: |-
+      Arrendamiento de predios rústicos.
+      Arrendamiento de servicios.
+      Arrendamiento de transporte
+      Otros contratos preparatorios.
+      Permuta.
+      Censo.
+      Sociedad.
+      Comodato.
+      Depósito.
+      Contratos aleatorios.
+      Cuasicontratos.
+      Anticresis
+  - numero: 22
+    seccion: VII. DERECHO DE FAMILIA
+    subseccion: ""
+    tema: Introducción
+    contenido: |-
+      1. La familia en el Derecho.
+      2. Concepto, naturaleza y características del Derecho de familia.
+      3. Principios que informan el Derecho de familia y sus transformaciones.
+      4. Familia, parentesco y matrimonio.
+      4.1. Concepto de parentesco.
+      4.2. Clasificaciones del parentesco.
+  - numero: 23
+    seccion: VII. DERECHO DE FAMILIA
+    subseccion: ""
+    tema: El matrimonio
+    contenido: |-
+      1. Esponsales o promesa de matrimonio.
+      2. Naturaleza del matrimonio, conceptos y elementos.
+      3. Requisitos del matrimonio.
+      3.1. Requisitos de existencia.
+      3.1.1. Diversidad de sexos.
+      3.1.2. Consentimiento de los contrayentes.
+      3.2. Requisitos de validez.
+      3.2.1. Consentimiento exento de vicios.
+      3.2.1.1. El error en la identidad de la persona.
+      3.2.1.2. El error en las cualidades.
+      3.2.1.3. La fuerza.
+      3.2.2. Capacidad de las partes y ausencia de impedimentos dirimentes.
+      3.2.3. Solemnidades.
+      3.2.3.1. Matrimonios celebrados en Chile
+      3.2.3.1.1. Ante oficial civil.
+      3.2.3.1.2. Ante entidad religiosa.
+      3.2.3.1.3. Requisitos.
+      3.2.3.2. Matrimonios celebrados en el extranjero.
+      4. Efectos del matrimonio.
+      5. Bienes familiares.
+      6. Término del matrimonio y visión crítica de las causales de terminación.
+      6.1. La separación de hecho y separación judicial
+      6.2. La disolución por muerte real y presunta.
+      6.3. La disolución por declaración de nulidad.
+      6.4. La disolución por divorcio.
+      6.4.1. Clasificación.
+      6.4.2. Convenio regulador.
+      6.4.3. Compensación económica.
+    excluidas: |-
+      Impedimentos impedientes o prohibiciones.
+      Suspensión y término de la Patria Potestad.
+      La emancipación.
+      Tutelas y Curadurías.
+  - numero: 24
+    seccion: VII. DERECHO DE FAMILIA
+    subseccion: ""
+    tema: Regímenes patrimoniales del matrimonio
+    contenido: |-
+      1. Generalidades sobre los distintos regímenes.
+      2. Las capitulaciones matrimoniales.
+      2.1. Definición.
+      2.2. Características.
+      2.3. Naturaleza jurídica.
+      2.4. Solemnidades.
+      2.5. Estipulaciones permitidas.
+      2.6. Estipulaciones prohibidas.
+      3. La sociedad conyugal.
+      3.1. Haber absoluto o bienes que ingresan sin cargo a recompensa.
+      3.2. Haber Relativo o bienes que ingresan con cargo a recompensa.
+      3.3. Bienes que permanecen en el haber propio de cada cónyuge.
+      3.4. La subrogación.
+      3.4.1. Subrogación personal y real.
+      3.4.2. Subrogación de inmueble a inmueble.
+      3.4.3. Subrogación de inmueble a valores.
+      3.4.4. Requisitos aplicables a toda clase de subrogación.
+      3.5. Pasivo absoluto de la sociedad conyugal.
+      3.6. Pasivo relativo.
+      3.7. Las recompensas.
+      3.7.1. De la sociedad a los cónyuges.
+      3.7.2. De los cónyuges a la sociedad.
+      3.7.3. De las que se deben entre sí los cónyuges.
+      3.8. Administración de la sociedad conyugal.
+      3.8.1. Administración ordinaria.
+      3.8.1.1. Administración de los bienes de la mujer.
+      3.8.1.2. Administración de los bienes sociales.
+      3.8.2. Administración extraordinaria.
+      3.9. La renuncia a los gananciales.
+      3.10. Disolución de la sociedad conyugal.
+      3.11. Patrimonio Reservado de la Mujer Casada
+      3.11.1. Requisitos
+      3.11.2. Activo del patrimonio reservado
+      3.11.3. Pasivo del patrimonio reservado
+      3.11.4. Administración
+      3.11.5. Prueba del patrimonio reservado
+      3.11.6. Efectos de la disolución de la sociedad en este patrimonio.
+      4. La separación de bienes.
+      4.1. Separación Judicial.
+      4.1.1. Causales.
+      4.1.2. Efectos.
+      4.2. Separación Legal.
+      4.2.1. Total.
+      4.2.1.1. Causales.
+      4.2.1.2. Efectos.
+      4.2.2. Parcial.
+      4.2.2.1. Causales.
+      4.2.2.2. Efectos.
+      4.3. Separación Convencional.
+    excluidas: |-
+      Liquidación de la sociedad Conyugal.
+      Régimen de participación en los gananciales.
+  - numero: 25
+    seccion: VII. DERECHO DE FAMILIA
+    subseccion: ""
+    tema: La filiación
+    contenido: |-
+      1. Filiación matrimonial y no matrimonial
+      2. Adopción y técnicas de reproducción asistida
+      3. Efectos de la filiación
+    excluidas: Acciones de filiación
+  - numero: 26
+    seccion: VII. DERECHO DE FAMILIA
+    subseccion: ""
+    tema: El derecho de alimentos
+    contenido: ""
+  - numero: 27
+    seccion: VIII. DERECHO SUCESORIO
+    subseccion: ""
+    tema: La sucesión por causa de muerte como modo de adquirir el dominio
+    contenido: |-
+      1. Concepto.
+      2. Características.
+      2.1. Derivativo.
+      2.2. A título gratuito.
+      2.3. A título universal o singular.
+      3. Asignatarios (herederos y legatarios).
+      3.1. Asignatarios a título universal o herederos.
+      3.1.1. Herederos universales.
+      3.1.2. Herederos de cuota.
+      3.1.3. Heredero del remanente.
+      3.2. Asignatarios a título singular o legatarios.
+      3.2.1. Legados de género.
+      3.2.2. Legados de especie o cuerpo cierto.
+      4. La apertura de la sucesión.
+      4.1. Concepto.
+      4.2. Oportunidad en que se produce.
+      4.3. Comurientes.
+      4.4. Lugar en que se abre.
+      4.5. Ley que la rige.
+      4.6. La guarda y aposición de sellos.
+      4.7. Publicidad de la apertura.
+      5. La delación de las asignaciones.
+      5.1. Concepto.
+      5.2. Momento en que se defiere.
+      5.3. Momento en que se defiere la asignación condicional.
+      6. La aceptación y la repudiación.
+      6.1. Concepto.
+      6.2. Cuál es el plazo para pronunciarse: desde y hasta cuando se cuenta.
+      6.3. Libertad para aceptar o repudiar: Excepciones.
+      6.4. Características del acto de aceptación y repudiación.
+      6.5. Aceptación tácita de la herencia.
+      7. La herencia yacente.
+      8. Beneficio de inventario
+      9. El derecho de transmisión.
+  - numero: 28
+    seccion: VIII. DERECHO SUCESORIO
+    subseccion: ""
+    tema: El derecho real de herencia
+    contenido: |-
+      1. Concepto.
+      2. Características.
+      3. Posesión de la herencia.
+      3.1. Legal.
+      3.2. Material.
+      3.3. Efectiva. Noción.
+      4. Requisitos para que los asignatarios puedan disponer de los bienes heredados.
+      5. Adquisición del derecho real de herencia por tradición y por prescripción.
+      6. La acción de petición de herencia.
+      6.1. Concepto.
+      6.2. Características.
+      6.3. Sujetos de la acción.
+      6.4. Objeto de la acción.
+      6.5. Efectos.
+  - numero: 29
+    seccion: VIII. DERECHO SUCESORIO
+    subseccion: ""
+    tema: Incapacidades e indignidades
+    contenido: |-
+      1. Requisitos para suceder.
+      2. Capacidad para suceder.
+      3. Indignidades.
+  - numero: 30
+    seccion: VIII. DERECHO SUCESORIO
+    subseccion: ""
+    tema: La sucesión intestada
+    contenido: |-
+      1. Ámbito de aplicación.
+      2. Fundamentos de la sucesión intestada.
+      3. Los herederos ab intestato.
+      3.1. Quiénes son.
+      3.2. Concepto de órdenes de sucesión
+      3.3. Órdenes de sucesión (posteriores al 26 de octubre de 1998).
+      3.3.1. Cuando la filiación del causante se encuentra determinada.
+      3.3.2. Cuando la filiación del causante no se encuentra determinada.
+      3.4. El derecho de representación.
+      3.4.1. Concepto.
+      3.4.2. Personas que intervienen.
+      3.4.3. Requisitos para que opere.
+      3.4.4. De dónde emana el derecho del representante.
+      3.4.5. Efectos de la representación.
+      3.5. Pérdida de derechos de sucesión intestada.
+      3.6. Extranjeros y sucesión intestada.
+      4. Las sucesiones mixtas.
+  - numero: 31
+    seccion: VIII. DERECHO SUCESORIO
+    subseccion: ""
+    tema: La sucesión testada
+    contenido: |-
+      1. El Testamento
+      1.1. Concepto y características.
+      1.2. Requisitos.
+      1.2.1. Capacidad.
+      1.2.2. Voluntad exenta de vicios.
+      1.3. Clasificación.
+      1.3.1. Otorgado en Chile.
+      1.3.1.1. Solemne abierto.
+      1.3.1.2. Solemne cerrado.
+      1.4. Interpretación.
+      1.5. Nulidad.
+      1.6. Revocación.
+      1.6.1. Qué es lo revocable.
+      1.6.2. Cómo debe revocarse.
+      1.6.3. Clasificación.
+      1.6.3.1. Expresa.
+      1.6.3.2. Tácita.
+      2. Las Asignaciones Testamentarias.
+      2.1. Conceptos generales.
+      2.2. Requisitos.
+      2.3. Derechos que concurren en la sucesión
+      2.3.1. Acrecimiento.
+      2.3.2. Sustitución.
+      2.3.3. Cómo concurren los derechos de representación, transmisión,
+      acrecimiento y sustitución.
+      2.4. Las asignaciones forzosas.
+      2.4.1. Concepto de asignaciones forzosas.
+      2.4.2. Limitaciones a la libertad de testar.
+      2.4.3. Enumeración.
+      2.4.3.1. Alimentos que se deben por ley.
+      2.4.3.2. Legítimas (sucesiones a partir del 26 de octubre de 1998).
+      2.4.3.2.1. Concepto y naturaleza de las legítimas.
+      2.4.3.2.2. Quiénes son legitimarios.
+      2.4.3.2.3. Comparación con la forma de distribuir la herencia
+      abintestato.
+      2.4.3.2.4. Legítima Rigorosa.
+      2.4.3.2.4.1. Concepto.
+      2.4.3.2.4.2. Cómo se determina.
+      2.4.3.2.4.3. Cómo se divide.
+      2.4.3.2.4.4. Características.
+      2.4.3.2.4.5. Cómo concurren entre sí.
+      2.4.3.2.4.6. Caso en que falte un legitimario sin nadie
+      que pueda representarlo.
+      2.4.3.2.5. Legítima Efectiva.
+      2.4.3.2.5.1. Concepto.
+      2.4.3.2.5.2. No favorece al cónyuge.
+      2.4.3.2.5.3. La legítima efectiva solo existe si todos los
+      herederos son legitimarios.
+      2.4.3.2.6. Derechos y cargas especiales del cónyuge sobreviviente
+      como legitimario.
+      2.4.3.2.6.1. Porción mínima según art. 988.
+      2.4.3.2.6.2. Pérdida de la calidad de legitimario.
+      2.4.3.2.7. La colación o primer acervo imaginario.
+      2.4.3.2.8. El segundo acervo imaginario.
+      2.4.3.2.9. Cosas imputables a las legítimas.
+      2.4.3.2.10. Cómo se pagan las legítimas y los diversos casos que se
+      presentan.
+      2.4.3.3. Cuarta de mejoras.
+      2.4.3.3.1. Beneficiarios de la Cuarta de Mejoras.
+      2.4.3.3.2. Forma en que se puede distribuir la Cuarta.
+      2.4.3.3.3. Características.
+      2.4.3.3.4. Convención respecto de la Cuarta de mejoras.
+      2.4.4. La acción de reforma de testamento y la preterición.
+      2.4.4.1. Concepto.
+      2.4.4.2. Características.
+      2.4.4.3. Objeto: qué es lo que protege.
+      3. El Desheredamiento.
+      3.1. Concepto.
+      3.2. Requisitos del desheredamiento.
+      3.3. Efectos.
+      3.4. Revocación.
+  - numero: 32
+    seccion: VIII. DERECHO SUCESORIO
+    subseccion: ""
+    tema: La partición de bienes
+    contenido: |-
+      1. La acción de partición.
+      1.1. Concepto, características.
+      1.2. El pacto de indivisión.
+      1.3. La indivisión forzada.
+      2. Formas de hacer la partición.
+      2.1. Por el propio causante.
+      2.2. De común acuerdo.
+      2.3. Por un partidor.
+      3. Efectos de la partición.
+      3.1. La adjudicación y el efecto retroactivo de la partición.
+      3.2. La evicción en la partición.
+  - numero: 33
+    seccion: VIII. DERECHO SUCESORIO
+    subseccion: ""
+    tema: El pago de las deudas hereditarias
+    contenido: |-
+      1. Responsabilidad de los herederos.
+      2. Cómo se dividen las deudas hereditarias. Las excepciones a la divisibilidad.
+      3. Responsabilidad de los legatarios por deudas de la herencia.
+  - numero: 34
+    seccion: VIII. DERECHO SUCESORIO
+    subseccion: ""
+    tema: El beneficio de separación.
+    contenido: |-
+      1. Concepto.
+      2. Personas que tiene derecho a solicitarlo.
+      3. Contra quién se pide.
+      4. Efectos.
+    excluidas: |-
+      Testamentos privilegiados.
+      Testamentos otorgados en el extranjero.
+      Clasificación de las asignaciones testamentarias.
+      Donaciones revocables e irrevocables.
+      Los albaceas y ejecutores testamentarios.
+      Acciones y recursos contra la partición.
+      El pago de las cargas testamentarias o legados.
+      Las guardas.

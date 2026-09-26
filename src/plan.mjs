@@ -25,13 +25,18 @@ export const MINUTOS = { tema_nuevo: 30, repaso: 7, simulacro: 45 };
  */
 export function alcance(temario, universidad) {
   const porRama = { civil: [], procesal: [] };
-  const vistos = new Set();
+  // Unidades o temas que el examen no incluye (p. ej. proceso penal en la UAI),
+  // aplicables cuando no hay cedulario del ramo que ya las deje fuera.
+  const excluye = universidad?.perfil?.alcance_excluye ?? [];
+  const vistos = new Set(
+    [...temario.temas.values()].filter((t) => excluye.some((x) => t.id === x || t.unidad === x)).map((t) => t.id),
+  );
   const ced = universidad?.cedularios ?? {};
   for (const rama of ['civil', 'procesal']) {
     if (ced[rama]?.length) {
       for (const c of ced[rama]) for (const t of c.temas) if (!vistos.has(t)) (vistos.add(t), porRama[rama].push(t));
     } else {
-      for (const t of temario.temas.values()) if (t.rama === rama) (vistos.add(t.id), porRama[rama].push(t.id));
+      for (const t of temario.temas.values()) if (t.rama === rama && !vistos.has(t.id)) (vistos.add(t.id), porRama[rama].push(t.id));
     }
   }
   return porRama;

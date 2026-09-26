@@ -1,0 +1,980 @@
+# Cédula de Derecho Procesal, Temario de Licenciatura — Facultad de Derecho UC (vigente desde el 1 de abril de 2021). https://derecho.uc.cl/wp-content/uploads/2026/05/Cedula_Derecho_Procesal_18.03.2021.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "puc") y revisada.
+# La numeración es nuestra cuando el documento no numera cédulas.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: I. INSTITUCIONES PROCESALES I
+    subseccion: ""
+    tema: El conflicto de relevancia jurídica y sus formas de solución
+    contenido: |-
+      1. Autotutela y heterotutela
+      1.1. El conflicto de relevancia jurídica (concepto) y sus formas de solución
+      1.2. Autotutela: concepto, necesidad de exclusión en un Estado de Derecho y
+      prohibición en Chile
+      1.3. Heterotutela: concepto de proceso y derecho a la acción.
+      1.4. Autocomposición
+      2. Medios alternativos de resolución de conflictos en materia civil y penal
+      2.1. Medios de autocomposición en materia civil:
+      2.1.1. Renuncia de derechos
+      2.1.2. Transacción
+      2.1.3. Desistimiento de la demanda
+      2.1.4. Allanamiento a la demanda 2.1.5. Avenimiento
+      2.1.6. Conciliación.
+      2.2. Medios de autocomposición en materia penal:
+      2.2.1. Suspensión condicional del procedimiento
+      2.2.2. Acuerdos reparatorios
+      2.2.3. Principio de oportunidad
+    excluidas: |-
+      Evolución del Derecho Procesal.
+      Clasificación del Derecho Procesal
+      Fuentes del Derecho Procesal
+  - numero: 2
+    seccion: I. INSTITUCIONES PROCESALES I
+    subseccion: ""
+    tema: La jurisdicción
+    contenido: |-
+      1. Bases constitucionales y legales
+      2. Elementos, concepto y momentos
+      2.1. Elementos del acto jurisdiccional
+      2.1.1. Forma
+      2.1.2. Contenido
+      2.1.3. Función
+      2.2. Concepto de jurisdicción:
+      2.2.1. Concepto del artículo 76 CPR.
+      2.2.2. Concepto doctrinario.
+      2.3. Momentos jurisdiccionales:
+      2.3.1. Conocimiento;
+      2.3.2. Decisión (juzgamiento);
+      2.3.3. Ejecución.
+      3. Características de la jurisdicción
+      3.1. Exclusiva
+      3.2. Improrrogable
+      3.3. Indelegable
+      3.4. Unitaria
+      4. Eficacia de la función jurisdiccional
+      5. Jurisdicción contencioso-administrativa
+      5.1. Relación entre actos jurisdiccionales y actos administrativos
+      5.2. Función jurisdiccional y función administrativa
+      5.3. El control jurisdiccional sobre los actos administrativos
+      5.4. Jurisdicción contencioso-administrativa
+      6. Jurisdicción supranacional y extranjera
+      6.1. Principio de territorialidad de la jurisdicción
+      6.2. Tribunales chilenos conocen conflictos surgidos fuera de Chile
+      6.3. Tribunales extranjeros conocen conflictos surgidos dentro de Chile (transferencia
+      por acto legislativo y por las partes).
+      7. Facultades anexas a la jurisdicción
+      7.1. Facultades conservadoras
+      7.1.1. Concepto
+      7.1.2. Manifestaciones de ejercicio de esta facultad
+      7.2. Facultades disciplinarias
+      7.2.1. Concepto
+      7.2.2. Manifestaciones de ejercicio de esta facultad
+      7.3. Facultades económicas
+      7.3.1. Concepto
+      7.3.2. Manifestaciones de ejercicio de esta facultad
+      8. Actos judiciales no contenciosos
+      8.1. Concepto
+      8.2. Calidad no jurisdiccional
+    excluidas: |-
+      Límites internos y externos a la jurisdicción
+      Conflictos de jurisdicción: conflictos entre órganos de distintos Estados y
+      conflictos al interior de un mismo Estado Relación
+      con la función legislativa y administrativa
+      Respecto de los actos judiciales no contenciosos se excluye la tramitación general
+      de los actos judiciales no contenciosos y la transformación en un acto
+      contencioso.
+  - numero: 3
+    seccion: I. INSTITUCIONES PROCESALES I
+    subseccion: ""
+    tema: El derecho a la tutela jurisdiccional
+    contenido: |-
+      1. Derecho a la acción: acción y pretensión
+      1.1. Naturaleza y concepto del derecho a la acción.
+      1.2. Concepto y diferencias entre acción y pretensión.
+      2. Derecho a la reacción: excepciones y defensas
+      2.1. Concepto de derecho a la reacción
+      2.2. Relación con el derecho a la acción
+      2.3. Contenido de la pretensión del demandado
+      2.3.1. Concepto de excepciones procesales y materiales
+      2.3.2. Concepto de alegaciones y defensas
+      3. Tipos particulares de tutela
+      3.1. Declarativa o de mera declaración, positivas y negativas
+      3.1.1. Concepto y contenido
+      3.2. Constitutiva
+      3.2.1. Concepto y contenido
+      3.3. Condenatoria específica, de futuro y genérica o con reserva
+      3.3.1. Concepto y contenido
+      3.4. De ejecución
+      3.4.1. Concepto y contenido
+      3.5. Anticipada y de urgencia
+      3.5.1. Concepto y contenido
+      3.6. De jactancia y autodenuncia
+      3.6.1. Concepto y contenido de la jactancia.
+      3.6.2. Concepto y contenido de la autodenuncia en materia penal
+      3.7. Tutela preventiva
+      3.7.1. Concepto y contenido
+      3.8. Tutela cautelar
+      3.8.1. Concepto
+      3.8.2. Requisitos
+      3.8.3. Contracautela
+      3.9. Tutela individual y tutela de intereses colectivos y difusos y de derechos
+      individuales homogéneos
+      3.9.1. Conceptos
+      3.10. Tutela jurisdiccional frente a los actos de la Administración del Estado
+      3.10.1. Concepto y fundamento
+      3.11. Tutela en el ámbito penal.
+      3.11.1. Naturaleza del conflicto jurídico penal
+      3.11.2. Intereses contrapuestos y partes involucrada
+      3.11.3. Principio de oficialidad
+      3.11.4. Reconocimiento del interés de la víctima
+  - numero: 4
+    seccion: I. INSTITUCIONES PROCESALES I
+    subseccion: ""
+    tema: Contenido del derecho a la tutela jurisdiccional
+    contenido: |-
+      IV.1. Acceso a la jurisdicción
+      1. Acceso a órganos propiamente jurisdiccionales
+      1.1. Órganos predeterminados por la ley: derecho al juez natural
+      1.1.1. Contenido del derecho
+      1.1.2. Las normas de competencia en materia civil y penal
+      1.1.2.1. Concepto y función
+      1.1.2.2. Relación con jurisdicción
+      1.1.2.3. Clasificación
+      1.1.2.4. Diferencias entre competencia absoluta y relativa
+      1.1.2.5. Factores de la competencia absoluta (materia civil y penal):
+      1.1.2.5.1. Materia
+      1.1.2.5.2. Fuero
+      1.1.2.5.3. Cuantía
+      1.1.2.6. Territorio como factor de competencia (materia civil y penal)
+      1.1.2.7. Prórroga de la competencia
+      1.1.2.7.1. Concepto
+      1.1.2.7.2. Requisitos
+      1.1.2.7.3. Efectos
+      1.1.2.8. Reglas generales de la competencia
+      1.1.2.8.1. Concepto
+      1.1.2.8.2. Contenido
+      1.1.3. Formas de reclamar de la infracción al derecho al juez natural
+      1.2. Órganos inexcusables – principio de inexcusabilidad
+      1.2.1. Concepto.
+      1.2.2. Jurisdicción como poder deber
+      1.3. Órganos independientes
+      1.3.1. Contenido del derecho
+      1.3.2. Inavocabilidad
+      1.3.3. Sistema de nombramiento de los jueces
+      1.3.4. Inamovilidad
+      1.4. Órganos Imparciales: inhabilidades, implicancias y recusaciones
+      1.4.1. Concepto
+      1.4.2. Diferencias
+      1.4.3. Causales principales
+      1.4.4. Efectos de la inhabilidad una vez declarada.
+      1.5. Órganos integrados por jueces personalmente responsables
+      1.5.1. Responsabilidad de los jueces
+      1.5.1.1. Responsabilidad común
+      1.5.1.2. Responsabilidad disciplinaria
+      1.5.1.2.1. Concepto
+      1.5.1.2.2. Conducta ministerial de los jueces (solo el concepto,
+      no cada uno de los deberes y prohibiciones)
+      1.5.2. Responsabilidad política
+      1.5.3. Responsabilidad ministerial
+      1.5.3.1. Concepto
+      1.5.3.2. Resguardos que establece la ley en esta materia
+      1.5.4. Responsabilidad del Estado por el error judicial
+      1.6. Órganos continuamente accesibles
+      1.6.1. Sedentariedad
+      1.6.2. Subrogación e integración
+      1.6.2.1. Conceptos
+      1.6.2.2. Reglas básicas
+      1.7. Órganos capaces de juzgar dentro de un plazo razonable
+      1.8. Órganos que actúen en forma gratuita
+      1.8.1. Los tribunales prestan un servicio gratuito
+      1.8.2. Derecho a asistencia letrada para quienes no puedan proveérsela
+      1.9. Órganos que actúen públicamente
+      1.9.1. Principio de publicidad
+      1.9.2. Excepciones.
+      2. Que no se excluya el conocimiento de ciertas pretensiones
+      2.1. Contenido de la garantía.
+      3. Que no se obstaculice el conocimiento de las pretensiones (Ej: Solve et repete)
+      3.1. Contenido de la garantía;
+      3.2. Restricciones que el legislador puede imponer legítimamente.
+      1. Concepto y consagración constitucional del debido proceso
+      2. Garantías básicas del Debido Proceso en este ámbito
+      2.1. Derecho a la defensa
+      2.2. Derecho a la asistencia letrada
+      2.3. Derecho a formular alegaciones
+      2.4. Derecho a la presunción de inocencia en materia penal
+      2.5. Derecho a un juicio oral y público en materia penal
+      2.6. Derecho a la prueba
+      2.7. Derecho a la contradicción
+      2.8. Derecho a la igualdad de partes
+      2.9. Derecho a la motivación
+      2.10. Derecho al recurso
+      1. Derecho a la cosa juzgada (ne bis in idem procesal)
+      1.1. La cosa juzgada como atributo esencial de la jurisdicción.
+      2. Derecho a la ejecución de la sentencia
+      2.1. Ejecución de la sentencia y facultad de imperio
+    excluidas: |-
+      Reglas del turno y distribución de causas.
+      Contiendas de competencia.
+      Análisis detallado de los deberes y prohibiciones de los jueces.
+      IV.2. Debido proceso en el conocimiento y decisión
+      Origen y evolución del debido proceso.
+      IV.3. Derecho a la eficacia de la sentencia
+  - numero: 5
+    seccion: I. INSTITUCIONES PROCESALES I
+    subseccion: ""
+    tema: El proceso
+    contenido: |-
+      1. Naturaleza jurídica del proceso
+      1.1. Proceso y procedimiento: diferencias.
+      1.2. Naturaleza jurídica del proceso. Teoría de su naturaleza:
+      1.2.1. Del contrato;
+      1.2.2. Del cuasicontrato;
+      1.2.3. De la relación jurídica;
+      1.2.4. De la situación jurídica;
+      1.2.5. De la institución.
+      2. Presupuestos procesales:
+      2.1. De existencia
+      2.1.1. Concepto de presupuestos procesales
+      2.1.2. Presupuestos de existencia:
+      2.1.2.1. Tribunal
+      2.1.2.2. Partes
+      2.1.2.3. Conflicto de relevancia jurídica
+      2.1.2.4. Emplazamiento del demandado (discusión en cuanto a si el
+      emplazamiento es un presupuesto procesal de existencia)
+      2.1.3. Cosa juzgada aparente
+      2.2. De validez
+      2.2.1. Concepto
+      2.2.2. Presupuestos de validez:
+      2.2.2.1. Competencia
+      2.2.2.2. Capacidad de las partes
+      2.2.2.3. Formas procesales.
+      2.3. De eficacia
+      2.3.1. Concepto
+      2.3.2. Presupuestos de eficacia:
+      2.3.2.1. Accionabilidad
+      2.3.2.2. Legitimación
+      2.3.2.3. Interés para obrar
+    excluidas: Sistemas Procesales Civiles y Penales
+  - numero: 6
+    seccion: I. INSTITUCIONES PROCESALES I
+    subseccion: ""
+    tema: El procedimiento
+    contenido: |-
+      1. Noción de procedimiento
+      2. Principios Formativos del Procedimiento
+      2.1. Unilateralidad y bilateralidad
+      2.1.1. Conceptos
+      2.2. Dispositivo e inquisitivo; acusatorio
+      2.2.1. Conceptos.
+      2.2.2. Principio de aportación de parte.
+      2.3. Orden consecutivo legal, convencional o discrecional
+      2.3.1. Conceptos
+      2.4. Preclusión
+      2.4.1. Concepto
+      2.4.2. Casos.
+      2.5. Concentración y continuidad
+      2.5.1. Conceptos
+      2.6. Oralidad, escrituración y protocolización
+      2.6.1. Conceptos
+      2.7. Mediación o inmediación
+      2.7.1. Conceptos
+      2.8. Buena fe
+      2.8.1. Conceptos
+      2.9. Economía procesal
+      2.10. Publicidad
+  - numero: 7
+    seccion: II. INSTITUCIONES PROCESALES II
+    subseccion: ""
+    tema: Sujetos procesales
+    contenido: |-
+      1. Órgano Jurisdiccionales
+      1.1. Concepto de tribunal
+      1.2. Clasificación de los tribunales
+      1.2.1. Ordinarios, especiales y arbitrales
+      1.2.2. Letrados o iletrados
+      1.2.3. Unipersonales o colegiados
+      1.2.4. Accidentales o permanentes
+      1.2.5. Primera, segunda o única instancia
+      1.2.6. Superiores o inferiores
+      1.3. Tribunales Ordinarios
+      1.3.1. Corte Suprema
+      1.3.1.1. Organización
+      1.3.1.2. Funciones principales en el sistema chileno
+      1.3.1.3. Competencia
+      1.3.2. Cortes de Apelaciones
+      1.3.2.1. Organización
+      1.3.2.2. Competencia
+      1.3.3. Substanciación de los asuntos ante los tribunales colegiados
+      1.3.4. Jueces de Letras
+      1.3.4.1. Concepto
+      1.3.4.2. Organización
+      1.3.4.3. Competencia
+      1.3.5. Tribunales Orales en lo Penal
+      1.3.5.1. Concepto
+      1.3.5.2. Organización
+      1.3.5.3. Competencia
+      1.3.6. Juzgados de Garantía
+      1.3.6.1. Concepto
+      1.3.6.2. Organización
+      1.3.6.3. Competencia
+      1.4. Tribunales Arbitrales
+      1.4.1. Concepto y clases de árbitros
+      1.4.2. Fuentes del arbitraje: compromiso y cláusula compromisoria
+      1.4.3. Aceptación y juramento
+      1.4.4. Requisitos para ser nombrado árbitro
+      1.4.5. Inhabilidades de los árbitros
+      1.4.6. Recursos contra las sentencias de los árbitros
+      1.4.7. Terminación del compromiso
+      2. Partes e intervinientes
+      2.1. Noción de parte
+      2.1.1. Concepto de parte
+      2.1.2. Partes directas: demandantes – demandados
+      2.1.3. Pluralidad de partes
+      2.1.4. Partes indirectas: terceros interesados y no interesados
+      2.2. Intervinientes en el ámbito penal:
+      2.2.1. Fiscal
+      2.2.1.1. Concepto
+      2.2.1.2. Rol
+      2.2.2. Imputado
+      2.2.2.1. Concepto
+      2.2.3. Defensor (público o privado)
+      2.2.4. Víctima
+      2.2.4.1. Concepto
+      2.2.4.2. Víctima en los casos en que el ofendido no puede ejercer los
+      derechos por sí mismo
+      2.2.5. Querellante
+      2.2.5.1. Concepto
+      2.3. Capacidad para ser parte, capacidad procesal y ius postulandi
+      2.4. Comparecencia y actuación de las partes e intervinientes en el proceso:
+      representación procesal
+      2.5. Litis Consortio
+      2.5.1. Litisconsorcio voluntario inicial y ulterior
+      2.5.1.1. Conceptos
+      2.5.1.2. Fundamentos
+      2.5.1.3. Casos
+      2.5.2. Litisconsorcio necesario
+      2.5.2.1. Conceptos
+      2.5.2.2. Fundamentos
+      2.5.2.3. Casos
+      2.5.3. Inicial y sobrevenido
+      2.6. Substitución y sucesión procesal
+      2.6.1. Conceptos
+      2.6.2. Casos
+      2.7. Intervención provocada
+      3. Ministerio Público, Defensoría Penal Pública y Policía
+      3.1. Principios informadores de la actuación del Ministerio Público
+      3.1.1. Principio de oficialidad y legalidad
+      3.1.2. Principio de objetividad
+      3.1.3. Principio de eficiencia
+      3.1.4. Principio de transparencia y probidad
+      3.1.5. Principio de responsabilidad
+      3.2. Defensoría Penal Pública y licitada
+      3.2.1. Concepto
+      3.2.2. Funciones
+      3.3. Policía
+      3.3.1. Concepto
+      3.3.2. Funciones
+    excluidas: |-
+      Tribunales Especiales y órganos de la administración del Estado que ejercen
+      funciones jurisdiccionales
+      Otros titulares activos y pasivos de la acción.
+      Estructura orgánica del Ministerio Público. Funciones del Fiscal Nacional, fiscales
+      regionales, fiscales locales y adjuntos y del Consejo General.
+      Estructura orgánica de la Defensoría Penal Pública. Funciones del Defensor
+      Nacional, defensorías regionales y locales. Sistema de licitaciones y prestadores.
+  - numero: 8
+    seccion: II. INSTITUCIONES PROCESALES II
+    subseccion: ""
+    tema: Los actos jurídicos procesales y su eficacia
+    contenido: |-
+      1. Concepto y requisitos
+      1.1. Concepto de Acto Jurídico Procesal
+      1.2. Requisitos de existencia:
+      1.2.1. Causa procesal
+      1.2.2. Objeto procesal
+      1.2.3. Voluntad
+      1.3. Requisitos de validez:
+      1.3.1. Causa lícita
+      1.3.2. Objeto lícito
+      1.3.3. Voluntad exenta de vicios
+      1.3.4. Capacidad
+      2. Actos y hechos jurídico-procesales
+      3. Actuaciones judiciales y plazos
+      3.1. Concepto
+      3.2. Requisitos de las actuaciones judiciales.
+      3.3. Forma en que pueden ser decretadas las actuaciones judiciales.
+      3.4. Los plazos
+      4. Actos procesales de las partes
+      5. Actos procesales de los terceros
+      6. Actos procesales del tribunal: las resoluciones judiciales
+      6.1. Concepto
+      6.2. Clasificación según naturaleza de las resoluciones: Decretos, Autos, Sentencias
+      interlocutorias y Sentencias definitivas
+      6.2.1. Concepto
+      6.2.2. Requisitos de cada una
+      6.3. Ejecutoriedad de las resoluciones judiciales y resoluciones que causan ejecutoria.
+      6.4. Efectos o cualidades de las resoluciones judiciales
+      6.4.1. Desasimiento
+      6.4.1.1. Concepto
+      6.4.1.2. Regulación
+      6.4.1.3. Excepciones
+      6.4.2. Imperatividad y coercibilidad
+      6.4.3. Cosa Juzgada
+      6.4.3.1. Concepto
+      6.4.3.2. Naturaleza
+      6.4.3.3. Efectos
+      6.4.3.4. Acción y excepción
+      7. Actos procesales de los auxiliares de la administración de justicia: notificaciones
+      7.1. Concepto, importancia y efecto.
+      7.2. Clases:
+      7.2.1. Materia civil
+      7.2.1.1. Tipos de notificación en materia civil
+      7.2.1.2. Procedencia y requisitos de cada una
+      7.2.2. Materia penal
+      8. Ineficacia de los actos procesales:
+      8.1. Inexistencia
+      8.1.1. Concepto
+      8.1.2. Efectos
+      8.1.3. Formas de constatación
+      8.2. Nulidad procesal
+      8.2.1. Concepto, requisitos y efectos.
+      8.2.2. Formas de saneamiento
+      8.2.3. Formas de declaración
+      8.2.4. Efectos
+    excluidas: Notificaciones en Procedimientos especiales
+  - numero: 9
+    seccion: II. INSTITUCIONES PROCESALES II
+    subseccion: ""
+    tema: Teoría de la prueba
+    contenido: |-
+      1. Noción de prueba
+      1.1. Aproximación del juez a los hechos y al derecho.
+      1.2. Definición de prueba.
+      2. Importancia de la prueba como presupuesto de una sentencia justa
+      3. Actos de investigación en el proceso penal
+      3.1. Ministerio Público y Principio de objetividad.
+      4. Fuentes y medios: diferencia entre ambos conceptos
+      5. Objeto de la prueba
+      5.1. Cuál es el objeto de la prueba.
+      5.2. El derecho como objeto de la prueba.
+      6. Tema de la prueba
+      6.1. Concepto.
+      6.2. Hechos que no son tema de prueba:
+      6.2.1. Hechos que no son pertinentes para la pretensión jurídica.
+      6.2.2. Hechos no controvertidos.
+      6.2.3. Hechos notorios.
+      6.2.4. Hechos objeto de una presunción legal.
+      6.2.5. Hechos negativos.
+      7. La carga de la prueba en materia civil y penal
+      7.1. Concepto.
+      7.2. Distribución de la carga de la prueba
+      7.3. Principio de inocencia
+      8. Fases del procedimiento probatorio:
+      8.1. Proposición
+      8.2. Admisión
+      8.2.1. Causales para no admitir un medio de prueba en genérico:
+      8.2.1.1. Medio de prueba no autorizado por ley:
+      8.2.1.1.1. Sistema taxativo
+      8.2.1.1.2. Sistema no taxativo
+      8.2.1.2. Teoría de la exclusión de la prueba. Exclusión de medios de
+      prueba en ciertas materias.
+      8.2.1.3. Incumplimiento de las condiciones legales del medio.
+      8.2.1.4. Preclusión del derecho a presentar la prueba.
+      8.2.1.5. Medio de prueba inútil o irrelevante.
+      8.2.1.6. Ilicitud de la prueba.
+      8.3. Ejecución: términos probatorios
+      8.4. Prueba de oficio
+      8.5. Trámites posteriores a la prueba
+      8.5.1. Observaciones a la prueba.
+      8.5.2. Alegatos finales.
+      9. Interpretación de la prueba
+      9.1. Concepto.
+      9.2. Diferencia con valoración.
+      10. Sistemas de valoración de la prueba.
+      10.1. Íntima convicción.
+      10.2. Prueba legal o tasada.
+      10.3. Sana crítica.
+  - numero: 10
+    seccion: II. INSTITUCIONES PROCESALES II
+    subseccion: ""
+    tema: Sistema recursivo
+    contenido: |-
+      1. Concepto de los recursos procesales
+      1.1. Concepto.
+      1.2. Relación entre remedios, recursos y acciones procesales.
+      2. Características generales de los recursos procesales
+      2.1. Elementos de todo recurso.
+      3. Presupuestos
+      4. Clasificaciones: Recursos de mérito y recursos de nulidad
+      4.1. Conceptos
+      4.2. Diferencias
+      5. Efectos de los recursos
+      5.1. Efecto devolutivo.
+      5.1.1. Principios que inciden en este efecto:
+      5.1.2. Principio dispositivo
+      5.1.3. Principio tantum devolutum quantum apellatum
+      5.1.4. Prohibición de reformatio in peius
+      5.2. Efecto suspensivo
+  - numero: 11
+    seccion: II. INSTITUCIONES PROCESALES II
+    subseccion: ""
+    tema: Sistema cautelar
+    contenido: |-
+      1. Concepto y fundamentos
+      1.1. Concepto de medidas cautelares
+      1.2. Fundamento de las medidas cautelares
+      2. Características
+      2.1. Esencialmente provisionales
+      2.2. Acumulables
+      2.3. Sustituibles
+      2.4. Limitadas
+      2.5. No taxativas
+      2.6. De aplicación general
+      3. Presupuestos
+      3.1. Peligro de retraso (incluye daño irreparable)
+      3.2. Verosimilitud de la pretensión
+      3.3. Funcionalidad a la pretensión
+      3.4. Legitimación activa
+      4. Clasificación
+      4.1. Medidas cautelares en el ámbito civil: conservativas e innovativas
+      4.1.1. Diferencia entre la tutela cautelar (conservativa e innovativa) y la tutela
+      anticipada.
+      4.1.2. Medidas cautelares en particular:
+      4.1.2.1. Secuestro de la cosa que es objeto de la demanda.
+      4.1.2.2. Nombramiento de uno o más interventores.
+      4.1.2.3. Retención de bienes determinados.
+      4.1.2.4. Prohibición de celebrar actos y contratos sobre bienes
+      determinados.
+      4.2. Medidas cautelares en el ámbito penal
+      4.2.1. Medidas cautelares reales: remisión al CPC
+      4.2.2. Medidas cautelares personales:
+      4.2.2.1. Citación
+      4.2.2.2. Detención
+      4.2.2.3. Prisión preventiva
+      4.2.2.4. Otras medidas cautelares personales
+  - numero: 12
+    seccion: III. PROCEDIMIENTOS CIVILES I
+    subseccion: ""
+    tema: "Medidas prejudiciales: preparatorias, probatorias y cautelares"
+    contenido: |-
+      1. Medidas Prejudiciales Preparatorias
+      1.1. Concepto
+      1.2. Enumeración
+      1.3. Regulación de cada una.
+      2. Medidas Prejudiciales Probatorias
+      2.1. Concepto
+      2.2. Enumeración
+      2.3. Regulación de cada una.
+      3. Medidas Prejudiciales Cautelares
+      3.1. Concepto
+      3.2. Exigencias para decretarlas como prejudiciales
+  - numero: 13
+    seccion: III. PROCEDIMIENTOS CIVILES I
+    subseccion: ""
+    tema: Procedimiento ordinario de mayor cuantía
+    contenido: |-
+      1. Características
+      2. Período de discusión:
+      2.1. Demanda
+      2.1.1. Concepto
+      2.1.2. Requisitos
+      2.1.3. Posibilidades de modificar la demanda
+      2.2. Emplazamiento
+      2.2.1. Concepto
+      2.2.2. Importancia
+      2.2.3. Elementos
+      2.2.4. Regulación.
+      2.3. Contestación y actitudes del demandado
+      2.3.1. Rebeldía y efectos
+      2.3.2. Aceptación de la demanda.
+      2.3.2.1. Allanamiento
+      2.3.2.2. Aceptación de los hechos o confesión.
+      2.3.3. Defensa.
+      2.3.3.1. Excepciones dilatorias
+      2.3.3.1.1. Concepto
+      2.3.3.1.2. Causales
+      2.3.3.1.3. Tramitación
+      2.3.3.2. Contestación
+      2.3.3.2.1. Requisitos
+      2.3.3.2.2. Excepciones perentorias
+      2.3.3.2.2.1. Incluidas en la contestación
+      2.3.3.2.2.2. Anómalas.
+      2.3.3.3. Defensa negativa
+      2.3.4. Demanda Reconvencional
+      2.3.4.1. Concepto
+      2.3.4.2. Requisitos
+      2.3.4.3. Tramitación
+      2.4. Replica y Dúplica
+      2.4.1. Conceptos
+      2.4.2. Tramitación
+      3. Período de conciliación
+      3.1. Tramitación
+      3.2. Facultades del juez
+      4. Período de prueba
+      4.1. Resolución que recibe la causa a prueba
+      4.1.1. Contenido.
+      4.1.2. Naturaleza y recursos en su contra.
+      4.2. Términos probatorios
+      4.2.1. Término probatorio ordinario
+      4.2.1.1. Concepto
+      4.2.1.2. Plazo
+      4.2.1.3. Características del plazo
+      4.2.2. Término probatorio extraordinario
+      4.2.2.1. Concepto
+      4.2.2.2. Regulación
+      4.2.3. Término probatorio especial
+      4.2.3.1. Concepto
+      4.2.3.2. Causales
+      4.2.4. Ampliación de la prueba
+      4.3. Proposición, admisibilidad, producción y valoración de cada uno de los medios de
+      prueba
+      4.3.1. Documentos
+      4.3.1.1. Concepto
+      4.3.1.2. Instrumento público y privado
+      4.3.1.3. Documentos especiales regulados por el CC
+      4.3.1.4. Documentos electrónicos
+      4.3.1.5. Forma y oportunidad para acompañar los documentos en juicio,
+      reconocimiento del instrumento privado y cuestionamientos a
+      su admisibilidad.
+      4.3.1.6. Valor probatorio de los instrumentos.
+      4.3.2. Testigos
+      4.3.2.1. Concepto y clasificación.
+      4.3.2.2. Admisibilidad: Exclusiones legales e Inhabilidades.
+      4.3.2.3. Obligaciones de los testigos.
+      4.3.2.4. Forma y oportunidad para producir la prueba testimonial.
+      4.3.2.5. Valor probatorio de la prueba testimonial.
+      4.3.3. Confesión
+      4.3.3.1. Concepto y clasificación.
+      4.3.3.2. Limitaciones a la admisibilidad de la confesión.
+      4.3.3.3. Forma y oportunidad para producir la confesión judicial
+      provocada.
+      4.3.3.4. Valor probatorio de la prueba confesional.
+      4.3.4. Inspección personal del tribunal
+      4.3.4.1. Concepto y admisibilidad.
+      4.3.4.2. Forma y oportunidad para producirla.
+      4.3.4.3. Valor probatorio.
+      4.3.5. Informe de peritos
+      4.3.5.1. Concepto y admisibilidad.
+      4.3.5.2. Requisitos para el nombramiento 4.3.5.3. Forma y oportunidad
+      para producirlo.
+      4.3.5.4. Valor probatorio.
+      4.3.6. Presunciones:
+      4.3.6.1. Concepto.
+      4.3.6.2. Clasificaciones.
+      4.3.6.3. Valor probatorio.
+      5. Período de observaciones a la prueba
+      6. Citación a oír sentencia
+      7. Medidas para mejor resolver
+      8. Período de sentencia
+    excluidas: |-
+      Procedimiento ordinario de menor y mínima cuantía
+      Característica del sistema probatorio del CPC
+  - numero: 14
+    seccion: III. PROCEDIMIENTOS CIVILES I
+    subseccion: ""
+    tema: Suspensión y otras formas de terminación del procedimiento
+    contenido: |-
+      1. Suspensión del procedimiento
+      2. Equivalentes jurisdiccionales
+      3. Abandono del procedimiento
+      4. Decaimiento o pérdida sobreviniente del interés
+  - numero: 15
+    seccion: III. PROCEDIMIENTOS CIVILES I
+    subseccion: ""
+    tema: Incidentes
+    contenido: |-
+      1. Concepto
+      2. Clasificación
+      3. Incidentes Ordinarios
+      3.1. Tramitación.
+      4. Incidentes Especiales
+      4.1. Tramitación
+      5. Incidente de Nulidad Procesal.
+      6. Acumulación de Autos.
+      6.1. Concepto
+      6.2. Requisitos
+      6.3. Tramitación
+      6.4. Efectos
+      7. Cuestiones de competencia por vía declinatoria
+      7.1. Tramitación
+      8. Desistimiento de la Demanda.
+      8.1. Tramitación
+      9. Abandono del Procedimiento.
+      9.1. Condiciones
+      9.2. Tramitación
+      9.3. Efectos
+    excluidas: |-
+      Incidente de cuestiones de competencia por vía inhibitoria
+      Incidente de implicancias y recusaciones
+  - numero: 16
+    seccion: III. PROCEDIMIENTOS CIVILES I
+    subseccion: ""
+    tema: Procedimiento declarativo sumario
+    contenido: |-
+      1. Campo de aplicación
+      2. Estructura y fases
+    excluidas: Procedimiento monitorio
+  - numero: 17
+    seccion: III. PROCEDIMIENTOS CIVILES I
+    subseccion: ""
+    tema: Procedimiento arbitral
+    contenido: |-
+      1. Árbitros de derecho: normas especiales de tramitación.
+      2. Árbitros mixtos y arbitradores: normas especiales de tramitación.
+    excluidas: Arbitraje internacional.
+  - numero: 18
+    seccion: IV. PROCEDIMIENTOS CIVILES II
+    subseccion: ""
+    tema: Procedimientos de ejecución
+    contenido: |-
+      1. Procedimiento Ejecutivo de Obligaciones de Dar
+      1.1. Requisitos de ejercicio de la acción ejecutiva
+      1.1.1. La obligación debe constar en un título ejecutivo
+      1.1.1.1. Títulos ejecutivos perfectos
+      1.1.1.2. Títulos ejecutivos imperfectos y gestiones preparatorias
+      1.1.2. La obligación debe ser líquida
+      1.1.3. La obligación debe ser actualmente exigible
+      1.1.4. La acción ejecutiva no debe estar prescrita
+      1.2. Examen de admisibilidad de la acción, mandamiento de ejecución y
+      requerimiento de pago
+      1.2.1. La demanda ejecutiva
+      1.2.2. Examen de admisibilidad
+      1.2.3. El mandamiento de ejecución y embargo
+      1.2.3.1. Concepto
+      1.2.3.2. Naturaleza
+      1.2.3.3. Contenido
+      1.2.4. El requerimiento de pago
+      1.2.4.1. Concepto
+      1.2.4.2. Forma de realizarlo
+      1.2.4.3. Embargo
+      1.3. Actitudes que puede adoptar el demandado – excepciones
+      1.3.1. Plazo y contenido de la defensa: las excepciones
+      1.3.1.1. Tramitación y fallo de las excepciones
+      1.4. Cosa juzgada de la sentencia ejecutiva
+      1.5. Breves nociones del procedimiento de apremio:
+      1.5.1. Embargo
+      1.6. Las tercerías
+      2. Cumplimiento incidental
+      2.1. Condiciones
+      2.2. Actitudes que puede adoptar el demandado – excepciones
+      2.3. Tramitación y fallo de las excepciones
+      3. Cumplimiento de las resoluciones emanadas de tribunales extranjeras – Exequátur
+      3.1. Condiciones y tramitación del exequatur.
+    excluidas: |-
+      Ejecución de los bienes y pago
+      Tramitación del cuaderno de apremio (salvo el requerimiento de pago)
+      Medidas de apremio en el cumplimiento incidental del fallo.
+      Juicio ejecutivo de obligación de hacer y de no hacer.
+  - numero: 19
+    seccion: IV. PROCEDIMIENTOS CIVILES II
+    subseccion: ""
+    tema: Recursos
+    contenido: |-
+      1. Recurso de aclaración, rectificación y enmienda
+      1.1. Causales
+      1.2. Resoluciones recurribles
+      1.3. Plazo
+      1.4. Efectos de su interposición
+      2. Recurso de reposición
+      2.1. Concepto y características
+      2.2. Resoluciones recurribles
+      2.3. Plazo
+      2.4. Efectos de su interposición
+      3. Recurso de apelación
+      3.1. Concepto, causal y características
+      3.2. Resoluciones recurribles
+      3.3. Plazo
+      3.4. Requisitos del recurso
+      3.5. Efectos de su interposición
+      3.6. Impugnación y revisión de resolución de admisibilidad
+      3.7. Prueba en segunda instancia
+      3.8. Efecto devolutivo y competencia del tribunal de segunda instancia
+      4. Recurso de hecho
+      4.1. Concepto
+      4.2. Causales
+      4.3. Características
+      4.4. Plazo de interposición
+      5. Recurso de casación
+      5.1. Recurso de casación en la forma
+      5.1.1. Concepto y características
+      5.1.2. Resoluciones recurribles
+      5.1.3. Causales
+      5.1.4. Plazo para su interposición y requisitos del escrito
+      5.1.5. Preparación del recurso
+      5.1.6. Efectos de su interposición
+      5.1.7. Fallo del recurso y consecuencias
+      5.1.8. Casación de oficio
+      5.2. Recurso de casación en el fondo
+      5.2.1. Concepto y características
+      5.2.2. Resoluciones recurribles
+      5.2.3. Causales
+      5.2.4. Plazo para su interposición y requisitos del escrito
+      5.2.5. Efectos de su interposición
+      5.2.6. Fallo del recurso y consecuencias
+      6. Recurso de queja
+      6.1. Concepto y características
+      6.2. Resoluciones recurribles
+      6.3. Plazo de interposición
+      7. Recurso de revisión (acción)
+      7.1. Causales
+      7.2. Plazo
+    excluidas: |-
+      Litigación en materia civil
+      Análisis de la viabilidad del caso
+      Estudio de los antecedentes fácticos
+      Estudios de los antecedentes jurídicos
+      Análisis de la prueba
+      Construcción del caso
+      Técnicas básicas de persuasión jurídica
+      Argumentación fáctica
+      Argumentación jurídica
+      El caso ante los tribunales
+      Alegaciones persuasivas escritas y orales
+      Examen directo y contraexamen de testigos y expertos
+      Alegaciones de cierre escritas y orales
+  - numero: 20
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Estructura general del proceso penal acusatorio chileno
+    contenido: ""
+  - numero: 21
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Acción penal y acción civil
+    contenido: |-
+      1. La Acción Penal Pública, Privada y Previa Instancia Particular
+      1.1. Clasificación, titularidad y ejercicio de la acción penal
+      1.2. Problemáticas asociadas a la acción penal
+      2. La acción civil
+      2.1. Clasificación, titularidad y ejercicio de la acción civil
+  - numero: 22
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Control de garantías en el código procesal penal
+    contenido: |-
+      1. Cautela de garantías
+      2. Amparo de garantías
+      3. Autorización judicial de diligencias de investigación
+      4. Recurso Nulidad
+      5. Nulidad Procesal
+    excluidas: |-
+      Diligencias investigativas especialmente reguladas en el Código Procesal Penal
+      y en leyes especiales.
+  - numero: 23
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Derechos y funciones de los sujetos procesales
+    contenido: |-
+      1. Fiscal y Ministerio Público (Constitución y CPP)
+      2. Imputado
+      3. Defensor
+      4. Víctima
+      5. Querellante
+      6. Policía.
+    excluidas: |-
+      Tribunales, Ley Nº19640 Orgánica Constitucional del Ministerio Público y Ley
+      Nº19718 que crea la Defensoría Penal Pública.
+      Normas comunes a los procedimientos penales.
+  - numero: 24
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Salidas anticipadas y salidas alternativas
+    contenido: |-
+      1. Persecución penal pública y discrecionalidad
+      1.1. Archivo provisional
+      1.2. Facultad de no iniciar investigación
+      1.3. Principio de oportunidad
+      2. Salidas alternativas
+      2.1. Acuerdos reparatorios
+      2.2. Suspensión condicional del procedimiento
+  - numero: 25
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Investigación
+    contenido: |-
+      1. Formas de inicio
+      1.1. De oficio por el Ministerio Público
+      1.2. La denuncia
+      1.3. La querella
+      2. Formalización
+      2.1. Concepto
+      2.2. Efectos
+      3. Cierre de la investigación
+      3.1. Reapertura.
+      3.2. Decisión de no perseverar.
+      3.3. Sobreseimiento temporal y definitivo.
+      3.4. Forzamiento de la acusación.
+  - numero: 26
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Medidas cautelares
+    contenido: |-
+      1. Personales
+      1.1. Citación
+      1.2. Detención
+      1.3. Prisión preventiva
+      1.4. Otras medidas cautelares personales
+    excluidas: Medidas cautelares reales en materia penal
+  - numero: 27
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Etapa preparatoria
+    contenido: |-
+      1. La acusación
+      2. Cuestiones previas
+      2.1. Discusiones sobre vicios de forma
+      2.2. Excepciones de previo y especial pronunciamiento
+      3. Debate acerca de las pruebas
+      3.1. Convenciones probatorias
+      3.2. Admisión y exclusión de prueba en el proceso penal
+      3.2.1. Causales
+      3.2.2. Régimen recursivo
+      3.3. Prueba lícita e ilícita
+      4. El auto de apertura del juicio oral.
+  - numero: 28
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Juicio oral
+    contenido: |-
+      1. Principios
+      2. Estructura general
+      3. Apertura.
+      3.1. Constitución del tribunal y presencia de los intervinientes
+      4. Declaración del imputado
+      5. Prueba
+      5.1. Medios de prueba
+      5.2. Particularidades acerca de la rendición de la prueba en el proceso penal
+      5.3. Sistema de valoración y convicción contemplado en el Código Procesal Penal
+      6. Veredicto
+      7. Audiencia de determinación de pena
+      8. Sentencia
+    excluidas: |-
+      Ejecución de la sentencia
+      Técnicas de litigación para el juicio oral
+      Alegatos de apertura y clausura
+      Examen directo y contraexamen
+      Objeciones
+  - numero: 29
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Recursos en materia penal
+    contenido: |-
+      1. Sistema general de recursos
+      2. Particularidades de los recursos en el proceso penal
+      2.1. Reposición
+      2.2. Apelación
+      2.3. Acción de Revisión
+      2.4. Nulidad
+      2.4.1. Causales
+      2.4.2. Competencia
+      2.4.3. Plazo
+      2.4.4. Efectos
+  - numero: 30
+    seccion: V. PROCEDIMIENTOS PENALES
+    subseccion: ""
+    tema: Procedimientos especiales
+    contenido: |-
+      1. Procedimiento abreviado
+      2. Procedimiento simplificado
+    excluidas: Procedimiento monitorio.

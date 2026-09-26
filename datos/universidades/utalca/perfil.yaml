@@ -1,0 +1,42 @@
+# Perfil del examen de grado — Universidad de Talca.
+id: utalca
+nombre: Universidad de Talca
+sigla: UTalca
+facultad: Facultad de Ciencias Jurídicas y Sociales
+examen:
+  nombre: Examen de Licenciatura
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Interrogación oral de Derecho Civil, Derecho Procesal y una tercera disciplina
+      detalle: >-
+        Examen oral sobre los cedularios de Derecho Civil y Derecho Procesal, más una tercera
+        disciplina que el egresado inscribe al momento de inscribir el examen (Constitucional,
+        Trabajo, Seguridad Social, Teoría del Derecho, Administrativo, Comercial, Internacional
+        Privado o Público, Penal o Tributario).
+      fuente: Página de Cedularios Examen de Licenciatura, Facultad de Ciencias Jurídicas y Sociales UTalca
+  cambio_2027: >-
+    Desde la cohorte que ingrese en 2027, el examen de grado se reemplaza por dos asignaturas de
+    quinto año (Derecho Civil y Derecho Procesal) con análisis de casos y un examen oral final
+    cada una (nota mínima 4,0). Quienes ingresaron antes siguen con el examen de grado.
+  fuente_cambio: Diario El Centro, 4 de septiembre de 2026
+estilo_comision:
+  - Oral. Cada cédula agrupa un área amplia (negocio jurídico, obligaciones, contratos…) con exclusiones expresas.
+  - Cada cédula trae bibliografía recomendada: conviene cargar esos manuales con agregar_manual.
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  electivas: La tercera disciplina no está cubierta en esta versión.
+por_confirmar:
+  - Composición de la comisión, duración, calificación y reglas de reprobación (reglamento no revisado).
+fuentes:
+  - titulo: Cedularios Examen de Licenciatura — Facultad de Ciencias Jurídicas y Sociales UTalca
+    url: https://www.juridicasysociales.utalca.cl/?page_id=857
+  - titulo: Cedulario Derecho Civil (marzo 2025)
+    url: https://www.juridicasysociales.utalca.cl/wp-content/uploads/2025/04/Cedulario-Derecho-Civil-marzo-2025.pdf
+  - titulo: Cedulario de Derecho Procesal (actualización mayo 2023)
+    url: https://www.juridicasysociales.utalca.cl/wp-content/uploads/2023/10/Cedulario-EL-Derecho-Procesal-2023.pdf
+  - titulo: "Universidad de Talca elimina examen de grado de Derecho desde 2027 (Diario El Centro)"
+    url: https://www.diarioelcentro.cl/2026/09/04/universidad-de-talca-elimina-examen-de-grado-de-derecho-desde-2027/
+revisado: 2026-09-25

@@ -1,0 +1,60 @@
+# Perfil del examen de grado — Pontificia Universidad Católica de Valparaíso.
+id: pucv
+nombre: Pontificia Universidad Católica de Valparaíso
+sigla: PUCV
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de Licenciatura
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Interrogación oral sobre el temario único (Derecho Público, Civil y Procesal)
+      detalle: >-
+        Evaluación oral en la que el egresado responde las preguntas de una comisión de al menos
+        cuatro miembros. El temario único incluye Derecho público, Derecho civil y Derecho
+        procesal y busca verificar un nivel suficiente de información científica, técnica y,
+        cuando corresponde, práctica.
+      fuente: Reglamento del Examen de Licenciatura (Res. 34/2021-F y 56/2021-D), arts. 4 y 5; Circular de síntesis de reglas
+  comision: Al menos cuatro miembros designados por el Decano; fecha y comisión se notifican con al menos 15 días corridos de anticipación.
+  calificacion: >-
+    Una sola nota de 1 a 7 (admite fracciones de 0,5); aprobación con 4. Se procura unanimidad;
+    si no, decide la mayoría y, en empate, la moción apoyada por el presidente. Si el egresado
+    rinde bien dos de las tres materias y en una no alcanza la suficiencia, la comisión puede
+    declarar el examen "pendiente" y rendir sólo esa materia 45 días después (régimen desagregado).
+  reprobacion: >-
+    Tras la primera reprobación se puede repetir pasados dos meses; tras la segunda, cuatro
+    meses. Reprobado tres veces, sólo puede volver a rendirlo después de un régimen de tutorías,
+    una última vez.
+  plazos: Inscribirse dentro de un año desde el egreso (si no, cuenta como primera reprobación) y aprobar dentro de cuatro años.
+  cohorte_2022: >-
+    Desde la cohorte 2022, la licenciatura es una asignatura del décimo semestre con evaluaciones
+    escritas de conocimiento y de aplicación por ciclo (público, civil, procesal) y un examen oral
+    final ante cuatro profesores que mide destrezas argumentales (30 % de la nota; mínimo 3,0 en él).
+  fuente_general: Circular "Síntesis de reglas de los regímenes de examen de licenciatura vigentes", Escuela de Derecho PUCV
+estilo_comision:
+  - Oral, ante una comisión numerosa (cuatro o más) que abarca Público, Civil y Procesal.
+  - El temario de Procesal es muy detallado en recursos (apelación, casación, queja) y nulidad procesal.
+  - La Escuela ofrece el Programa de Preparación para el Examen de Licenciatura (PPEL) con interrogaciones simuladas.
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    Temarios fijados por las Resoluciones 23/2016-F (Civil) y 24/2016-F (Procesal) para las
+    cohortes 2011–2021. Cada apartado del temario es aquí una "cédula" (numeración nuestra).
+    Derecho Público también se examina y no está cubierto en esta versión.
+por_confirmar:
+  - Duración del examen.
+  - Temarios aplicables a la asignatura "Licenciatura" de la cohorte 2022 (el programa aún no se publica).
+fuentes:
+  - titulo: Egresados en proceso de titulación — Escuela de Derecho PUCV
+    url: https://www.pucv.cl/uuaa/derecho/egresados-en-proceso-de-titulacion
+  - titulo: Circular de síntesis de reglas del examen de licenciatura
+    url: https://www.pucv.cl/uuaa/site/docs/20230109/20230109093744/circular_sintesis_reglas_vigentes_examen_de_licenciatura.pdf
+  - titulo: Reglamento del Examen de Licenciatura (texto refundido, Res. 34/2021-F y 56/2021-D)
+    url: https://www.pucv.cl/uuaa/site/docs/20210604/20210604104730/resolucion_34_2021_f_y_56_2021_d_introduce_modificaciones_al_reglamento_del_examen_de_licenciatura.pdf
+  - titulo: Temario de Derecho Civil (Res. 23/2016-F)
+    url: https://www.pucv.cl/uuaa/site/docs/20180712/20180712172457/resoluci__n_23_2016f_fija_temario_derecho_civil.pdf
+  - titulo: Temario de Derecho Procesal (Res. 24/2016-F)
+    url: https://www.pucv.cl/uuaa/site/docs/20180712/20180712172905/resoluci__n_24_2016f_fija_temario_derecho_procesal.pdf
+revisado: 2026-09-25

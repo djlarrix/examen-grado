@@ -56,8 +56,9 @@ export class Tutor {
         cedulario: Object.keys(cedularios).length ? Object.entries(cedularios).map(([r, c]) => `${r}: ${c.length} cédulas`).join(', ') : 'no transcrito (se usa el temario completo)',
       })),
       otra_universidad:
-        'Si la universidad del estudiante no está, configura universidad "otra": se usa el temario ' +
-        'completo y el estudiante describe su examen en `notas`. Pídele su cedulario para sumarlo.',
+        'Si la universidad del estudiante no está, configura universidad "otra" y pídele sus documentos ' +
+        '(cedulario, reglamento, exámenes anteriores, pautas): cargar_documento, guardar_cedulario y ' +
+        'guardar_perfil_examen. Mientras tanto se usa el temario completo.',
     };
   }
 
@@ -100,7 +101,9 @@ export class Tutor {
         instruccion:
           'Estudiante nuevo. Antes de enseñar, pregúntale (en una sola intervención y sin formulario): ' +
           'universidad, fecha aproximada del examen y horas por semana que puede estudiar. Luego ' +
-          '`configurar_estudiante`. Si no sabe la fecha, se puede configurar después.',
+          '`configurar_estudiante`. Si no sabe la fecha, se puede configurar después. Si su universidad ' +
+          'no está en la lista, configura "otra" y ofrécele subir su cedulario, reglamento y exámenes ' +
+          'anteriores con `cargar_documento`.',
         universidades_disponibles: (await this.listar_universidades()).universidades.map((u) => `${u.id} (${u.nombre})`),
       };
     }
@@ -385,8 +388,20 @@ export class Tutor {
     };
     // Pesos para practicar debilidades: lo débil y lo no visto salen más.
     const pesoTemas = (ts) => Math.max(...ts.map((t) => ({ sin_ver: 2, debil: 4, aprendiendo: 3, consolidando: 1.5, dominado: 1 })[dominio(progreso.get(t), hoy)]));
-    const escrita = universidad?.perfil.examen?.modalidad === 'escrita';
+    // Modalidad por ramo: en la UDD, Civil es un caso escrito y Procesal es oral.
+    const modalidadDe = (r) => universidad?.perfil.examen?.modalidad_por_ramo?.[r] ?? universidad?.perfil.examen?.modalidad;
+    const sortearTres = (pool) => {
+      const disponibles = [...pool];
+      const temas = [];
+      while (temas.length < 3 && disponibles.length) {
+        const t = elegir(disponibles, (x) => pesoTemas([x]));
+        temas.push(t);
+        disponibles.splice(disponibles.indexOf(t), 1);
+      }
+      return temas;
+    };
     const sorteo = ramas.map((r) => {
+      const escrita = modalidadDe(r) === 'escrita';
       const cedulas = universidad?.cedularios[r];
       if (cedulas?.length) {
         const c = numero !== undefined ? cedulas.find((x) => x.numero === Number(numero)) : elegir(cedulas, (x) => pesoTemas(x.temas));
@@ -394,20 +409,18 @@ export class Tutor {
         if (escrita && c.temas.length > 3) {
           // Examen escrito sobre un caso: el caso cruza unos pocos temas del
           // curso, no el curso entero. Se sortean tres para construirlo.
-          const pool = [...c.temas];
-          const temas = [];
-          while (temas.length < 3 && pool.length) {
-            const t = elegir(pool, (x) => pesoTemas([x]));
-            temas.push(t);
-            pool.splice(pool.indexOf(t), 1);
-          }
-          return { rama: r, cedula: c.numero, tema: c.tema, temas, temas_titulos: temas.map((t) => temario.temas.get(t).titulo), para: 'construir un caso que cruce estos temas' };
+          const temas = sortearTres(c.temas);
+          return { rama: r, modalidad: 'escrita', cedula: c.numero, tema: c.tema, temas, temas_titulos: temas.map((t) => temario.temas.get(t).titulo), para: 'construir un caso que cruce estos temas' };
         }
-        return { rama: r, cedula: c.numero, tema: c.tema, contenido: c.contenido || '(sin desglose en el cedulario)', temas: c.temas };
+        return { rama: r, modalidad: modalidadDe(r) ?? 'oral', cedula: c.numero, tema: c.tema, contenido: c.contenido || '(sin desglose en el cedulario)', temas: c.temas };
       }
       const ids = alcance(temario, universidad)[r];
+      if (escrita) {
+        const temas = sortearTres(ids);
+        return { rama: r, modalidad: 'escrita', cedula: null, temas, temas_titulos: temas.map((t) => temario.temas.get(t).titulo), para: 'construir un caso que cruce estos temas' };
+      }
       const id = elegir(ids, (t) => pesoTemas([t]));
-      return { rama: r, cedula: null, tema: temario.temas.get(id).titulo, temas: [id] };
+      return { rama: r, modalidad: modalidadDe(r) ?? 'oral', cedula: null, tema: temario.temas.get(id).titulo, temas: [id] };
     });
     return {
       universidad: universidad?.perfil.sigla ?? 'sin perfil',
