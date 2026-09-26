@@ -6,6 +6,7 @@ facultad: Facultad de Ciencias Jurídicas y Sociales
 examen:
   nombre: Examen de Licenciatura
   modalidad: oral
+  exposicion_minutos: 15
   ramos: [civil, procesal]
   partes:
     - titulo: Disertación

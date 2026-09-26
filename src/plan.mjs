@@ -159,7 +159,7 @@ function tocaSimulacro(fase, ultimo, hoy, vistos, total) {
  * La sesión de hoy: repasos vencidos + temas nuevos + (quizás) simulacro,
  * dentro de los minutos disponibles.
  */
-export function sesionDeHoy({ temario, universidad, estudiante, progreso, foco, simulacros, hoy, minutos }) {
+export function sesionDeHoy({ temario, universidad, estudiante, progreso, foco, simulacros, hoy, minutos, transversal }) {
   const h = soloFecha(hoy);
   const presupuesto = minutos ?? minutosPorDia(estudiante);
   const porRama = alcance(temario, universidad);
@@ -185,7 +185,14 @@ export function sesionDeHoy({ temario, universidad, estudiante, progreso, foco, 
 
   // 2. Temas nuevos: primero los que eligió el estudiante; después el orden del
   //    plan, intercalando ramos y respetando prerrequisitos.
-  const orden = intercalar(porRama.civil, porRama.procesal);
+  let orden = intercalar(porRama.civil, porRama.procesal);
+  // Si el tiempo no alcanza para todo, primero lo que piden casi todas las
+  // universidades (alto rendimiento); el orden del plan desempata.
+  const apurado = Boolean(plan.advertencia);
+  if (apurado && transversal) {
+    const p = (id) => transversal.de(id)?.proporcion ?? 0;
+    orden = orden.map((id, i) => ({ id, i })).sort((a, b) => p(b.id) - p(a.id) || a.i - b.i).map((x) => x.id);
+  }
   const sinVer = (id) => !progreso.has(id);
   const listo = (id) => temario.temas.get(id).requiere.every((r) => progreso.has(r) || !enAlcance.has(r));
   const candidatos = [...foco.filter(sinVer), ...orden.filter((t) => sinVer(t) && listo(t) && !foco.includes(t))];
@@ -201,6 +208,32 @@ export function sesionDeHoy({ temario, universidad, estudiante, progreso, foco, 
     const t = temario.temas.get(id);
     return { id, titulo: t.titulo, rama: t.rama };
   };
+  // Agenda en bloques: recuperar antes de aprender (calienta y mide olvidos),
+  // cada tema nuevo con pretest → explicación → práctica, pausas cada ~50 min
+  // y cierre con volcado de memoria.
+  const agenda = [];
+  let reloj = 0;
+  let desdePausa = 0;
+  const bloque = (min, que, como) => {
+    if (desdePausa + min > 55 && reloj > 0) {
+      agenda.push({ minuto: reloj, duracion: 5, bloque: 'Pausa', como: 'De pie, sin pantalla. El cerebro consolida en las pausas.' });
+      reloj += 5;
+      desdePausa = 0;
+    }
+    agenda.push({ minuto: reloj, duracion: min, bloque: que, como });
+    reloj += min;
+    desdePausa += min;
+  };
+  for (const r of repasos) bloque(MINUTOS.repaso, `Repaso: ${describir(r.tema).titulo}`, 'Pregunta abierta sin mirar apuntes → el estudiante responde → corrección → registrar_respuesta.');
+  for (const id of nuevos)
+    bloque(
+      MINUTOS.tema_nuevo,
+      `Tema nuevo: ${describir(id).titulo}`,
+      'Pretest de 1-2 preguntas (2 min) → clase breve con ejemplo resuelto (13 min) → práctica de recuperación y mini caso (12 min) → el estudiante lo explica con sus palabras (3 min).',
+    );
+  if (simulacro) bloque(MINUTOS.simulacro, 'Simulacro', 'Según el formato de su examen (sortear_cedula). Corrección con la rúbrica y registrar_simulacro.');
+  if (agenda.length) bloque(3, 'Cierre', 'Volcado de memoria: 3 ideas clave del día y 1 duda, sin mirar. Anuncia qué toca mañana.');
+
   return {
     fecha: h,
     minutos_disponibles: presupuesto,
@@ -211,6 +244,8 @@ export function sesionDeHoy({ temario, universidad, estudiante, progreso, foco, 
     temas_nuevos: nuevos.map((id) => ({ ...describir(id), elegido_por_ti: foco.includes(id) })),
     simulacro_recomendado: simulacro,
     minutos_estimados: presupuesto - resto,
+    agenda,
+    ...(apurado ? { prioridad: 'Con poco tiempo, los temas nuevos van por alto rendimiento: los que exigen casi todas las universidades.' } : {}),
     advertencia: plan.advertencia,
   };
 }

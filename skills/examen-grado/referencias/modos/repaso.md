@@ -17,6 +17,10 @@
 4. `registrar_respuesta` con la calificación del **primer intento** (lo que recordó solo), modo "repaso", y el error si lo hubo. El segundo intento, ya corregido, no sube la nota.
 5. Cada 4–5 repasos, una frase de avance ("van 5 de 8; los de bienes están firmes").
 
+## Variar el repaso
+
+En la fase de consolidación, alterna los repasos de temas con un bloque corto de `practicar_plazos` o un par de `practicar_discriminacion`: recuperar el mismo contenido en formatos distintos lo hace más flexible. Pide la confianza antes de corregir y regístrala en `confianza`.
+
 ## Si hay demasiados repasos vencidos
 
 Pasa cuando el estudiante deja de estudiar unos días. No los hagas todos de una vez: `sesion_de_hoy` ya los limita a lo que cabe; el resto queda para mañana. Díselo sin culpas: "quedan 12 para mañana; con dos días al día estamos al día".

@@ -24,3 +24,9 @@ test('numerales con sangría quedan en líneas propias', () => {
   const { texto } = limpiarTexto('Art. 434. Títulos:\n\n    1°. Sentencia firme, bien sea definitiva o\ninterlocutoria;\n    2°. Copia autorizada de escritura pública;');
   assert.equal(texto, 'Art. 434. Títulos:\n1°. Sentencia firme, bien sea definitiva o interlocutoria;\n2°. Copia autorizada de escritura pública;');
 });
+
+test('limpiarTexto separa una llamada a nota pegada a la palabra', () => {
+  const { texto, notas } = limpiarTexto('Art. 549. Los interdictos o juiciosNOTA 36 posesorios sumarios pueden intentarse:');
+  assert.equal(texto, 'Art. 549. Los interdictos o juicios posesorios sumarios pueden intentarse:');
+  assert.deepEqual(notas, ['NOTA 36']);
+});

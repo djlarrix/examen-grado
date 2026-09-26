@@ -11,7 +11,8 @@
     "start": "node src/index.mjs",
     "test": "node --test \"test/**/*.test.mjs\"",
     "validar": "node scripts/validar-datos.mjs",
-    "verificar-articulos": "node scripts/verificar-articulos.mjs"
+    "verificar-articulos": "node scripts/verificar-articulos.mjs",
+    "verificar-plazos": "node scripts/verificar-plazos.mjs"
   },
   "engines": {
     "node": ">=22.13"

@@ -11,7 +11,7 @@ import { join } from 'node:path';
 import { directorioDatos } from './rutas.mjs';
 
 /** Subir cuando cambie la forma de lo que se guarda, para no servir formatos viejos. */
-const VERSION = 2;
+const VERSION = 3;
 
 const dir = () => join(directorioDatos(), 'cache');
 const ruta = (clave) => join(dir(), createHash('sha256').update(`v${VERSION}:${clave}`).digest('hex').slice(0, 32) + '.json');

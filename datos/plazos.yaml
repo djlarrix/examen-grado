@@ -1,0 +1,366 @@
+# Plazos legales para practicar ("¿en qué plazo…?").
+#
+# Cada plazo se comprueba contra el texto vigente de Ley Chile con
+# `npm run verificar-plazos`: las frases de `literal` deben aparecer en el
+# artículo citado. Si una reforma cambia el plazo, el script falla y el plazo
+# no llega al estudiante con un número viejo.
+#
+# `respuesta` es lo que el estudiante debe decir; `precision` agrega el matiz
+# que distingue una respuesta buena de una excelente.
+
+- id: cpc.contestacion
+  tema: procesal.ordinario.discusion
+  pregunta: ¿Cuál es el término de emplazamiento para contestar la demanda en el juicio ordinario si el demandado fue notificado en el territorio jurisdiccional del tribunal?
+  respuesta: 18 días.
+  precision: "Si está en otro territorio jurisdiccional o en el extranjero, se aumenta según la tabla de emplazamiento que fija la Corte Suprema (CPC 259). Ojo: textos anteriores a la reforma decían 15 días + 3."
+  articulo: CPC 258
+  literal: [dieciocho días]
+
+- id: cpc.excepciones_dilatorias
+  tema: procesal.accion.defensa
+  pregunta: ¿Hasta cuándo pueden oponerse las excepciones dilatorias en el juicio ordinario?
+  respuesta: Dentro del término de emplazamiento, todas en un mismo escrito.
+  articulo: CPC 305
+  literal: [dentro del término de emplazamiento]
+
+- id: cpc.apelacion
+  tema: procesal.recursos.apelacion
+  pregunta: ¿En qué plazo se interpone el recurso de apelación en materia civil?
+  respuesta: 5 días desde la notificación; 10 días si se apela una sentencia definitiva.
+  articulo: CPC 189
+  literal: [cinco días, diez días]
+
+- id: cpc.reposicion
+  tema: procesal.recursos.reposicion
+  pregunta: ¿En qué plazo se pide reposición de un auto o decreto?
+  respuesta: 5 días fatales desde la notificación.
+  precision: Si se hacen valer nuevos antecedentes; sin ellos puede pedirse, pero el tribunal puede rechazarla de plano.
+  articulo: CPC 181
+  literal: [cinco días]
+
+- id: cpc.casacion
+  tema: procesal.recursos.casacion_forma
+  pregunta: ¿En qué plazo se interpone el recurso de casación (en la forma o en el fondo)?
+  respuesta: 15 días desde la notificación de la sentencia recurrida.
+  articulo: CPC 770
+  literal: [quince días]
+
+- id: cpc.termino_probatorio
+  tema: procesal.ordinario.periodo_prueba
+  pregunta: ¿Cuánto dura el término probatorio ordinario en el juicio ordinario de mayor cuantía?
+  respuesta: 20 días.
+  articulo: CPC 328
+  literal: [veinte días]
+
+- id: cpc.lista_testigos
+  tema: procesal.prueba.testigos
+  pregunta: ¿En qué plazo debe presentarse la lista de testigos en el juicio ordinario?
+  respuesta: Dentro de los 5 días siguientes a la última notificación de la resolución que recibe la causa a prueba.
+  articulo: CPC 320
+  literal: [cinco días]
+
+- id: cpc.reposicion_auto_prueba
+  tema: procesal.ordinario.periodo_prueba
+  pregunta: ¿En qué plazo puede pedirse reposición de la resolución que recibe la causa a prueba?
+  respuesta: Dentro de tercero día (3 días).
+  precision: Puede apelarse en subsidio, en el solo efecto devolutivo.
+  articulo: CPC 319
+  literal: [tercero día]
+
+- id: cpc.observaciones_prueba
+  tema: procesal.ordinario.sentencia
+  pregunta: Vencido el término probatorio, ¿cuánto tienen las partes para hacer observaciones a la prueba?
+  respuesta: 10 días.
+  articulo: CPC 430
+  literal: [diez días]
+
+- id: cpc.plazo_sentencia
+  tema: procesal.ordinario.sentencia
+  pregunta: ¿En qué plazo debe dictarse la sentencia definitiva de primera instancia?
+  respuesta: Dentro de 60 días desde que la causa queda en estado de sentencia (citación para oír sentencia).
+  articulo: CPC 162
+  literal: [sesenta días]
+
+- id: cpc.abandono
+  tema: procesal.comunes.incidentes
+  pregunta: ¿Cuándo procede el abandono del procedimiento?
+  respuesta: Cuando todas las partes han cesado en su prosecución durante 6 meses, contados desde la última resolución recaída en gestión útil.
+  articulo: CPC 152
+  literal: [seis meses]
+
+- id: cpc.incidentes
+  tema: procesal.comunes.incidentes
+  pregunta: Promovido un incidente, ¿cuánto tiene la contraria para responder?
+  respuesta: 3 días.
+  articulo: CPC 89
+  literal: [tres días]
+
+- id: cpc.citacion
+  tema: procesal.proceso.actos
+  pregunta: ¿Qué significa que una diligencia se decrete "con citación"?
+  respuesta: Que no puede llevarse a efecto sino pasados 3 días desde su notificación, plazo en que la contraria puede oponerse.
+  articulo: CPC 69
+  literal: [tres días]
+
+- id: cpc.prejudicial_precautoria
+  tema: procesal.ordinario.prejudiciales
+  pregunta: Concedida una medida prejudicial precautoria, ¿en qué plazo debe presentarse la demanda?
+  respuesta: 10 días, ampliable hasta 30 días por motivos fundados.
+  precision: Si no se presenta, o no se pide que la medida se mantenga, queda sin efecto de pleno derecho y el solicitante responde de los perjuicios (se presume dolo).
+  articulo: CPC 280
+  literal: [diez días, treinta días]
+
+- id: cpc.sumario_comparendo
+  tema: procesal.especiales.sumario
+  pregunta: En el juicio sumario, ¿para cuándo se cita a la audiencia (comparendo)?
+  respuesta: Para el quinto día hábil después de la última notificación.
+  articulo: CPC 683
+  literal: [quinto día hábil]
+
+- id: cpc.excepciones_ejecutivo
+  tema: procesal.ejecutivo.dar
+  pregunta: En el juicio ejecutivo por obligación de dar, ¿en qué plazo debe oponerse el ejecutado requerido en el territorio jurisdiccional del tribunal?
+  respuesta: 8 días útiles.
+  precision: "Requerido en el territorio de otro tribunal: ante el exhortado, el mismo plazo; ante el tribunal de la causa, 8 días fatales más el aumento de la tabla de emplazamiento (CPC 460). Textos anteriores a la reforma decían 4 días."
+  articulo: CPC 459
+  literal: [ocho días útiles]
+
+- id: cpc.prueba_ejecutivo
+  tema: procesal.ejecutivo.dar
+  pregunta: ¿Cuánto dura el término probatorio en el juicio ejecutivo?
+  respuesta: 10 días, ampliable hasta 10 días más a petición del acreedor.
+  articulo: CPC 468
+  literal: [diez días]
+
+- id: cpc.observaciones_ejecutivo
+  tema: procesal.ejecutivo.dar
+  pregunta: En el juicio ejecutivo, vencido el término probatorio, ¿cuánto tienen las partes para hacer observaciones a la prueba?
+  respuesta: 6 días.
+  articulo: CPC 469
+  literal: [seis días]
+
+- id: cpc.titulo_ejecutivo_antiguedad
+  tema: procesal.ejecutivo.titulo
+  pregunta: ¿Qué hace el tribunal si al examinar el título advierte que la acción ejecutiva está prescrita?
+  respuesta: Deniega la ejecución, salvo que se compruebe la subsistencia de la acción por alguno de los medios del art. 434.
+  precision: La acción ejecutiva prescribe en 3 años (CC 2515).
+  articulo: CPC 442
+  literal: [acción ejecutiva se encuentre prescrita]
+
+- id: cpc.cumplimiento_incidental
+  tema: procesal.especiales.cumplimiento_incidental
+  pregunta: ¿Dentro de qué plazo puede pedirse el cumplimiento incidental de una sentencia ante el tribunal que la dictó?
+  respuesta: Dentro de 1 año desde que la ejecución se hizo exigible.
+  articulo: CPC 233
+  literal: [un año]
+
+- id: cpc.revision
+  tema: procesal.recursos.queja_revision
+  pregunta: ¿Hasta cuándo puede interponerse el recurso de revisión civil?
+  respuesta: Hasta 1 año desde la última notificación de la sentencia objeto del recurso.
+  articulo: CPC 811
+  literal: [un año]
+
+- id: cot.queja
+  tema: procesal.recursos.queja_revision
+  pregunta: ¿En qué plazo se interpone el recurso de queja?
+  respuesta: 5 días hábiles desde la notificación de la resolución que motiva el recurso.
+  precision: Se aumenta según la tabla de emplazamiento en ciertos casos; el plazo total no puede exceder de 15 días hábiles.
+  articulo: COT 548
+  literal: [cinco días hábiles]
+
+- id: cpp.apelacion
+  tema: procesal.recursos.nulidad_penal
+  pregunta: En el proceso penal, ¿en qué plazo se apela?
+  respuesta: 5 días desde la notificación de la resolución impugnada.
+  articulo: CPP 366
+  literal: [cinco días]
+
+- id: cpp.nulidad
+  tema: procesal.recursos.nulidad_penal
+  pregunta: ¿En qué plazo se interpone el recurso de nulidad penal?
+  respuesta: 15 días desde la notificación de la sentencia definitiva.
+  precision: "Si el juicio duró más de 5 días, se suma un día por cada dos de exceso, sin superar 30 días. Textos anteriores a la reforma decían 10 días."
+  articulo: CPP 372
+  literal: [quince días, treinta días]
+
+- id: cpp.reposicion
+  tema: procesal.recursos.nulidad_penal
+  pregunta: En el proceso penal, ¿en qué plazo se pide reposición de una resolución dictada fuera de audiencia?
+  respuesta: Dentro de tercero día.
+  precision: Las dictadas en audiencia se reponen verbalmente en el acto.
+  articulo: CPP 362
+  literal: [tercero día]
+
+- id: cpp.detencion
+  tema: procesal.penal.cautelares
+  pregunta: Detenido alguien en flagrancia, ¿en qué plazo máximo debe ser puesto a disposición del juez?
+  respuesta: 24 horas.
+  articulo: CPP 131
+  literal: [veinticuatro horas]
+
+- id: cpp.plazo_investigacion
+  tema: procesal.penal.cierre
+  pregunta: ¿Cuál es el plazo máximo de la investigación desde la formalización?
+  respuesta: 2 años.
+  articulo: CPP 247
+  literal: [dos años]
+
+- id: cpp.acusacion
+  tema: procesal.penal.intermedia
+  pregunta: Cerrada la investigación, ¿en qué plazo debe el fiscal acusar (o sobreseer o no perseverar)?
+  respuesta: Dentro de los 10 días siguientes al cierre.
+  articulo: CPP 248
+  literal: [diez días]
+
+- id: cpp.suspension_condicional
+  tema: procesal.penal.salidas_alternativas
+  pregunta: ¿Por cuánto tiempo se fija la suspensión condicional del procedimiento?
+  respuesta: No menos de 1 ni más de 3 años.
+  articulo: CPP 237
+  literal: [un año ni superior a tres]
+
+- id: cc.nulidad_relativa
+  tema: civil.acto.nulidad_relativa
+  pregunta: ¿En qué plazo prescribe la acción de nulidad relativa (rescisión)?
+  respuesta: 4 años.
+  precision: Desde la celebración del acto; en la fuerza, desde que cesa; en la incapacidad, desde que cesa (CC 1691).
+  articulo: CC 1691
+  literal: [cuatro años]
+
+- id: cc.nulidad_absoluta
+  tema: civil.acto.nulidad_absoluta
+  pregunta: ¿Con cuánto tiempo se sanea la nulidad absoluta?
+  respuesta: 10 años.
+  precision: No se sanea por ratificación de las partes.
+  articulo: CC 1683
+  literal: [diez años]
+
+- id: cc.lesion_enorme
+  tema: civil.contratos_esp.lesion
+  pregunta: ¿En qué plazo expira la acción rescisoria por lesión enorme?
+  respuesta: 4 años desde la fecha del contrato.
+  articulo: CC 1896
+  literal: [cuatro años]
+
+- id: cc.redhibitoria
+  tema: civil.contratos_esp.saneamiento
+  pregunta: ¿Cuánto dura la acción redhibitoria?
+  respuesta: 6 meses para muebles y 1 año para bienes raíces, desde la entrega real.
+  articulo: CC 1866
+  literal: [seis meses, un año]
+
+- id: cc.eviccion
+  tema: civil.contratos_esp.saneamiento
+  pregunta: ¿En qué plazo prescribe la acción de saneamiento por evicción?
+  respuesta: 4 años; pero la sola restitución del precio prescribe según las reglas generales.
+  articulo: CC 1856
+  literal: [cuatro años]
+
+- id: cc.retroventa
+  tema: civil.contratos_esp.compraventa
+  pregunta: ¿Cuánto tiempo puede pactarse para ejercer la acción de retroventa?
+  respuesta: No puede pasar de 4 años desde la fecha del contrato.
+  articulo: CC 1885
+  literal: [cuatro años]
+
+- id: cc.comisorio_calificado
+  tema: civil.oblig.resolucion
+  pregunta: En el pacto comisorio calificado por no pago del precio, ¿hasta cuándo puede el comprador enervar la resolución pagando?
+  respuesta: A más tardar dentro de las 24 horas siguientes a la notificación judicial de la demanda.
+  articulo: CC 1879
+  literal: [veinticuatro horas]
+
+- id: cc.comisorio_prescripcion
+  tema: civil.oblig.resolucion
+  pregunta: ¿Cuándo prescribe el pacto comisorio?
+  respuesta: En el plazo prefijado por las partes, si no pasa de 4 años; en otro caso, en 4 años desde la fecha del contrato.
+  articulo: CC 1880
+  literal: [cuatro años]
+
+- id: cc.prescripcion_extintiva
+  tema: civil.oblig.prescripcion_extintiva
+  pregunta: ¿Cuál es el plazo general de prescripción de las acciones ejecutivas y de las ordinarias?
+  respuesta: 3 años las ejecutivas y 5 años las ordinarias, desde que la obligación se hizo exigible.
+  precision: La acción ejecutiva se convierte en ordinaria por el lapso de 3 años y dura otros 2.
+  articulo: CC 2515
+  literal: [tres años, cinco]
+
+- id: cc.prescripcion_ordinaria
+  tema: civil.bienes.prescripcion_adquisitiva
+  pregunta: ¿Qué plazo exige la prescripción adquisitiva ordinaria?
+  respuesta: 2 años para los muebles y 5 años para los bienes raíces.
+  articulo: CC 2508
+  literal: [dos años, cinco años]
+
+- id: cc.prescripcion_extraordinaria
+  tema: civil.bienes.prescripcion_adquisitiva
+  pregunta: ¿Qué plazo exige la prescripción adquisitiva extraordinaria?
+  respuesta: 10 años.
+  articulo: CC 2511
+  literal: [diez años]
+
+- id: cc.extracontractual
+  tema: civil.resp.acciones_extra
+  pregunta: ¿En qué plazo prescriben las acciones por responsabilidad extracontractual?
+  respuesta: 4 años desde la perpetración del acto.
+  articulo: CC 2332
+  literal: [cuatro años]
+
+- id: cc.posesorias
+  tema: civil.bienes.posesorias
+  pregunta: ¿En qué plazo prescriben las acciones posesorias para conservar la posesión?
+  respuesta: 1 año completo desde el acto de molestia o embarazo.
+  precision: Las de recuperar, 1 año desde que el poseedor anterior perdió la posesión (CC 920).
+  articulo: CC 920
+  literal: [un año]
+
+- id: cc.pauliana
+  tema: civil.oblig.prenda_general
+  pregunta: ¿En qué plazo prescribe la acción pauliana (revocatoria)?
+  respuesta: 1 año desde la fecha del acto o contrato.
+  articulo: CC 2468
+  literal: [un año]
+
+- id: cc.reforma_testamento
+  tema: civil.suc.asignaciones_forzosas
+  pregunta: ¿En qué plazo prescribe la acción de reforma del testamento?
+  respuesta: 4 años desde que los legitimarios tuvieron conocimiento del testamento y de su calidad de tales.
+  articulo: CC 1216
+  literal: [cuatro años]
+
+- id: cc.peticion_herencia
+  tema: civil.suc.derecho_herencia
+  pregunta: ¿Cuándo expira el derecho de petición de herencia?
+  respuesta: En 10 años (prescripción extraordinaria); el heredero putativo con posesión efectiva puede oponer la ordinaria de 5 años.
+  articulo: CC 1269
+  literal: [diez años]
+
+- id: cc.requerimiento_aceptar
+  tema: civil.suc.aceptacion_repudiacion
+  pregunta: Demandado un asignatario para que declare si acepta o repudia, ¿qué plazo tiene?
+  respuesta: 40 días desde la demanda.
+  precision: "Si no declara, se entiende que repudia (y si es heredero, que acepta con beneficio de inventario cuando se le demanda por un acreedor: CC 1232 y 1233)."
+  articulo: CC 1232
+  literal: [cuarenta días]
+
+- id: cc.impugnacion_paternidad
+  tema: civil.familia.acciones_filiacion
+  pregunta: ¿En qué plazo puede el marido impugnar la paternidad del hijo concebido o nacido durante el matrimonio?
+  respuesta: Dentro de los 180 días siguientes a aquel en que tuvo conocimiento del parto (o 1 año si residía en lugar distinto).
+  articulo: CC 212
+  literal: [ciento ochenta días]
+
+- id: lmc.divorcio
+  tema: civil.familia.divorcio
+  pregunta: ¿Qué plazo de cese de convivencia exige el divorcio de común acuerdo y el divorcio unilateral?
+  respuesta: De común acuerdo, más de 1 año; unilateral, a lo menos 3 años.
+  articulo: LMC 55
+  literal: [un año, tres años]
+
+- id: l18101.desahucio
+  tema: civil.contratos_esp.arrendamiento
+  pregunta: En el arriendo de un inmueble urbano pactado mes a mes o de duración indefinida, ¿qué plazo tiene el arrendatario desahuciado para restituir?
+  respuesta: 2 meses desde la notificación, más 1 mes por cada año completo de ocupación, sin exceder de 6 meses en total.
+  articulo: L18101 3
+  literal: [dos meses, seis meses]

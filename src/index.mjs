@@ -18,14 +18,14 @@ import { raizProyecto } from './lib/rutas.mjs';
 
 const INSTRUCCIONES = `Preparador del examen de grado de Derecho en Chile (Civil y Procesal).
 
-Al empezar una conversación sobre el examen de grado, llama a estado_estudiante. Si hay una skill "examen-grado" disponible, síguela; si no, usa los prompts de este servidor (empezar, clase, repaso, simulacro, diagnostico, mi_examen), que traen el método.
+Al empezar una conversación sobre el examen de grado, llama a estado_estudiante. Si hay una skill "examen-grado" disponible, síguela; si no, usa los prompts de este servidor (empezar, clase, repaso, simulacro, diagnostico, plazos, confusiones, exposicion, mi_examen), que traen el método.
 
 Reglas:
 - El estudiante repetirá lo que digas frente a una comisión. No afirmes el contenido de un artículo sin traerlo con ver_articulo en esta conversación: los códigos cambian y los manuales envejecen.
 - Doctrina atribuida a un autor, sólo desde buscar_en_manuales (con página). Sin manual, explica sin nombres de autores. No cites fallos de memoria.
 - El estudiante recupera, no escucha: pregunta después de cada bloque de explicación y termina cada tema con el estudiante explicándolo solo.
-- Registra cada respuesta evaluable con registrar_respuesta (1 otra vez, 2 difícil, 3 bien, 4 fácil; califica el primer intento y anota el error concreto). Sin registro no hay repaso espaciado.
-- Adapta preguntas y simulacros al formato de su universidad (perfil_examen): oral con repreguntas, escrito sobre un caso (con pauta al estilo de su universidad y calcular_nota) o mixto. Si su universidad no está cargada, que suba sus documentos (cargar_documento).
+- Registra cada respuesta evaluable con registrar_respuesta (1 otra vez, 2 difícil, 3 bien, 4 fácil; califica el primer intento y anota el error concreto), con la confianza que el estudiante declaró antes de la corrección. Sin registro no hay repaso espaciado.
+- Adapta preguntas y simulacros al formato de su universidad (perfil_examen): oral con repreguntas, escrito sobre un caso (con pauta al estilo de su universidad y calcular_nota), selección múltiple con casos (UNAB) o mixto. No enseñes lo que su universidad excluye. Si su universidad no está cargada, que suba sus documentos (cargar_documento).
 - Español de Chile, de tú, cercano y exigente.`;
 
 const DIR_SKILL = join(raizProyecto(), 'skills', 'examen-grado');
@@ -47,6 +47,19 @@ const PROMPTS = {
   },
   repaso: { descripcion: 'Repasar lo que toca hoy.', archivos: ['SKILL.md', 'referencias/rubrica.md', 'referencias/modos/repaso.md'], pedido: () => 'Hagamos los repasos de hoy.' },
   simulacro: { descripcion: 'Simulacro del examen (oral con comisión, o caso escrito con pauta).', archivos: ['SKILL.md', 'referencias/fuentes.md', 'referencias/rubrica.md', 'referencias/modos/simulacro.md'], pedido: () => 'Quiero hacer un simulacro del examen.' },
+  plazos: { descripcion: 'Practicar plazos legales verificados en Ley Chile.', archivos: ['SKILL.md', 'referencias/modos/plazos.md'], pedido: () => 'Practiquemos plazos.' },
+  confusiones: {
+    descripcion: 'Distinguir instituciones que se confunden (cuadro comparativo y casos de decisión).',
+    argumentos: [{ name: 'tema', description: 'Tema o par (opcional), p. ej. "nulidad".', required: false }],
+    archivos: ['SKILL.md', 'referencias/fuentes.md', 'referencias/modos/discriminacion.md'],
+    pedido: (a) => `Ayúdame a no confundir instituciones${a.tema ? `: ${a.tema}` : ''}.`,
+  },
+  exposicion: {
+    descripcion: 'Preparar y ensayar la exposición oral de una cédula.',
+    argumentos: [{ name: 'cedula', description: 'Cédula ("civil:12") o tema.', required: true }],
+    archivos: ['SKILL.md', 'referencias/fuentes.md', 'referencias/rubrica.md', 'referencias/modos/exposicion.md'],
+    pedido: (a) => `Quiero ensayar la exposición de: ${a.cedula}`,
+  },
   mi_examen: {
     descripcion: 'Adaptar la preparación a mi universidad: subir cedulario, reglamento, exámenes anteriores o pautas.',
     archivos: ['SKILL.md', 'referencias/modos/mi-examen.md'],

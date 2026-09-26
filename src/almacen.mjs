@@ -129,6 +129,13 @@ export class Almacen {
     this.db = new DatabaseSync(ruta);
     this.db.exec('PRAGMA journal_mode = WAL; PRAGMA foreign_keys = ON;');
     this.db.exec(ESQUEMA);
+    this.migrar();
+  }
+
+  /** Columnas agregadas después de la primera versión: bases antiguas se actualizan solas. */
+  migrar() {
+    const columnas = (tabla) => new Set(this.db.prepare(`PRAGMA table_info(${tabla})`).all().map((c) => c.name));
+    if (!columnas('respuestas').has('confianza')) this.db.exec('ALTER TABLE respuestas ADD COLUMN confianza TEXT');
   }
 
   cerrar() {
@@ -202,10 +209,20 @@ export class Almacen {
       .run(estudiante, tema, s.estabilidad, s.dificultad, s.ultimo_repaso, s.proximo, s.repasos, s.lapsos, s.ultima_calificacion);
   }
 
-  registrarRespuesta(estudiante, { tema, fecha, calificacion, modo, pregunta, error }) {
+  registrarRespuesta(estudiante, { tema, fecha, calificacion, modo, pregunta, error, confianza }) {
     this.db
-      .prepare('INSERT INTO respuestas (estudiante, tema, fecha, calificacion, modo, pregunta, error) VALUES (?, ?, ?, ?, ?, ?, ?)')
-      .run(estudiante, tema, fecha, calificacion, modo ?? null, pregunta ?? null, error ?? null);
+      .prepare('INSERT INTO respuestas (estudiante, tema, fecha, calificacion, modo, pregunta, error, confianza) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
+      .run(estudiante, tema, fecha, calificacion, modo ?? null, pregunta ?? null, error ?? null, confianza ?? null);
+  }
+
+  /** Aciertos por nivel de confianza declarada: ¿sabe lo que sabe? */
+  calibracion(estudiante) {
+    return this.db
+      .prepare(
+        `SELECT confianza, COUNT(*) AS respuestas, SUM(CASE WHEN calificacion >= 3 THEN 1 ELSE 0 END) AS aciertos
+         FROM respuestas WHERE estudiante = ? AND confianza IS NOT NULL GROUP BY confianza`,
+      )
+      .all(estudiante);
   }
 
   respuestas(estudiante, { tema, limite = 20 } = {}) {

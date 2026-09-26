@@ -1,0 +1,257 @@
+# Instituciones que se confunden en el examen.
+#
+# Distinguir instituciones parecidas es lo que separa una respuesta correcta de
+# una buena, y es lo que más fallan las preguntas de alternativas: el
+# distractor suele ser la institución vecina. Cada par trae los EJES por los
+# que conviene compararlas; el contenido de cada casilla lo construye el
+# estudiante (y el tutor lo corrige con la norma en la mano: ver_articulo).
+
+- id: nulidad_absoluta_relativa
+  nombre: Nulidad absoluta y nulidad relativa
+  temas: [civil.acto.nulidad_absoluta, civil.acto.nulidad_relativa]
+  ejes: [causales, quién puede alegarla, declaración de oficio, saneamiento por ratificación, saneamiento por transcurso del tiempo, efectos respecto de terceros]
+
+- id: nulidad_inoponibilidad
+  nombre: Nulidad e inoponibilidad
+  temas: [civil.acto.nulidad_absoluta, civil.acto.inoponibilidad]
+  ejes: [momento del vicio o de la causa, a quién afecta, quién la alega, efectos entre las partes, efectos respecto de terceros]
+
+- id: nulidad_resolucion
+  nombre: Nulidad y resolución
+  temas: [civil.acto.nulidad_relativa, civil.oblig.resolucion]
+  ejes: [causa (vicio originario o incumplimiento posterior), actos a los que se aplica, efectos entre las partes, efectos contra terceros (1490-1491 y 1689), prescripción]
+
+- id: resciliacion_revocacion
+  nombre: Resciliación, revocación y resolución
+  temas: [civil.acto.ineficacia, civil.oblig.resolucion]
+  ejes: [quién la decide, causa, efecto retroactivo, contratos en que procede]
+
+- id: error_dolo
+  nombre: Error y dolo como vicios del consentimiento
+  temas: [civil.acto.error, civil.acto.dolo]
+  ejes: [origen (espontáneo o provocado), requisitos para viciar el acto, actos unilaterales y bilaterales, dolo incidental, sanción]
+
+- id: objeto_causa_ilicita
+  nombre: Objeto ilícito y causa ilícita
+  temas: [civil.acto.objeto_ilicito, civil.acto.causa]
+  ejes: [concepto, casos legales, prueba, sanción, repetición de lo dado o pagado (1468)]
+
+- id: simulacion_fraude
+  nombre: Simulación y fraude a la ley
+  temas: [civil.acto.simulacion, civil.acto.orden_publico]
+  ejes: [qué se oculta o se elude, acción que procede, prueba, efectos respecto de terceros]
+
+- id: condicion_plazo
+  nombre: Condición y plazo
+  temas: [civil.oblig.condicionales, civil.oblig.plazo]
+  ejes: [certidumbre del hecho, efecto sobre el nacimiento o la exigibilidad, retroactividad, lo pagado antes de cumplirse, renuncia]
+
+- id: tacita_comisorio
+  nombre: Condición resolutoria tácita y pacto comisorio
+  temas: [civil.oblig.resolucion]
+  ejes: [fuente, necesidad de sentencia, enervamiento y su plazo, prescripción, contratos en que opera]
+
+- id: solidaridad_indivisibilidad
+  nombre: Solidaridad e indivisibilidad
+  temas: [civil.oblig.solidarias, civil.oblig.indivisibles]
+  ejes: [fundamento (vínculo u objeto), fuente, transmisión a los herederos, efecto de la interrupción de la prescripción, conversión en indemnización de perjuicios]
+
+- id: fianza_solidaridad
+  nombre: Fianza y codeudoría solidaria
+  temas: [civil.contratos_esp.fianza, civil.oblig.solidarias]
+  ejes: [carácter accesorio, beneficios de excusión y división, a quién se demanda primero, acción de reembolso, extinción]
+
+- id: prescripcion_adquisitiva_extintiva
+  nombre: Prescripción adquisitiva y extintiva
+  temas: [civil.bienes.prescripcion_adquisitiva, civil.oblig.prescripcion_extintiva]
+  ejes: [efecto, plazos, interrupción natural y civil, suspensión, alegación y renuncia]
+
+- id: prescripcion_caducidad
+  nombre: Prescripción extintiva y caducidad
+  temas: [civil.oblig.prescripcion_extintiva, civil.oblig.caducidad]
+  ejes: [fundamento, interrupción y suspensión, declaración de oficio, renuncia, ejemplos legales]
+
+- id: posesion_tenencia
+  nombre: Dominio, posesión y mera tenencia
+  temas: [civil.bienes.dominio, civil.bienes.posesion, civil.bienes.mera_tenencia]
+  ejes: [elementos (corpus y animus), si conduce a la prescripción, protección (acciones), presunciones, transformación de una en otra (716 y 730)]
+
+- id: tradicion_entrega
+  nombre: Tradición y entrega
+  temas: [civil.bienes.tradicion, civil.oblig.dar]
+  ejes: [qué transfiere, título que la antecede, efecto, cuándo hay entrega sin tradición]
+
+- id: reivindicatoria_posesorias
+  nombre: Acción reivindicatoria y acciones posesorias
+  temas: [civil.bienes.reivindicatoria, civil.bienes.posesorias]
+  ejes: [derecho protegido, legitimado activo y pasivo, bienes, prescripción, procedimiento]
+
+- id: reivindicatoria_peticion
+  nombre: Acción reivindicatoria y petición de herencia
+  temas: [civil.bienes.reivindicatoria, civil.suc.derecho_herencia]
+  ejes: [objeto (cosa singular o universalidad), legitimado pasivo, prescripción, prestaciones mutuas]
+
+- id: mandato_representacion
+  nombre: Mandato y representación
+  temas: [civil.contratos_esp.mandato, civil.acto.representacion]
+  ejes: [naturaleza (contrato o modalidad), fuente, mandato sin representación, efectos frente a terceros]
+
+- id: comodato_mutuo_deposito
+  nombre: Comodato, mutuo, depósito y arrendamiento
+  temas: [civil.contratos_esp.prestamos_deposito, civil.contratos_esp.arrendamiento]
+  ejes: [gratuidad u onerosidad, transfiere dominio o mera tenencia, qué se restituye, interés principal protegido, riesgos]
+
+- id: promesa_prometido
+  nombre: Promesa y contrato prometido
+  temas: [civil.contratos_esp.promesa, civil.contratos_esp.compraventa]
+  ejes: [obligación que genera, requisitos del 1554, solemnidad, acciones ante el incumplimiento]
+
+- id: hipoteca_prenda
+  nombre: Hipoteca y prenda
+  temas: [civil.contratos_esp.hipoteca, civil.contratos_esp.prenda]
+  ejes: [bienes sobre los que recae, entrega o inscripción, solemnidades, acciones del acreedor, preferencia]
+
+- id: lesion_redhibitorios
+  nombre: Lesión enorme y vicios redhibitorios
+  temas: [civil.contratos_esp.lesion, civil.contratos_esp.saneamiento]
+  ejes: [qué se protege, requisitos, bienes a que se aplica, acciones y opciones del demandado, plazo]
+
+- id: contractual_extracontractual
+  nombre: Responsabilidad contractual y extracontractual
+  temas: [civil.resp.contractual, civil.resp.extracontractual]
+  ejes: [vínculo previo, graduación de la culpa, carga de la prueba, mora, capacidad, solidaridad (2317), daño moral, prescripción]
+
+- id: dano_patrimonial_moral
+  nombre: Daño emergente, lucro cesante y daño moral
+  temas: [civil.resp.dano, civil.resp.dano_moral]
+  ejes: [concepto, prueba, avaluación, procedencia en sede contractual y extracontractual]
+
+- id: nulidad_divorcio
+  nombre: Nulidad matrimonial y divorcio
+  temas: [civil.familia.termino_nulidad, civil.familia.divorcio]
+  ejes: [causa (vicio de origen o ruptura posterior), efectos retroactivos, matrimonio putativo, filiación, compensación económica, titulares y plazos]
+
+- id: regimenes
+  nombre: Sociedad conyugal, separación y participación en los gananciales
+  temas: [civil.familia.sociedad_conyugal, civil.familia.separacion_participacion]
+  ejes: [bienes comunes o propios, administración, responsabilidad por deudas, crédito o comunidad al término]
+
+- id: representacion_transmision
+  nombre: Derecho de representación, de transmisión y acrecimiento
+  temas: [civil.suc.representacion_transmision_acrecimiento, civil.suc.intestada]
+  ejes: [en qué sucesión opera, supuesto de hecho, quién ocupa el lugar de quién, requisitos de capacidad y dignidad]
+
+- id: legitimas_mejoras
+  nombre: Legítimas, cuarta de mejoras y libre disposición
+  temas: [civil.suc.asignaciones_forzosas, civil.suc.acervos]
+  ejes: [beneficiarios, cálculo, protección (reforma de testamento), acervos imaginarios]
+
+- id: oblicua_pauliana
+  nombre: Acción oblicua y acción pauliana
+  temas: [civil.oblig.prenda_general]
+  ejes: [qué busca el acreedor, requisitos, a quién aprovecha, plazo]
+
+- id: jurisdiccion_competencia
+  nombre: Jurisdicción y competencia
+  temas: [procesal.jurisdiccion.concepto, procesal.competencia.concepto]
+  ejes: [concepto, relación entre ambas, vicio y sanción, cómo se reclama su falta]
+
+- id: absoluta_relativa
+  nombre: Competencia absoluta y relativa
+  temas: [procesal.competencia.absoluta, procesal.competencia.relativa]
+  ejes: [elementos que la determinan, orden público, prórroga, declaración de oficio, oportunidad para alegar la incompetencia]
+
+- id: implicancia_recusacion
+  nombre: Implicancias y recusaciones
+  temas: [procesal.organica.implicancias]
+  ejes: [gravedad de la causal, declaración de oficio, renuncia, sanción al juez que falla implicado, recurso que procede]
+
+- id: prejudiciales_precautorias
+  nombre: Medidas prejudiciales y medidas precautorias
+  temas: [procesal.ordinario.prejudiciales, procesal.cautelares.precautorias]
+  ejes: [finalidad, oportunidad, requisitos, contracautela, plazo para demandar]
+
+- id: dilatorias_perentorias
+  nombre: Excepciones dilatorias y perentorias
+  temas: [procesal.accion.defensa]
+  ejes: [qué atacan (procedimiento o fondo), oportunidad, tramitación, excepciones mixtas y anómalas]
+
+- id: ordinario_sumario
+  nombre: Juicio ordinario y juicio sumario
+  temas: [procesal.ordinario.discusion, procesal.especiales.sumario]
+  ejes: [ámbito de aplicación, estructura, prueba, sustitución de procedimiento, recursos]
+
+- id: incidental_ejecutivo
+  nombre: Cumplimiento incidental y juicio ejecutivo
+  temas: [procesal.especiales.cumplimiento_incidental, procesal.ejecutivo.dar]
+  ejes: [título, tribunal, plazo para pedirlo, excepciones admisibles, opción del acreedor]
+
+- id: resoluciones
+  nombre: Sentencia definitiva, interlocutoria, auto y decreto
+  temas: [procesal.proceso.resoluciones]
+  ejes: [qué resuelve, forma de notificación, recursos que proceden, producen cosa juzgada]
+
+- id: cosa_juzgada_desasimiento
+  nombre: Cosa juzgada y desasimiento
+  temas: [procesal.recursos.cosa_juzgada, procesal.proceso.resoluciones]
+  ejes: [a quién vincula, desde cuándo, excepciones, triple identidad]
+
+- id: notificaciones
+  nombre: Notificación personal, por cédula y por estado diario
+  temas: [procesal.comunes.notificaciones]
+  ejes: [resoluciones que se notifican así, quién la practica, dónde, cuándo se entiende hecha]
+
+- id: abandono_desistimiento
+  nombre: Abandono del procedimiento y desistimiento de la demanda
+  temas: [procesal.comunes.incidentes]
+  ejes: [quién lo provoca, qué se extingue (procedimiento o acción), plazo, efectos]
+
+- id: apelacion_casacion
+  nombre: Apelación y casación en la forma
+  temas: [procesal.recursos.apelacion, procesal.recursos.casacion_forma]
+  ejes: [ordinario o extraordinario, causales, resoluciones impugnables, preparación, qué puede hacer el tribunal superior]
+
+- id: casacion_forma_fondo
+  nombre: Casación en la forma y casación en el fondo
+  temas: [procesal.recursos.casacion_forma, procesal.recursos.casacion_fondo]
+  ejes: [vicio que se ataca, tribunal que conoce, causales, preparación, sentencia de reemplazo]
+
+- id: queja_hecho
+  nombre: Recurso de queja y recurso de hecho
+  temas: [procesal.recursos.queja_revision, procesal.recursos.hecho]
+  ejes: [finalidad, resoluciones contra las que procede, tribunal, plazo]
+
+- id: nulidad_casacion
+  nombre: Recurso de nulidad penal y casación civil
+  temas: [procesal.recursos.nulidad_penal, procesal.recursos.casacion_fondo]
+  ejes: [causales, tribunal competente, efectos, nuevo juicio o sentencia de reemplazo]
+
+- id: salidas_alternativas
+  nombre: Suspensión condicional del procedimiento y acuerdo reparatorio
+  temas: [procesal.penal.salidas_alternativas]
+  ejes: [delitos en que procede, quién la acuerda, papel de la víctima, condiciones, efecto sobre la acción penal]
+
+- id: abreviado_simplificado
+  nombre: Procedimiento abreviado y procedimiento simplificado
+  temas: [procesal.penal.abreviado, procesal.penal.simplificado]
+  ejes: [pena requerida, aceptación de los hechos, tribunal, recursos]
+
+- id: formalizacion_acusacion
+  nombre: Formalización y acusación
+  temas: [procesal.penal.formalizacion, procesal.penal.intermedia]
+  ejes: [oportunidad, contenido, efectos, control judicial]
+
+- id: detencion_prision
+  nombre: Detención y prisión preventiva
+  temas: [procesal.penal.cautelares]
+  ejes: [finalidad, requisitos, duración, quién la decreta, recursos]
+
+- id: sistemas_prueba
+  nombre: Prueba legal tasada, sana crítica y libre convicción
+  temas: [procesal.prueba.sistemas]
+  ejes: [quién fija el valor, fundamentación exigida, procedimientos en que rige, control por casación o nulidad]
+
+- id: tercerias
+  nombre: Tercerías de dominio, posesión, prelación y pago
+  temas: [procesal.ejecutivo.dar]
+  ejes: [qué alega el tercero, efecto sobre la ejecución, oportunidad, tramitación]

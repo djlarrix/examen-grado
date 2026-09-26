@@ -363,8 +363,8 @@ unidades:
         requiere: [procesal.recursos.teoria]
         relacionados: [civil.contratos.interpretacion]
       - id: procesal.recursos.nulidad_penal
-        titulo: Recurso de nulidad (proceso penal)
-        articulos: [CPP 372-387]
+        titulo: Recursos en el proceso penal. Reposición, apelación y recurso de nulidad
+        articulos: [CPP 352-371, CPP 372-387]
         requiere: [procesal.recursos.teoria]
         relacionados: [procesal.recursos.casacion_forma]
       - id: procesal.recursos.queja_revision

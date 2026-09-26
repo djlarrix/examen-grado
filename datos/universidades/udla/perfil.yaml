@@ -7,6 +7,7 @@ facultad: Facultad de Derecho
 examen:
   nombre: Examen de Grado
   modalidad: oral
+  exposicion_minutos: 8
   ramos: [civil, procesal]
   partes:
     - titulo: Derecho Civil (se rinde por separado)

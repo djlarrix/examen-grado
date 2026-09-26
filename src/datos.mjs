@@ -135,6 +135,38 @@ export function validar(temario, universidades) {
 
 let cache;
 /** Contenido cargado y validado, una sola vez por proceso. */
+/** Plazos legales para practicar (datos/plazos.yaml), ya verificados contra Ley Chile. */
+export async function cargarPlazos(ruta = join(raizProyecto(), 'datos', 'plazos.yaml')) {
+  return (await leerYaml(ruta)).map((p) => ({ ...p, literal: p.literal ?? [] }));
+}
+
+/** Pares de instituciones que se confunden (datos/confusiones.yaml). */
+export async function cargarConfusiones(ruta = join(raizProyecto(), 'datos', 'confusiones.yaml')) {
+  return leerYaml(ruta);
+}
+
+/**
+ * En cuántas universidades (con cedulario del ramo cargado) se exige cada tema.
+ * Un tema que piden casi todas es de alto rendimiento: aparece en cualquier
+ * comisión y conviene asegurarlo primero cuando el tiempo no alcanza.
+ */
+export function transversalidad(temario, universidades) {
+  const total = { civil: 0, procesal: 0 };
+  const cuenta = new Map();
+  for (const u of universidades.values()) {
+    for (const [rama, cedulas] of Object.entries(u.cedularios)) {
+      total[rama]++;
+      for (const t of new Set(cedulas.flatMap((c) => c.temas))) cuenta.set(t, (cuenta.get(t) ?? 0) + 1);
+    }
+  }
+  const de = (id) => {
+    const t = temario.temas.get(id);
+    if (!t || !total[t.rama]) return null;
+    return { universidades: cuenta.get(id) ?? 0, de: total[t.rama], proporcion: (cuenta.get(id) ?? 0) / total[t.rama] };
+  };
+  return { de, total };
+}
+
 export async function contenido() {
   if (!cache) {
     cache = (async () => {
@@ -142,7 +174,25 @@ export async function contenido() {
       const universidades = await cargarUniversidades();
       const errores = validar(temario, universidades);
       if (errores.length) throw new Error(`Contenido inválido:\n- ${errores.join('\n- ')}`);
-      return { temario, universidades };
+      const plazos = await cargarPlazos();
+      for (const p of plazos) {
+        if (!temario.temas.has(p.tema)) errores.push(`plazo ${p.id}: tema inexistente (${p.tema})`);
+        try {
+          parsearReferencia(p.articulo);
+        } catch (e) {
+          errores.push(`plazo ${p.id}: ${e.message}`);
+        }
+      }
+      const confusiones = await cargarConfusiones();
+      const vistas = new Set();
+      for (const c of confusiones) {
+        if (vistas.has(c.id)) errores.push(`confusión ${c.id} repetida`);
+        vistas.add(c.id);
+        for (const t of c.temas ?? []) if (!temario.temas.has(t)) errores.push(`confusión ${c.id}: tema inexistente (${t})`);
+        if (!c.ejes?.length) errores.push(`confusión ${c.id}: sin ejes de comparación`);
+      }
+      if (errores.length) throw new Error(`Contenido inválido:\n- ${errores.join('\n- ')}`);
+      return { temario, universidades, plazos, confusiones, transversal: transversalidad(temario, universidades) };
     })();
   }
   return cache;

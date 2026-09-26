@@ -115,9 +115,14 @@ export const DEFINICIONES = [
       properties: {
         tema: TEMA,
         calificacion: { type: 'integer', enum: [1, 2, 3, 4] },
-        modo: { type: 'string', enum: ['clase', 'repaso', 'diagnostico', 'pregunta', 'simulacro'] },
+        modo: { type: 'string', enum: ['clase', 'repaso', 'diagnostico', 'pregunta', 'simulacro', 'plazos', 'discriminacion', 'exposicion'] },
         pregunta: { type: 'string', description: 'La pregunta que se hizo, resumida.' },
         error: { type: 'string', description: 'Qué confundió u omitió. Vacío si respondió bien.' },
+        confianza: {
+          type: 'string',
+          enum: ['alta', 'media', 'baja'],
+          description: 'Qué tan seguro dijo estar ANTES de saber si acertó. Un acierto con confianza baja se programa como difícil; un error con confianza alta se marca para corregirlo a fondo.',
+        },
       },
       required: ['tema', 'calificacion'],
     },
@@ -135,6 +140,54 @@ export const DEFINICIONES = [
         prioridad: { type: 'string', enum: ['azar', 'debiles'] },
         ejercicio: { type: 'integer', description: 'Sólo cédulas de ese ejercicio de examen de grado (UNAB: 1, 2 o 3).' },
       },
+    },
+  },
+  {
+    name: 'practicar_plazos',
+    description:
+      'Preguntas de plazos legales ("¿en qué plazo se apela?"), verificados contra el texto vigente de Ley Chile. Prioriza temas ya vistos y débiles. ' +
+      'Trae la respuesta: no la muestres hasta que el estudiante conteste.',
+    inputSchema: {
+      type: 'object',
+      properties: { rama: RAMA, tema: { type: 'string', description: 'Tema, cédula o unidad para acotar.' }, cantidad: { type: 'integer', minimum: 1, maximum: 15 } },
+    },
+  },
+  {
+    name: 'practicar_discriminacion',
+    description:
+      'Pares de instituciones que se confunden (nulidad absoluta/relativa, apelación/casación…) con los ejes para compararlas. ' +
+      'Para un cuadro comparativo de memoria y casos en que hay que decidir qué institución aplica.',
+    inputSchema: {
+      type: 'object',
+      properties: { rama: RAMA, tema: { type: 'string', description: 'Tema, cédula o unidad para acotar.' }, cantidad: { type: 'integer', minimum: 1, maximum: 5 } },
+    },
+  },
+  {
+    name: 'preparar_exposicion',
+    description:
+      'Prepara la exposición oral de una cédula (o tema): puntos que debe cubrir según el texto oficial, guion con tiempos, rúbrica y errores previos del estudiante. ' +
+      'Para universidades con disertación o exposición inicial (U. Central, UDD, UDLA) o para ensayar cualquier cédula en voz alta.',
+    inputSchema: {
+      type: 'object',
+      properties: { rama: RAMA, numero: { type: 'integer' }, tema: { type: 'string' }, minutos: { type: 'number', description: 'Duración. Por omisión, la del perfil o 8.' } },
+    },
+  },
+  {
+    name: 'diagnostico',
+    description:
+      'Elige un tema por unidad (los más exigidos entre universidades) para un diagnóstico inicial. Lo que el estudiante no domina queda como foco ' +
+      'al registrarlo con modo "diagnostico"; lo que domina entra al repaso.',
+    inputSchema: { type: 'object', properties: { rama: RAMA, cantidad: { type: 'integer', minimum: 4, maximum: 30 } } },
+  },
+  {
+    name: 'exportar',
+    description:
+      'Genera un archivo para usar fuera del chat: "anki" (tarjetas guardadas + plazos, listo para importar en Anki) o ' +
+      '"calendario" (.ics con una sesión por día de estudio, simulacros y el día del examen).',
+    inputSchema: {
+      type: 'object',
+      properties: { formato: { type: 'string', enum: ['anki', 'calendario'] }, hora: { type: 'string', description: 'Hora de las sesiones (HH:MM), para el calendario.' } },
+      required: ['formato'],
     },
   },
   {
@@ -325,7 +378,9 @@ export const DEFINICIONES = [
   },
   {
     name: 'guardar_material',
-    description: 'Guarda material que le sirvió al estudiante (ficha, cuadro, esquema, línea de tiempo, tarjetas) para volver a verlo.',
+    description:
+      'Guarda material que le sirvió al estudiante (ficha, cuadro, esquema, línea de tiempo, tarjetas) para volver a verlo. ' +
+      'Las tarjetas, en formato "P: pregunta" / "R: respuesta" separadas por una línea en blanco, se pueden exportar a Anki.',
     inputSchema: {
       type: 'object',
       properties: {

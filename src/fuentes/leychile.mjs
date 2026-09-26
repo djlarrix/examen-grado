@@ -61,7 +61,13 @@ const PARECE_NOTA = /\d|^(L\.|Ley|LEY|Art|ART|D\.?\s?L|D\.?F\.?L|D\.O|CPR|NOTA|I
 
 export function limpiarTexto(crudo) {
   const notas = [];
-  const lineas = String(crudo).split('\n').map((l) => {
+  // Llamada a nota pegada a una palabra ("juiciosNOTA 36 posesorios"): se
+  // separa del texto y se guarda como nota.
+  const sinLlamadas = String(crudo).replace(/([a-záéíóúñ,;.)])NOTA\s?(\d+)\b/g, (m, antes, n) => {
+    notas.push(`NOTA ${n}`);
+    return antes;
+  });
+  const lineas = sinLlamadas.split('\n').map((l) => {
     const m = l.match(NOTA_MARGEN);
     if (m && PARECE_NOTA.test(m[2].trim())) {
       notas.push(m[2].trim());

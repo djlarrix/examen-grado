@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** Valida el contenido (temario, cedularios, mapas) sin red. Corre en cada commit. */
-import { cargarTemario, cargarUniversidades, validar } from '../src/datos.mjs';
+import { cargarTemario, cargarUniversidades, validar, contenido } from '../src/datos.mjs';
 
 const temario = await cargarTemario();
 const universidades = await cargarUniversidades();
@@ -19,6 +19,14 @@ for (const [id, u] of universidades) {
 }
 if (errores.length) {
   console.log(`\n${errores.length} error(es):\n- ${errores.join('\n- ')}`);
+  process.exit(1);
+}
+// Plazos y confusiones se validan al armar el contenido completo.
+try {
+  const { plazos, confusiones } = await contenido();
+  console.log(`Plazos: ${plazos.length} · Pares de instituciones que se confunden: ${confusiones.length}`);
+} catch (e) {
+  console.log(`\n${e.message}`);
   process.exit(1);
 }
 console.log('\nContenido válido.');

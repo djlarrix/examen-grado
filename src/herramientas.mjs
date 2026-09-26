@@ -6,12 +6,14 @@
  * las normas viene de Ley Chile y el de la doctrina, de los manuales que el
  * propio estudiante cargó, con página.
  */
-import { resolve as resolverRuta } from 'node:path';
-import { stat } from 'node:fs/promises';
+import { resolve as resolverRuta, join } from 'node:path';
+import { stat, mkdir, writeFile } from 'node:fs/promises';
 import { contenido } from './datos.mjs';
 import { Almacen } from './almacen.mjs';
 import { programar, dominio, DOMINIOS, recuperabilidadHoy, CALIFICACIONES, diasEntre } from './repaso.mjs';
-import { alcance, planGeneral, sesionDeHoy } from './plan.mjs';
+import { alcance, planGeneral, sesionDeHoy, minutosPorDia } from './plan.mjs';
+import { elegirPonderado, puntosDeCedula, guionDeExposicion, tarjetasDeTexto, textoAnki, calendarioIcs } from './didactica.mjs';
+import { directorioDatos } from './lib/rutas.mjs';
 import { NORMAS, parsearReferencia, citaLegible } from './fuentes/normas.mjs';
 import { verArticulo } from './fuentes/leychile.mjs';
 import { extraerPaginas } from './lib/pdf.mjs';
@@ -36,11 +38,11 @@ export class Tutor {
   }
 
   async ctx() {
-    const { temario, universidades } = await contenido();
+    const { temario, universidades, transversal, plazos, confusiones } = await contenido();
     const est = this.almacen.estudiante(this.id);
     const base = est?.universidad ? universidades.get(est.universidad) ?? null : null;
     const universidad = combinarUniversidad(base, this.almacen.perfilPropio(this.id), this.almacen.cedulariosPropios(this.id), est);
-    return { temario, universidades, est, universidad, hoy: this.hoy() };
+    return { temario, universidades, transversal, plazos, confusiones, est, universidad, hoy: this.hoy() };
   }
 
   // — Configuración ————————————————————————————————————————————————
@@ -146,7 +148,7 @@ export class Tutor {
   }
 
   async sesion_de_hoy({ minutos } = {}) {
-    const { temario, est, universidad, hoy } = await this.ctx();
+    const { temario, est, universidad, transversal, hoy } = await this.ctx();
     if (!est) throw new ErrorDeUso('Estudiante sin configurar. Llama a `estado_estudiante`.');
     return sesionDeHoy({
       temario,
@@ -157,6 +159,7 @@ export class Tutor {
       simulacros: this.almacen.simulacros(this.id, 5),
       hoy,
       minutos,
+      transversal,
     });
   }
 
@@ -278,7 +281,7 @@ export class Tutor {
   }
 
   async ver_tema({ tema, cedula, rama } = {}) {
-    const { temario, universidad, hoy } = await this.ctx();
+    const { temario, universidad, transversal, plazos, confusiones, hoy } = await this.ctx();
     const progreso = this.almacen.progreso(this.id);
     let ids;
     let ced = null;
@@ -309,6 +312,11 @@ export class Tutor {
         requiere: t.requiere.map((r) => ({ id: r, titulo: temario.temas.get(r).titulo, dominio: `${icono(dominio(progreso.get(r), hoy))} ${DOMINIOS[dominio(progreso.get(r), hoy)].nombre}` })),
         relacionados: t.relacionados.map((r) => ({ id: r, titulo: temario.temas.get(r).titulo })),
         ...(cedulas.length ? { en_tu_cedulario: cedulas } : {}),
+        ...(plazos.some((p) => p.tema === id) ? { plazos: plazos.filter((p) => p.tema === id).map((p) => ({ pregunta: p.pregunta, respuesta: p.respuesta, fundamento: citaLegible(p.articulo) })) } : {}),
+        ...(confusiones.some((c) => c.temas.includes(id))
+          ? { se_confunde_con: confusiones.filter((c) => c.temas.includes(id)).map((c) => ({ par: c.nombre, comparar_por: c.ejes.join(' · ') })) }
+          : {}),
+        ...(transversal?.de(id) ? { se_exige_en: `${transversal.de(id).universidades} de ${transversal.de(id).de} cedularios oficiales de ${t.rama === 'civil' ? 'Civil' : 'Procesal'}` } : {}),
         tu_estado: {
           dominio: `${icono(d)} ${DOMINIOS[d].nombre}`,
           ...(e ? { repasos: e.repasos, olvidos: e.lapsos, ultimo_repaso: e.ultimo_repaso, proximo_repaso: e.proximo, recuerdo_estimado_hoy: `${Math.round(recuperabilidadHoy(e, hoy) * 100)}%` } : {}),
@@ -370,12 +378,29 @@ export class Tutor {
 
   // — Registro del aprendizaje ——————————————————————————————————————
 
-  async registrar_respuesta({ tema, calificacion, modo, pregunta, error } = {}) {
+  async registrar_respuesta({ tema, calificacion, modo, pregunta, error, confianza } = {}) {
     const { temario, est, hoy } = await this.ctx();
     if (!temario.temas.has(tema)) throw new ErrorDeUso(`Tema desconocido "${tema}". Registra por id de tema (una cédula puede abarcar varios; usa ver_tema para ver cuáles).`);
-    const g = Number(calificacion);
-    if (![1, 2, 3, 4].includes(g)) throw new ErrorDeUso('calificacion: 1 (otra vez), 2 (difícil), 3 (bien) o 4 (fácil).');
+    const dada = Number(calificacion);
+    if (![1, 2, 3, 4].includes(dada)) throw new ErrorDeUso('calificacion: 1 (otra vez), 2 (difícil), 3 (bien) o 4 (fácil).');
+    if (confianza !== undefined && !['alta', 'media', 'baja'].includes(confianza)) throw new ErrorDeUso('confianza: alta, media o baja.');
+    // Un acierto con baja confianza es casi una adivinanza: se programa como
+    // "difícil" para que vuelva pronto. El error con alta confianza es el más
+    // valioso de corregir (efecto de hipercorrección): se marca para reenseñar.
+    const g = confianza === 'baja' && dada >= 3 ? 2 : dada;
     const previo = this.almacen.estadoTema(this.id, tema);
+    // En el diagnóstico, lo que no sabe todavía no se "repasa": se enseña. No
+    // se crea estado de repaso (seguiría contando como tema nuevo) y se marca
+    // como foco para que la sesión lo ponga primero.
+    if (modo === 'diagnostico' && g <= 2 && !previo) {
+      this.almacen.registrarRespuesta(this.id, { tema, fecha: hoy, calificacion: dada, modo, pregunta, error, confianza });
+      this.almacen.agregarFoco(this.id, [tema], hoy);
+      return {
+        tema: temario.temas.get(tema).titulo,
+        diagnostico: 'Todavía no lo domina: queda marcado para enseñarlo primero (foco), sin contarlo como visto.',
+        ...(dada === 1 && confianza === 'alta' ? { error_de_alta_confianza: 'Estaba seguro y se equivocó: anótalo y trabájalo apenas empiece ese tema.' } : {}),
+      };
+    }
     let nuevo = programar(previo, g, hoy, { fechaExamen: est?.fecha_examen });
     // Dos recuperaciones el mismo día no son dos repasos espaciados. FSRS ya no
     // sube la estabilidad con 0 días transcurridos, pero la calificación que
@@ -384,12 +409,20 @@ export class Tutor {
     if (previo?.ultimo_repaso === hoy) nuevo = { ...nuevo, ultima_calificacion: Math.min(previo.ultima_calificacion, g) };
     this.almacen.transaccion(() => {
       this.almacen.guardarEstado(this.id, tema, nuevo);
-      this.almacen.registrarRespuesta(this.id, { tema, fecha: hoy, calificacion: g, modo, pregunta, error });
+      this.almacen.registrarRespuesta(this.id, { tema, fecha: hoy, calificacion: dada, modo, pregunta, error, confianza });
     });
     const d = dominio(nuevo, hoy);
     return {
       tema: temario.temas.get(tema).titulo,
       calificacion: `${g} (${CALIFICACIONES[g]})`,
+      ...(g !== dada ? { ajuste: 'Acertó sin seguridad: se programa como "difícil" para confirmarlo pronto. Dile que el acierto cuenta, y que volverá a verlo.' } : {}),
+      ...(dada === 1 && confianza === 'alta'
+        ? {
+            error_de_alta_confianza:
+              'Estaba seguro y se equivocó: es el error que mejor se corrige si se trabaja ahora. Muestra el contraste (lo que creía vs. la regla y su fundamento), ' +
+              'pídele que explique con sus palabras por qué la regla es así, y vuelve a preguntarlo en otra forma antes de terminar la sesión.',
+          }
+        : {}),
       dominio: `${icono(d)} ${DOMINIOS[d].nombre}`,
       proximo_repaso: nuevo.proximo,
       en_dias: diasEntre(hoy, nuevo.proximo),
@@ -514,7 +547,200 @@ export class Tutor {
       temas_que_mas_se_olvidan: masOlvidados,
       errores_recientes: this.almacen.errores(this.id, 10).map((e) => ({ ...e, tema: temario.temas.get(e.tema)?.titulo ?? e.tema })),
       racha_dias: this.racha(hoy),
+      calibracion: this.calibracion(),
     };
+  }
+
+  /** ¿Sabe lo que sabe? Aciertos según la confianza que declaró antes de ver la corrección. */
+  calibracion() {
+    const filas = this.almacen.calibracion(this.id);
+    if (!filas.length) return 'Sin datos: pide al estudiante su confianza (alta/media/baja) antes de corregir y regístrala en `confianza`.';
+    const por = Object.fromEntries(filas.map((f) => [f.confianza, { respuestas: f.respuestas, aciertos: `${Math.round((100 * f.aciertos) / f.respuestas)}%` }]));
+    const pct = (c) => (por[c] ? parseInt(por[c].aciertos, 10) : null);
+    let lectura = 'Calibración razonable.';
+    if (pct('alta') !== null && pct('alta') < 75) lectura = 'Sobreconfianza: cuando dice estar seguro acierta poco. Conviene más recuperación con verificación y menos relectura.';
+    else if (pct('baja') !== null && pct('baja') > 60) lectura = 'Subconfianza: sabe más de lo que cree. Conviene simulacros para ganar seguridad.';
+    return { por_confianza: por, lectura };
+  }
+
+  // — Práctica dirigida ———————————————————————————————————————————————
+
+  /** Pesos para elegir qué practicar: lo visto y débil pesa más que lo nuevo. */
+  pesoPractica(progreso, hoy) {
+    return (id) => ({ sin_ver: 0.6, debil: 4, aprendiendo: 3, consolidando: 2, dominado: 1 })[dominio(progreso.get(id), hoy)];
+  }
+
+  async enAlcance(rama, tema) {
+    const { temario, universidad } = await this.ctx();
+    const alc = alcance(temario, universidad);
+    let ids = new Set(rama ? alc[rama] : [...alc.civil, ...alc.procesal]);
+    if (tema) {
+      const pedidos = new Set(await this.resolverTemas([tema]));
+      ids = new Set([...ids].filter((x) => pedidos.has(x)));
+      if (!ids.size) ids = pedidos; // lo pidió explícitamente aunque su cedulario no lo incluya
+    }
+    return ids;
+  }
+
+  async practicar_plazos({ rama, tema, cantidad = 5 } = {}) {
+    const { temario, plazos, hoy } = await this.ctx();
+    const ids = await this.enAlcance(rama, tema);
+    const pool = plazos.filter((p) => ids.has(p.tema));
+    if (!pool.length) throw new ErrorDeUso('No hay plazos cargados para ese filtro. Prueba sin `tema`, o con la otra rama.');
+    const peso = this.pesoPractica(this.almacen.progreso(this.id), hoy);
+    const elegidos = elegirPonderado(pool, Math.min(Number(cantidad) || 5, 15), (p) => peso(p.tema));
+    return {
+      preguntas: elegidos.map((p, i) => ({
+        n: i + 1,
+        tema: p.tema,
+        tema_titulo: temario.temas.get(p.tema).titulo,
+        pregunta: p.pregunta,
+        respuesta: p.respuesta,
+        ...(p.precision ? { precision: p.precision } : {}),
+        fundamento: citaLegible(p.articulo),
+        articulo: p.articulo,
+      })),
+      verificado: 'Cada plazo se comprobó contra el texto vigente de Ley Chile (npm run verificar-plazos).',
+      como_seguir:
+        'Pregunta de a uno y NO muestres la respuesta hasta que conteste (pídele también su confianza). Corrige con el fundamento. ' +
+        'Registra cada uno con registrar_respuesta (modo "plazos"): acierto 3, acierto con la precisión 4, error 2 (un plazo olvidado no borra el tema). ' +
+        'Al final, vuelve a preguntar los que falló, en otro orden. Truco de memoria: agrupar por número ("todo lo que es 4 años").',
+    };
+  }
+
+  async practicar_discriminacion({ rama, tema, cantidad = 1 } = {}) {
+    const { temario, confusiones, hoy } = await this.ctx();
+    const ids = await this.enAlcance(rama, tema);
+    const progreso = this.almacen.progreso(this.id);
+    const pool = confusiones.filter((c) => c.temas.some((t) => ids.has(t)));
+    if (!pool.length) throw new ErrorDeUso('No hay pares de instituciones para ese filtro.');
+    // Comparar sirve cuando ambas instituciones ya se estudiaron (intercalado):
+    // se prefieren pares con los dos temas vistos.
+    const peso = (c) => {
+      const vistos = c.temas.filter((t) => progreso.has(t)).length / c.temas.length;
+      const debil = c.temas.some((t) => ['debil', 'aprendiendo'].includes(dominio(progreso.get(t), hoy)));
+      return 0.3 + 2 * vistos + (debil ? 1.5 : 0);
+    };
+    const elegidos = elegirPonderado(pool, Math.min(Number(cantidad) || 1, 5), peso);
+    return {
+      pares: elegidos.map((c) => ({
+        par: c.nombre,
+        temas: c.temas.map((t) => ({ id: t, titulo: temario.temas.get(t).titulo, dominio: DOMINIOS[dominio(progreso.get(t), hoy)].nombre })),
+        comparar_por: c.ejes,
+        normas: [...new Set(c.temas.flatMap((t) => temario.temas.get(t).articulos))].map((a) => ({ referencia: a, cita: citaLegible(a) })),
+      })),
+      como_seguir:
+        '1) El estudiante arma de memoria un cuadro comparativo (filas = ejes, columnas = instituciones). ' +
+        '2) Corrige casilla por casilla, trayendo la norma con ver_articulo. ' +
+        '3) Luego 2-3 casos breves en que debe decidir QUÉ institución aplica y por qué (el error típico es aplicar la vecina). ' +
+        'Registra por tema (modo "discriminacion") y ofrece guardar el cuadro con guardar_material (tipo "cuadro").',
+    };
+  }
+
+  async preparar_exposicion({ rama, numero, tema, minutos } = {}) {
+    const { temario, universidad } = await this.ctx();
+    let titulo;
+    let contenidoOficial;
+    let ids;
+    if (numero !== undefined) {
+      if (!rama) throw new ErrorDeUso('Indica `rama` junto con `numero`.');
+      const c = universidad?.cedularios[rama]?.find((x) => x.numero === Number(numero));
+      if (!c) throw new ErrorDeUso(`No existe la cédula ${numero} de ${rama} en el cedulario del estudiante.`);
+      titulo = c.tema;
+      contenidoOficial = c.contenido;
+      ids = c.temas;
+    } else if (tema) {
+      ids = await this.resolverTemas([tema]);
+      titulo = ids.map((t) => temario.temas.get(t).titulo).join(' · ');
+      contenidoOficial = ids.map((t) => `${temario.temas.get(t).titulo}.`).join('\n');
+    } else throw new ErrorDeUso('Indica la cédula (`rama` + `numero`) o un `tema`.');
+    const examen = universidad?.perfil.examen ?? {};
+    const min = Number(minutos) || examen.exposicion_minutos || 8;
+    const puntos = puntosDeCedula(contenidoOficial, titulo);
+    const errores = ids.flatMap((t) => this.almacen.respuestas(this.id, { tema: t, limite: 20 }).filter((r) => r.error).map((r) => r.error)).slice(0, 5);
+    return {
+      cedula: titulo,
+      minutos: min,
+      guion: guionDeExposicion(puntos, min),
+      debe_cubrir: puntos,
+      temas: ids.map((t) => ({ id: t, titulo: temario.temas.get(t).titulo, normas: temario.temas.get(t).articulos })),
+      ...(errores.length ? { cuidado_con: errores } : {}),
+      rubrica: ['Estructura anunciada y respetada', 'Cobertura de los puntos de la cédula', 'Precisión normativa (artículos correctos)', 'Lenguaje jurídico', 'Manejo del tiempo', 'Respuesta a la interrogación posterior'],
+      como_seguir:
+        'El estudiante prepara un guion de palabras clave (no un texto para leer) y expone contra el reloj: pídele que avise al empezar y al terminar. ' +
+        'Marca qué puntos cubrió y cuáles no, evalúa con la rúbrica y luego interroga 5-8 min como la comisión, sobre lo omitido o impreciso. ' +
+        'Repetir la exposición una segunda vez el mismo día mejora mucho más que una sola versión perfecta.',
+    };
+  }
+
+  async diagnostico({ rama, cantidad = 12 } = {}) {
+    const { temario, universidad, transversal } = await this.ctx();
+    const progreso = this.almacen.progreso(this.id);
+    const alc = alcance(temario, universidad);
+    const ramas = rama ? [rama] : ['civil', 'procesal'];
+    // Un tema por unidad (el más exigido entre universidades), intercalando
+    // ramos: da una foto amplia en poco tiempo y activa conocimientos previos.
+    const porRama = ramas.map((r) => {
+      const set = new Set(alc[r]);
+      return temario.ramas[r].unidades
+        .map((u) => u.temas.filter((t) => set.has(t) && !progreso.has(t)).sort((a, b) => (transversal?.de(b)?.proporcion ?? 0) - (transversal?.de(a)?.proporcion ?? 0))[0])
+        .filter(Boolean);
+    });
+    const orden = [];
+    for (let i = 0; orden.length < Number(cantidad) && porRama.some((l) => i < l.length); i++) for (const l of porRama) if (i < l.length && orden.length < Number(cantidad)) orden.push(l[i]);
+    if (!orden.length) return { temas: [], nota: 'Ya hay registro en todas las unidades: el progreso reemplaza al diagnóstico (usa `progreso`).' };
+    return {
+      temas: orden.map((t) => ({ id: t, titulo: temario.temas.get(t).titulo, unidad: temario.temas.get(t).unidadTitulo })),
+      como_seguir:
+        'Una pregunta por tema, de dificultad media y SIN enseñar todavía (es un pretest: equivocarse ahora también ayuda a aprender después). ' +
+        'Pide su confianza antes de corregir. Registra cada una con registrar_respuesta (modo "diagnostico", con confianza): lo que no domina queda como foco, ' +
+        'lo que sí domina entra al repaso. Cierra con un resumen por unidad y una propuesta de por dónde empezar.',
+    };
+  }
+
+  async exportar({ formato, hora = '19:00' } = {}) {
+    const { temario, est, universidad, plazos, hoy } = await this.ctx();
+    const dir = join(directorioDatos(), 'exportaciones');
+    await mkdir(dir, { recursive: true });
+    if (formato === 'anki') {
+      const tarjetas = [];
+      for (const m of this.almacen.material(this.id).filter((x) => x.tipo === 'tarjetas')) {
+        const completo = this.almacen.material(this.id, { id: m.id })[0] ?? m;
+        const rama = completo.tema ? temario.temas.get(completo.tema)?.rama : null;
+        for (const t of tarjetasDeTexto(completo.contenido)) tarjetas.push({ ...t, etiquetas: ['examen-grado', rama, completo.tema?.replace(/\./g, '::')].filter(Boolean) });
+      }
+      const alc = new Set(Object.values(alcance(temario, universidad)).flat());
+      for (const p of plazos.filter((x) => alc.has(x.tema))) {
+        tarjetas.push({ frente: p.pregunta, reverso: `${p.respuesta}${p.precision ? `\n${p.precision}` : ''}\n(${citaLegible(p.articulo)})`, etiquetas: ['examen-grado', 'plazos', temario.temas.get(p.tema).rama] });
+      }
+      const ruta = join(dir, `tarjetas-${hoy}.txt`);
+      await writeFile(ruta, textoAnki(tarjetas));
+      return {
+        archivo: ruta,
+        tarjetas: tarjetas.length,
+        de_tu_material: tarjetas.filter((t) => !t.etiquetas.includes('plazos')).length,
+        plazos: tarjetas.filter((t) => t.etiquetas.includes('plazos')).length,
+        como_importar: 'En Anki: Archivo → Importar → elige el archivo. Las columnas (frente, reverso, etiquetas) se reconocen solas.',
+        nota: 'Para sumar tarjetas propias, guárdalas con guardar_material (tipo "tarjetas") en formato "P: pregunta" / "R: respuesta".',
+      };
+    }
+    if (formato === 'calendario') {
+      if (!est?.fecha_examen) throw new ErrorDeUso('Falta la fecha de examen (configurar_estudiante).');
+      if (!/^\d{1,2}:\d{2}$/.test(hora)) throw new ErrorDeUso('hora en formato HH:MM, p. ej. "19:00".');
+      const plan = planGeneral({ temario, universidad, estudiante: est, progreso: this.almacen.progreso(this.id), simulacros: this.almacen.simulacros(this.id), hoy });
+      const cal = calendarioIcs({ hoy, fechaExamen: est.fecha_examen, fases: plan.fases, minutos: minutosPorDia(est), diasSemana: est.dias_semana ?? 6, hora, universidad: universidad?.perfil.sigla });
+      if (!cal) throw new ErrorDeUso('La fecha de examen ya pasó o es hoy.');
+      const ruta = join(dir, `plan-examen-grado-${hoy}.ics`);
+      await writeFile(ruta, cal.ics);
+      return {
+        archivo: ruta,
+        sesiones: cal.sesiones,
+        simulacros: cal.simulacros,
+        supuestos: `Una sesión de ${minutosPorDia(est)} min a las ${hora}, ${est.dias_semana ?? 6} días por semana desde el lunes.`,
+        como_importar: 'Ábrelo con doble clic (Calendario de macOS, Outlook) o impórtalo en Google Calendar (Configuración → Importar).',
+      };
+    }
+    throw new ErrorDeUso('formato: "anki" (tarjetas y plazos) o "calendario" (plan de sesiones .ics).');
   }
 
   // — Documentos que sube el estudiante ——————————————————————————————

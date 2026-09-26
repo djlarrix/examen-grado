@@ -8,6 +8,7 @@ facultad: Facultad de Derecho
 examen:
   nombre: Examen de Licenciatura
   modalidad: oral
+  exposicion_minutos: 10
   ramos: [civil, procesal]
   partes:
     - titulo: Primera parte — exposición de cédula
