@@ -1,0 +1,617 @@
+# Cedulario de Derecho Civil (actualizado 2024) — Universidad de las Américas, Facultad de Derecho.
+# Fuente: https://www.udla.cl/descargas/derecho/CEDULARIO-DERECHO-CIVIL.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "udla") y revisada.
+# Cada "cédula" es un tema numerado del documento (la numeración es la del original).
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: Concepto e importancia del acto jurídico.
+    contenido: |-
+      1.1Clasificaciones.
+      1.2Elementos constitutivos del acto jurídico: cosas esenciales, de la naturaleza y
+      accidentales.
+      1.3Requisitos de existencia y de validez del acto jurídico:
+  - numero: 2
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "La voluntad: concepto, requisitos necesarios para su eficacia jurídica, manifestación expresa y tácita, y el silencio."
+    contenido: |-
+      2.1 La voluntad en los actos jurídicos bilaterales: formación del consentimiento. Referencia a
+      la responsabilidad civil precontractual. Voluntad real y declarada.
+      2.2 La simulación: concepto, clasificación y efectos. Diferencias con la nulidad y con el fraude
+      a la ley.
+  - numero: 3
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "Vicios de la voluntad: el error."
+    contenido: ""
+  - numero: 4
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: La fuerza
+    contenido: ""
+  - numero: 5
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: El dolo.
+    contenido: ""
+  - numero: 6
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: La lesión.
+    contenido: ""
+  - numero: 7
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "La capacidad:"
+    contenido: |-
+      1. Capacidad de goce y de ejercicio.
+      2. Incapacidades de ejercicio absolutas y relativas.
+      3. Incapacidades de ejercicio especiales.
+  - numero: 8
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "El objeto:"
+    contenido: |-
+      1. Concepto.
+      2. Requisitos.
+      3. Objeto Ilícito.
+  - numero: 9
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "La causa:"
+    contenido: |-
+      1. Conceptos.
+      2. Requisitos.
+      3. Causa ilícita.
+      4. Prueba de la causa.
+  - numero: 10
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "Las formalidades:"
+    contenido: |-
+      1. Solemnidades.
+      2. Formalidades habilitantes.
+      3. Formalidades por vía de prueba.
+      4. Formalidades por vía de publicidad.
+  - numero: 11
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "Ineficacia de los actos jurídicos:"
+    contenido: |-
+      1. Clases de ineficacia.
+      2. Inexistencia jurídica y nulidad. Doctrinas.
+  - numero: 12
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "Teoría de la nulidad y rescisión:"
+    contenido: |-
+      Nulidad absoluta y relativa: conceptos, características y causales.
+      1. Saneamiento de la nulidad.
+      2. Nulidad total y parcial.
+      3. Efectos de la nulidad entre las partes y respeto de terceros.
+      4. Conversión del acto nulo.
+      5. El error común.
+  - numero: 13
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "La inoponibilidad:"
+    contenido: |-
+      1. Concepto.
+      2. Clasificación de sus causas.
+      3. Efectos.
+      4. Saneamiento de la inoponibilidad.
+      2. Referencia a la resolución, terminación, caducidad, resciliación y revocación.
+  - numero: 14
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "Modalidades de los actos jurídicos :"
+    contenido: |-
+      1. Conceptos y principales clasificaciones de la condición,
+      2. El plazo
+      3. El modo.
+      4. Cómputo de los plazos.
+  - numero: 15
+    seccion: "I. TEORÍA GENERAL DEL ACTO JURÍDICO SECCIÓN TERCERA: TEORÍA GENERAL DE LOS ACTOS JURÍDICOS."
+    subseccion: ""
+    tema: "Efectos de los actos jurídicos entre las partes y terceros. La representación en los actos jurídicos: concepto, teorías que explican su naturaleza, fuentes, requisitos y efectos. Actos no susceptibles de representación."
+    contenido: ""
+  - numero: 16
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: "Conceptos de cosa y bien. Diversas clasificaciones:"
+    contenido: |-
+      1. Atendiendo a la naturaleza de las cosas en que consisten:
+      1. Bienes corporales e incorporales. Derechos y acciones reales y personales:
+      conceptos, elementos, referencia a algunas teorías y paralelo.
+      2. Bienes muebles e inmuebles. Clasificación de los derechos y acciones en muebles e
+      inmuebles.
+  - numero: 17
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: Bienes consumibles y no consumibles.
+    contenido: |-
+      1. Bienes fungibles y no fungibles. Diferencia entre la fungibilidad y la consumibilidad.
+      2. Bienes específicos y genéricos.
+      3. Bienes singulares y universales.
+      2. Atendiendo a los derechos de que son susceptibles:
+      1. Bienes apropiables y no apropiables.
+      2. Bienes comerciables y no comerciables.
+      3. Bienes particulares y nacionales. Clasificación del dominio público.
+      LOS DERECHOS REALES.
+  - numero: 18
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: El derecho de propiedad .
+    contenido: |-
+      1. Concepto, fundamentos, evolución y características.
+      2. Facultades o atributos de la propiedad. Facultad y capacidad de disposición.
+      3. Contenido pasivo de la propiedad.
+      4. Limitaciones a la propiedad.
+      5. Diversas clases de propiedad:
+      1. En cuanto a su extensión: propiedad plena y mera o nuda propiedad; propiedad absoluta
+      y propiedad fiduciaria.
+      2. En cuanto a las cosas objeto del derecho: conceptos de propiedad civil, propiedad
+      minera, propiedad sobre derechos de aprovechamiento de agua, propiedad intelectual,
+      propiedad industrial, etc.
+      3. En cuanto a su titular: referencia a la propiedad particular y a la propiedad sobre bienes
+      nacional.
+      4. Comunidad y copropiedad.
+  - numero: 19
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: "Los modos de adquirir la propiedad:"
+    contenido: |-
+      1. Conceptos de título y modo de adquirir.
+      2. Enunciación de los modos de adquirir.
+      3. Clasificaciones de los modos de adquirir: originarios y derivativos; a título gratuito y a título
+      oneroso; a título singular y a título universal; y entre vivos y por causa de muerte.
+      LOS MODOS DE ADQUIRIR LA PROPIEDAD EN PARTICULAR.
+  - numero: 20
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: La tradición
+    contenido: |-
+      1. Concepto, características y requisitos. Entrega y tradición.
+      2. Especies de tradición:
+      1. Tradición de derechos reales sobre una cosa corporal mueble:
+      1. Tradición real.
+      2. Tradición ficta.
+      2. Tradición de derechos reales sobre una cosa corporal inmueble.
+      1. El Conservador de Bienes Raíces: rol de la inscripción conservatoria en Chile; libros
+      del Conservador; títulos que deben y pueden inscribirse, y sanción, en general, por
+      la falta de inscripción de los títulos que deben inscribirse; Conservador competente
+      para practicar una inscripción y documentos idóneos para requerirla; negativa del
+      Conservador a practicar una inscripción; y quiénes pueden solicitar una inscripción.
+      3. Tradición del derecho de servidumbre.
+      4. Tradición del derecho de herencia.
+      5. Tradición de los derechos personales.
+  - numero: 21
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: La prescripción adquisitiva y la posesión
+    contenido: |-
+      1. La prescripción en general:
+      1. Concepto, evolución y fundamentos de la prescripción.
+      2. Conceptos de prescripción adquisitiva y extintiva.
+      3. Reglas comunes a la prescripción adquisitiva y extintiva.
+      2. Requisitos para ganar por prescripción el dominio. Actos de mera facultad y de mera
+      tolerancia.
+      3. Prueba de la posesión.
+      4. Interrupción natural y civil de la prescripción.
+      5. Clases de prescripción: ordinaria y extraordinaria. Suspensión de la prescripción.
+  - numero: 22
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: "La posesión:"
+    contenido: |-
+      a. Concepto y elementos.
+      b. Naturaleza jurídica.
+      c. Diferencias entre el dominio, la posesión y la mera tenencia. Concepto y características
+      de la mera tenencia.
+      d. Ventajas de la posesión. Presunciones.
+      e. La accesión de posesiones.
+      f. La coposesión.
+      g. Clases de posesión: regular e irregular; no viciosa y viciosa (posesión útil e inútil).
+      h. Adquisición, conservación y pérdida de la posesión de los muebles e inmuebles inscritos.
+      Referencia al D.L. Nº 2.695 sobre regularización de la pequeña propiedad raíz y
+      constitución del dominio sobre ella.
+  - numero: 23
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: Otros modos de adquirir la propiedad y derechos reales limitados.
+    contenido: |-
+      1. La ley.
+      2. Referencia a la sucesión por causa de muerte y al derecho real de herencia (su estudio
+      detallado corresponde a la cátedra de Derecho Civil IV).
+  - numero: 24
+    seccion: II. LOS OBJETOS DEL DERECHO
+    subseccion: ""
+    tema: Acciones protectoras del dominio y demás derechos reales, y de la posesión.
+    contenido: |-
+      1. Referencia a las medidas generales de protección del dominio.
+      2. Referencia a acciones personales
+      3. La acción reivindicatoria:
+      1. Concepto.
+      2. Cosas que pueden ser reivindicadas. Referencia a la acción de petición de herencia.
+      3. Quien puede reivindicar. Acción publiciana.
+      4. Contra quién se puede reivindicar.
+      5. Medidas precautorias.
+      6. Prestaciones mutuas:
+      1. Del poseedor vencido al reivindicador.
+      2. Del reivindicador al poseedor vencido.
+      7. Derecho de retención del poseedor vencido.
+      8. Injusto detentador.
+  - numero: 25
+    seccion: III. LA OBLIGACIÓN EN GENERAL Y SUS FUENTES
+    subseccion: ""
+    tema: La obligación en general y sus fuentes.
+    contenido: |-
+      1. Concepto de obligación. Referencia a la relación derecho real y derecho personal. Derecho
+      personal y obligación.
+      2. Los elementos de la obligación. La cuestión de la patrimonialidad de la obligación.
+      3. Importancia y evolución del derecho de las obligaciones.
+      4. Teoría general de las fuentes de las obligaciones:
+      1. Concepto de fuentes de las obligaciones:
+      2. Clasificación tradicional de las fuentes de las obligaciones; críticas. Otras clasificaciones.
+      Clasificación del Código Civil.
+      3. El contrato: concepto y críticas a la definición del Código Civil.
+      4. El cuasicontrato: concepto, críticas y fundamentos. Referencia a los cuasicontratos que
+      reglamenta el Código Civil y a los proyectos de este código.
+      5. Los hechos ilícitos: conceptos de delito y cuasidelito. Diferencia fundamental con los
+      delitos y cuasidelitos penales.
+      6. La ley: concepto, fundamento y características de las obligaciones legales.
+      7. El enriquecimiento sin causa.
+      8. La declaración unilateral de voluntad.
+  - numero: 26
+    seccion: III. LA OBLIGACIÓN EN GENERAL Y SUS FUENTES
+    subseccion: ""
+    tema: Clasificación de las obligaciones.
+    contenido: |-
+      1. Criterios de clasificación de las obligaciones: esquema.
+      2. Obligaciones civiles y naturales.
+      3. Obligaciones de dar, hacer y no hacer.
+      4. Obligaciones de especie o cuerpo cierto y de género. Obligaciones de dinero y de valor. Ley
+      Nº18.010 sobre operaciones de crédito de dinero.
+      5. Obligaciones de objeto único, de simple objeto múltiple, alternativas y facultativas.
+  - numero: 27
+    seccion: III. LA OBLIGACIÓN EN GENERAL Y SUS FUENTES
+    subseccion: ""
+    tema: Obligaciones simplemente conjuntas, solidarias e indivisibles.
+    contenido: |-
+      Obligaciones puras y simples, y sujetas a condición, a plazo y a modo.
+      Otras categorías de obligaciones: de medio y de resultado, propter rem o ambulatorias y,
+      causales y abstractas o formales.
+  - numero: 28
+    seccion: III. LA OBLIGACIÓN EN GENERAL Y SUS FUENTES
+    subseccion: ""
+    tema: Efectos de las obligaciones.
+    contenido: |-
+      1. Efectos desde el punto de vista del cumplimiento: cumplimiento voluntario o pago y
+      modalidades del pago. Cumplimiento voluntario por equivalencia: dación en pago,
+      compensación y confusión.
+      2. Efectos desde el punto de vista del incumplimiento en las obligaciones de dar, hacer y no
+      hacer:
+      1. El cumplimiento forzoso en naturaleza o ejecución forzada:
+      1. Derecho de prenda general.
+      2. Referencia a la acción ejecutiva y a la Insolvencia.
+      3. Prelación de créditos: concepto. Las preferencias: clases y características.
+  - numero: 29
+    seccion: III. LA OBLIGACIÓN EN GENERAL Y SUS FUENTES
+    subseccion: ""
+    tema: "La ejecución por equivalencia o indemnización de perjuicios:"
+    contenido: |-
+      i. Responsabilidad civil contractual: concepto y fundamentos.
+      ii. Requisitos de la responsabilidad civil contractual: incumplimiento, imputabilidad
+      (hecho del deudor, culpa y dolo), mora (mora del deudor y del acreedor; excepción
+      de contrato no cumplido; el derecho de retención) y daño (concepto, clases y
+      avaluación).
+      iii. Corrección monetaria de la indemnización.
+      iv. Circunstancias que alteran o eliminan la responsabilidad del deudor: dolo como
+      agravante de responsabilidad, referencia a la ausencia de culpa, caso fortuito y
+      fuerza mayor, estado de necesidad, hecho o culpa del acreedor, hecho ajeno, teoría
+      de la imprevisión y convenciones modificatorias de la responsabilidad.
+  - numero: 30
+    seccion: III. LA OBLIGACIÓN EN GENERAL Y SUS FUENTES
+    subseccion: ""
+    tema: Derechos auxiliares del acreedor. Acción oblicua o subrogatoria y acción revocatoria o pauliana.
+    contenido: |-
+      TRANSFERENCIA, TRANSMISIÓN Y EXTINCIÓN DE LAS OBLIGACIONES.
+      1. La transferencia de las obligaciones. Referencia a la cesión de créditos, a la asunción de
+      deudas y a la cesión del contrato.
+      2. La transmisión de obligaciones. Deudas hereditarias y testamentarias. Derechos y
+      obligaciones intransmisibles.
+  - numero: 31
+    seccion: III. LA OBLIGACIÓN EN GENERAL Y SUS FUENTES
+    subseccion: ""
+    tema: Modos de extinguir las obligaciones.
+    contenido: |-
+      1. Ideas generales.
+      2. Modos diferentes del pago: resciliación, remisión, novación, imposibilidad de cumplimiento
+      (la pérdida de la cosa que se debe y la teoría de los riesgos) y prescripción extintiva
+      (diferencias con la caducidad).
+  - numero: 32
+    seccion: IV. TEORÍA GENERAL DEL CONTRATO Y DE LOS CONTRATOS EN PARTICULAR
+    subseccion: ""
+    tema: Teoría general del contrato y de los contratos en particular.
+    contenido: |-
+      • Referencias a la teoría de los actos jurídicos.
+      • Concepto de contrato.
+      • Clasificaciones.
+      o Unilaterales y bilaterales.
+      o Gratuitos y onerosos.
+      o Conmutativos y aleatorios.
+      o Principales y accesorios.
+      o Nominados e innominados.
+      o Consensuales, solemnes y reales.
+      o De ejecución instantánea y de tracto sucesivo.
+      o De libre discusión y de adhesión.
+      o Otras categorías contractuales. Contrato dirigido. Contrato tipo. Contrato forzoso.
+      Autocontrato. Subcontrato.
+      • Principios fundamentales de la contratación.
+      o Libertad contractual.
+      o Consensualismo contractual.
+      o Fuerza obligatoria de los contratos.
+      o Efecto relativo de los contratos.
+      o Buena fe.
+      • Efectos e interpretación de los contratos.
+      o Efectos entre las partes.
+      • Autonomía de la voluntad.
+      • Fuerza obligatoria. Limitaciones.
+      • Ejecución de buena fe.
+      o Efectos respecto de terceros.
+      • Quiénes son terceros. Principio.
+      • Estipulación a favor de otro.
+      • Promesa de hecho ajeno.
+      o Teoría de la inoponibilidad. Sus diferencias con la nulidad.
+      o Interpretación de los contratos. Reglas de interpretación.
+      • Disolución de los contratos.
+      o Por voluntad de las partes.
+      • Mutuo consentimiento.
+      • Revocación.
+      • Renuncia.
+      o Por causas legales.
+      o Resolución y terminación.
+      o Nulidad y rescisión.
+      o Otras causas de disolución. Muerte. Plazo extintivo.
+      • Nuevas tendencias de la contratación
+  - numero: 33
+    seccion: IV. TEORÍA GENERAL DEL CONTRATO Y DE LOS CONTRATOS EN PARTICULAR
+    subseccion: ""
+    tema: Promesa.
+    contenido: ""
+  - numero: 34
+    seccion: IV. TEORÍA GENERAL DEL CONTRATO Y DE LOS CONTRATOS EN PARTICULAR
+    subseccion: ""
+    tema: Compraventa y Permuta.
+    contenido: ""
+  - numero: 35
+    seccion: IV. TEORÍA GENERAL DEL CONTRATO Y DE LOS CONTRATOS EN PARTICULAR
+    subseccion: ""
+    tema: Transacción.
+    contenido: ""
+  - numero: 36
+    seccion: IV. TEORÍA GENERAL DEL CONTRATO Y DE LOS CONTRATOS EN PARTICULAR
+    subseccion: ""
+    tema: Mandato.
+    contenido: ""
+  - numero: 37
+    seccion: IV. TEORÍA GENERAL DEL CONTRATO Y DE LOS CONTRATOS EN PARTICULAR
+    subseccion: ""
+    tema: Comodato. Diferencias entre el comodato, el comodato precario y el precario.
+    contenido: ""
+  - numero: 38
+    seccion: IV. TEORÍA GENERAL DEL CONTRATO Y DE LOS CONTRATOS EN PARTICULAR
+    subseccion: ""
+    tema: "Contratos de garantía: prenda civil e hipoteca."
+    contenido: ""
+  - numero: 39
+    seccion: V. DERECHO DE FAMILIA.
+    subseccion: ""
+    tema: Derecho de familia
+    contenido: |-
+      1. Concepto, ubicación y características del Derecho de Familia.
+      2.Concepto de familia.
+      3. Referencia a la protección jurídica de la familia.
+      4. Fuentes de las relaciones de familia. El parentesco.
+      5. Principios que inspiraron al Código Civil a la época de su dictación y su evolución legislativa.
+      Principios que en la actualidad inspiran al Código Civil.
+  - numero: 40
+    seccion: V. DERECHO DE FAMILIA.
+    subseccion: ""
+    tema: El matrimonio y acuerdo de unión civil.
+    contenido: |-
+      1.- Matrimonio:
+      1. Concepto y requisitos de existencia y validez.
+      2. Celebración y efectos.
+      3. Disolución del matrimonio:
+      a) Muerte natural y presunta
+      b) Sentencia firme de nulidad (revisión comparativa nulidad matrimonial y nulidad
+      patrimonial)
+      c) Sentencia firme de divorcio
+      d) Voluntad del cónyuge de la persona que ha obtenido la rectificación de la Ley N
+      °21.120, en aplicación de lo dispuesto en el artículo 19 de este cuerpo legal)
+      4. Matrimonio putativo.
+      2. Divorcio: conceptos y efectos del divorcio
+      3. Separación Judicial.
+      4. Concubinato.
+      2.- Acuerdo de Unión Civil.
+  - numero: 41
+    seccion: V. DERECHO DE FAMILIA.
+    subseccion: ""
+    tema: Régimen patrimonial del matrimonio.
+    contenido: |-
+      1. Concepto y noción general de los distintos regímenes económicos del matrimonio. El
+      régimen chileno.
+      2. Capitulaciones matrimoniales.
+      3. Sociedad conyugal:
+      1. Concepto.
+      2. Haber absoluto y relativo. Haber propio de cada cónyuge.
+      3. Pasivo: obligación y contribución a las deudas.
+      4. Recompensas.
+      5. Administración ordinaria y extraordinaria. Patrimonio reservado de la mujer casada y
+      otros patrimonios parcialmente separados.
+      6. Disolución.
+      7. Renuncia a los gananciales.
+      8. Liquidación de la sociedad conyugal.
+      4. Separación de bienes: judicial, convencional y legal.
+      5. Participación en los gananciales.
+  - numero: 42
+    seccion: V. DERECHO DE FAMILIA.
+    subseccion: ""
+    tema: Los bienes familiares
+    contenido: |-
+      1. Concepto y características.
+      2. Bienes que pueden declararse familiares.
+      3. Declaración de afectación de un bien como familiar:
+      4. Efectos de la afectación de un bien como familiar.
+      5. Limitaciones a la ejecución de los bienes familiares.
+      6. Desafectación de los bienes familiares.
+  - numero: 43
+    seccion: V. DERECHO DE FAMILIA.
+    subseccion: ""
+    tema: Los alimentos
+    contenido: |-
+      1. Concepto, características y titulares.
+      2. Referencia a la acción.
+      3. Cumplimiento.
+  - numero: 44
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: Derecho sucesorio
+    contenido: |-
+      1. Diferentes acepciones de la expresión “sucesión por causa de muerte”. La sucesión por
+      causa de muerte como modo de adquirir.
+      2. Principios que informan al derecho sucesorio.
+      3. El derecho real de herencia: concepto, características y modos de adquirirlo. Posesión legal,
+      real y efectiva. Requisitos para disponer de los bienes hereditarios.
+      4. Clases de sucesión: testada, intestada y mixta. Sucesión contractual.
+      5. Formas de suceder: a título universal y a título singular. Limitaciones a la libertad de testar.
+      6. Asignatarios por causa de muerte: herederos y legatarios.
+      7. Referencia a las indignidades e incapacidades para suceder.
+  - numero: 45
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: "La sucesión indirecta: derechos de transmisión y de representación."
+    contenido: |-
+      Los acervos común o bruto, ilíquido (las bajas generales de la herencia) y líquido. Referencia a
+      los acervos imaginarios.
+  - numero: 46
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: Apertura de la sucesión. Aceptación y repudiación de las asignaciones
+    contenido: |-
+      1. Apertura de la sucesión.
+      2. Delación de las asignaciones.
+      3. Ley que rige la sucesión.
+      4. Aceptación y repudiación: fundamento y características.
+      5. La herencia yacente.
+      6. Responsabilidad de los herederos y legatarios. Beneficios de inventario y de separación.
+  - numero: 47
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: La sucesión legal o abintestato o intestada
+    contenido: |-
+      1. Aplicación.
+      2. Órdenes de sucesión: concepto, clasificación y análisis de cada uno.
+      3. Sucesión parte testada y parte intestada.
+  - numero: 48
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: El testamento
+    contenido: |-
+      1. Concepto.
+      2. Capacidad para testar.
+      3. Clasificaciones.
+      4. Testamentos solemnes otorgados en Chile. Testamentos abiertos y cerrados.
+      5. Vicios del testamento: fuerza y dolo.
+  - numero: 49
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: Las asignaciones testamentarias
+    contenido: |-
+      1. Requisitos.
+      2. Interpretación.
+      3. Clasificaciones: puras y simples, sujetas a modalidades; a título singular o legados y a título
+      universal o herencias; voluntarias y forzosas. Las donaciones revocables.
+  - numero: 50
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: El acrecimiento y la sustitución
+    contenido: |-
+      1. Conceptos y requisitos.
+      2. Cómo concurren los derechos de transmisión, representación, distintos derechos.
+  - numero: 51
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: Las asignaciones forzosas
+    contenido: |-
+      1. Alimentos legales.
+      2. Legítimas.
+      3. Mejoras.
+      4. Protección de las asignaciones forzosas. Los acervos imaginarios: definición y aplicación.
+      5. El desheredamiento: concepto y requisitos.
+  - numero: 52
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: La revocación y la reforma de testamento
+    contenido: |-
+      1. Conceptos y requisitos.
+      2. Acciones.
+      LA ACCIÓN DE PETICIÓN DE HERENCIA
+      1.-Concepto
+      2.-Características
+      3.-Plazo de prescripción para su ejercicio
+  - numero: 53
+    seccion: VI. DERECHO SUCESORIO.
+    subseccion: ""
+    tema: La partición de bienes
+    contenido: |-
+      1. Concepto.
+      2. La acción de partición.
+      3. Formas de hacer la partición.
+      4. Liquidación y distribución de los bienes comunes.
+      5. Efectos de la partición.
+      6. Acciones y recursos que pueden hacerse valer contra la partición.
+  - numero: 54
+    seccion: VII. RESPONSABILIDAD CIVIL EXTRACONTRACTUAL Y CONTRACTUAL
+    subseccion: ""
+    tema: Paralelo entre Responsabilidad civil extracontractual y contractual.
+    contenido: ""
+  - numero: 55
+    seccion: VII. RESPONSABILIDAD CIVIL EXTRACONTRACTUAL Y CONTRACTUAL
+    subseccion: ""
+    tema: Concepto, clases y sistemas de responsabilidad
+    contenido: |-
+      a) Noción y sistemas: responsabilidad objetiva y responsabilidad subjetiva.
+      b) Clases de responsabilidad civil: contractual, precontractual y extracontractual;
+      determinación de la procedencia de una en subsidio de la otra.
+      c) El cúmulo u opción de responsabilidades; sistemas de responsabilidad: objetivo y subjetivo.
+      d) Elementos de la responsabilidad
+      1.- El acto humano: la voluntad – acción u omisión
+      2.-Casos de exclusión de responsabilidad por ausencia de acción.
+      3.- El caso fortuito o fuerza mayor.
+      4.-El problema de la responsabilidad de las personas jurídicas; la voluntad en los actos
+      colectivos.
+      5.- La capacidad: regla general; incapacidades.
+      6.- La antijuridicidad: antijuridicidad y tipicidad: el ilícito civil típico; la responsabilidad por hecho
+      lícito; el problema del abuso del derecho.
+      7.- Circunstancias que excluyen la ilicitud: legítima defensa, estado de necesidad, el
+      incumplimiento de la promesa matrimonial; la asunción voluntaria de responsabilidad: a) los
+      pactos de irresponsabilidad, b) la aceptación de los riesgos.
+      8.- El dolo: concepto, teoría unitaria del dolo, prueba, efectos.
+      9.- La culpa; concepto, forma de apreciar la culpa, graduación, prueba, presunción de la culpa
+      contractual; responsabilidad sin culpa en nuestra legislación; fundamento de responsabilidad
+      sin culpa; regímenes legales de la responsabilidad sin culpa en el derecho chileno.
+      10.-El daño: noción de daño; requisitos de la resarcibilidad del daño. Clases de daño (daño
+      patrimonial y no patrimonial), resarcibilidad del daño moral; avaluación del daño moral:
+      tendencias.
+      11.-Relación de causalidad entre la acción u omisión culposa o dolosa y el daño.
+      12.-Teorías que intentan determinar la naturaleza del nexo causal.
+      55. Presunciones de responsabilidad
+      • Las presunciones de culpa: fundamentos y clasificación.
+      • Presunciones de responsabilidad por hecho propio; presunciones de responsabilidad
+      por el hecho ajeno.
+      • Presunciones de responsabilidad por el hecho de las cosas.

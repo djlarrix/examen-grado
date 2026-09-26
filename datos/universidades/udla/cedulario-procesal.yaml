@@ -1,0 +1,571 @@
+# Cedulario de Derecho Procesal (actualizado a marzo 2023) — Universidad de las Américas, Facultad de Derecho.
+# Fuente: https://www.udla.cl/descargas/derecho/CEDULARIO-DERECHO-PROCESAL.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "udla") y revisada.
+# Cada "cédula" es un tema numerado del documento (la numeración es la del original).
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: I. FUNDAMENTOS DEL DERECHO PROCESAL
+    subseccion: ""
+    tema: Aspectos generales del Derecho Procesal
+    contenido: |-
+      a. Formas de solucionar los conflictos jurídicos.
+      b. Mecanismos autocompositivos
+      c. Concepto, evolución y contenido del Derecho Procesal.
+      d. Efectos de la ley procesal en el tiempo y en el territorio
+  - numero: 2
+    seccion: I. FUNDAMENTOS DEL DERECHO PROCESAL
+    subseccion: ""
+    tema: La jurisdicción
+    contenido: |-
+      a. Concepto y acepciones.
+      b. Elementos de la jurisdicción.
+      c. Facultades anexas a la jurisdicción. Conservadora. Disciplinaria. Económica.
+  - numero: 3
+    seccion: I. FUNDAMENTOS DEL DERECHO PROCESAL
+    subseccion: ""
+    tema: La competencia
+    contenido: |-
+      a. Concepto
+      b. Clasificaciones
+      c. Reglas generales de la competencia
+      d. Reglas especiales de competencia. Los factores de competencia absoluta y
+      relativa.
+      e. Prórroga de la competencia.
+  - numero: 4
+    seccion: I. FUNDAMENTOS DEL DERECHO PROCESAL
+    subseccion: ""
+    tema: Los tribunales
+    contenido: |-
+      a. Antecedentes generales y criterios de organización de los tribunales en nuestro
+      país.
+      b. Concepto y clasificaciones.
+      c. Los tribunales ordinarios, atribuciones y competencia.
+      d. Funcionamiento de los tribunales colegiados.
+      e. Tribunales especiales que forman parte del Poder Judicial
+  - numero: 5
+    seccion: I. FUNDAMENTOS DEL DERECHO PROCESAL
+    subseccion: ""
+    tema: El proceso
+    contenido: |-
+      a. Concepto e ideas afines.
+      b. Jurisdicción, acción, proceso y procedimiento.
+      c. Elementos del proceso.
+      d. Presupuestos procesales.
+  - numero: 6
+    seccion: I. FUNDAMENTOS DEL DERECHO PROCESAL
+    subseccion: ""
+    tema: La acción y la reacción
+    contenido: |-
+      a. Concepto. Importancia. Derecho, pretensión, acción, demanda y libelo.
+      b. Pretensiones múltiples.
+      c. La reacción. Allanamiento. Defensa negativa.
+      d. Excepciones. Clasificación. Correspondencia entre la acción y la excepción.
+      e. La inacción. Consecuencias en el ámbito procesal civil y procesal penal
+  - numero: 7
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: Los actos jurídicos procesales
+    contenido: |-
+      a. Hechos y actos procesales.
+      b. Concepto, características y elementos.
+      c. Formas y clasificaciones.
+      d. Imperativos del proceso. Cargas y obligaciones.
+      e. Existencia, validez y eficacia del acto jurídico-procesal.
+  - numero: 8
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: El procedimiento
+    contenido: |-
+      a. Concepto.
+      b. Clasificaciones del procedimiento
+      c. Principios procesales y reglas técnicas del procedimiento.
+      d. Paralización y extinción del procedimiento
+  - numero: 9
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: Las partes y la comparecencia en juicio
+    contenido: |-
+      a. Capacidad para ser parte. Legitimación.
+      b. Clasificación
+      c. Pluralidad de partes
+      d. La Comparecencia en Juicio.
+      e. El Patrocinio y el Mandato Judicial .
+  - numero: 10
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: Las actuaciones judiciales.
+    contenido: |-
+      a. Concepto y clasificación.
+      b. Requisitos de validez.
+      c. Forma de practicar o autorizar la práctica de las actuaciones judiciales
+      i. Con conocimiento.
+      ii. Con citación
+      iii. Con audiencia.
+      iv. De plano
+  - numero: 11
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: Las notificaciones.
+    contenido: |-
+      a. Concepto.
+      b. Naturaleza Jurídica, importancia, efectos.
+      c. Requisitos comunes a toda notificación.
+      d. Tipos de notificación.
+      i. Notificación por estado diario
+      ii. Notificación por cédula.
+      iii. Notificación personal. Notificación personal subsidiaria
+      iv. Notificación por avisos.
+      v. Notificación tácita y ficta.
+      vi. Notificación por medios electrónicos
+  - numero: 12
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: Los plazos y las rebeldías
+    contenido: |-
+      a. Los plazos. Concepto, importancia y clasificación de los plazos.
+      i. Plazos legales, judiciales y convencionales.
+      ii. Plazos individuales y comunes.
+      iii. Plazos fatales y no fatales.
+      b. Las rebeldías. Concepto y relación con la preclusión.
+      c. Requisitos de las rebeldías
+      d. Efectos de su declaración.
+  - numero: 13
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: Las Resoluciones Judiciales .
+    contenido: |-
+      a. Concepto
+      b. Clasificación. Según su naturaleza jurídica. Según el estado que se encuentran según
+      su cumplimiento. Sentencias de Término.
+      c. Formas y requisitos de las resoluciones judiciales.
+      d. Efectos de las resoluciones judiciales: Desasimiento del Tribunal. Cosa Juzgada: Acción
+      y Excepción
+  - numero: 14
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: Los incidentes
+    contenido: |-
+      a. Concepto y clasificación. Incidentes ordinarios y especiales. De previo y especial
+      pronunciamiento e incidentes dilatorios.
+      b. Los incidentes ordinarios: tramitación, prueba, resolución.
+      c. Los incidentes especiales:
+      i. Desistimiento de la demanda.
+      ii. Abandono del procedimiento.
+  - numero: 15
+    seccion: II. NORMAS COMUNES A TODO PROCEDIMIENTO.
+    subseccion: ""
+    tema: La nulidad procesal.
+    contenido: |-
+      a. Concepto y fundamentos legales.
+      b. Nulidades de orden público y de interés privado; de trámites esenciales y de trámites
+      no esenciales; de la relación procesal y de otros actos del procedimiento.
+      c. Relaciones con la Casación.
+      d. El incidente ordinario de nulidad y el incidente especial de rescisión de lo obrado o de
+      nulidad por falta de emplazamiento.
+      e. La nulidad por vía de excepción y la nulidad de oficio
+  - numero: 16
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: Las medidas prejudiciales y medidas precautorias
+    contenido: |-
+      a. Concepto y clasificación. Juicios en que proceden.
+      b. Oportunidad y requisitos para solicitarlas.
+      c. Quien puede pedirlas.
+      d. Estudio particular de cada una de ellas.
+      e. Tramitación. Requisitos y obligaciones que debe cumplir el solicitante
+  - numero: 17
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: El Procedimiento Declarativo ordinario. Inicio.
+    contenido: |-
+      a. Carácter de este procedimiento. Su aplicación general en defecto de otro
+      procedimiento.
+      b. Diversas maneras de iniciar el juicio ordinario. La demanda. Requisitos e importancia.
+      c. Forma de presentar la demanda. Disponibilidad de la demanda: modificación, retiro.
+      Efectos de la notificación de la demanda
+      d. El emplazamiento.
+  - numero: 18
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: El Procedimiento Declarativo ordinario. Defensa del demandado.
+    contenido: |-
+      a. Diversas actitudes que puede adoptar el demandado.
+      b. Las excepciones dilatorias. Su tramitación.
+      c. La contestación expresa y la tácita o ficta. Excepciones que pueden oponerse. La
+      reconvención.
+      d. Rebeldía del demandado. Sus efectos. Réplica y dúplica
+  - numero: 19
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: El Procedimiento Declarativo ordinario. La conciliación y la recepción de la causa a prueba
+    contenido: |-
+      a. La conciliación Concepto. Cuando procede. Efectos.
+      b. La recepción de la causa a prueba.
+      c. El término probatorio. Sus clases: Ordinario, Extraordinario y Especial.
+  - numero: 20
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: Los medios de prueba en particular. Prueba instrumental.
+    contenido: |-
+      a. Los instrumentos. Concepto. Instrumentos públicos y privados.
+      b. Oportunidad y forma de producir la prueba instrumental.
+      c. Valor probatorio.
+      d. Impugnación de los instrumentos. Forma de acompañarlos al juicio.
+  - numero: 21
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: La prueba y los medios de prueba en particular. Prueba testimonial
+    contenido: |-
+      a. Concepto.
+      b. Oportunidad y forma de producirla
+      c. Inhabilidades.
+      d. Valor probatorio.
+  - numero: 22
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: Los medios de prueba en particular. Prueba confesional
+    contenido: |-
+      a. Concepto.
+      b. Oportunidad y forma de producirla.
+      c. Valor probatorio. Divisibilidad e indivisibilidad
+      d. Retractación.
+  - numero: 23
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: Los medios de prueba en particular. Inspección personal del tribunal y prueba pericial
+    contenido: |-
+      a. Concepto.
+      b. Oportunidad y forma de producirla.
+      c. Valor probatorio
+  - numero: 24
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: Las presunciones y la valoración de la prueba
+    contenido: |-
+      a. Presunciones de derecho, legales y judiciales.
+      b. Valor probatorio
+      c. Apreciación comparativa de los medios de prueba.
+      d. Sistemas de valoración de la prueba. Legal o tasada, sana crítica, libre convicción
+  - numero: 25
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: Trámites posteriores a la prueba .
+    contenido: |-
+      a. Observaciones a la prueba
+      b. La citación para oír sentencia.
+      c. Medidas para mejor resolver.
+      d. Período de Sentencia. Otras formas de poner término al juicio.
+  - numero: 26
+    seccion: III. PROCEDIMIENTOS DECLARATIVOS CIVILES
+    subseccion: ""
+    tema: Procedimiento declarativo sumario.
+    contenido: |-
+      a. Aplicabilidad de este procedimiento. Caracteres e importancia.
+      b. Demanda y providencia que debe recaer en ella.
+      c. La audiencia. Objetivo de ella.
+      d. Aceptación provisional de la demanda.
+      e. Substitución de procedimientos. Noción. Oportunidad procesal. Régimen
+      procedimental. Efectos.
+  - numero: 27
+    seccion: IV. PROCEDIMIENTOS EJECUTIVOS
+    subseccion: ""
+    tema: Cumplimiento incidental del fallo.
+    contenido: |-
+      a. Resoluciones que pueden cumplirse: las ejecutoriadas y las que causen ejecutoria.
+      b. Tribunal competente.
+      c. Excepciones admisibles y requisitos.
+      d. Formas de procurar el cumplimiento.
+      e. Apremios.
+      f. Quebrantamiento de lo ordenado por el tribunal.
+  - numero: 28
+    seccion: IV. PROCEDIMIENTOS EJECUTIVOS
+    subseccion: ""
+    tema: El juicio ejecutivo por obligaciones de dar. Aspectos generales y Acción ejecutiva
+    contenido: |-
+      a. Generalidades.
+      b. Naturaleza del juicio ejecutivo.
+      c. La acción ejecutiva.
+      i. Requisitos para que proceda la acción ejecutiva.
+      ii. Estudio particular de los títulos ejecutivos.
+      iii. Obligación líquida y exigible
+      iv. Prescripción de la acción ejecutiva.
+  - numero: 29
+    seccion: IV. PROCEDIMIENTOS EJECUTIVOS
+    subseccion: ""
+    tema: El juicio ejecutivo de obligación de dar. Tramitación del cuaderno ejecutivo. Demanda y excepciones
+    contenido: |-
+      a. La demanda ejecutiva y el mandamiento de ejecución y embargo.
+      b. El requerimiento de pago
+      c. Las excepciones y sus diferencias con las del juicio ordinario.
+      d. La respuesta a las excepciones.
+      e. Admisibilidad e inadmisibilidad de las excepciones.
+  - numero: 30
+    seccion: IV. PROCEDIMIENTOS EJECUTIVOS
+    subseccion: ""
+    tema: El juicio ejecutivo de obligación de dar. Tramitación del cuaderno ejecutivo . Prueba, sentencia y recursos .
+    contenido: |-
+      a. La prueba y el término probatorio.
+      b. La sentencia y sus diversas clases.
+      c. La cosa juzgada y la reserva de acciones y excepciones.
+      d. La renovación de la acción ejecutiva.
+      e. Recursos contra la sentencia. Efectos de su concesión en el cumplimiento del fallo.
+  - numero: 31
+    seccion: IV. PROCEDIMIENTOS EJECUTIVOS
+    subseccion: ""
+    tema: El juicio ejecutivo de obligación de dar. Tramitación del cuaderno de apremio.
+    contenido: |-
+      a. El embargo.
+      b. Administración de los bienes embargados.
+      c. Realización de los bienes. Bienes muebles. Efectos de comercio. Bienes susceptibles de
+      corrupción o deterioro. Inmuebles. Otros bienes.
+      d. El remate y sus formalidades. La citación a los acreedores hipotecarios.
+      e. Liquidación del crédito y pago al ejecutante.
+  - numero: 32
+    seccion: IV. PROCEDIMIENTOS EJECUTIVOS
+    subseccion: ""
+    tema: El juicio ejecutivo de obligación de dar. Las tercerías .
+    contenido: |-
+      a. Concepto. Clasificación. Naturaleza jurídica
+      b. La tercería de dominio. Efectos de su interposición. Tramitación. Derechos que
+      pueden tramitarse como tercería de dominio.
+      c. La tercería de posesión. Efectos de su interposición. Tramitación.
+      d. La tercería de prelación. Efectos de su interposición. Tramitación.
+      e. La tercería de pago. Efectos de su interposición. Tramitación. Diversas formas de
+      hacerla valer
+  - numero: 33
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: Aspectos generales de los recursos.
+    contenido: |-
+      a. Concepto e importancia. Fundamento
+      b. Clasificación: ordinarios y extraordinarios. Otras clasificaciones. Características.
+      c. Efectos de los recursos respecto de la resolución impugnada.
+  - numero: 34
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: Recursos de retractación y recurso de reposición
+    contenido: |-
+      a. El recurso de aclaración, rectificación o enmienda
+      b. El Recurso de Reposición.
+      c. Definición y objeto.
+      d. Resoluciones susceptibles de reposición.
+      e. Sus diversas clases.
+      f. Interposición, tramitación y fallo.
+  - numero: 35
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Apelación. Aspectos generales e interposición
+    contenido: |-
+      a. Definición y objeto.
+      b. Resoluciones apelables.
+      c. Quien puede apelar. Concepto de agravio.
+      d. Plazo para apelar.
+      e. Interposición del recurso. Contenido y requisitos.
+  - numero: 36
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Apelación . Examen de admisibilidad
+    contenido: |-
+      a. Resoluciones que pueden recaer en el escrito de apelación. Admisibilidad.
+      b. Efectos de la apelación: suspensivo y devolutivo. Casos en que debe concederse el
+      sólo efecto devolutivo.
+      c. Tramitación posterior a la concesión del recurso. Remisión del expediente al tribunal
+      de alzada..
+      d. Declaración de admisibilidad o inadmisibilidad por el tribunal de alzada. Reposición.
+  - numero: 37
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Apelación. Tramitación en segunda instancia .
+    contenido: |-
+      a. Adhesión a la apelación
+      b. Autos en relación
+      c. Prueba en segunda instancia
+      d. Vista de la causa. Relación. Alegatos
+      e. Modos de terminar la apelación. Sentencia. Desistimiento.
+  - numero: 38
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Hecho.
+    contenido: |-
+      a. Definición y objeto
+      b. Casos en que procede
+      c. Tramitación.
+  - numero: 39
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Casación en la Forma. Aspectos generales
+    contenido: |-
+      a. Definición y objeto.
+      b. Resoluciones susceptibles de este recurso.
+      c. Causales que lo autorizan: vicios en la sentencia y en el procedimiento; trámites
+      esenciales en primera y en segunda instancia.
+      d. Preparación del recurso.
+  - numero: 40
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Casación en la Forma. Requisitos del recurso, tramitación ante el tribunal inferior.
+    contenido: |-
+      a. Plazo para interponerlo. Contenido del escrito.
+      b. Quién puede interponerlo. Concepto de agraviado.
+      c. Admisibilidad e inadmisibilidad. Reposición de la resolución que declara ésta última.
+      d. Efectos de la aceptación del recurso en el cumplimiento del fallo.
+      e. Tramitación posterior a la concesión del recurso. Remisión del expediente al tribunal
+      de alzada.
+  - numero: 41
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Casación en la Forma. Tramitación ante el tribunal superior .
+    contenido: |-
+      a. Designación de abogado. Prueba de la causal.
+      b. Vista de la causa. Relación. Alegatos.
+      c. La sentencia. Estado en que puede quedar el proceso. Sentencia de reemplazo.
+      d. Casación de oficio.
+  - numero: 42
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Casación en el Fondo.
+    contenido: |-
+      a. Definición y objeto.
+      b. Resoluciones susceptibles del recurso.
+      c. Causal que lo autorizan: infracción de ley que influya en lo dispositivo del fallo. Los
+      hechos del pleito. Violación de las leyes reguladoras de la prueba, de la ley del contrato
+      y de la ley extranjera.
+      d. Casación de oficio
+  - numero: 43
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Casación en el fondo. Requisitos del recurso, tramitación ante el tribunal inferior.
+    contenido: |-
+      a. Personas que pueden interponerlo.
+      b. Interposición del recurso. Plazo. Contenido y requisitos del escrito.
+      c. Admisibilidad e inadmisibilidad. Reposición de la resolución que declara esta última.
+      d. Tramitación posterior a la concesión del recurso. Remisión del proceso.
+      e. Efectos de la concesión del recurso en el cumplimiento del fallo.
+  - numero: 44
+    seccion: V. LOS RECURSOS PROCESALES
+    subseccion: ""
+    tema: El Recurso de Casación en el fondo. Tramitación ante el tribunal superior.
+    contenido: |-
+      a. Tramitación del recurso ante el tribunal superior. Designación de abogado.
+      b. Vista de la causa. Informes en derecho.
+      c. Fallo. Sentencia de casación y sentencia de reemplazo. Límites de la competencia del
+      tribunal.
+      d. Casación de oficio.
+  - numero: 45
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Principios básicos establecidos por el Código Procesal Penal
+    contenido: |-
+      a. Juicio previo y única persecución. Juez natural
+      b. Exclusividad de la investigación penal
+      c. Presunción de inocencia del imputado.
+      d. Legalidad de las medidas privativas o restrictivas de libertad
+      e. Protección de la víctima.
+      f. Autorización judicial previa. Cautela de garantías
+      g. Aplicación temporal de la ley procesal penal.
+      h. Efecto en Chile de las sentencias penales de tribunales extranjeros.
+  - numero: 46
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Los sujetos procesales. Imputado, víctima, querellante
+    contenido: |-
+      a. El Imputado. Calidad de imputado. Defensa
+      b. La Víctima
+      c. Querellante:
+      i. La acción en el proceso penal. Clases y relevancia
+      ii. La acción civil en el proceso penal. Distinción y tramitación.
+  - numero: 47
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Los sujetos procesales. Ministerio Público, Policías, Defensoría, Tribunales.
+    contenido: |-
+      a. Ministerio Público
+      b. Policía.
+      c. Defensoría Penal Pública
+      d. Tribunales de Garantía y de Juicio Oral en lo Penal
+  - numero: 48
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Las Medidas Cautelares.
+    contenido: |-
+      a. Citación
+      b. Detención. Audiencia de Control de la Detención
+      c. Prisión Preventiva
+      d. Cautelares del art. 155 del Código Procesal Penal. Cautelares reales.
+  - numero: 49
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Procedimiento por crimen o simple delito de acción penal pública. Etapa de
+    contenido: |-
+      Investigación. Inicio, actuaciones previas a la formalización
+      a. Formas de inicio
+      b. Mecanismos de Selectividad: Archivo Provisional, Facultad de No Iniciar la Investigación
+      y Principio de Oportunidad.
+      c. Características de la investigación
+      d. Diligencias de investigación.
+  - numero: 50
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: "Procedimiento por crimen o simple delito de acción penal pública Formalización y cierre de la investigación :"
+    contenido: |-
+      a. Concepto. Oportunidad. Efectos. La audiencia de formalización. Desarrollo. Algunas
+      peticiones posibles.
+      b. Conclusión de la etapa de la investigación. Cierre de la investigación. Plazo judicial para
+      el cierre de la investigación. Control judicial anterior a la formalización de la
+      investigación
+      c. Facultades del Ministerio Público al cierre de la investigación:
+      i. Solicitud de Sobreseimiento al Juez de Garantía.
+      ii. Acusación. Contenido. Principio de Congruencia.
+      iii. Facultad de No Perseverar en la investigación. Forzamiento de la acusación.
+  - numero: 51
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Procedimiento por crimen o simple delito de acción penal pública. Etapa Intermedia o de Preparación de Juicio Oral.
+    contenido: |-
+      a. Trámites que la componen.
+      b. La acusación y tramitación de la misma. La actividad del querellante y el forzamiento de
+      la acusación.
+      c. Facultades del acusado. Contestación a la acusación, deducción de excepciones de previo
+      y especial pronunciamiento.
+      d. La audiencia preparatoria del juicio oral. Actividad de defensa del imputado. El
+      ofrecimiento de prueba, convenciones probatorias y exclusión. La prueba ilícita.
+      e. El auto de apertura de juicio oral.
+  - numero: 52
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Procedimiento por crimen o simple delito de acción penal pública. El Juicio Oral.
+    contenido: |-
+      Alegatos de apertura y prueba
+      a. Principios y normas generales.
+      b. Estructura
+      c. Actuaciones previas.
+      d. Los alegatos de apertura.
+      e. La rendición de la prueba, medios de prueba en particular y valoración.
+  - numero: 53
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Procedimiento por crimen o simple delito de acción penal pública. El Juicio Oral. Los alegatos de clausura y sentencia.
+    contenido: |-
+      a. Alegato final y clausura del debate,
+      b. El veredicto, la sentencia definitiva, las audiencias de determinación de la pena y de
+      medidas cautelares
+  - numero: 54
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Las salidas alternativas.
+    contenido: |-
+      a. Concepto. Oportunidad.
+      b. La suspensión condicional del procedimiento : Concepto. Requisitos . Condiciones.
+      Efectos penales y civiles.
+      c. El acuerdo reparatorio. Concepto. Procedencia. Efectos penales y civiles.
+      Cumplimiento.
+  - numero: 55
+    seccion: VI. DERECHO PROCESAL PENAL.
+    subseccion: ""
+    tema: Régimen de Recursos en el Código Procesal Penal
+    contenido: |-
+      a. Disposiciones generales sobre los recursos
+      b. Recurso de reposición
+      c. Recurso de Apelación
+      d. Recurso de Nulidad

@@ -1,0 +1,416 @@
+# Cedulario de Derecho Procesal 2025 — Universidad Central de Chile (Facultad de Derecho y Humanidades).
+# Fuente: https://facdeh.ucentral.cl/oase/wp-content/uploads/2026/07/CEDULARIO-DERECHO-PROCESAL-ANO-2025.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "ucentral") y revisada.
+# Cada cédula reúne dos temas; el título es la unión de ambos.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Disposiciones generales sobre los recursos en el proceso penal · El embargo, distinción entre bienes muebles e inmuebles; los bienes inembargables
+    contenido: |-
+      1. Disposiciones generales sobre los recursos en el proceso penal. Causales de interposición,
+      cuáles son las resoluciones recurribles y como se resuelven. Características de la Vista de la Causa
+      ante los Tribunales Superiores.
+      2. El embargo, distinción entre bienes muebles e inmuebles; los bienes inembargables. La
+      Realización de los Bienes embargados en el procedimiento ejecutivo. Tramites posteriores a la
+      realización.
+  - numero: 2
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Las Resoluciones judiciales · Las Notificaciones en los procedimientos civiles
+    contenido: |-
+      1. Las Resoluciones judiciales. Clasificaciones; Efectos de las resoluciones judiciales; El
+      desasimiento del tribunal y sus excepciones. La Cosa juzgada civil. Como se hace valer. Requisitos y
+      forma de invocarla.
+      2. Las Notificaciones en los procedimientos civiles. Concepto, clasificación, características,
+      requisitos, formas de practicarlas y su procedencia.
+  - numero: 3
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: La Jurisdicción · El Procedimiento sumario
+    contenido: |-
+      1. La Jurisdicción. Concepto legal, visión crítica, concepto doctrinario. Elementos esenciales. Sus
+      fuentes y sus límites; Los Actos judiciales no contenciosos. Paralelo entre la Jurisdicción
+      Contenciosa y la No Contenciosa; Las Atribuciones conexas de los tribunales.
+      2. El Procedimiento sumario. Ámbito de aplicación. Clasificación; La accesión provisional de la
+      demanda; Requisitos de procedencia, actitudes del demandado. La sustitución del procedimiento
+      y sus requisitos de procedencia; Etapa de discusión del procedimiento y la forma de rendir la
+      prueba.
+  - numero: 4
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Los Equivalentes jurisdiccionales · Los denominados “Principios Básicos “del Proceso Penal; Enumeración, sus características,
+    contenido: |-
+      1. Los Equivalentes jurisdiccionales. Concepto; Clasificaciones, requisitos de procedencia y paralelo
+      entre los tres clásicos equivalente en materia civil; Las Salidas alternativas en el Procedimiento
+      Penal. Paralelo entre la Suspensión Condicional del Procedimiento y el Acuerdo Reparatorio.
+      2. Los denominados “Principios Básicos “del Proceso Penal; Enumeración, sus características,
+      ámbito de aplicación y consecuencias prácticas en cada Procedimiento penal.
+  - numero: 5
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Procedimiento abreviado en el proceso penal · Las Notificaciones en los procedimientos civiles
+    contenido: |-
+      1. Procedimiento abreviado en el proceso penal. Presupuestos, oportunidad para solicitarlo. La
+      oposición del querellante, efectos y recursos. Tramitación del Procedimiento. Recursos que
+      proceden en contra de la sentencia dictada.
+      2. Las Notificaciones en los procedimientos civiles. Clases de notificación; Lugares hábiles para
+      practicarlas, que funcionarios las pueden realizar, horarios y requisitos; Que resoluciones
+      corresponde a cada forma de notificación; Reglas especiales.
+  - numero: 6
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: La prueba testimonial en el proceso civil · Presupuestos del Procedimiento Simplificado; Ámbito de su aplicación; En que consiste el
+    contenido: |-
+      1. La prueba testimonial en el proceso civil. Concepto y clasificación de los testigos; Obligaciones y
+      derechos de los testigos; Inhabilidades de los testigos; Las tachas, concepto y tramitación. La
+      valoración de la prueba testimonial.
+      2. Presupuestos del Procedimiento Simplificado; Ámbito de su aplicación; En que consiste el
+      Requerimiento y su contenido. Recursos que proceden.
+  - numero: 7
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Medios de impugnación en el proceso civil · Las Excepciones dilatorias
+    contenido: |-
+      1. Medios de impugnación en el proceso civil. Clasificación de los recursos atendida su finalidad.
+      Tramitación general de los recursos, naturaleza jurídica de las resoluciones recurridas, plazos de
+      interposición, ante quién se interpone y quién lo resuelve.
+      2. Las Excepciones dilatorias. Concepto, clasificaciones según su finalidad, según su objeto y
+      tramitación; Formas de oponerlas en los diferentes procedimientos y tramitación.
+  - numero: 8
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Formas como se decretan las actuaciones judiciales · Funcionamiento de la Corte Suprema y de las Cortes de Apelaciones
+    contenido: |-
+      1. Formas como se decretan las actuaciones judiciales. Tramitación y efectos. Las Notificaciones.
+      Medios de impugnación, tramitación y efectos.
+      2. Funcionamiento de la Corte Suprema y de las Cortes de Apelaciones. Manera de conocer los
+      asuntos. Diferencias de tramitación entre conocer en cuenta o previa vista de la causa. Los
+      tramites esenciales en la vista de la causa.
+  - numero: 9
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Patrocinio y representación judicial · Los intervinientes del proceso penal
+    contenido: |-
+      1. Patrocinio y representación judicial. Concepto, requisitos y como se otorga; El Mandato Judicial.
+      Formas de otorgarlo. Paralelo entre Mandato y Patrocinio. La Agencia oficiosa procesal. Concepto
+      y requisitos.
+      2. Los intervinientes del proceso penal. Derechos y obligaciones de cada interviniente. Formas de
+      inicio del proceso penal. Casos de denuncia obligatoria.
+  - numero: 10
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Las Partes · Requisitos de la denominada Acción Ejecutiva
+    contenido: |-
+      1. Las Partes. Concepto, Clasificación, Partes indirectas: los terceros coadyuvantes, independientes
+      y excluyentes. Requisitos de la demanda. Requisitos de la contestación de la demanda. Requisitos
+      de la demanda reconvencional.
+      2. Requisitos de la denominada Acción Ejecutiva. Actitudes del Tribunal. Recursos que proceden
+      contra la primera resolución en el procedimiento ejecutivo. Menciones del Mandamiento de
+      Ejecución y embargo.
+  - numero: 11
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El Incidente general y los Incidentes especiales · Cumplimiento de las resoluciones judiciales dictadas por tribunales extranjeros
+    contenido: |-
+      1. El Incidente general y los Incidentes especiales. Concepto; Clasificación; tramitación;
+      Procedencia de recursos según sea el caso.
+      2. Cumplimiento de las resoluciones judiciales dictadas por tribunales extranjeros. El Exequátur;
+      Cuestiones que analiza la Corte Suprema; tramitación. Los Conflictos de jurisdicción; los diferentes
+      tipos de conflicto y quien los resuelve.
+  - numero: 12
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Los plazos o términos legales · Actitudes del demandado al ser notificado de la demanda en juicio ordinario
+    contenido: |-
+      1. Los plazos o términos legales. Clasificaciones y características en el proceso civil y en el proceso
+      penal. La preclusión, concepto y efectos; Diferencia con la caducidad. La rebeldía. Consecuencias,
+      respecto del conflicto, del procedimiento y las partes.
+      2. Actitudes del demandado al ser notificado de la demanda en juicio ordinario. La Rebeldía; El
+      Allanamiento; las excepciones y su clasificación; la demanda reconvencional, requisitos; El
+      Emplazamiento. Cuáles son sus elementos. Cuál es su extensión.
+  - numero: 13
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El Recurso de apelación en materia civil · La Competencia
+    contenido: |-
+      1. El Recurso de apelación en materia civil. Concepto, causal de procedencia, resoluciones
+      recurribles, efectos en que se puede y/o debe ser concedido; tramitación en 1° y en 2° Instancia.
+      Formas de término del recurso. La Orden de no innovar. Ante quien se presenta, como se tramita.
+      2. La Competencia. Concepto legal y doctrinario. Paralelo entre la Competencia y la Jurisdicción.
+      Reglas Generales de la Competencia. Factores Generales de competencia. Prórroga de
+      competencia. Incompetencia.
+  - numero: 14
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Los Recursos procesales Extraordinarios en Materia Civil; Concepto, enumeración, aspectos · Las Resoluciones judiciales; Concepto, clasificaciones, características y requisitos de cada una de
+    contenido: |-
+      1. Los Recursos procesales Extraordinarios en Materia Civil; Concepto, enumeración, aspectos
+      formales, las causales de interposición; Paralelo entre la Casación en la Forma y en el Fondo; La
+      Casación de Oficio; Requisitos de Procedencia, tramitación y conocimiento del recurso.
+      2. Las Resoluciones judiciales; Concepto, clasificaciones, características y requisitos de cada una de
+      ellas. Forma de notificación de cada categoría y los efectos de ellas.
+  - numero: 15
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: La Sustitución del procedimiento y la Accesión Provisional de la Demanda en el juicio sumario · Las Tercerías en el juicio ejecutivo
+    contenido: |-
+      1. La Sustitución del procedimiento y la Accesión Provisional de la Demanda en el juicio sumario.
+      Procedencia, requisitos, oportunidad para solicitarlo y su tramitación.
+      2. Las Tercerías en el juicio ejecutivo. Clases de tercerías, tramitación. Cuando procede la
+      suspensión del procedimiento. Recursos que proceden respecto de la sentencia que los resuelve.
+  - numero: 16
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Fuentes del Derecho Procesal; Clasificación de las Fuentes, Enumeración de ellas · La sentencia definitiva de primera instancia en el procedimiento civil de mayor cuantía
+    contenido: |-
+      1.- Fuentes del Derecho Procesal; Clasificación de las Fuentes, Enumeración de ellas. Debido
+      Proceso; Su tratamiento normativo; Garantías de un Debido Proceso.
+      2. La sentencia definitiva de primera instancia en el procedimiento civil de mayor cuantía.
+      Requisitos. Recursos que pueden deducir en su contra. Formas en que puede ser concedido.
+      Formas en que puede ser conocido por el Tribunal superior.
+  - numero: 17
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El Recurso de casación en la forma · Las Medidas Precautorias en el proceso civil
+    contenido: |-
+      1. El Recurso de casación en la forma. Concepto, causales que permiten su interposición,
+      tramitación en el Tribunal a quo y ad quem; La Preparación del Recurso, concepto y sanción.
+      2. Las Medidas Precautorias en el proceso civil. Clasificaciones, requisitos de procedencia en
+      general. Requisitos específicos de ellas; Forma de impugnar la resolución que se pronuncia sobre
+      la petición. Tramitación; Formalidades de las Precautorias Pre Judiciales.
+  - numero: 18
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: La demanda · Medidas pre judiciales
+    contenido: |-
+      1. La demanda. Concepto, su importancia. Requisitos de la demanda: requisitos comunes y
+      especiales. Consecuencias de la omisión de los requisitos. Efectos de la presentación y su
+      notificación.
+      2. Medidas pre judiciales. Concepto, clasificación, requisitos y tramitación. Efectos.
+  - numero: 19
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Emplazamiento · El Cierre de la investigación
+    contenido: |-
+      1. Emplazamiento. Que actitudes puede adoptar la parte demandada luego de notificada una
+      demanda en su contra en los procedimientos civiles. Plazos. Excepciones en el procedimiento
+      ordinario, alegaciones o defensas, demanda reconvencional.
+      2. El Cierre de la investigación. Decisiones que puede adoptar el Ministerio Público. El
+      Forzamiento de la acusación. Recursos que proceden.
+  - numero: 20
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: La Recepción de la causa a prueba en el Procedimiento ordinario · Recurso de hecho en materia civil
+    contenido: |-
+      1. La Recepción de la causa a prueba en el Procedimiento ordinario. Requisitos, presupuestos y
+      contenido de la resolución. Recursos que proceden en su contra. Fundamentos del mismo. Forma
+      de notificación de la resolución.
+      2. Recurso de hecho en materia civil. Causales de procedencia. Forma de interposición,
+      tramitación del recurso y forma de resolverlo.
+  - numero: 21
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: La Prueba · La Prórroga de la Competencia
+    contenido: |-
+      1. La Prueba. Concepto; La Carga de la prueba; Los sistemas de valoración de la prueba: La libre
+      convicción, la prueba tasada y la sana crítica. Medios de prueba en el proceso civil. Principales
+      características de cada uno de ellos; Valoración comparativa de los diversos medios de prueba.
+      2. La Prórroga de la Competencia. Concepto, requisitos de procedencia y su clasificación. Las
+      Reglas del Turno y Distribución; Ámbito de aplicación, obligatoriedad de las mismas y paralelo
+      entre ambas instituciones.
+  - numero: 22
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Trámites posteriores a la prueba en el proceso civil · La Formalización de la investigación en el proceso penal
+    contenido: |-
+      1. Trámites posteriores a la prueba en el proceso civil. Las Observaciones a la prueba. La Citación
+      para oír la sentencia y sus efectos. Notifica. Medidas para Mejor Resolver. Características.
+      Requisitos de la Sentencia definitiva.
+      2. La Formalización de la investigación en el proceso penal. Concepto; Oportunidad en que se
+      realiza; Intervinientes esenciales de la Audiencia; Consecuencias respecto del fiscal, del imputado
+      y efectos respecto de la prescripción.
+  - numero: 23
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Formas de término normal del procedimiento ordinario en primera instancia · Las Tercerías en el Juicio Ejecutivo
+    contenido: |-
+      1. Formas de término normal del procedimiento ordinario en primera instancia. La Sentencia
+      definitiva. Requisitos especiales de aquella Resolución. Formas anómalas de poner término al
+      procedimiento ordinario.
+      2. Las Tercerías en el Juicio Ejecutivo. Cuales son. Qué derecho es el que se invoca en cada caso
+      por el tercero. Requisitos de procedencia. Tramitación. Cuando procede la suspensión del
+      procedimiento y cuáles son los requisitos para que el tribunal lo conceda.
+  - numero: 24
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Recepción de la causa a prueba en el Proceso Civil · Las Medidas Precautorias en el proceso civil
+    contenido: |-
+      1. Recepción de la causa a prueba en el Proceso Civil. Menciones esenciales y contenido de la
+      resolución; Procedencia de abrir la etapa de prueba; recursos que proceden respecto de aquella
+      resolución; Consecuencias de la apelación que se puede plantear por las partes.
+      2. Las Medidas Precautorias en el proceso civil. Clasificaciones, requisitos de procedencia en
+      general. Requisitos específicos; Forma de impugnar la resolución que se pronuncia sobre la
+      petición. Tramitación de la solicitud; Formalidades de las Precautorias Pre Judiciales.
+  - numero: 25
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El mandamiento de ejecución y embargo en el procedimiento ejecutivo · Los Incidentes especiales
+    contenido: |-
+      1. El mandamiento de ejecución y embargo en el procedimiento ejecutivo. Naturaleza jurídica.
+      Cuáles son sus menciones esenciales. Notificación del mandamiento de ejecución y embargo,
+      actitudes puede adoptar el ejecutado. Efectos.
+      2. Los Incidentes especiales. Concepto, enumeración, clasificaciones; Su forma de tramitación
+      general y los recursos que proceden respecto de ellos.
+  - numero: 26
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El Embargo · El Recurso de Revisión en Materia Civil
+    contenido: |-
+      1. El Embargo. Concepto, bienes embargables, consecuencias jurídicas de la traba de embargo; Los
+      incidentes relacionados con el mismo y las tercerías en el juicio ejecutivo. Generalidades.
+      2. El Recurso de Revisión en Materia Civil. Concepto, Tribunal Competente, causales de
+      procedencia, requisitos de la presentación, tramitación y fallo del recurso. Efectos de la resolución
+      que acoge el recurso.
+  - numero: 27
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: La Recepción de la causa a prueba en el procedimiento sumario · Actitudes del demandado al ser notificado de la demanda en juicio ordinario
+    contenido: |-
+      1. La Recepción de la causa a prueba en el procedimiento sumario. Requisitos, menciones
+      esenciales, oportunidad en que debe dictarse, los recursos que proceden respecto de tal
+      resolución. Forma de notificación y maneras de rendir la prueba en el Procedimiento Sumario.
+      2. Actitudes del demandado al ser notificado de la demanda en juicio ordinario. La Rebeldía; El
+      Allanamiento; las excepciones y su clasificación; la demanda reconvencional, Contestación de la
+      demanda. Generalidades de cada actitud. Emplazamiento, concepto, requisitos, hipótesis y efectos
+      de este.
+  - numero: 28
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El Recurso de reposición civil · El cumplimiento de las resoluciones dictadas por un tribunal nacional
+    contenido: |-
+      1.- El Recurso de reposición civil. Clasificación del recurso; Sus diferencias. Resoluciones respecto
+      de las que procede, su tramitación, el fallo que la resuelve.
+      2. El cumplimiento de las resoluciones dictadas por un tribunal nacional. Requisitos de
+      procedencia. Resoluciones firmes y ejecutoriadas. Tribunal competente para la ejecución.
+      Procedimientos que permiten el cumplimiento.
+  - numero: 29
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: La Adhesión a la apelación · La Aclaración, Rectificación o Enmienda y la Reposición
+    contenido: |-
+      1. La Adhesión a la apelación. Concepto, características, momentos en que se pueda formalizar la
+      petición. Situación de la adhesión, si el apelante se desiste del recurso.
+      2. La Aclaración, Rectificación o Enmienda y la Reposición. Naturaleza jurídica, objeto de estos,
+      que clase de resoluciones permiten su interposición, tramitación y efectos de su concesión.
+  - numero: 30
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El recurso de casación en la forma · Los Sujetos Procesales del proceso Penal
+    contenido: |-
+      1. El recurso de casación en la forma. Concepto, resoluciones respecto de las cuales procede:
+      Clasificación de las causales. La Preparación del Recurso. Cuando procede; Admisibilidad. La
+      Casación de Oficio.
+      2. Los Sujetos Procesales del proceso Penal. Enumeración. La Querella. Concepto, titulares,
+      requisitos. Derechos del querellante. La Victima y sus derechos.
+  - numero: 31
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: "El Embargo · Formas de inicio del proceso penal y actitudes del fiscal: La denuncia; La Querella, De oficio"
+    contenido: |-
+      1. El Embargo. Concepto, características, bienes embargables; La realización de los bienes muebles
+      y de los inmuebles, Reglas especiales según el bien embargado.
+      2. Formas de inicio del proceso penal y actitudes del fiscal: La denuncia; La Querella, De oficio.
+      Recursos que proceden respecto de las distintas actitudes que adopte el Fiscal.
+  - numero: 32
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Las medidas cautelares en el Proceso Penal; Clasificación, requisitos de procedencia, · Los Equivalentes jurisdiccionales
+    contenido: |-
+      1. Las medidas cautelares en el Proceso Penal; Clasificación, requisitos de procedencia,
+      oportunidad en que se pueden solicitar La Prisión Preventiva, requisitos, causales de aplicación y
+      forma de revisión de su extensión o mantención.
+      2. Los Equivalentes jurisdiccionales. Concepto, importancia y fundamentación, características.
+      Clasificaciones y paralelo entre los más utilizados.
+  - numero: 33
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El Recurso de Apelación Civil
+    contenido: |-
+      1.La Oposición de excepciones en el juicio ejecutivo; Tramitación y fallo. Rendición de la prueba.
+      Recursos que proceden respecto de la sentencia. Forma de realización de los bienes embargados.
+      Distinción entre bienes muebles e inmuebles.
+      2. El Recurso de Apelación Civil. Concepto, causal y resoluciones susceptibles de su interposición.
+      Efectos en que se debe conceder según la naturaleza de la resolución y de quien lo interpone.
+      Recurso de hecho. Generalidades.
+  - numero: 34
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Cuáles son las etapas del Procedimiento ordinario en Materia Civil; La discusión, la Conciliación, · El imputado
+    contenido: |-
+      1. Cuáles son las etapas del Procedimiento ordinario en Materia Civil; La discusión, la Conciliación,
+      La Prueba, las observaciones a la prueba, la Sentencia, la Impugnación y la ejecución. Las
+      características de la resolución que recibe la causa a prueba, términos probatorios, nociones
+      fundamentales de la prueba.
+      2. El imputado. La Calidad de Imputado (desde cuando se considera imputado) y sus derechos. Las
+      Declaraciones del imputado. Generalidades. Situación de la denominada “auto defensa”.
+  - numero: 35
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Gestiones preparatorias de la vía ejecutiva · Los Recursos Procesales en General
+    contenido: |-
+      1. Gestiones preparatorias de la vía ejecutiva. Concepto, enumeración, requisitos, tramitación y
+      efectos. Acción ejecutiva. Generalidades.
+      2. Los Recursos Procesales en General. Concepto; Clasificaciones; Causales específicas de los
+      mismos; Como son conocidos y resueltos por los Tribunales según su composición y la instancia en
+      que se encuentra su tramitación.
+  - numero: 36
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Interdictos posesorios · Los efectos en que puede ser concedido el recurso de Apelación
+    contenido: |-
+      1. Interdictos posesorios. Concepto, clasificación, tramitación y medios de prueba en particular.
+      2. Los efectos en que puede ser concedido el recurso de Apelación. Alcances y consecuencias.
+      Modos de terminación del recurso de apelación. Recursos o herramientas procesales que
+      proceden ante la concesión indebida de un recurso; La Vista de la Causa en Materia Civil.
+  - numero: 37
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Los Sujetos Procesales del proceso Penal · La Prueba Documental en el Proceso Civil
+    contenido: |-
+      1. Los Sujetos Procesales del proceso Penal. Enumeración y las principales funciones de cada uno
+      de ellos; Facultades del Ministerio Publico. Obligaciones y deberes de la Fiscalía respecto de las
+      víctimas.
+      2. La Prueba Documental en el Proceso Civil. Que son los Instrumentos, como se clasifican; Como
+      se acompañan en juicio, efectos de su acompañamiento. Valor probatorio de los Instrumentos.
+      Impugnación, Tramitación.
+  - numero: 38
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Los Derechos de la Víctima en el proceso penal · La Nulidad Procesal en el proceso civil
+    contenido: |-
+      1. Los Derechos de la Víctima en el proceso penal. Clases de acciones en el proceso penal. Quienes
+      son titulares de aquellas acciones. Cuáles son los requisitos de cada una de ellas.
+      2. La Nulidad Procesal en el proceso civil. Causal; Cuando procede. El Perjuicio; Tramitación y sus
+      reglas procesales. La Nulidad de Oficio; Los efectos de la declaración de Nulidad.
+  - numero: 39
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: El Recurso de Queja · Los Medios de Prueba en el Proceso Civil
+    contenido: |-
+      1. El Recurso de Queja. Su doble carácter de Jurisdiccional y Disciplinario; Causal legal; Tribunal
+      que conoce del recurso; Forma y oportunidad de su interposición, requisitos formales;
+      Admisibilidad, vista y resolución del Recurso.
+      2. Los Medios de Prueba en el Proceso Civil. Enumeración; Clasificaciones; La Prueba de Peritos;
+      Requisitos para ser perito; forma de nombramiento; objeto del informe pericial; valor Probatorio
+      del Informe de Peritos.
+  - numero: 40
+    seccion: Cedulario de Derecho Procesal 2025
+    subseccion: ""
+    tema: Auxiliares de la administración de justicia · El juicio oral en el proceso penal
+    contenido: |-
+      1. Auxiliares de la administración de justicia. Generalidades, clasificación en cuanto a sus funciones
+      (dentro y fuera del tribunal), requisitos y funciones de cada uno.
+      2. El juicio oral en el proceso penal. Intervinientes, Actuaciones previas, disposiciones generales
+      sobre la prueba, desarrollo del juicio oral, alegatos de apertura y clausura.

@@ -1,0 +1,56 @@
+# Perfil del examen de grado — Universidad de las Américas.
+# Cada afirmación lleva su fuente. Lo no verificado va en `por_confirmar`.
+id: udla
+nombre: Universidad de las Américas
+sigla: UDLA
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de Grado
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Derecho Civil (se rinde por separado)
+      detalle: >-
+        Derecho Civil se rinde en abril, junio, septiembre o noviembre; la inscripción es el mes
+        anterior, con formulario ante el Director de Carrera del campus de egreso. En agosto no hay exámenes.
+      fuente: Calendario de inscripción Examen de Grado Derecho 2026
+    - titulo: Derecho Procesal y Derecho Constitucional
+      detalle: Se rinden juntos en mayo, julio, octubre o diciembre.
+      fuente: Calendario de inscripción Examen de Grado Derecho 2026
+    - titulo: Cédula de Derecho Constitucional (exposición)
+      detalle: >-
+        Exposición solemne oral de 7 a 8 minutos sobre todos los tópicos de la cédula elegida, sin
+        leer apuntes, seguida de unos 8 minutos de preguntas y solicitudes de aclaración de la comisión.
+      fuente: Tutorial para la preparación y exposición de la cédula de Derecho Constitucional (UDLA)
+  exigencia: 0.6
+  habilitacion: >-
+    Quien tiene vencido el plazo para rendir el examen puede rendir un "examen de habilitación
+    específico": escrito, de preguntas objetivas sobre los cedularios de Civil, Procesal y
+    Constitucional, una vez al año (abril). Aprobado, puede volver a pedir fecha de examen de grado.
+  fuente_habilitacion: Instructivo de postulación Examen de Habilitación Específico 2026
+estilo_comision:
+  - Civil y Procesal se rinden en meses distintos: el plan puede concentrarse en un ramo por convocatoria.
+  - La comisión valora la exposición ordenada, el lenguaje jurídico correcto y que se responda "de acuerdo con nuestro ordenamiento" antes de dar la opinión propia (tutorial oficial).
+  - Antes de contestar, organizar las ideas; está permitido pedir unos instantes a la comisión.
+por_confirmar:
+  - Duración y forma de la interrogación en Civil y Procesal (el tutorial oficial describe la cédula de Constitucional).
+  - Reglamento o "Procedimiento de Examen de Grado" (menciona un máximo de 5 reprobaciones); el estudiante puede subirlo.
+fuentes:
+  - titulo: Obtención de grado — Facultad de Derecho UDLA
+    url: https://derecho.udla.cl/obtencion-de-grado/
+  - titulo: Cedulario Derecho Civil
+    url: https://www.udla.cl/descargas/derecho/CEDULARIO-DERECHO-CIVIL.pdf
+  - titulo: Cedulario Derecho Procesal
+    url: https://www.udla.cl/descargas/derecho/CEDULARIO-DERECHO-PROCESAL.pdf
+  - titulo: Calendario de inscripción Examen de Grado Derecho 2026
+    url: https://www.udla.cl/descargas/derecho/2026-CALENDARIO-DE-INSCRIPCION-EXAMEN-DE-GRADO-DERECHO.pdf
+  - titulo: Tutorial para la preparación de la cédula de Derecho Constitucional
+    url: https://www.udla.cl/descargas/derecho/Tutorial-para-la-preparacion-de-la-cedula-de-Derecho-Constitucional.pdf
+  - titulo: Instructivo de postulación Examen de Habilitación Específico
+    url: https://www.udla.cl/descargas/derecho/Instructivo-de-Postulacion-Examen-de-Habilitacion-Especifico-Escuela-de-Derecho.pdf
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: 55 temas en Civil y 55 en Procesal, numerados como en el documento oficial.
+revisado: 2026-09-26

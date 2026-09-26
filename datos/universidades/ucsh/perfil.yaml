@@ -1,0 +1,36 @@
+# Perfil del examen de grado — Universidad Católica Silva Henríquez.
+# Cada afirmación lleva su fuente. Lo no verificado va en `por_confirmar`.
+id: ucsh
+nombre: Universidad Católica Silva Henríquez
+sigla: UCSH
+facultad: Facultad de Ciencias Sociales, Jurídicas y Económicas — Escuela de Derecho
+examen:
+  nombre: Examen de Grado
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Examen oral y público de Derecho Civil y Derecho Procesal
+      detalle: >-
+        Evaluación oral y pública cuyo propósito es valorar el nivel de conocimientos jurídicos y
+        competencias adquiridas durante la formación, en concordancia con el perfil de egreso. Los
+        cedularios fijan los temas incluidos y señalan expresamente los excluidos.
+      fuente: Resolución N° 001, de 16 de enero de 2020 (considerandos 2 y 3)
+  exigencia: 0.6
+estilo_comision:
+  - Lo marcado "(nociones generales)" sólo exige lo fundamental; lo demás se pregunta con detalle.
+  - La resolución trae una lista cerrada de exclusiones por ramo: no dedicar tiempo a esas materias.
+  - Bibliografía referencial del propio cedulario (Ducci, Vial, Peñailillo, Abeliuk, Meza Barros, Elorriaga, Casarino, Mosquera y Maturana, Horvitz y López): conviene saber qué dicen sobre los temas centrales.
+por_confirmar:
+  - Duración, composición de la comisión y forma de calificación (la resolución no las indica).
+  - Vigencia de los cedularios de 2020 (el estudiante puede subir una versión más reciente con cargar_documento).
+fuentes:
+  - titulo: Resolución N° 001/2020 — Aprueba Cedularios de Derecho Civil y Derecho Procesal para el Examen de Grado
+    url: https://www.ucsh.cl/assets/uploads/2022/08/Resolucio%CC%81n-cedulario.pdf
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    11 secciones en Civil y 8 en Procesal, cada una con sus puntos numerados. Cada cedulario trae
+    además la lista oficial de materias excluidas (se muestra en el índice).
+revisado: 2026-09-26

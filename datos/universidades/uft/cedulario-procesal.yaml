@@ -1,0 +1,239 @@
+# Temario de Licenciatura — Derecho Procesal. Universidad Finis Terrae, Facultad de Derecho.
+# Fuente: https://derecho.uft.cl/wp-content/uploads/2024/10/derecho-procesal.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "numerado") y revisada.
+# Cada "cédula" es un punto del temario (1.1, 1.2…), numerado correlativamente.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: 1. Jurisdicción y competencia
+    subseccion: ""
+    tema: Generalidades.
+    contenido: |-
+      1.1.1. Concepto y fuentes del Derecho Procesal.
+      1.1.2. La ley procesal. Naturaleza y efectos en cuanto al tiempo y el espacio.
+    excluidas: |-
+      Formas de solucionar los conflictos (autotutela – autocomposición – proceso),
+      Evolución y contenidos del derecho procesal y sistemas procesales.
+  - numero: 2
+    seccion: 1. Jurisdicción y competencia
+    subseccion: ""
+    tema: La jurisdicción.
+    contenido: |-
+      1.2.1. Concepto.
+      1.2.2. Elementos de la jurisdicción.
+      1.2.3. Características de la jurisdicción.
+      1.2.4. Limites internos y externos de la jurisdicción.
+      1.2.5. Conflictos de jurisdicción.
+      1.2.6. Equivalentes jurisdiccionales.
+      1.2.7. Actos judiciales no contenciosos sólo: posesión efectiva, procedimiento general- autorización para
+      enajenar
+    excluidas: |-
+      La Jurisdicción, legislación y administración (como paralelo).
+      Actos Judiciales no contenciosos (salvo lo que se indica expresamente).
+      Nociones generales acerca de lo contencioso administrativo.
+  - numero: 3
+    seccion: 1. Jurisdicción y competencia
+    subseccion: ""
+    tema: La Competencia
+    contenido: |-
+      1.3.1. Concepto.
+      1.3.2. Factores que la determinan.
+      1.3.3. Clasificaciones.
+      1.3.4. Reglas generales de la competencia.
+      1.3.5. Estudio particular de los factores de competencia absoluta y relativa.
+      1.3.6. Prórroga de la competencia.
+    excluidas: |-
+      Reglas de distribución de causas.
+      Cuestiones y contiendas de competencia.
+  - numero: 4
+    seccion: 1. Jurisdicción y competencia
+    subseccion: ""
+    tema: Los Tribunales
+    contenido: |-
+      1.4.1. Estudio particular de los Tribunales ordinarios y de su competencia.
+      1.4.2. Funcionamiento de los Tribunales colegiados. Acuerdos.
+      1.4.3. Los Tribunales arbitrales.
+    excluidas: |-
+      Bases fundamentales del estatuto legal de los jueces.
+      Subrogación e integración.
+      Auxiliares de la Administración de Justicia.
+  - numero: 5
+    seccion: 2. Normas comunes a todo procedimiento
+    subseccion: ""
+    tema: Generalidades sobre el Proceso
+    contenido: |-
+      2.1.1. El Proceso.
+      2.1.2. La Acción.
+      2.1.3. La Reacción.
+      2.1.4. Los presupuestos procesales.
+      2.1.5. La Teoría del Acto Jurídico Procesal.
+      2.1.5.1. Hechos y actos jurídicos procesales.
+      2.1.5.2. Requisitos de existencia y validez.
+      2.1.5.3. Clasificación.
+      2.1.5.4. Causales de ineficacia.
+      2.1.6. El Procedimiento.
+      2.1.7. Clasificación.
+      2.1.8. Principios formativos del procedimiento.
+      2.1.9. Las partes y su representación.
+      2.1.10. Las actuaciones judiciales.
+      2.1.11. Las resoluciones judiciales.
+      2.1.12. Las notificaciones.
+      2.1.13. Los plazos y sus clasificaciones.
+      2.1.14. La rebeldía.
+      2.1.15. Paralización del procedimiento.
+      2.1.16. Cosa juzgada.
+    excluidas: |-
+      Extinción del procedimiento.
+      Otras reglas comunes a todo procedimiento.
+  - numero: 6
+    seccion: 3. Procedimientos comunes
+    subseccion: ""
+    tema: El Juicio Ordinario de Mayor Cuantía
+    contenido: |-
+      3.1.1. Periodo de Discusión – Conciliación.
+      3.1.2. Periodo de Prueba:
+      3.1.2.1. La prueba.
+      3.1.2.2. Qué es la prueba.
+      3.1.2.3. Qué se prueba.
+      3.1.2.4. Quién prueba.
+      3.1.2.5. Cómo se prueba.
+      3.1.2.6. Valoración de la prueba.
+      3.1.3. Trámites posteriores a la prueba.
+      3.1.4. Periodo de Sentencia.
+      3.1.5. Medidas para mejor resolver.
+    excluidas: |-
+      Sistema de evaluación probatoria.
+      Sentencia propiamente tal.
+  - numero: 7
+    seccion: 3. Procedimientos comunes
+    subseccion: ""
+    tema: El Juicio Sumario
+    contenido: |-
+      3.2.1. Procedencia.
+      3.2.2. Tramitación.
+      3.2.3. Particularidades.
+      3.2.4. Juicio de arrendamiento.
+  - numero: 8
+    seccion: 3. Procedimientos comunes
+    subseccion: ""
+    tema: El cumplimiento de resoluciones judiciales.
+    contenido: |-
+      3.3.1. Resoluciones de los Tribunales Chilenos.
+      3.3.2. Resoluciones dictadas por Tribunales Extranjeros.
+  - numero: 9
+    seccion: 3. Procedimientos comunes
+    subseccion: ""
+    tema: El Juicio Ejecutivo de Mayor Cuantía
+    contenido: |-
+      3.4.1. La acción ejecutiva.
+      3.4.2. La tramitación de Juicio de Obligación de Dar.
+      3.4.2.1. Cuaderno ejecutivo.
+      3.4.2.2. Cuaderno de apremio.
+      3.4.3. Reglas comunes.
+      3.4.4. Ejecución bancaria y ejecución de prenda.
+    excluidas: |-
+      El Juicio Ejecutivo en las obligaciones de hacer.
+      El Juicio Ejecutivo en las obligaciones de no hacer.
+      Actos Judiciales no contenciosos.
+  - numero: 10
+    seccion: 4. Incidentes y recursos
+    subseccion: ""
+    tema: Potestad cautelar y prejudicial.
+    contenido: |-
+      4.1.1. Medidas prejudiciales.
+      4.1.2. Medidas precautorias.
+  - numero: 11
+    seccion: 4. Incidentes y recursos
+    subseccion: ""
+    tema: Los Incidentes.
+    contenido: |-
+      4.2.1. Incidentes ordinarios – tramitación.
+      4.2.2. Incidentes especiales.
+      4.2.2.1. Incidente de nulidad procesal.
+      4.2.2.2. Cuestiones de competencia.
+      4.2.2.3. Desistimiento de la Demanda.
+      4.2.2.4. Abandono del Procedimiento.
+    excluidas: |-
+      La Nulidad Procesal (concepto, ideas, matrices, propuestas, características y
+      formas de declararla)
+  - numero: 12
+    seccion: 4. Incidentes y recursos
+    subseccion: ""
+    tema: Los Recursos.
+    contenido: |-
+      4.3.1. Recurso de Reposición.
+      4.3.2. Recurso de Aclaración, Rectificación o Enmienda.
+      4.3.3. Recurso de Apelación.
+      4.3.4. Recurso de Hecho.
+      4.3.5. Recurso de Casación: Forma, Fondo y Casación de Oficio.
+      4.3.6. Recurso de Revisión.
+      4.3.7. Recurso de Queja.
+    excluidas: |-
+      Recurso de Inaplicabilidad.
+      Recurso de Protección.
+      Recurso de Amparo Económico.
+  - numero: 13
+    seccion: 5. Procedimiento penal nuevo
+    subseccion: ""
+    tema: Parte General
+    contenido: |-
+      5.1.1. Marco constitucional y principal del nuevo proceso.
+      5.1.2. La acción penal pública, privada y previa instancia particular.
+      5.1.3. La acción civil.
+  - numero: 14
+    seccion: 5. Procedimiento penal nuevo
+    subseccion: ""
+    tema: Reglas comunes a todo juicio
+    contenido: |-
+      5.2.1. Sujetos procesales.
+      5.2.1.1. El Tribunal.
+      5.2.1.2. El Ministerio Público.
+      5.2.1.3. La Policía.
+      5.2.1.4. El Imputado.
+      5.2.1.5. El Defensor.
+      5.2.1.6. La Víctima.
+      5.2.1.7. El Querellante.
+      5.2.2. Las resoluciones.
+      5.2.3. Días y horas hábiles.
+      5.2.4. Notificaciones, comunicaciones y citaciones judiciales.
+      5.2.5. Los plazos.
+      5.2.6. Las rebeldías.
+      5.2.7. Costas.
+      5.2.8. Reglas supletorias.
+  - numero: 15
+    seccion: 5. Procedimiento penal nuevo
+    subseccion: ""
+    tema: "Parte Especial: Juicio ordinario sobre crimen o simple delito de acción pública."
+    contenido: |-
+      5.3.1. La etapa de investigación.
+      5.3.1.1. Inicio del procedimiento; Requisición del Ministerio Público; la denuncia; la querella.
+      5.3.1.2. Persecución penal pública y discrecionalidad. Archivo provisional. Facultad de No Investigar.
+      Principio de Oportunidad.
+      5.3.1.3. Formalización de la Investigación. Efectos.
+      5.3.1.4. Determinación de la existencia del delito y la participación; actuaciones de investigación.
+      5.3.1.5. Aseguramiento de la persona del sujeto pasivo; citación; detención; prisión preventiva, otras
+      medias cautelares personales; amparo o habeas corpus.
+      5.3.1.6. Aseguramiento de la responsabilidad pecuniaria del sujeto pasivo. Medidas cautelares
+      reales.
+      5.3.1.7. Salidas alternativas. Suspensión condicional del procedimiento y acuerdos reparatorios.
+      5.3.1.8. Conclusión de la Investigación; acusación; decisión de no perseverar; reapertura de la
+      investigación; sobreseimiento temporal y definitivo.
+      5.3.2. Parte intermedia: preparación del Juicio Oral.
+      5.3.2.1. Audiencia de preparación del juicio oral: formalidades y desarrollo.
+      5.3.2.2. Objetivos: corrección de vicios formales; excepciones de previo y especial pronunciamiento;
+      conciliación sobre la acción civil; debate acerca de las pruebas; exclusión de prueba.
+      5.3.2.3. Auto de apertura de Juicio Oral.
+      5.3.3. Juicio Oral.
+      5.3.3.1. Principios del juicio oral.
+      5.3.4. Formalidades.
+      5.3.5. Presentación de prueba.
+      5.3.6. Procedimiento.
+      5.3.7. Valoración de la prueba y sentencia definitiva.
+  - numero: 16
+    seccion: 5. Procedimiento penal nuevo
+    subseccion: ""
+    tema: Recursos.
+    contenido: |-
+      5.4.1. Sistema general de recursos.
+      5.4.2. Recurso de nulidad.
+    excluidas: Procedimientos especiales (Abreviado, Simplificado y Monitorio)

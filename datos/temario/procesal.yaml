@@ -237,6 +237,10 @@ unidades:
       - id: procesal.especiales.exequatur
         titulo: Cumplimiento de resoluciones extranjeras. Exhorto y exequátur
         articulos: [CPC 76, CPC 242-251]
+      - id: procesal.especiales.interdictos
+        titulo: Interdictos o juicios posesorios sumarios (querellas posesorias, denuncia de obra nueva y ruinosa)
+        articulos: [CPC 549-583]
+        relacionados: [civil.bienes.posesorias]
       - id: procesal.especiales.hacienda
         titulo: Juicio de Hacienda
         articulos: [CPC 748-752]

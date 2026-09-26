@@ -69,13 +69,23 @@ export class Tutor {
     // combina lo oficial con lo que él mismo aportó (reglamento, exámenes).
     if (!universidad && propia) {
       const { cedulario, ...perfil } = propia.perfil;
-      return { ...perfil, cedulario: Object.fromEntries(Object.entries(propia.cedularios).map(([r, c]) => [r, `${c.length} cédulas (${propia.origen_cedulario?.[r] ?? 'oficial'})`])), electivas: cedulario?.electivas };
+      return {
+        ...perfil,
+        cedulario: Object.fromEntries(Object.entries(propia.cedularios).map(([r, c]) => [r, `${c.length} cédulas (${propia.origen_cedulario?.[r] ?? 'oficial'})`])),
+        ...(Object.keys(propia.exclusiones ?? {}).length ? { excluido_del_examen: propia.exclusiones } : {}),
+        electivas: cedulario?.electivas,
+      };
     }
     if (!id) throw new ErrorDeUso('Indica la universidad o configura primero al estudiante.');
     const u = universidades.get(id);
     if (!u) return { universidad: id, conocida: false, nota: 'Universidad sin perfil. Usa lo que el estudiante cuente de su examen (guardado en `notas`).', notas_estudiante: est?.notas ?? null };
     const { cedulario, ...perfil } = u.perfil;
-    return { ...perfil, cedulario: Object.fromEntries(Object.entries(u.cedularios).map(([r, c]) => [r, `${c.length} cédulas`])), electivas: cedulario?.electivas };
+    return {
+      ...perfil,
+      cedulario: Object.fromEntries(Object.entries(u.cedularios).map(([r, c]) => [r, `${c.length} cédulas`])),
+      ...(Object.keys(u.exclusiones ?? {}).length ? { excluido_del_examen: u.exclusiones } : {}),
+      electivas: cedulario?.electivas,
+    };
   }
 
   async configurar_estudiante({ universidad, fecha_examen, horas_semana, dias_semana, nombre, notas } = {}) {
@@ -211,9 +221,11 @@ export class Tutor {
           const ds = c.temas.map((t) => dominio(progreso.get(t), hoy));
           detalle = ` — ${ds.filter((d) => d !== 'sin_ver').length}/${ds.length} temas vistos, ${ds.filter((d) => d === 'dominado').length} dominados`;
         }
-        lineas.push(`${icono(this.dominioDe(c.temas, progreso, hoy))} ${c.numero}. ${c.tema}${detalle}${estrella}`);
+        const eeg = c.ejercicios?.length ? ` [EEG ${c.ejercicios.join('·')}]` : '';
+        lineas.push(`${icono(this.dominioDe(c.temas, progreso, hoy))} ${c.numero}. ${c.tema}${eeg}${detalle}${estrella}`);
       }
-      return { leyenda, vista: `cedulario ${universidad.perfil.sigla} — ${rama}`, cedulas: lineas, como_elegir: `Para estudiar una cédula: elegir_temas con "${rama}:<número>". Para ver su contenido: ver_tema con cedula y rama.` };
+      const excl = universidad.exclusiones?.[rama];
+      return { leyenda, vista: `cedulario ${universidad.perfil.sigla} — ${rama}`, cedulas: lineas, ...(excl ? { excluido_del_examen: excl } : {}), como_elegir: `Para estudiar una cédula: elegir_temas con "${rama}:<número>". Para ver su contenido: ver_tema con cedula y rama.` };
     }
 
     const alc = new Set(alcance(temario, universidad)[rama]);
@@ -246,12 +258,21 @@ export class Tutor {
         out.push(...c.temas);
         continue;
       }
+      // "ejercicio:2" (UNAB): todas las cédulas que se evalúan en ese ejercicio de examen de grado.
+      const ej = r.match(/^(?:(civil|procesal)\s*:\s*)?(?:ejercicio|eeg)\s*[:#]?\s*(\d+)$/i);
+      if (ej) {
+        const ramas = ej[1] ? [ej[1].toLowerCase()] : Object.keys(universidad?.cedularios ?? {});
+        const cs = ramas.flatMap((x) => (universidad?.cedularios[x] ?? []).filter((c) => c.ejercicios?.includes(Number(ej[2]))));
+        if (!cs.length) throw new ErrorDeUso(`El cedulario de ${universidad?.perfil.sigla ?? 'la universidad del estudiante'} no distingue ejercicios, o ninguna cédula corresponde al ejercicio ${ej[2]}.`);
+        out.push(...cs.flatMap((c) => c.temas));
+        continue;
+      }
       const unidad = temario.ramas[r.split('.')[0]]?.unidades.find((u) => u.id === r);
       if (unidad) {
         out.push(...unidad.temas);
         continue;
       }
-      throw new ErrorDeUso(`No reconozco "${r}". Usa un id de tema (civil.acto.nulidad_relativa), una cédula ("civil:40") o una unidad ("civil.bienes"). Busca con buscar_temario.`);
+      throw new ErrorDeUso(`No reconozco "${r}". Usa un id de tema (civil.acto.nulidad_relativa), una cédula ("civil:40"), una unidad ("civil.bienes") o, si tu universidad los distingue, un ejercicio ("ejercicio:2"). Busca con buscar_temario.`);
     }
     return [...new Set(out)];
   }
@@ -376,7 +397,7 @@ export class Tutor {
     };
   }
 
-  async sortear_cedula({ rama, numero, prioridad = 'azar' } = {}) {
+  async sortear_cedula({ rama, numero, prioridad = 'azar', ejercicio } = {}) {
     const { temario, universidad, hoy } = await this.ctx();
     const progreso = this.almacen.progreso(this.id);
     const ramas = rama ? [rama] : ['civil', 'procesal'];
@@ -390,10 +411,11 @@ export class Tutor {
     const pesoTemas = (ts) => Math.max(...ts.map((t) => ({ sin_ver: 2, debil: 4, aprendiendo: 3, consolidando: 1.5, dominado: 1 })[dominio(progreso.get(t), hoy)]));
     // Modalidad por ramo: en la UDD, Civil es un caso escrito y Procesal es oral.
     const modalidadDe = (r) => universidad?.perfil.examen?.modalidad_por_ramo?.[r] ?? universidad?.perfil.examen?.modalidad;
-    const sortearTres = (pool) => {
+    const formato = universidad?.perfil.examen?.formato_preguntas;
+    const sortearTres = (pool, n = 3) => {
       const disponibles = [...pool];
       const temas = [];
-      while (temas.length < 3 && disponibles.length) {
+      while (temas.length < n && disponibles.length) {
         const t = elegir(disponibles, (x) => pesoTemas([x]));
         temas.push(t);
         disponibles.splice(disponibles.indexOf(t), 1);
@@ -402,7 +424,25 @@ export class Tutor {
     };
     const sorteo = ramas.map((r) => {
       const escrita = modalidadDe(r) === 'escrita';
-      const cedulas = universidad?.cedularios[r];
+      let cedulas = universidad?.cedularios[r];
+      if (ejercicio !== undefined) {
+        cedulas = (cedulas ?? []).filter((c) => c.ejercicios?.includes(Number(ejercicio)));
+        if (!cedulas.length) throw new ErrorDeUso(`Ninguna cédula de ${r} corresponde al ejercicio ${ejercicio} en el cedulario de ${universidad?.perfil.sigla ?? 'tu universidad'}.`);
+      }
+      if (escrita && formato === 'seleccion_multiple' && numero === undefined) {
+        // Examen objetivo (UNAB): varios casos breves, cada uno con preguntas de
+        // alternativas; conviene que crucen distintos temas del alcance.
+        const pool = [...new Set((cedulas?.length ? cedulas.flatMap((c) => c.temas) : alcance(temario, universidad)[r]))];
+        const temas = sortearTres(pool, 6);
+        return {
+          rama: r,
+          modalidad: 'seleccion_multiple',
+          ...(ejercicio !== undefined ? { ejercicio: Number(ejercicio) } : {}),
+          temas,
+          temas_titulos: temas.map((t) => temario.temas.get(t).titulo),
+          para: 'construir 3 casos breves con 3-4 preguntas de alternativas cada uno (una sola correcta), cubriendo estos temas',
+        };
+      }
       if (cedulas?.length) {
         const c = numero !== undefined ? cedulas.find((x) => x.numero === Number(numero)) : elegir(cedulas, (x) => pesoTemas(x.temas));
         if (!c) throw new ErrorDeUso(`No existe la cédula ${numero} de ${r}.`);
@@ -427,7 +467,9 @@ export class Tutor {
       modalidad: universidad?.perfil.examen?.modalidad ?? 'desconocida',
       prioridad,
       sorteo,
-      como_seguir: 'Simula la comisión según `perfil_examen` (estilo_comision). Al terminar, `registrar_simulacro` con una calificación por cada tema evaluado.',
+      como_seguir: sorteo.some((x) => x.modalidad === 'seleccion_multiple')
+        ? 'Arma los casos y preguntas según referencias/modos/simulacro.md (selección múltiple): alternativas plausibles, sin pistas. Corrige al final, explica cada alternativa, calcula la nota con `calcular_nota` y guarda con `registrar_simulacro`.'
+        : 'Simula la comisión según `perfil_examen` (estilo_comision). Al terminar, `registrar_simulacro` con una calificación por cada tema evaluado.',
     };
   }
 
@@ -737,12 +779,14 @@ export function combinarUniversidad(base, propio, cedulariosPropios, est) {
     ...(propio ? { aportado_por_el_estudiante: { fuentes: propio.fuentes, notas: propio.notas, actualizado: propio.actualizado } } : {}),
   };
   const cedularios = { ...(base?.cedularios ?? {}) };
+  const exclusiones = { ...(base?.exclusiones ?? {}) };
   const origen = Object.fromEntries(Object.keys(cedularios).map((r) => [r, 'oficial']));
   for (const [rama, c] of Object.entries(cedulariosPropios ?? {})) {
     cedularios[rama] = c.cedulas;
+    delete exclusiones[rama];
     origen[rama] = `subido por el estudiante${c.fuente ? `: ${c.fuente}` : ''}`;
   }
-  return { perfil, cedularios, origen_cedulario: origen };
+  return { perfil, cedularios, exclusiones, origen_cedulario: origen };
 }
 
 /** "Código Civil", "CC", "Ley 19.947", "matrimonio civil" → sigla. */

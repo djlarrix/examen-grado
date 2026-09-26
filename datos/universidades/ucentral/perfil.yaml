@@ -1,0 +1,54 @@
+# Perfil del examen de grado — Universidad Central de Chile.
+# Cada afirmación lleva su fuente. Lo no verificado va en `por_confirmar`.
+id: ucentral
+nombre: Universidad Central de Chile
+sigla: U. Central
+facultad: Facultad de Derecho y Humanidades
+examen:
+  nombre: Examen de Grado (Licenciatura en Ciencias Jurídicas y Sociales)
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Modalidad tradicional (oral)
+      detalle: >-
+        Interrogación sobre los cedularios de Derecho Civil y Derecho Procesal, más la exposición
+        inicial de una materia específica que el egresado elige libremente, "como carta de
+        presentación de su examen". Comisión de tres profesores: Civil, Procesal y una materia a
+        elección de las cédulas de asignaturas disponibles. Se rinde todos los meses salvo febrero.
+        Pueden optar los egresados de cohortes anteriores a 2026.
+      duracion_minutos: 60
+      fuente: Sitio OASE de la Facultad (Examen de grado en la carrera de Derecho)
+    - titulo: Modalidad nueva (caso escrito + defensa oral)
+      detalle: >-
+        Resolución escrita de casos prácticos (3 horas, en laboratorio de computación) y luego
+        defensa oral de 20 a 25 minutos ante una comisión de tres académicos. Se rinde en julio y
+        diciembre, con cupos por sede. Optativa para egresados de cohortes hasta 2025; obligatoria
+        (en el décimo semestre) para la cohorte que ingresó en 2026.
+      duracion_minutos: 180
+      fuente: Sitio OASE; Resolución 5654 (nueva modalidad de rendición del examen de licenciatura)
+  comision: Tres académicos (Civil, Procesal y la materia elegida).
+  exigencia: 0.6
+estilo_comision:
+  - Cada cédula sorteada trae DOS temas distintos (a menudo de áreas lejanas, p. ej. Personas + Responsabilidad contractual): hay que poder saltar de uno a otro con orden.
+  - Los enunciados piden paralelos y distinciones ("paralelo entre mandato y patrocinio", "diferencias con la nulidad"): preparar cuadros comparativos.
+  - El examen parte con la exposición de una materia elegida por el egresado: conviene llevarla ensayada (5-10 minutos, con estructura y cierre).
+  - En la modalidad nueva, el caso escrito se defiende luego oralmente: además de resolverlo, hay que saber justificar cada decisión ante preguntas.
+por_confirmar:
+  - Duración exacta y ponderación de cada parte en la modalidad tradicional (el sitio dice "1 hora aprox.").
+  - Formato de los casos y de la pauta de corrección de la modalidad nueva (el estudiante puede subir ejemplos con cargar_documento).
+  - Cédulas de las asignaturas electivas (Constitucional, Penal, etc.) — el tutor cubre Civil y Procesal.
+fuentes:
+  - titulo: OASE — Examen de grado en la carrera de Derecho (Facultad de Derecho y Humanidades)
+    url: https://facdeh.ucentral.cl/oase/
+  - titulo: Cedulario Derecho Civil año 2025
+    url: https://facdeh.ucentral.cl/oase/wp-content/uploads/2026/07/CEDULARIO-DERECHO-CIVIL-ANO-2025.pdf
+  - titulo: Cedulario Derecho Procesal año 2025
+    url: https://facdeh.ucentral.cl/oase/wp-content/uploads/2026/07/CEDULARIO-DERECHO-PROCESAL-ANO-2025.pdf
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    40 cédulas por ramo, cada una con dos temas ("1.-" y "2.-"). Varios temas se repiten en
+    distintas cédulas combinados de otra forma: estudiar por temas cubre todas las combinaciones.
+revisado: 2026-09-26

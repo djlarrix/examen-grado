@@ -1,0 +1,442 @@
+# Cedulario de Derecho Civil 2025 — Universidad Central de Chile (Facultad de Derecho y Humanidades).
+# Fuente: https://facdeh.ucentral.cl/oase/wp-content/uploads/2026/07/CEDULARIO-DERECHO-CIVIL-ANO-2025.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "ucentral") y revisada.
+# Cada cédula reúne dos temas; el título es la unión de ambos.
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Personas · Responsabilidad civil contractual
+    contenido: |-
+      1.- Personas. Concepto y clasificación. Atributos de la personalidad en las personas
+      naturales. Paralelo con las personas jurídicas.
+      2.- Responsabilidad civil contractual. Requisitos de procedencia. Mora y sus efectos.
+      Formas de avaluación de los perjuicios.
+  - numero: 2
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Sucesión por causa de muerte · Regímenes matrimoniales
+    contenido: |-
+      1.- Sucesión por causa de muerte. Concepto y naturaleza jurídica. Derecho real de herencia
+      y formas de adquisición. Órdenes de sucesión intestada. Derechos que pueden concurrir en
+      una sucesión.
+      2.- Regímenes matrimoniales. Concepto y clasificaciones de los regímenes matrimoniales.
+      Capitulaciones matrimoniales. Sociedad conyugal. Administración, haberes en la sociedad
+      conyugal. Del pasivo de la sociedad conyugal. Recompensas.
+  - numero: 3
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: "Principios inspiradores del Código Civil: especial referencia a autonomía privada, buena · Filiación"
+    contenido: |-
+      1.- Principios inspiradores del Código Civil: especial referencia a autonomía privada, buena
+      fe, enriquecimiento sin causa, libre circulación de los bienes, responsabilidad civil,
+      omnipotencia de la ley, protección de la propiedad y seguridad jurídica.
+      2.- Filiación. Clasificación. Acciones de filiación. Titulares de cada acción e hipótesis de
+      procedencia. Efectos de la filiación.
+  - numero: 4
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: La posesión · Ineficacia de los actos jurídicos
+    contenido: |-
+      1.- La posesión. Concepto, elementos y clasificaciones de la posesión. La accesión de
+      posesiones. Adquisición, conservación y pérdida de la posesión.
+      2.- Ineficacia de los actos jurídicos. Concepto y clasificaciones. Inexistencia, Nulidad,
+      renuncia, resolución, resciliación, terminación, inoponibilidad y plazo extintivo. Respecto
+      de las mismas: concepto, causales, características y efectos.
+  - numero: 5
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Acciones protectoras del dominio y la posesión · Vicios de la voluntad y simulación en los actos jurídicos
+    contenido: |-
+      1.- Acciones protectoras del dominio y la posesión. La acción reivindicatoria: concepto y
+      requisitos, cosas que pueden reivindicarse y sujetos activo y pasivo de la acción
+      reivindicatoria. La acción publiciana: concepto y requisitos de procedencia. Las
+      prestaciones mutuas. Acciones posesorias: concepto y requisitos de procedencia. Tipos de
+      acciones posesorias y su función específica.
+      2.- Vicios de la voluntad y simulación en los actos jurídicos. El error, fuerza, dolo y lesión.
+      Concepto, requisitos y efectos de cada uno.
+  - numero: 6
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Modos de adquirir el dominio · Cuasicontratos
+    contenido: |-
+      1.- Modos de adquirir el dominio. Breve referencia a Ocupación y Accesión. Tradición:
+      concepto, elementos y características. Naturaleza jurídica. Distinción entre entrega y
+      tradición. Especies de tradición.
+      2.- Cuasicontratos. Concepto y características como fuente de obligaciones civiles.
+      Tratamiento en el Código Civil: agencia oficiosa o gestión de negocios ajenos, pago de lo
+      no debido y la comunidad.
+  - numero: 7
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: La prescripción adquisitiva o usucapión · Garantía personales
+    contenido: |-
+      1.- La prescripción adquisitiva o usucapión. Concepto y regulación en el Código Civil.
+      Reglas comunes a ambos tipos de prescripción. Requisitos generales de la prescripción
+      adquisitiva. Clases de prescripción adquisitiva y sus requisitos. Interrupción y suspensión
+      de la prescripción.
+      2.- Garantía personales. Conceptos de garantía y caución. La fianza, la solidaridad pasiva y
+      la cláusula penal.
+  - numero: 8
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Sociedad conyugal · Efectos de las obligaciones en el incumplimiento
+    contenido: |-
+      1.- Sociedad conyugal. Administración de la sociedad conyugal y de los bienes de la mujer.
+      Disolución de la sociedad conyugal. Renuncia a los gananciales. El patrimonio reservado de
+      la mujer casada. Liquidación de la sociedad conyugal. El beneficio de emolumentos.
+      2.- Efectos de las obligaciones en el incumplimiento. Ejecución forzada de obligaciones de
+      dar, hacer y no hacer. Prelación de créditos: concepto y explicación de las causas de
+      preferencia.
+  - numero: 9
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Contratos · Teoría de los bienes
+    contenido: |-
+      1.- Contratos. Concepto, elementos o cosas de los contratos, y clasificaciones. Principios de
+      la contratación. Efectos de los contratos. Reglas de interpretación de los contratos:
+      enunciación, análisis y forma en que operan.
+      2.- Teoría de los bienes. Concepto jurídico de cosa y bien. Derechos reales y personales.
+      Concepto y clasificación de los derechos reales. Clasificación de las cosas en el Código
+      Civil y su importancia.
+  - numero: 10
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Derechos auxiliares del acreedor · Situaciones de ruptura del vínculo matrimonial
+    contenido: |-
+      1.- Derechos auxiliares del acreedor. Concepto y enumeración. Medidas conservativas.
+      Acción pauliana o revocatoria y acción oblicua o subrogatoria.
+      2.- Situaciones de ruptura del vínculo matrimonial. Divorcio. Nulidad (matrimonio
+      putativo). Muerte. Separación judicial. Compensación económica.
+  - numero: 11
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: El matrimonio · Teoría de los bienes
+    contenido: |-
+      1.- El matrimonio. Definición legal de matrimonio. Requisitos de existencia y validez.
+      Impedimentos dirimentes e impedientes o prohibiciones. Formalidades legales del
+      matrimonio. Efectos del matrimonio.
+      2.- Teoría de los bienes. Concepto jurídico de cosa y bien. Derechos reales y personales.
+      Concepto y clasificación de los derechos reales. Clasificación de las cosas en el Código
+      Civil y su importancia.
+  - numero: 12
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Obligaciones Modales · Responsabilidad civil extracontractual
+    contenido: |-
+      1.- Obligaciones Modales. Obligaciones a plazo: concepto y clasificación del plazo. Efectos.
+      Formas de extinción del plazo. Obligaciones condicionales: concepto y clasificaciones de la
+      condición. Efectos de la condición suspensiva y resolutoria. La acción resolutoria: concepto,
+      características, efectos entre las partes y frente a terceros, diferencias con la nulidad.
+      2.- Responsabilidad civil extracontractual. Sistema de responsabilidad por daños en el
+      Código Civil y sus elementos.
+  - numero: 13
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Modos de extinguir las obligaciones · Contratos reales
+    contenido: |-
+      1.- Modos de extinguir las obligaciones. Concepto y enumeración general. El pago efectivo
+      o solución, la novación y la compensación. Prescripción extintiva. Requisitos y efectos de
+      cada uno.
+      2.- Contratos reales. Mutuo civil y de operaciones de crédito de dinero (ley 18.010). El
+      comodato, comodato precario y simple precario. Depósito (regular, irregular, necesario y
+      secuestro), concepto y nociones generales.
+  - numero: 14
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: "Indemnización de perjuicios: concepto y clases de indemnización · Apertura de la sucesión y delación de las asignaciones: concepto, momento, y lugar en"
+    contenido: |-
+      1.- Indemnización de perjuicios: concepto y clases de indemnización. Requisitos de la
+      indemnización de perjuicios: enunciación. Imputabilidad del incumplimiento:
+      imputabilidad a título de dolo y de culpa. Graduación de la culpa. Casos en que la culpa se
+      presume. Asimilación de la culpa al dolo.
+      2.- Apertura de la sucesión y delación de las asignaciones: concepto, momento, y lugar en
+      que se producen, ley que rige la sucesión. Incapacidades e indignidades para suceder:
+      caracteres y efectos. Bajas generales de la herencia y Teoría de los acervos: concepto, clases
+      y tratamiento. Plazos para aceptar o repudiar una asignación.
+  - numero: 15
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Contratos consensuales · Funciones generales del registro inmobiliario
+    contenido: |-
+      1.- Contratos consensuales. Concepto, elementos, características y efectos de: la
+      compraventa, el arrendamiento y el mandato.
+      2.- Funciones generales del registro inmobiliario. Funciones jurídicas de la inscripción en el
+      Código Civil (Teoría de la Posesión Inscrita). Inscripciones a que da lugar la sucesión por
+      causa de muerte. El objeto de la inscripción.
+  - numero: 16
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Garantías reales · Sociedad conyugal
+    contenido: |-
+      1.- Garantías reales. La hipoteca, concepto, características y requisitos. La hipoteca como
+      derecho real y como contrato. El principio de especialidad y la cláusula de garantía general.
+      Efectos de la hipoteca. Purga de la hipoteca. Acción hipotecaria y acción de desposeimiento.
+      La prenda, aspectos generales.
+      2.- Sociedad conyugal. Administración de la sociedad conyugal y de los bienes de la mujer.
+      Disolución de la sociedad conyugal. Renuncia a los gananciales. El patrimonio reservado de
+      la mujer casada. Liquidación de la sociedad conyugal. El beneficio de emolumentos.
+  - numero: 17
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Las asignaciones forzosas · Obligaciones según el número de sujetos
+    contenido: |-
+      1.- Las asignaciones forzosas. Concepto y tipos o clases. Las legítimas, cuarta de mejoras y
+      alimentos que se deben por ley.
+      2.- Obligaciones según el número de sujetos. Obligaciones simplemente conjuntas.
+      Concepto, características, reglas. Obligaciones indivisibles, tipos de indivisibilidad, reglas,
+      especial referencia a las indivisibilidades de pago.
+  - numero: 18
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: "Vicios de la voluntad y simulación en los actos jurídicos · Dominio, posesión y tenencia: conceptos, elementos, características y clasificaciones"
+    contenido: |-
+      1.- Vicios de la voluntad y simulación en los actos jurídicos. El error, fuerza, dolo y lesión.
+      Concepto, requisitos y efectos de cada uno.
+      2.- Dominio, posesión y tenencia: conceptos, elementos, características y clasificaciones.
+      Limitaciones del dominio: referencia a usufructo y servidumbres.
+  - numero: 19
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Acto jurídico · Teoría de los bienes
+    contenido: |-
+      1.- Acto jurídico. Concepto y características principales. Clasificaciones. Requisitos de
+      existencia y de validez. Modalidades de los actos jurídicos (condición, plazo y modo).
+      2.- Teoría de los bienes. Concepto jurídico de cosa y bien. Derechos reales y personales.
+      Concepto y clasificación de los derechos reales. Clasificación de las cosas en el Código
+      Civil y su importancia.
+  - numero: 20
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Responsabilidad civil contractual · La posesión
+    contenido: |-
+      1.- Responsabilidad civil contractual. Requisitos de procedencia. Mora y sus efectos.
+      Formas de avaluación de los perjuicios.
+      2.- La posesión. Concepto, elementos y clasificaciones de la posesión. La accesión de
+      posesiones. Adquisición, conservación y pérdida de la posesión.
+  - numero: 21
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: "Contratos reales · Apertura de la sucesión y delación de las asignaciones: concepto, momento, y lugar en"
+    contenido: |-
+      1.- Contratos reales. Mutuo civil y de operaciones de crédito de dinero (ley 18.010). El
+      comodato, comodato precario y simple precario. Depósito (regular, irregular, necesario y
+      secuestro), concepto y nociones generales.
+      2.- Apertura de la sucesión y delación de las asignaciones: concepto, momento, y lugar en
+      que se producen, ley que rige la sucesión. Incapacidades e indignidades para suceder:
+      caracteres y efectos. Bajas generales de la herencia y Teoría de los acervos: concepto, clases
+      y tratamiento. Plazos para aceptar o repudiar una asignación.
+  - numero: 22
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Obligaciones según el número de sujetos · Sucesión testada
+    contenido: |-
+      1.- Obligaciones según el número de sujetos. Obligaciones simplemente conjuntas.
+      Concepto, características, reglas. Obligaciones solidarias. Concepto, tipos de solidaridad,
+      fuentes de la solidaridad y efectos de la solidaridad.
+      2.- Sucesión testada. Concepto. El testamento: definición y características. Requisitos de
+      validez del testamento. Capacidad de testar. La voluntad en el testamento. Interpretación del
+      testamento. Nulidad del testamento.
+  - numero: 23
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Funciones generales del registro inmobiliario · Contratos consensuales
+    contenido: |-
+      1.- Funciones generales del registro inmobiliario. Funciones jurídicas de la inscripción en el
+      Código Civil (Teoría de la Posesión Inscrita). Inscripciones a que da lugar la sucesión por
+      causa de muerte. El objeto de la inscripción.
+      2.- Contratos consensuales. Concepto, elementos, características y efectos de: la
+      compraventa, el arrendamiento y el mandato.
+  - numero: 24
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Regímenes patrimoniales en el matrimonio, distintos de la sociedad conyugal, tipos, · Contratos de compraventa y permuta
+    contenido: |-
+      1.- Regímenes patrimoniales en el matrimonio, distintos de la sociedad conyugal, tipos,
+      oportunidad y modos de constituirse. Régimen de separación total de bienes: fuentes y
+      efectos. Régimen de participación en los gananciales: fuentes, efectos, causales de
+      terminación y procedimiento de determinación de los gananciales. Los bienes familiares.
+      2.- Contratos de compraventa y permuta. La compraventa: concepto y caracteres.
+      Requisitos. Elementos de la esencia: la cosa, el precio y el consentimiento. La venta de cosa
+      ajena. Efectos de la compraventa: obligaciones del vendedor y del comprador. Pactos
+      accesorios al contrato de compraventa: pacto de retracto, pacto de retroventa y pacto
+      comisorio. Lesión en la compraventa. El contrato de permuta: concepto, diferencias con la
+      compraventa, reglas aplicables.
+  - numero: 25
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Ineficacia de los actos jurídicos · Regímenes patrimoniales en el matrimonio, distintos de la sociedad conyugal, tipos,
+    contenido: |-
+      1.- Ineficacia de los actos jurídicos. Concepto y clasificaciones. Inexistencia, Nulidad,
+      renuncia, resolución, resciliación, terminación, inoponibilidad y plazo extintivo. Respecto
+      de las mismas: concepto, causales, características y efectos.
+      2.- Regímenes patrimoniales en el matrimonio, distintos de la sociedad conyugal, tipos,
+      oportunidad y modos de constituirse. Régimen de separación total de bienes: fuentes y
+      efectos. Régimen de participación en los gananciales: fuentes, efectos, causales de
+      terminación y procedimiento de determinación de los gananciales. Los bienes familiares.
+  - numero: 26
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Responsabilidad civil extracontractual · Teoría de los acervos
+    contenido: |-
+      1.- Responsabilidad civil extracontractual. Requisitos de procedencia. Responsabilidad por
+      el hecho propio y por el hecho ajeno.
+      2.- Teoría de los acervos. Bajas generales de la herencia. Acervos imaginarios. Medios
+      directos e indirectos de protección de la legítima.
+  - numero: 27
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: "Contratos de compraventa y permuta · Indemnización de perjuicios: concepto y clases de indemnización"
+    contenido: |-
+      1.- Contratos de compraventa y permuta. La compraventa: concepto y caracteres.
+      Requisitos. Elementos de la esencia: la cosa, el precio y el consentimiento. La venta de cosa
+      ajena. Efectos de la compraventa: obligaciones del vendedor y del comprador. Pactos
+      accesorios al contrato de compraventa: pacto de retracto, pacto de retroventa y pacto
+      comisorio. Lesión en la compraventa. El contrato de permuta: concepto, diferencias con la
+      compraventa, reglas aplicables.
+      2.- Indemnización de perjuicios: concepto y clases de indemnización. Requisitos de la
+      indemnización de perjuicios: enunciación. Imputabilidad del incumplimiento:
+      imputabilidad a título de dolo y de culpa. Graduación de la culpa. Casos en que la culpa se
+      presume.
+      Asimilación de la culpa al dolo.
+  - numero: 28
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Responsabilidad civil extracontractual · Modos de extinguir las obligaciones
+    contenido: |-
+      1.- Responsabilidad civil extracontractual. Requisitos de procedencia. Presunciones de
+      responsabilidad.
+      2.- Modos de extinguir las obligaciones. Concepto y enumeración general. El pago efectivo
+      o solución, la novación y la compensación. Prescripción Extintiva. Requisitos y efectos de
+      cada uno.
+  - numero: 29
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Obligaciones Modales · El matrimonio
+    contenido: |-
+      1.- Obligaciones Modales. Obligaciones a plazo: concepto y clasificación del plazo. Efectos.
+      Formas de extinción del plazo. Obligaciones condicionales: concepto y clasificaciones de la
+      condición. Efectos de la condición suspensiva y resolutoria. La acción resolutoria: concepto,
+      características, efectos entre las partes y frente a terceros, diferencias con la nulidad.
+      2.- El matrimonio. Definición legal de matrimonio. Requisitos de existencia y validez.
+      Impedimentos dirimentes e impedientes o prohibiciones. Formalidades legales del
+      matrimonio. Efectos del matrimonio.
+  - numero: 30
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: "Principios inspiradores del Código Civil: especial referencia a autonomía privada, buena · Sucesión por causa de muerte"
+    contenido: |-
+      1.- Principios inspiradores del Código Civil: especial referencia a autonomía privada, buena
+      fe, enriquecimiento sin causa, libre circulación de los bienes, responsabilidad civil,
+      omnipotencia de la ley, protección de la propiedad y seguridad jurídica.
+      2.- Sucesión por causa de muerte. Concepto y naturaleza jurídica. Derecho real de herencia
+      y formas de adquisición. Órdenes de sucesión intestada. Derechos que pueden concurrir en
+      una sucesión.
+  - numero: 31
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Efectos de las obligaciones en el incumplimiento · Formas de garantía reales
+    contenido: |-
+      1.- Efectos de las obligaciones en el incumplimiento. Ejecución forzada de obligaciones de
+      dar, hacer y no hacer. Prelación de créditos: concepto y explicación de las causas de
+      preferencia.
+      2.- Formas de garantía reales. La hipoteca, concepto, características y requisitos. La
+      hipoteca como derecho real y como contrato. El principio de especialidad y la cláusula de
+      garantía general. Efectos de la hipoteca. Purga de la hipoteca. Acción hipotecaria y acción
+      de desposeimiento. La prenda, aspectos generales.
+  - numero: 32
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Situaciones de ruptura del vínculo matrimonial · Acto jurídico
+    contenido: |-
+      1.- Situaciones de ruptura del vínculo matrimonial. Divorcio. Nulidad (matrimonio
+      putativo). Muerte. Separación judicial. Compensación económica.
+      2.- Acto jurídico. Concepto y características principales. Clasificaciones. Requisitos de
+      existencia y de validez. Modalidades de los actos jurídicos (condición, plazo y modo).
+  - numero: 33
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: "Dominio, posesión y tenencia: conceptos, elementos, características y clasificaciones · Cuasicontratos"
+    contenido: |-
+      1.- Dominio, posesión y tenencia: conceptos, elementos, características y clasificaciones.
+      Limitaciones del dominio: referencia a usufructo y servidumbres.
+      2.- Cuasicontratos. Concepto y características como fuente de obligaciones civiles.
+      Tratamiento en el Código Civil: agencia oficiosa o gestión de negocios ajenos, pago de lo
+      no debido y la comunidad.
+  - numero: 34
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Las asignaciones forzosas · Contratos
+    contenido: |-
+      1.- Las asignaciones forzosas. Concepto y tipos o clases. Las legítimas, cuarta de mejoras y
+      alimentos que se deben por ley.
+      2.- Contratos. Concepto, elementos o cosas de los contratos, y clasificaciones. Principios de
+      la contratación. Efectos de los contratos. Reglas de interpretación de los contratos:
+      enunciación, análisis y forma en que operan.
+  - numero: 35
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Garantía personales · La prescripción adquisitiva o usucapión
+    contenido: |-
+      1.- Garantía personales. Conceptos de garantía y caución. La fianza, la solidaridad pasiva y
+      la cláusula penal.
+      2.- La prescripción adquisitiva o usucapión. Concepto y regulación en el Código Civil.
+      Reglas comunes a ambos tipos de prescripción. Requisitos generales de la prescripción
+      adquisitiva. Clases de prescripción adquisitiva y sus requisitos. Interrupción y suspensión
+      de la prescripción.
+  - numero: 36
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Modos de adquirir el dominio · Derechos auxiliares del acreedor
+    contenido: |-
+      1.- Modos de adquirir el dominio. Breve referencia a Ocupación y Accesión. Tradición:
+      concepto, elementos y características. Naturaleza jurídica. Distinción entre entrega y
+      tradición. Especies de tradición.
+      2.- Derechos auxiliares del acreedor. Concepto y enumeración. Medidas conservativas.
+      Acción pauliana o revocatoria y acción oblicua o subrogatoria.
+  - numero: 37
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Regímenes matrimoniales · Sucesión testada
+    contenido: |-
+      1.- Regímenes matrimoniales. Concepto y clasificaciones de
+      los regímenes matrimoniales. Capitulaciones matrimoniales.
+      Sociedad conyugal. Administración, haberes en la sociedad
+      conyugal. Del pasivo de la sociedad conyugal. Recompensas.
+      2.- Sucesión testada. Concepto. El testamento: definición y características. Clases de
+      testamento en la legislación chilena. Otorgados en Chile y en país extranjero. Concepto,
+      requisitos y formalidades de cada uno de ellos. Revocación y reforma del testamento:
+      acción de reforma del testamento. Naturaleza, concepto, características, objeto, legitimidad
+      activa y pasiva. Preterición.
+  - numero: 38
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Filiación · Teoría de los acervos
+    contenido: |-
+      1.- Filiación. Clasificación. Acciones de filiación. Titulares de cada acción e hipótesis de
+      procedencia. Efectos de la filiación.
+      2.- Teoría de los acervos. Bajas generales de la herencia. Acervos imaginarios. Medios
+      directos e indirectos de protección de la legítima.
+  - numero: 39
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Acciones protectoras del dominio y la posesión · Ineficacia de los actos jurídicos
+    contenido: |-
+      1.- Acciones protectoras del dominio y la posesión. La acción reivindicatoria: concepto y
+      requisitos, cosas que pueden reivindicarse y sujetos activo y pasivo de la acción
+      reivindicatoria. La acción publiciana: concepto y requisitos de procedencia. Las
+      prestaciones mutuas. Acciones posesorias: concepto y requisitos de procedencia. Tipos de
+      acciones posesorias y su función específica.
+      2.- Ineficacia de los actos jurídicos. Concepto y clasificaciones. Inexistencia, Nulidad,
+      renuncia, resolución, resciliación, terminación, inoponibilidad y plazo extintivo. Respecto
+      de las mismas: concepto, causales, características y efectos.
+  - numero: 40
+    seccion: Cedulario de Derecho Civil 2025
+    subseccion: ""
+    tema: Responsabilidad civil extracontractual · Personas
+    contenido: |-
+      1.- Responsabilidad civil extracontractual. Sistema de responsabilidad por daños en el
+      Código Civil y sus elementos.
+      2.- Personas. Concepto y clasificación. Atributos de la personalidad. Paralelo con las
+      personas jurídicas.

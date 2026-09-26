@@ -1,0 +1,63 @@
+# Perfil del examen de grado — Universidad Andrés Bello (malla D.U. 1681/2011).
+# Cada afirmación lleva su fuente. Lo no verificado va en `por_confirmar`.
+id: unab
+nombre: Universidad Andrés Bello
+sigla: UNAB
+facultad: Facultad de Derecho
+examen:
+  nombre: Ejercicios de Examen de Grado (EEG)
+  modalidad: escrita
+  formato_preguntas: seleccion_multiple
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Primer ejercicio (EEG 1)
+      detalle: >-
+        Derecho Civil (Teoría general del negocio jurídico; Objetos del Derecho), Derecho
+        Constitucional y Derecho Procesal (orgánico; normas comunes; juicio ordinario).
+      fuente: Temario EG malla 2011, período 2026-20 (I. Temario primer ejercicio)
+    - titulo: Segundo ejercicio (EEG 2)
+      detalle: >-
+        Derecho Civil (negocio jurídico, obligaciones, contratos, responsabilidad, familia y
+        sucesorio), Derecho Constitucional y Derecho Procesal (incluye procedimientos especiales y recursos).
+      fuente: Temario EG malla 2011, período 2026-20 (II. Temario segundo ejercicio)
+    - titulo: Tercer ejercicio (EEG 3)
+      detalle: >-
+        Derecho Civil (todo el temario, con partición), Derecho Laboral y Derecho Procesal (todo el temario).
+      fuente: Temario EG malla 2011, período 2026-20 (III. Temario tercer ejercicio)
+  metodo: >-
+    Cada ejercicio mide los contenidos "en la solución de preguntas asociadas a casos prácticos".
+    Se responde en una hoja de respuestas y se corrige con tablas de respuestas correctas por
+    "forma" del instrumento; luego hay un proceso de revisión (3 días hábiles) en que se pueden
+    objetar preguntas ante una comisión revisora.
+  fuente_metodo: Protocolo de revisión EEG 2026-10, malla 2011; Temario EG (presentación)
+  fechas_2026_20: EEG 1 y EEG 2 el 7 de octubre de 2026; EEG 3 el 8 de octubre de 2026; 11:00 hrs.
+  fuente_fechas: Información relevante rendición EEG malla 1681, segundo semestre 2026
+  exigencia: 0.6
+estilo_comision:
+  - No hay comisión oral: son casos breves seguidos de preguntas de respuesta cerrada. La clave es leer el caso con precisión (fechas, calidades de las partes, montos) antes de mirar las alternativas.
+  - Las alternativas incorrectas suelen ser "casi correctas" (plazo equivocado, efecto invertido, requisito de otra institución): entrenar la discriminación entre instituciones parecidas.
+  - Se consideran "todas las modificaciones legales vigentes publicadas en el último tiempo": estudiar con texto vigente de Ley Chile.
+  - La Facultad ofrece talleres de preparación por ejercicio (Civil y Procesal) vía Canvas.
+por_confirmar:
+  - Número de preguntas, tiempo y ponderación de cada área por ejercicio (no publicados).
+  - Si todas las preguntas son de selección múltiple o hay alguna de desarrollo (el protocolo habla de hoja de respuestas y claves por forma).
+  - Temario de la malla nueva (distinta de 1681/2011), si el estudiante pertenece a ella.
+fuentes:
+  - titulo: Examen de grado — Facultad de Derecho UNAB
+    url: https://facultades.unab.cl/derecho/examen-de-grado/
+  - titulo: Temario EG malla 2011, período 2026-20
+    url: https://facultades.unab.cl/derecho/wp-content/uploads/2026/04/Temario-EG-2011-2026-20.pdf
+  - titulo: Información relevante rendición EEG malla 1681, segundo semestre 2026
+    url: https://facultades.unab.cl/derecho/wp-content/uploads/2026/07/Informacion-relevante-rendicion-EEG-malla-1681-segundo-semestre-2026.pdf
+  - titulo: Protocolo de revisión EEG 2026-10, malla 2011
+    url: https://facultades.unab.cl/derecho/wp-content/uploads/2026/04/PROTOCOLO-DE-REVISION-EEG-202610-MALLA-2011.pdf
+  - titulo: Talleres de preparación ejercicios examen de grado (marzo 2026)
+    url: https://facultades.unab.cl/derecho/wp-content/uploads/2026/03/TALLERES-DE-PREPARACION-EJERCICIOS-EXAMEN-DE-GRADO.pdf
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    Temario por ejercicio fundido en uno: cada tema indica en qué EEG se evalúa. Para preparar un
+    ejercicio concreto, elegir_temas con "ejercicio:1", "ejercicio:2" o "ejercicio:3".
+revisado: 2026-09-26

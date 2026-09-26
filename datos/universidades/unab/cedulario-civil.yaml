@@ -1,0 +1,400 @@
+# Temario de los Ejercicios de Examen de Grado (EEG), malla 2011 — Derecho Civil. Universidad Andrés Bello.
+# Fuente: Temario EG 2011, período 2026-20 — https://facultades.unab.cl/derecho/wp-content/uploads/2026/04/Temario-EG-2011-2026-20.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "unab") y revisada.
+# El documento trae un temario por ejercicio; los temas repetidos se funden y `ejercicios` indica en cuáles se evalúan.
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: Teoría general del negocio jurídico
+    subseccion: ""
+    tema: Teoría del acto jurídico
+    contenido: |-
+      1.1. Concepto y clasificación del negocio jurídico.
+      1.2. Elementos del negocio jurídico.
+      1.3. Requisitos de existencia y validez del acto jurídico.
+      1.3.1. Existencia.
+      1.3.1.1. Voluntad y consentimiento.
+      1.3.1.2. Objeto.
+      1.3.1.3. Causa.
+      1.3.1.4. Formalidades por vía de solemnidad.
+      1.3.2. Validez.
+      1.3.2.1. Voluntad exenta de vicios.
+      1.3.2.2. Objeto lícito.
+      1.3.2.3. Causa lícita.
+      1.3.2.4. Capacidad.
+      1.3.2.4.1. Generalidades.
+      1.3.2.4.2. Incapacidades generales y especiales.
+      1.4. Formalidades.
+      1.5. Ineficacia del acto jurídico.
+      1.5.1. Inexistencia.
+      1.5.2. Nulidad.
+      1.6. Modalidades.
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 2
+    seccion: Teoría general del negocio jurídico
+    subseccion: ""
+    tema: Teoría general del contrato
+    contenido: |-
+      2.1. Concepto y características del contrato.
+      2.2. Clasificación de los contratos.
+      2.3. Principios generales de contratación.
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 3
+    seccion: Objetos del Derecho
+    subseccion: ""
+    tema: Las cosas y los bienes
+    contenido: |-
+      1.1. Concepto de objetos del derecho.
+      1.2. Clasificación de las cosas.
+    ejercicios:
+      - 1
+      - 3
+  - numero: 4
+    seccion: Objetos del Derecho
+    subseccion: ""
+    tema: El dominio
+    contenido: |-
+      2.1. Concepto.
+      2.2. Clasificación.
+      2.3. Facultades del dominio.
+    ejercicios:
+      - 1
+      - 3
+  - numero: 5
+    seccion: Objetos del Derecho
+    subseccion: ""
+    tema: Modos de adquirir el dominio y posesión
+    contenido: |-
+      3.1. Concepto y clasificación.
+      3.2. Ocupación.
+      3.3. Accesión.
+      3.4. Tradición.
+      3.4.1. Posesión. Requisitos, clasificación y teoría de la posesión inscrita.
+      3.4.2. Mera tenencia.
+      3.5. Prescripción adquisitiva.
+    ejercicios:
+      - 1
+      - 3
+  - numero: 6
+    seccion: Objetos del Derecho
+    subseccion: ""
+    tema: Las acciones protectoras del dominio y la posesión
+    contenido: |-
+      4.1. Acción reivindicatoria.
+      4.2. Acciones posesorias.
+    ejercicios:
+      - 1
+      - 3
+  - numero: 7
+    seccion: Teoría de las obligaciones
+    subseccion: ""
+    tema: Definición, elementos y clasificación de las obligaciones
+    contenido: |-
+      1.1. Obligaciones naturales y civiles.
+      1.2. Obligaciones de dar, hacer y no hacer.
+      1.3. Obligaciones con unidad y pluralidad de sujetos: simplemente conjuntas, solidarias e indivisibles.
+      1.4. Obligaciones puras y simples y sujetas a modalidad (sólo plazo y condición).
+      1.5. Obligaciones de especie o cuerpo cierto y obligaciones de género.
+      1.6. Obligaciones facultativas y alternativas.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 8
+    seccion: Teoría de las obligaciones
+    subseccion: ""
+    tema: Efectos de las obligaciones ante el incumplimiento
+    contenido: |-
+      2.1. Concepto de incumplimiento.
+      2.2. Derechos auxiliares del acreedor.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 9
+    seccion: Teoría de las obligaciones
+    subseccion: ""
+    tema: Modos de extinguir las obligaciones
+    contenido: |-
+      3.1. Pago.
+      3.2. Dación en pago.
+      3.3. Novación.
+      3.4. Prescripción extintiva.
+      3.5. Pérdida de la cosa que se debe.
+      3.6. Compensación.
+      3.7. Remisión.
+      3.8. Confusión
+    ejercicios:
+      - 2
+      - 3
+  - numero: 10
+    seccion: Los contratos
+    subseccion: ""
+    tema: "Contratos preparatorios: de promesa y de opción"
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 11
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de compraventa
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 12
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de arrendamiento
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 13
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de comodato
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 14
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de hipoteca
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 15
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de transacción
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 16
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de mandato
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 17
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de depósito
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 18
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de prenda
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 19
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de fianza
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 20
+    seccion: Los contratos
+    subseccion: ""
+    tema: Contrato de mutuo
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 21
+    seccion: Responsabilidad civil
+    subseccion: ""
+    tema: Efecto de las obligaciones y responsabilidad contractual
+    contenido: |-
+      1.1. Ejecución forzada de las obligaciones.
+      1.2. Indemnización de perjuicios.
+      1.2.1. Requisitos de procedencia.
+      1.2.2. Avaluación de los perjuicios.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 22
+    seccion: Responsabilidad civil
+    subseccion: ""
+    tema: Responsabilidad precontractual
+    contenido: |-
+      2.1. Origen y evolución de la responsabilidad precontractual.
+      2.2. Fundamento de la responsabilidad precontractual.
+      2.3. Naturaleza y régimen de la responsabilidad precontractual.
+      2.4. Responsabilidad precontractual a partir de la formulación de la oferta.
+      2.5. Responsabilidad precontractual en la aceptación.
+      2.6. Responsabilidad precontractual una vez formado el consentimiento.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 23
+    seccion: Responsabilidad civil
+    subseccion: ""
+    tema: Responsabilidad extracontractual
+    contenido: |-
+      3.1. Evolución jurídica de esta responsabilidad.
+      3.2. Responsabilidad objetiva y subjetiva.
+      3.3. Requisitos de procedencia.
+      3.4. Causas eximentes de responsabilidad y cláusula de irresponsabilidad.
+      3.5. Presunción de responsabilidad.
+      3.6. Acción de indemnización.
+      3.7. Los cúmulos de responsabilidades y de indemnizaciones.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 24
+    seccion: Derecho de familia
+    subseccion: ""
+    tema: Del Derecho de familia en general
+    contenido: |-
+      1.1. Concepto y características del Derecho de familia.
+      1.2. Principios que informan el Derecho de familia.
+      1.3. El parentesco.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 25
+    seccion: Derecho de familia
+    subseccion: ""
+    tema: El matrimonio
+    contenido: |-
+      2.1. Definición y características.
+      2.2. Requisitos de existencia.
+      2.3. Requisitos de validez.
+      2.4. Consentimiento libre y espontáneo.
+      2.5. Capacidad de los contrayentes.
+      2.6. Formalidades legales del matrimonio.
+      2.7. Matrimonios celebrados ante entidades religiosas de Derecho público.
+      2.8. Extinción del matrimonio.
+      2.9. Efectos del matrimonio.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 26
+    seccion: Derecho de familia
+    subseccion: ""
+    tema: Regímenes matrimoniales
+    contenido: |-
+      3.1. Generalidades.
+      3.2. Régimen de sociedad conyugal.
+      3.2.1. Capitulaciones matrimoniales.
+      3.2.2. Del haber de la sociedad conyugal.
+      3.2.3. Pasivo de la sociedad conyugal.
+      3.2.4. De la administración de la sociedad.
+      3.2.5. Disolución y liquidación de la sociedad conyugal.
+      3.2.6. Bienes reservados.
+      3.3. Régimen de separación de bienes.
+      3.4. Régimen de participación en los gananciales.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 27
+    seccion: Derecho de familia
+    subseccion: ""
+    tema: La filiación
+    contenido: |-
+      4.1. Generalidades.
+      4.2. Clases de filiación.
+      4.3. Efectos de la filiación.
+      4.4. Reconocimiento.
+      4.5. La repudiación.
+      4.6. De las acciones de filiación.
+      4.7. Deberes entre los padres y los hijos.
+      4.8. De la emancipación.
+      4.9. De la filiación adoptiva.
+      4.10. De los alimentos.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 28
+    seccion: Derecho sucesorio
+    subseccion: ""
+    tema: Conceptos generales
+    contenido: |-
+      1.1. La sucesión por causa de muerte como modo de adquirir el dominio.
+      1.2. Las asignaciones: a título universal y a título singular.
+      1.3. Los asignatarios.
+      1.4. La apertura de la sucesión y la delación.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 29
+    seccion: Derecho sucesorio
+    subseccion: ""
+    tema: Derecho real de herencia
+    contenido: |-
+      2.1. Concepto.
+      2.2. Modos de adquirir el derecho real de herencia.
+      2.3. Derecho de transmisión.
+      2.4. Los acervos.
+      2.5. Incapacidades e indignidades para suceder.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 30
+    seccion: Derecho sucesorio
+    subseccion: ""
+    tema: La sucesión intestada
+    contenido: |-
+      3.1. Concepto.
+      3.2. Derecho de representación.
+      3.3. Órdenes de sucesión.
+      3.4. Sucesión en parte testada y en parte intestada.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 31
+    seccion: Derecho sucesorio
+    subseccion: ""
+    tema: Sucesión testada
+    contenido: |-
+      4.1. Definición y características del testamento.
+      4.2. Requisitos del testamento.
+      4.3. Clasificación de los testamentos.
+      4.4. El derecho de acrecimiento y sustitución.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 32
+    seccion: Derecho sucesorio
+    subseccion: ""
+    tema: Asignaciones forzosas
+    contenido: |-
+      5.1. Generalidades.
+      5.2. Alimentos que se deben por ley.
+      5.3. Legítimas.
+      5.4. Acervos imaginarios.
+      5.5. Formas de pagar las legítimas.
+    ejercicios:
+      - 2
+      - 3
+  - numero: 33
+    seccion: Derecho sucesorio
+    subseccion: ""
+    tema: La partición
+    contenido: |-
+      6.1. La acción de partición.
+      6.2. Formas de hacer la partición.
+      6.3. El partidor.
+      6.4. Juicio de partición.
+      6.5. Efectos de la partición.
+    ejercicios:
+      - 3

@@ -92,7 +92,8 @@ export const DEFINICIONES = [
     name: 'elegir_temas',
     description:
       'El estudiante elige qué contenidos quiere ver: los temas elegidos pasan primero en la sesión de hoy. ' +
-      'Acepta ids de tema, cédulas ("civil:40", "procesal:12") o unidades completas ("civil.bienes").',
+      'Acepta ids de tema, cédulas ("civil:40", "procesal:12"), unidades completas ("civil.bienes") o, en universidades ' +
+      'con ejercicios de examen separados (UNAB), un ejercicio completo ("ejercicio:2", "civil:ejercicio:3").',
     inputSchema: {
       type: 'object',
       properties: {
@@ -132,6 +133,7 @@ export const DEFINICIONES = [
         rama: RAMA,
         numero: { type: 'integer', description: 'Forzar una cédula concreta.' },
         prioridad: { type: 'string', enum: ['azar', 'debiles'] },
+        ejercicio: { type: 'integer', description: 'Sólo cédulas de ese ejercicio de examen de grado (UNAB: 1, 2 o 3).' },
       },
     },
   },

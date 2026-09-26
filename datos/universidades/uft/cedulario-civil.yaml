@@ -1,0 +1,246 @@
+# Temario de Licenciatura — Derecho Civil. Universidad Finis Terrae, Facultad de Derecho.
+# Fuente: https://derecho.uft.cl/wp-content/uploads/2024/10/derecho-civil.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "numerado") y revisada.
+# Cada "cédula" es un punto del temario (1.1, 1.2…), numerado correlativamente.
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: 1. Parte general
+    subseccion: ""
+    tema: Noción y características del derecho civil.
+    contenido: ""
+  - numero: 2
+    seccion: 1. Parte general
+    subseccion: ""
+    tema: "Principios del derecho civil: solo autonomía de la voluntad, buena fe, libre circulación de los bienes y responsabilidad civil."
+    contenido: ""
+  - numero: 3
+    seccion: 1. Parte general
+    subseccion: ""
+    tema: Interpretación de la ley (solo reglas y elementos).
+    contenido: ""
+  - numero: 4
+    seccion: 1. Parte general
+    subseccion: ""
+    tema: Efectos de la ley (nociones generales, excluyendo Ley sobre Efecto Retroactivo de las Leyes).
+    contenido: ""
+  - numero: 5
+    seccion: 2. Personas
+    subseccion: ""
+    tema: "Personas naturales: noción, principio y fin de existencia (excluye muerte presunta)."
+    contenido: ""
+  - numero: 6
+    seccion: 2. Personas
+    subseccion: ""
+    tema: Personas jurídicas de derecho privado sin fines de lucro.
+    contenido: ""
+  - numero: 7
+    seccion: 2. Personas
+    subseccion: ""
+    tema: Atributos de la personalidad (excluye nombre, domicilio y personalidad).
+    contenido: ""
+  - numero: 8
+    seccion: 3. Acto jurídico y parte general del derecho de los contratos
+    subseccion: ""
+    tema: Concepto de acto jurídico.
+    contenido: ""
+  - numero: 9
+    seccion: 3. Acto jurídico y parte general del derecho de los contratos
+    subseccion: ""
+    tema: Principios de la contratación (excluye excepciones al efecto relativo de los contratos y efecto absoluto).
+    contenido: ""
+  - numero: 10
+    seccion: 3. Acto jurídico y parte general del derecho de los contratos
+    subseccion: ""
+    tema: Clasificaciones de los actos jurídicos y de los contratos del Código Civil.
+    contenido: ""
+  - numero: 11
+    seccion: 3. Acto jurídico y parte general del derecho de los contratos
+    subseccion: ""
+    tema: Elementos o cosas del acto jurídico.
+    contenido: ""
+  - numero: 12
+    seccion: 3. Acto jurídico y parte general del derecho de los contratos
+    subseccion: ""
+    tema: Requisitos de existencia y de validez del acto jurídico (excluye fraude a la ley).
+    contenido: ""
+  - numero: 13
+    seccion: 3. Acto jurídico y parte general del derecho de los contratos
+    subseccion: ""
+    tema: "Ineficacia del acto jurídico: solo inexistencia, nulidad e inoponibilidad."
+    contenido: ""
+  - numero: 14
+    seccion: 3. Acto jurídico y parte general del derecho de los contratos
+    subseccion: ""
+    tema: "Interpretación del contrato: solo los sistemas y las reglas del Código Civil."
+    contenido: ""
+  - numero: 15
+    seccion: 4. Derecho de las obligaciones y de la responsabilidad civil
+    subseccion: ""
+    tema: Conceptos y elementos de la obligación.
+    contenido: ""
+  - numero: 16
+    seccion: 4. Derecho de las obligaciones y de la responsabilidad civil
+    subseccion: ""
+    tema: Teoría de las fuentes de las obligaciones (excluye cuasicontratos, enriquecimiento injustificado y declaración unilateral de voluntad).
+    contenido: ""
+  - numero: 17
+    seccion: 4. Derecho de las obligaciones y de la responsabilidad civil
+    subseccion: ""
+    tema: "Clasificación de las obligaciones: solo de dar, hacer y no hacer; género y especie; puras y simples y sujetas a modalidad (excluye obligaciones modales); y de sujeto único y plural (excluye solidaridad activa y obligaciones indivisibles -salvo las indivisibilidades de pago-)."
+    contenido: ""
+  - numero: 18
+    seccion: 4. Derecho de las obligaciones y de la responsabilidad civil
+    subseccion: ""
+    tema: "Modos de extinguir las obligaciones: solo resciliación, pago, novación, prescripción y pérdida de la cosa que se debe."
+    contenido: ""
+  - numero: 19
+    seccion: 4. Derecho de las obligaciones y de la responsabilidad civil
+    subseccion: ""
+    tema: "Efectos de las obligaciones: ejecución forzada de las obligaciones (se incluye derecho de garantía general y referencias generales a la prelación de créditos); derechos auxiliares del acreedor."
+    contenido: ""
+  - numero: 20
+    seccion: 4. Derecho de las obligaciones y de la responsabilidad civil
+    subseccion: ""
+    tema: "Responsabilidad civil: indemnización de perjuicios en materia contractual (se incluye avaluación de los perjuicios) y responsabilidad civil extracontractual."
+    contenido: ""
+  - numero: 21
+    seccion: 5. Derecho de los bienes
+    subseccion: ""
+    tema: Conceptos de cosa y bien.
+    contenido: ""
+  - numero: 22
+    seccion: 5. Derecho de los bienes
+    subseccion: ""
+    tema: "Clasificaciones de los bienes: solo corporales e incorporales -derechos reales y personales- y muebles e inmuebles."
+    contenido: ""
+  - numero: 23
+    seccion: 5. Derecho de los bienes
+    subseccion: ""
+    tema: Derecho de propiedad, comunidad y acción reivindicatoria.
+    contenido: ""
+  - numero: 24
+    seccion: 5. Derecho de los bienes
+    subseccion: ""
+    tema: Modos de adquirir el dominio (excluye ocupación y accesión).
+    contenido: ""
+  - numero: 25
+    seccion: 5. Derecho de los bienes
+    subseccion: ""
+    tema: Mera tenencia.
+    contenido: ""
+  - numero: 26
+    seccion: 5. Derecho de los bienes
+    subseccion: ""
+    tema: Posesión.
+    contenido: ""
+  - numero: 27
+    seccion: 5. Derecho de los bienes
+    subseccion: ""
+    tema: Copropiedad (solo concepto, fuentes y extinción).
+    contenido: ""
+  - numero: 28
+    seccion: "6. Derecho de los contratos: parte especial"
+    subseccion: ""
+    tema: Promesa.
+    contenido: ""
+  - numero: 29
+    seccion: "6. Derecho de los contratos: parte especial"
+    subseccion: ""
+    tema: Compraventa (excluye arras, formas de cumplir con la entrega de los predios rústicos, pacto de retroventa y pacto de retracto).
+    contenido: ""
+  - numero: 30
+    seccion: "6. Derecho de los contratos: parte especial"
+    subseccion: ""
+    tema: Arrendamiento de cosas en el Código Civil (solo conceptos generales); y arrendamiento de inmuebles urbanos (Ley Nº 18.101).
+    contenido: ""
+  - numero: 31
+    seccion: "6. Derecho de los contratos: parte especial"
+    subseccion: ""
+    tema: Mandato.
+    contenido: ""
+  - numero: 32
+    seccion: "6. Derecho de los contratos: parte especial"
+    subseccion: ""
+    tema: Hipoteca (como derecho real y contrato).
+    contenido: ""
+  - numero: 33
+    seccion: "6. Derecho de los contratos: parte especial"
+    subseccion: ""
+    tema: Comodato y precario (solo conceptos generales).
+    contenido: ""
+  - numero: 34
+    seccion: 7. Derecho de familia
+    subseccion: ""
+    tema: Concepto, características y principios del derecho de familia.
+    contenido: ""
+  - numero: 35
+    seccion: 7. Derecho de familia
+    subseccion: ""
+    tema: Matrimonio (excluye formalidades, alimentos entre cónyuges, administración extraordinaria de la sociedad conyugal, régimen de participación en los gananciales, nulidad y separación judicial de los cónyuges).
+    contenido: ""
+  - numero: 36
+    seccion: 7. Derecho de familia
+    subseccion: ""
+    tema: Acuerdo de unión civil.
+    contenido: ""
+  - numero: 37
+    seccion: 7. Derecho de familia
+    subseccion: ""
+    tema: Bienes familiares.
+    contenido: ""
+  - numero: 38
+    seccion: 7. Derecho de familia
+    subseccion: ""
+    tema: Alimentos (solo concepto, requisitos, titulares y características).
+    contenido: ""
+  - numero: 39
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: "Sucesión por causa de muerte: solo concepto, principios, asignaciones y asignatarios (excluye capacidad y dignidad para suceder)."
+    contenido: ""
+  - numero: 40
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: Derecho real de herencia.
+    contenido: ""
+  - numero: 41
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: Apertura de la herencia y delación de las asignaciones.
+    contenido: ""
+  - numero: 42
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: Aceptación y repudiación de las asignaciones.
+    contenido: ""
+  - numero: 43
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: Teoría de los acervos (excluye acervos imaginarios).
+    contenido: ""
+  - numero: 44
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: Sucesión intestada.
+    contenido: ""
+  - numero: 45
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: Sucesión testada (excluye legados, salvo los de especie y de género, asignaciones sujetas a modalidad, derecho de sustitución, medidas de seguridad, desheredamiento y albaceas).
+    contenido: ""
+  - numero: 46
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: Asignaciones forzosas.
+    contenido: ""
+  - numero: 47
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: Acciones de reforma de testamento y de petición de herencia.
+    contenido: ""
+  - numero: 48
+    seccion: 8. Derecho sucesorio
+    subseccion: ""
+    tema: La partición de bienes (solo concepto, clases y efectos).
+    contenido: ""

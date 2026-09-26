@@ -242,7 +242,7 @@ test('UAI: sin cedulario de Procesal, el plan excluye el proceso penal', async (
 
 test('todas las universidades cargan su perfil y sortean', async () => {
   const { universidades } = await (await import('../src/datos.mjs')).contenido();
-  assert.ok(universidades.size >= 10);
+  assert.ok(universidades.size >= 15);
   for (const id of universidades.keys()) {
     const t = nuevoTutor();
     await t.configurar_estudiante({ universidad: id });
@@ -251,4 +251,45 @@ test('todas las universidades cargan su perfil y sortean', async () => {
     const p = await t.perfil_examen();
     assert.ok(p.examen?.modalidad, `${id} sin modalidad`);
   }
+});
+
+test('UNAB: temario por ejercicio, foco por ejercicio y sorteo de selección múltiple', async () => {
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'unab' });
+  const indice = await t.ver_indice({ rama: 'civil' });
+  assert.ok(indice.cedulas.some((l) => /Teoría del acto jurídico \[EEG 1·2·3\]/.test(l)));
+  assert.ok(indice.cedulas.some((l) => /La partición \[EEG 3\]/.test(l)));
+  // El EEG 1 no incluye familia ni sucesorio; el EEG 3 sí.
+  const ej1 = await t.resolverTemas(['ejercicio:1']);
+  assert.ok(ej1.includes('civil.acto.nulidad_absoluta') && ej1.includes('procesal.jurisdiccion.concepto'));
+  assert.ok(!ej1.includes('civil.familia.matrimonio') && !ej1.includes('procesal.recursos.apelacion'));
+  const ej3civil = await t.resolverTemas(['civil:ejercicio:3']);
+  assert.ok(ej3civil.includes('civil.suc.particion') && ej3civil.every((x) => x.startsWith('civil.')));
+  const s = await t.sortear_cedula({ ejercicio: 1 });
+  for (const x of s.sorteo) {
+    assert.equal(x.modalidad, 'seleccion_multiple');
+    assert.ok(x.temas.length > 1 && x.temas.every((id) => ej1.includes(id)), 'los temas salen del ejercicio pedido');
+  }
+  assert.match(s.como_seguir, /selección múltiple/);
+  await assert.rejects(t.resolverTemas(['ejercicio:9']), ErrorDeUso);
+});
+
+test('UCSH: las exclusiones oficiales del ramo se muestran en el índice y en el perfil', async () => {
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'ucsh' });
+  const indice = await t.ver_indice({ rama: 'procesal' });
+  assert.match(indice.excluido_del_examen, /Juicio de Hacienda/);
+  const p = await t.perfil_examen();
+  assert.match(p.excluido_del_examen.civil, /Esponsales/);
+});
+
+test('U. Central: cada cédula trae dos temas y el mapa cubre ambos', async () => {
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'ucentral' });
+  const v = await t.ver_tema({ cedula: 1, rama: 'civil' });
+  assert.match(v.cedula.tema, /Personas · Responsabilidad civil contractual/);
+  const ids = v.temas.map((x) => x.id);
+  assert.ok(ids.includes('civil.personas.atributos') && ids.includes('civil.resp.contractual'));
+  const p = await t.ver_tema({ cedula: 36, rama: 'procesal' });
+  assert.ok(p.temas.some((x) => x.id === 'procesal.especiales.interdictos'));
 });

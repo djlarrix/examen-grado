@@ -1,0 +1,311 @@
+# Temario de los Ejercicios de Examen de Grado (EEG), malla 2011 — Derecho Procesal. Universidad Andrés Bello.
+# Fuente: Temario EG 2011, período 2026-20 — https://facultades.unab.cl/derecho/wp-content/uploads/2026/04/Temario-EG-2011-2026-20.pdf
+# Transcripción literal generada con scripts/importar-cedulario.mjs (formato "unab") y revisada.
+# El documento trae un temario por ejercicio; los temas repetidos se funden y `ejercicios` indica en cuáles se evalúan.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: Derecho procesal orgánico
+    subseccion: ""
+    tema: Métodos de solución de conflictos
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 2
+    seccion: Derecho procesal orgánico
+    subseccion: ""
+    tema: Ley en el tiempo y en el espacio
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 3
+    seccion: Derecho procesal orgánico
+    subseccion: ""
+    tema: Jurisdicción
+    contenido: |-
+      3.1. Concepto y características.
+      3.2. Límites a la jurisdicción.
+      3.3. Momentos de la jurisdicción.
+      3.4. Equivalentes jurisdiccionales.
+      3.5. Potestades anexas o conexas: facultades disciplinarias, conservatorias y económicas.
+      3.6. Bases del ejercicio de la jurisdicción.
+      3.7. Tribunales de justicia: concepto y clasificaciones.
+      3.8. Tribunales ordinarios: concepto, características y competencia.
+      3.9. Tribunales especiales que forman parte del Poder Judicial: concepto, características y competencia.
+      3.10. Arbitraje: tribunales arbitrales, clases de arbitraje, fuentes del arbitraje.
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 4
+    seccion: Derecho procesal orgánico
+    subseccion: ""
+    tema: La competencia
+    contenido: |-
+      4.1. Conceptos.
+      4.2. Características.
+      4.3. Clasificaciones.
+      4.4. Diferencias con jurisdicción.
+      4.5. Competencia absoluta.
+      4.6. Competencia relativa.
+      4.6.1. Asuntos contenciosos civiles.
+      4.6.2. Asuntos no contenciosos.
+      4.7. Reglas generales de competencia.
+      4.8. Cuestiones y contiendas de competencia.
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 5
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Acción y pretensión
+    contenido: |-
+      1.1. Concepto.
+      1.2. Características.
+      1.3. Clasificaciones.
+      1.4. Requisitos de ejercicio o admisibilidad de la acción.
+      1.5. Condiciones de acogimiento de la acción.
+      1.6. Elementos de identificación de la acción.
+      1.7. Pluralidad de acciones.
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 6
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: El proceso y procedimiento
+    contenido: |-
+      2.1. Concepto.
+      2.2. Características.
+      2.3. Presupuestos procesales.
+      2.4. Clasificación de los procedimientos.
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 7
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Las partes
+    contenido: |-
+      3.1. Concepto.
+      3.2. Clasificación. Los terceros.
+      3.3. Capacidad procesal y representación.
+      3.4. Legitimación.
+      3.5. Sucesión procesal e Intervención forzada.
+      3.6. Pluralidad de partes o litisconsorcio
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 8
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Comparecencia en juicio
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 9
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Los actos jurídicos procesales
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 10
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Actuaciones judiciales
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 11
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: La formación del proceso
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 12
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Los plazos
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 13
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Los exhortos
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 14
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Las notificaciones
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 15
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Resoluciones judiciales y sus efectos
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 16
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Incidentes ordinarios
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 17
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: "Incidentes especiales: abandono del procedimiento, desistimiento de la demanda, costas y nulidad procesal"
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 18
+    seccion: Procedimientos declarativos civiles
+    subseccion: Normas comunes a todo procedimiento
+    tema: Medidas precautorias o cautelares
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 19
+    seccion: Procedimientos declarativos civiles
+    subseccion: Juicio ordinario
+    tema: Medidas prejudiciales
+    contenido: ""
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 20
+    seccion: Procedimientos declarativos civiles
+    subseccion: Juicio ordinario
+    tema: Juicio Ordinario de Mayor Cuantía
+    contenido: |-
+      2.1. Periodo de discusión.
+      2.1.1. Manera de iniciar el juicio.
+      2.1.2. Emplazamiento.
+      2.1.3. Comportamiento del demandado.
+      2.1.4. La reconvención.
+      2.2. La conciliación.
+      2.3. Periodo de prueba.
+      2.4. Periodo de sentencia.
+    ejercicios:
+      - 1
+      - 2
+      - 3
+  - numero: 21
+    seccion: Procedimientos civiles especiales
+    subseccion: ""
+    tema: Procedimiento sumario
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 22
+    seccion: Procedimientos civiles especiales
+    subseccion: ""
+    tema: Procedimiento ejecutivo de aplicación general de obligaciones de dar
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 23
+    seccion: Procedimientos civiles especiales
+    subseccion: ""
+    tema: Procedimiento de cumplimiento o ejecución de resoluciones judiciales dictadas por tribunales chilenos y extranjeros
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 24
+    seccion: Recursos
+    subseccion: ""
+    tema: Aclaración, rectificación o agregación
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 25
+    seccion: Recursos
+    subseccion: ""
+    tema: Recurso de reposición
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 26
+    seccion: Recursos
+    subseccion: ""
+    tema: Recurso de apelación
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 27
+    seccion: Recursos
+    subseccion: ""
+    tema: Recurso de hecho
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 28
+    seccion: Recursos
+    subseccion: ""
+    tema: Recurso de casación en la forma y en el fondo
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 29
+    seccion: Recursos
+    subseccion: ""
+    tema: La revisión
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3
+  - numero: 30
+    seccion: Recursos
+    subseccion: ""
+    tema: Recurso de queja
+    contenido: ""
+    ejercicios:
+      - 2
+      - 3

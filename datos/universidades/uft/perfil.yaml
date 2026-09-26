@@ -1,0 +1,44 @@
+# Perfil del examen de grado — Universidad Finis Terrae.
+# Cada afirmación lleva su fuente. Lo no verificado va en `por_confirmar`.
+id: uft
+nombre: Universidad Finis Terrae
+sigla: UFT
+facultad: Facultad de Derecho
+examen:
+  nombre: Examen de Grado (Licenciatura en Ciencias Jurídicas)
+  modalidad: oral
+  ramos: [civil, procesal]
+  partes:
+    - titulo: Derecho Civil y Derecho Procesal (temarios obligatorios)
+      detalle: >-
+        Los temarios de Derecho Civil y Derecho Procesal son obligatorios para todos quienes rinden
+        el examen. Cada temario indica expresamente qué se excluye ("EXCLUYE:" o "(excluye …)").
+      fuente: Sitio de la Facultad — Proceso de Licenciatura
+    - titulo: Cedulario a elección
+      detalle: >-
+        Además, el postulante elige uno de los cedularios restantes (Administrativo, Comercial,
+        Constitucional, Internacional Privado, Internacional Público, Laboral, Penal, Tributario o
+        Recursos Naturales), del que se sortea uno de sus temas para el examen.
+      fuente: Sitio de la Facultad — Proceso de Licenciatura
+  exigencia: 0.6
+estilo_comision:
+  - Los temarios delimitan con precisión el alcance ("solo reglas y elementos", "solo conceptos generales"): la comisión espera dominio de lo incluido, no erudición en lo excluido.
+  - Temas amplios en Procesal (p. ej. "Generalidades sobre el Proceso" abarca acción, presupuestos, resoluciones, notificaciones, plazos y cosa juzgada): conviene estudiarlos con un mapa conceptual que los conecte.
+por_confirmar:
+  - Duración, número de examinadores y forma de calificación del examen oral (no publicados en la página).
+  - Reglamento para optar al grado de Licenciado (el estudiante puede subirlo con cargar_documento).
+fuentes:
+  - titulo: Proceso de Licenciatura — Facultad de Derecho, U. Finis Terrae
+    url: https://derecho.uft.cl/facultad/egresados/
+  - titulo: Temario de Licenciatura — Derecho Civil
+    url: https://derecho.uft.cl/wp-content/uploads/2024/10/derecho-civil.pdf
+  - titulo: Temario de Licenciatura — Derecho Procesal
+    url: https://derecho.uft.cl/wp-content/uploads/2024/10/derecho-procesal.pdf
+cedulario:
+  civil: cedulario-civil.yaml
+  procesal: cedulario-procesal.yaml
+  mapa: mapa-temas.yaml
+  nota: >-
+    Temarios (no cédulas de sorteo): cada punto numerado es una unidad de estudio. Las exclusiones
+    del documento se conservan en cada punto.
+revisado: 2026-09-26

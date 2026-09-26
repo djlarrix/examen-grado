@@ -1,0 +1,214 @@
+# Cedulario de Licenciatura — Derecho Civil. Universidad Católica Silva Henríquez, Escuela de Derecho.
+# Fuente: Resolución N° 001, de 16 de enero de 2020, que aprueba los cedularios de Derecho Civil y Derecho
+# Procesal para el Examen de Grado — https://www.ucsh.cl/assets/uploads/2022/08/Resolucio%CC%81n-cedulario.pdf
+# El PDF es un escaneo: la transcripción parte de OCR (formato "ucsh" de scripts/importar-cedulario.mjs), con
+# errores de lectura corregidos a mano (tildes, "11." por "II."). La cédula es cada sección del cedulario.
+ramo: civil
+cedulas:
+  - numero: 1
+    seccion: I. TOPICOS PRINCIPALES DE TEORIA DE LA LEY
+    subseccion: ""
+    tema: Tópicos principales de teoría de la ley
+    contenido: |-
+      1. Fuentes del Derecho
+      2. Principios informativos del Derecho Civil: (Autonomía de la Voluntad, Buena fe, Libre
+      circulación de los bienes y responsabilidad)
+      3. Promulgación, publicación y fecha de la ley
+      4. Valor de la costumbre y de la sentencia judicial
+      5. Interpretación de la ley
+      6. Efectos de la ley en cuanto al tiempo
+      7. Efectos de la ley en cuanto al territorio
+      8. Derogación de las leyes
+  - numero: 2
+    seccion: II. LA PERSONA
+    subseccion: ""
+    tema: La persona
+    contenido: |-
+      1. Concepto y clases
+      2. Principio y fin de la existencia. Concepción, nacimiento, muerte, muerte encefálica,
+      muerte presunta.
+      3. Atributos de la personalidad: concepto, patrimonio y capacidad.
+      4. Derechos de la personalidad: concepto y tutela civil.
+      5. La persona jurídica: teoría general, corporaciones o asociaciones y fundaciones.
+  - numero: 3
+    seccion: III. EL ACTO JURÍDICO
+    subseccion: ""
+    tema: El acto jurídico
+    contenido: |-
+      1. Concepto
+      2. Clases
+      3. El abuso del derecho
+      4. Elementos
+      5. Requisitos
+      6. Voluntad y consentimiento. La oferta.
+      7. Vicios del consentimiento: error, fuerza y dolo
+      8. Objeto y objeto ilícito
+      9. Causa y causa ilícita
+      10. Formalidades y solemnidades
+      11. Efectos respecto de las partes y terceros.
+      12. Modalidades: en general, y en particular: condición, plazo y modo
+      13. Inexistencia
+      14. Régimen jurídico de la nulidad. Causales y titulares
+      15. Efectos de la nulidad: en especial, prestaciones mutuas
+      16. Saneamiento de la nulidad
+  - numero: 4
+    seccion: IV. TOPICOS CIVILES DE LA PRUEBA
+    subseccion: ""
+    tema: Tópicos civiles de la prueba
+    contenido: |-
+      1. Carga de la prueba
+      2. Medios de prueba
+      3. Valor de los instrumentos
+      4. Restricciones de la prueba testimonial
+      5. Valor de la confesión
+  - numero: 5
+    seccion: V. DE LOS BIENES
+    subseccion: ""
+    tema: De los bienes
+    contenido: |-
+      1. Diferencia entre cosa y bien
+      2. Cosas corporales e incorporales
+      3. Bienes muebles e inmuebles
+      4. Otras clasificaciones de bienes
+      5. La propiedad
+      6. La comunidad o copropiedad
+      7. La posesión
+      8. Los modos de adquirir el dominio
+      9. Ocupación y accesión (nociones generales: conceptos y clases)
+      10. Tradición
+      11. Prescripción adquisitiva
+      12. Derechos reales en cosa ajena: usufructo, uso, habitación, servidumbres (nociones
+      generales: concepto y clases)
+      13. Acción reivindicatoria
+      14. Acciones posesorias (nociones generales: concepto, clases y requisitos)
+  - numero: 6
+    seccion: VI. DE LAS OBLIGACIONES
+    subseccion: ""
+    tema: De las obligaciones
+    contenido: |-
+      1. Concepto y estructura
+      2. Las obligaciones naturales
+      3. Las obligaciones sujetas a modalidad
+      4. Las obligaciones con pluralidad de sujetos
+      5. Las obligaciones con multiplicidad de objetos
+      6. Las obligaciones de especie y de género
+      7. Efectos de las obligaciones
+      8. Cumplimiento de las obligaciones (el pago)
+      9. Indemnización de perjuicios por incumplimiento
+      10. Mora y excepción de contrato no cumplido
+      11. Modos de extinguir las obligaciones
+  - numero: 7
+    seccion: VII. FUENTES DE LAS OBLIGACIONES
+    subseccion: ""
+    tema: Fuentes de las obligaciones
+    contenido: |-
+      1. Concepto y enumeración
+      2. La responsabilidad civil extracontractual
+      3. La responsabilidad civil contractual
+  - numero: 8
+    seccion: VIII. TEORIA GENERAL DEL CONTRATO
+    subseccion: ""
+    tema: Teoría general del contrato
+    contenido: |-
+      1. Concepto y elementos
+      2. Clasificación
+      3. Principios de la contratación: autonomía privada (de la voluntad), consensualismo,
+      relatividad, fuerza obligatoria y buena fe
+      4. Extensión de la eficacia del contrato: partes y terceros
+      5. La promesa del hecho ajeno y la estipulación en favor de otro
+      6. Resolución por incumplimiento y teoría del riesgo
+      7. Teoría de la imprevisión o de la excesiva onerosidad sobreviniente
+      8. Lesión enorme
+      9. Interpretación e integración de los contratos
+  - numero: 9
+    seccion: IX. CONTRATOS CLÁSICOS
+    subseccion: ""
+    tema: Contratos clásicos
+    contenido: |-
+      1. Promesa
+      2. Compraventa
+      3. Cesión de Derechos (nociones generales: concepto, clases y requisitos)
+      4. Arrendamiento (nociones generales: concepto, tipos de arrendamiento, obligaciones de
+      las partes, oponibilidad del arrendamiento a terceros)
+      5. Mandato
+      6. Transacción
+      7. Comodato (nociones generales: concepto, requisitos, obligaciones, precario y comodato
+      precario)
+      8. Fianza
+      9. Prenda civil y sin desplazamiento
+      10. Hipoteca
+  - numero: 10
+    seccion: X. LA FAMILIA
+    subseccion: ""
+    tema: La familia
+    contenido: |-
+      1. Concepto
+      2. Acuerdo de unión civil
+      3. El matrimonio y sus propiedades esenciales
+      4. Requisitos del matrimonio
+      5. Formas de celebración
+      6. Deberes entre cónyuges
+      7. Separación de los cónyuges: de hecho y judicial
+      8. Nulidad del matrimonio
+      9. El divorcio
+      10. La compensación económica
+      11. Regímenes matrimoniales
+      12. Estatuto de los bienes familiares
+      13. De la sociedad conyugal
+      14. La filiación
+      15. Categorías y clases de filiaciones
+      16. Deberes y derechos personales entre padres e hijos
+      17. Patria potestad
+      18. Alimentos
+  - numero: 11
+    seccion: XI. SUCESION POR CAUSA DE MUERTE Y DONACIONES ENTRE VIVOS
+    subseccion: ""
+    tema: Sucesión por causa de muerte y donaciones entre vivos
+    contenido: |-
+      1. Concepto de sucesión por causa de muerte
+      2. El derecho real de herencia
+      3. Posesión de la herencia
+      4. Derechos de transmisión y representación
+      5. Apertura, delación, aceptación y repudiación
+      6. Herederos y legatarios
+      7. Capacidad e indignidad sucesorias (nociones generales: causales y efectos)
+      8. Beneficios de inventario y de separación
+      9. La sucesión intestada. Órdenes sucesorios
+      10. La sucesión testada. La facción de testamento
+      11. La sucesión forzosa
+      12. Legítimas y mejoras. Teoría de los acervos
+      13. Las asignaciones testamentarias (nociones generales: concepto y clases)
+      14. Pago de deudas hereditarias y testamentarias
+      15. La partición de bienes (nociones generales: concepto y efectos)
+      16. Las donaciones entre vivos
+exclusiones: |-
+  1. La sentencia judicial, jurisprudencia, y doctrina como fuentes del Derecho Civil.
+  2. El nombre, la nacionalidad y el estado civil
+  3. Doctrina de "levantamiento del velo" de la persona jurídica.
+  4. Representación
+  5. Bienes nacionales de uso público
+  6. Propiedad fiduciaria
+  7. Censo
+  8. Censo vitalicio
+  9. Contratos aleatorios típicos
+  10. Derechos auxiliares del acreedor: Medidas conservativas, acciones oblicua (subrrogatoria) y pauliana (revocatoria).
+  11. Derechos reales extracodiciales.
+  12. Los cuasicontratos: Pago de lo no debido y agencia oficiosa.
+  13. Autocontrato, contrato forzoso, contrato ley, contrato dirigido, contrato de adhesión, contratación por vía electrónica.
+  14. La sociedad
+  15. Mutuo
+  16. Depósito
+  17. Parentesco
+  18. Esponsales
+  19. Régimen de separación de bienes
+  20. Régimen de participación en los gananciales
+  21. Determinación de la filiación
+  22. Acciones de filiación
+  23. Adopción
+  24. Guardas
+  25. Derechos de sustitución y acrecimiento
+  26. Tipos especiales de legados
+  27. Acción de petición de herencia y de reforma del testamento
+  28. Ejecutores testamentarios (albaceas)
+  
+  Nota: Las materias seguidas de la expresión "(nociones generales)" exigen sólo los conocimientos de sus contenidos fundamentales o básicos, y no los desarrollos más pormenorizados o reglamentarios.

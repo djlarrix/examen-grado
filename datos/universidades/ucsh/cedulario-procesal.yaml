@@ -1,0 +1,208 @@
+# Cedulario de Licenciatura — Derecho Procesal. Universidad Católica Silva Henríquez, Escuela de Derecho.
+# Fuente: Resolución N° 001, de 16 de enero de 2020, que aprueba los cedularios de Derecho Civil y Derecho
+# Procesal para el Examen de Grado — https://www.ucsh.cl/assets/uploads/2022/08/Resolucio%CC%81n-cedulario.pdf
+# El PDF es un escaneo: la transcripción parte de OCR (formato "ucsh" de scripts/importar-cedulario.mjs), con
+# errores de lectura corregidos a mano (tildes, "11." por "II."). La cédula es cada sección del cedulario.
+ramo: procesal
+cedulas:
+  - numero: 1
+    seccion: "I. DERECHO PROCESAL ORGÁNICO: LEY PROCESAL, ACCIÓN, PROCESO"
+    subseccion: ""
+    tema: "Derecho procesal orgánico: ley procesal, acción, proceso"
+    contenido: |-
+      1. Fuentes del derecho procesal.
+      2. La ley procesal en el tiempo y en el espacio.
+      3. Garantías procesales de rango constitucional.
+      4. La acción procesal.
+      5. Condiciones o requisitos de la acción (accionabilidad; legitimación; causa de pedir).
+      6. Clasificación de las acciones. Las acciones de condena, declarativas y constitutivas.
+      7. Diferencias entre la acción civil y la acción penal.
+      8. La acumulación de acciones.
+      9. Métodos de solución de conflictos.
+      10. El proceso y el debido proceso.
+      11. Elementos constitutivos del proceso.
+      12. Los principios informadores del proceso: El principio de la bilateralidad, El principio
+      de igualdad, La imparcialidad del juzgador, El principio dispositivo, el principio
+      inquisitivo, el principio de publicidad. El principio de preclusión procesal. El
+      principio de economía procesal. El principio de eventualidad. El principio de
+      inmediación procesal. El principio de buena fe procesal, Principio de la verdad
+      formal y de la verdad material y el principio de adquisición procesal.
+      13. Los presupuestos procesales. Presupuestos procesales relativos al órgano
+      jurisdiccional. La jurisdicción de los tribunales chilenos. La jurisdicción por razón de
+      la materia. La competencia absoluta y relativa. La imparcialidad del juzgador
+      (implicancias y recusaciones).
+      14. Presupuestos procesales relativos a las partes: la capacidad procesal; la postulación
+      procesal (el patrocinio y el poder); la representación procesal.
+      15. Presupuestos procesales relativos al procedimiento: la aptitud formal de la
+      demanda (la demanda y su contenido); el emplazamiento legal de la parte; la
+      adecuación del procedimiento a la acción objeto del proceso.
+      16. Mecanismos de control de los presupuestos procesales. (nociones generales)
+  - numero: 2
+    seccion: "II. DERECHO PROCESAL ORGÁNICO: JURISDICCIÓN Y COMPETENCIA"
+    subseccion: ""
+    tema: "Derecho procesal orgánico: jurisdicción y competencia"
+    contenido: |-
+      1. Concepto y características de la jurisdicción.
+      2. Elementos del acto jurisdiccional: forma, contenido, función.
+      3. Jurisdicción contenciosa y voluntaria.
+      4. Límites internos y externos.
+      5. Los equivalentes jurisdiccionales.
+      6. De los tribunales de justicia, su organización y clasificación.
+      7. Tribunales arbitrales.
+      8. Jurisdicción voluntaria o no contenciosa.
+      9. Estatuto legal de los jueces. (nociones generales)
+      10. Mecanismos de designación de los jueces.
+      11. Responsabilidad, derechos y obligaciones de los jueces. (nociones generales)
+      12. Las bases fundamentales de la organización del Poder Judicial: la independencia, la
+      inamovilidad; la legalidad; la responsabilidad; la inexcusabilidad; la territorialidad;
+      la inavocabilidad; la publicidad; la sedentariedad; la pasividad; la gratuidad.
+      13. La competencia como presupuesto procesal.
+      14. Diferencias entre la jurisdicción y la competencia.
+      15. Las reglas de competencia absoluta y relativa en materia civil y penal.
+      16. La prórroga de la competencia.
+      17. Reglas generales de competencia.
+      18. Mecanismos para denunciar la incompetencia
+  - numero: 3
+    seccion: III. DISPOSICIONES COMUNES A TODO PROCEDIMIENTO
+    subseccion: ""
+    tema: Disposiciones comunes a todo procedimiento
+    contenido: |-
+      1. Actos procesales de parte. Actos procesales del juez. Actos procesales de los
+      auxiliares de la administración de justicia y de terceros.
+      2. Ineficacia de los actos procesales: inexistencia, nulidad, caducidad, inadmisibilidad.
+      3. Principios informativos y contenido del Código de Procedimiento Civil.
+      4. Las disposiciones comunes a todo procedimiento.
+      5. El concepto de parte; importancia jurídica y adquisición de la calidad en el proceso.
+      6. La capacidad de las partes y capacidad procesal.
+      7. El litisconsorcio. Efectos procesales del litisconsorcio.
+      8. La intervención de terceros en el proceso civil.
+      9. La representación procesal (de la comparecencia en juicio).
+      10. El mandato judicial y el patrocinio
+      11. De las actuaciones judiciales.
+      12. De la formación material del procedimiento.
+      13. Las notificaciones.
+      14. Los plazos.
+      15. Las resoluciones judiciales.
+      16. Efectos de las resoluciones judiciales.
+      17. La cosa juzgada.
+      18. Medidas cautelares
+      19. El desasimiento del tribunal.
+      20. Ley de tramitación electrónica.
+  - numero: 4
+    seccion: "IV. PROCEDIMIENTOS:"
+    subseccion: ""
+    tema: Juicio ordinario de mayor cuantía
+    contenido: |-
+      1. Fase de discusión: iniciación; medias prejudiciales y prejudiciales precautorias; la
+      demanda; emplazamiento; retiro, ampliación o modificación y desistimiento.
+      2. Reacción del demandado (rebeldía, allanamiento, defensa)
+      3. Excepciones dilatorias, perentorias, alegaciones o defensas.
+      4. La reconvención.
+      5. La réplica y dúplica.
+      6. Conciliación judicial.
+      7. La prueba. Teoría general de la prueba (generalidades, objeto, onus probandi,
+      carga o peso de la prueba, sistemas de valoración)
+      8. Sistema probatorio en el procedimiento ordinario de mayor cuantía (recepción de
+      la causa a prueba, procedimiento probatorio, término probatorio ordinario,
+      extraordinario y especial).
+      9. Sistemas de valoración de la prueba: legal o tasada, sana crítica y prueba en
+      conciencia.
+      10. Limitaciones, admisibilidad e inadmisibilidad de prueba.
+      11. Medios de prueba en particular, fuerza de convicción, valoración de la prueba,
+      apreciación comparativa.
+      12. Conclusión del período de prueba y observaciones a la prueba.
+      13. Citación a las partes a oír sentencia.
+      14. La sentencia.
+      15. Los equivalentes jurisdiccionales.
+      16. Los incidentes y su tramitación en particular.
+  - numero: 5
+    seccion: "IV. PROCEDIMIENTOS:"
+    subseccion: ""
+    tema: Procedimiento ejecutivo
+    contenido: |-
+      1. El procedimiento ejecutivo ordinario (de las obligaciones de dar).
+      2. Iniciación y trámites previos.
+      3. Títulos ejecutivos.
+      4. Preparación del título ejecutivo.
+      5. Examen de admisibilidad de la demanda.
+      6. Mandamiento de ejecución y embargo.
+      7. Emplazamiento.
+      8. Excepciones en materia procesal, plazos y tramitación de las mismas.
+      9. Sentencia ejecutiva (clases y condena en costas)
+      10. El cuaderno de apremio.
+      11. El embargo y sus fases.
+      12. Tercerías (concepto de tercerías y clases; tercerías de dominio, posesión, prelación
+      y pago)
+      13. Tramitación de tercerías.
+  - numero: 6
+    seccion: "IV. PROCEDIMIENTOS:"
+    subseccion: ""
+    tema: El procedimiento sumario  # el original dice "EL PROCIDIMIENO SUMARIO"
+    contenido: |-
+      1. Concepto, características y ámbitos de aplicación.
+      2. Tramitación.
+      3. Iniciación e audiencias típicas.
+      4. Substitución de procedimiento y efecto de aceptación provisional de la demanda.
+      5. Incidentes en el juicio sumario.
+      6. Prueba.
+      7. Sentencia.
+      8. Régimen de recursos.
+  - numero: 7
+    seccion: V. RECURSOS
+    subseccion: ""
+    tema: Recursos
+    contenido: |-
+      1. De los medios de impugnación.
+      2. Las acciones. Las solicitudes de reconsideración.
+      3. Los recursos.
+      4. Clasificación de los recursos.
+      5. Recurso de queja.
+      6. Recurso de casación en la forma y en el fondo.
+      7. La solicitud de reposición.
+      8. La aclaración, agregación o enmienda.
+      9. El recurso de apelación.
+      10. El recurso de hecho.
+      11. Acción de revisión.
+      12. Acción de amparo.
+      13. El recurso de protección.
+      14. La vista de la causa.
+  - numero: 8
+    seccion: IV. EL PROCESO PENAL
+    subseccion: ""
+    tema: El proceso penal
+    contenido: |-
+      1. Principios y características del sistema inquisitivo y acusatorio.
+      2. Estructura y contenido del Código Procesal Penal.
+      3. Formas de inicio y de término del proceso penal.
+      4. Las medidas cautelares reales y personales.
+      5. Los intervinientes en el proceso penal.
+      6. Procedimiento penal ordinario.
+      7. La prueba en el proceso penal. La prueba ilícita.
+      8. El principio de inocencia.
+      9. Los recursos y otros medios de impugnación.
+      10. El derecho de defensa.
+      11. Procedimiento Simplificado
+exclusiones: |-
+  1. Juicio de Hacienda
+  2. Juicio de Partición
+  3. Juicio de Mínima Cuantía
+  4. Otros procedimientos especiales
+  5. Cambio de partes
+  6. Substitución de partes
+  7. Historia y evolución del concepto de acción
+  8. Historia del Derecho Procesal
+  9. Incidente de acumulación de autos
+  10. Incidente de costas
+  11. Incidente de implicancias y recusaciones
+  12. El colegio de abogados
+  13. Acepciones de la palabra jurisdicción
+  14. Procedimiento Monitorio en materia penal
+  15. Relaciones entre acciones.
+  16. Tramitación en particular de los siguientes incidentes especiales: Condena en costas, incompetencia y privilegio de pobreza
+  17. Estructura en particular del Ministerio Público referido a su organización y funcionamiento.
+  18. Estructura en particular de la Defensoría: Referida a su organización y funcionamiento.
+  19. Los relatores.
+  20. Los notarios.
+  21. Responsabilidad Penal Juvenil
+  
+  Nota: Las materias seguidas de la expresión "(nociones generales)" exigen sólo los conocimientos de sus contenidos fundamentales o básicos, y no los desarrollos más pormenorizados o reglamentarios.

@@ -64,6 +64,8 @@ export async function cargarUniversidades(dir = join(raizProyecto(), 'datos', 'u
     const perfil = await leerYaml(join(base, 'perfil.yaml'));
     if (perfil.id !== id) throw new Error(`El perfil de ${id} dice id "${perfil.id}"`);
     const cedularios = {};
+    // Exclusiones que el documento declara para todo el ramo (no para una cédula).
+    const exclusiones = {};
     const c = perfil.cedulario ?? {};
     const mapa = c.mapa ? await leerYaml(join(base, c.mapa)) : {};
     for (const rama of RAMAS) {
@@ -74,8 +76,9 @@ export async function cargarUniversidades(dir = join(raizProyecto(), 'datos', 'u
         contenido: (ced.contenido ?? '').trimEnd(),
         temas: mapa[rama]?.[ced.numero] ?? [],
       }));
+      if (doc.exclusiones) exclusiones[rama] = doc.exclusiones.trimEnd();
     }
-    universidades.set(id, { perfil, cedularios });
+    universidades.set(id, { perfil, cedularios, exclusiones });
   }
   return universidades;
 }
