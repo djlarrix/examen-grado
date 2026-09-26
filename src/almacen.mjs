@@ -82,6 +82,35 @@ CREATE TABLE IF NOT EXISTS manuales (
   paginas INTEGER NOT NULL,
   agregado TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS documentos (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  estudiante TEXT NOT NULL,
+  tipo TEXT NOT NULL,
+  titulo TEXT NOT NULL,
+  rama TEXT,
+  ruta TEXT NOT NULL,
+  paginas INTEGER NOT NULL,
+  agregado TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS paginas_documento (
+  documento INTEGER NOT NULL,
+  pagina INTEGER NOT NULL,
+  texto TEXT NOT NULL,
+  PRIMARY KEY (documento, pagina)
+);
+CREATE TABLE IF NOT EXISTS cedularios_propios (
+  estudiante TEXT NOT NULL,
+  rama TEXT NOT NULL,
+  fuente TEXT,
+  cedulas TEXT NOT NULL,
+  actualizado TEXT NOT NULL,
+  PRIMARY KEY (estudiante, rama)
+);
+CREATE TABLE IF NOT EXISTS perfiles_propios (
+  estudiante TEXT PRIMARY KEY,
+  datos TEXT NOT NULL,
+  actualizado TEXT NOT NULL
+);
 CREATE VIRTUAL TABLE IF NOT EXISTS pasajes USING fts5(
   texto,
   manual UNINDEXED,
@@ -247,6 +276,73 @@ export class Almacen {
     if (id) return this.db.prepare('SELECT * FROM material WHERE estudiante = ? AND id = ?').all(estudiante, id);
     if (tema) return this.db.prepare('SELECT * FROM material WHERE estudiante = ? AND tema = ? ORDER BY id DESC').all(estudiante, tema);
     return this.db.prepare('SELECT id, tema, tipo, titulo, creado FROM material WHERE estudiante = ? ORDER BY id DESC').all(estudiante);
+  }
+
+  // — Documentos del estudiante (cedulario, exámenes anteriores, pautas…) ——
+
+  agregarDocumento(estudiante, { tipo, titulo, rama, ruta, paginas, agregado }) {
+    return this.transaccion(() => {
+      const r = this.db
+        .prepare('INSERT INTO documentos (estudiante, tipo, titulo, rama, ruta, paginas, agregado) VALUES (?, ?, ?, ?, ?, ?, ?)')
+        .run(estudiante, tipo, titulo, rama ?? null, ruta, paginas.length, agregado);
+      const id = Number(r.lastInsertRowid);
+      const st = this.db.prepare('INSERT INTO paginas_documento (documento, pagina, texto) VALUES (?, ?, ?)');
+      for (const p of paginas) st.run(id, p.numero, p.texto);
+      return id;
+    });
+  }
+
+  documentos(estudiante, tipo) {
+    const sql = `SELECT id, tipo, titulo, rama, paginas, agregado FROM documentos WHERE estudiante = ? ${tipo ? 'AND tipo = ?' : ''} ORDER BY id`;
+    return tipo ? this.db.prepare(sql).all(estudiante, tipo) : this.db.prepare(sql).all(estudiante);
+  }
+
+  documento(estudiante, id) {
+    return this.db.prepare('SELECT * FROM documentos WHERE estudiante = ? AND id = ?').get(estudiante, id) ?? null;
+  }
+
+  paginasDocumento(id, desde, hasta) {
+    return this.db.prepare('SELECT pagina, texto FROM paginas_documento WHERE documento = ? AND pagina BETWEEN ? AND ? ORDER BY pagina').all(id, desde, hasta);
+  }
+
+  quitarDocumento(estudiante, id) {
+    return this.transaccion(() => {
+      if (!this.documento(estudiante, id)) return false;
+      this.db.prepare('DELETE FROM paginas_documento WHERE documento = ?').run(id);
+      this.db.prepare('DELETE FROM documentos WHERE id = ?').run(id);
+      return true;
+    });
+  }
+
+  // — Cedulario y perfil propios (los que sube el estudiante) ——————————
+
+  guardarCedularioPropio(estudiante, rama, { fuente, cedulas }, hoy) {
+    this.db
+      .prepare(
+        `INSERT INTO cedularios_propios (estudiante, rama, fuente, cedulas, actualizado) VALUES (?, ?, ?, ?, ?)
+         ON CONFLICT(estudiante, rama) DO UPDATE SET fuente = excluded.fuente, cedulas = excluded.cedulas, actualizado = excluded.actualizado`,
+      )
+      .run(estudiante, rama, fuente ?? null, JSON.stringify(cedulas), hoy);
+  }
+
+  cedulariosPropios(estudiante) {
+    const filas = this.db.prepare('SELECT * FROM cedularios_propios WHERE estudiante = ?').all(estudiante);
+    return Object.fromEntries(filas.map((f) => [f.rama, { fuente: f.fuente, actualizado: f.actualizado, cedulas: JSON.parse(f.cedulas) }]));
+  }
+
+  borrarCedularioPropio(estudiante, rama) {
+    this.db.prepare('DELETE FROM cedularios_propios WHERE estudiante = ? AND rama = ?').run(estudiante, rama);
+  }
+
+  guardarPerfilPropio(estudiante, datos, hoy) {
+    this.db
+      .prepare('INSERT INTO perfiles_propios (estudiante, datos, actualizado) VALUES (?, ?, ?) ON CONFLICT(estudiante) DO UPDATE SET datos = excluded.datos, actualizado = excluded.actualizado')
+      .run(estudiante, JSON.stringify(datos), hoy);
+  }
+
+  perfilPropio(estudiante) {
+    const f = this.db.prepare('SELECT * FROM perfiles_propios WHERE estudiante = ?').get(estudiante);
+    return f ? { ...JSON.parse(f.datos), actualizado: f.actualizado } : null;
   }
 
   // — Manuales ——————————————————————————————————————————————————

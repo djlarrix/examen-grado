@@ -158,3 +158,59 @@ test('UDP: examen escrito, sorteo de temas para un caso y cursos con conteo en e
   assert.match(ced.cedula.excluidas, /no hacer/);
   assert.match(ced.cedula.bibliografia_recomendada, /Espinosa/);
 });
+
+test('universidad sin perfil: el estudiante sube su cedulario y su formato de examen', async () => {
+  hoy = '2026-10-01';
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'otra', fecha_examen: '2027-01-15', horas_semana: 12 });
+  const dir = mkdtempSync(join(tmpdir(), 'eg-'));
+  const ruta = join(dir, 'cedulario.pdf');
+  writeFileSync(ruta, pdfConTexto(['CEDULARIO DERECHO CIVIL\nCedula 1. Acto juridico: concepto y requisitos\nCedula 2. Nulidad absoluta y relativa', 'Cedula 3. Tradicion']));
+  const doc = await t.cargar_documento({ ruta, tipo: 'cedulario', rama: 'civil' });
+  assert.equal(doc.cargado, true);
+  assert.match(doc.comienzo, /Nulidad absoluta/);
+  assert.match(doc.siguiente, /guardar_cedulario/);
+  const pags = await t.leer_documento({ id: doc.id });
+  assert.equal(pags.paginas.length, 2);
+  assert.equal(pags.fin, true);
+
+  await assert.rejects(() => t.guardar_cedulario({ rama: 'civil', cedulas: [{ numero: 1, tema: 'X', temas: [] }] }), ErrorDeUso);
+  await assert.rejects(() => t.guardar_cedulario({ rama: 'civil', cedulas: [{ numero: 1, tema: 'X', temas: ['procesal.recursos.apelacion'] }] }), ErrorDeUso);
+  const g = await t.guardar_cedulario({
+    rama: 'civil',
+    fuente: 'Cedulario subido',
+    cedulas: [
+      { numero: 1, tema: 'Acto jurídico: concepto y requisitos', temas: ['civil.acto.teoria_general', 'civil.acto.elementos'] },
+      { numero: 2, tema: 'Nulidad absoluta y relativa', temas: ['civil.acto.nulidad_absoluta', 'civil.acto.nulidad_relativa'] },
+      { numero: 3, tema: 'Tradición', temas: ['civil.bienes.tradicion'] },
+    ],
+  });
+  assert.equal(g.temas_cubiertos, 5);
+
+  await assert.rejects(() => t.guardar_perfil_examen({ modalidad: 'escrita' }), ErrorDeUso); // sin fuente
+  const p = await t.guardar_perfil_examen({ universidad_nombre: 'U. Ejemplo', modalidad: 'escrita', duracion_minutos: 180, formato_pauta: 'Ítems con porcentaje', fuente: 'Examen de marzo 2026' });
+  assert.equal(p.perfil.examen.modalidad, 'escrita');
+  assert.equal(p.perfil.nombre, 'U. Ejemplo');
+  assert.match(p.perfil.cedulario.civil, /subido por el estudiante/);
+
+  // El índice y el plan usan el cedulario subido.
+  const indice = await t.ver_indice({ rama: 'civil' });
+  assert.ok(indice.cedulas.some((l) => l.includes('2. Nulidad absoluta y relativa')));
+  const sesion = await t.sesion_de_hoy({ minutos: 300 });
+  const civiles = sesion.temas_nuevos.filter((n) => n.rama === 'civil').map((n) => n.id);
+  assert.ok(civiles.every((id) => ['civil.acto.teoria_general', 'civil.acto.elementos', 'civil.acto.nulidad_absoluta', 'civil.acto.nulidad_relativa', 'civil.bienes.tradicion'].includes(id)), civiles.join());
+  // Examen escrito: el sorteo arma temas para un caso.
+  const s = await t.sortear_cedula({ rama: 'civil' });
+  assert.equal(s.modalidad, 'escrita');
+});
+
+test('calcular_nota: escala chilena con exigencia', async () => {
+  const t = nuevoTutor();
+  assert.deepEqual((await t.calcular_nota({ puntaje: 60, maximo: 100 })).nota, 4);
+  assert.equal((await t.calcular_nota({ puntaje: 100, maximo: 100 })).nota, 7);
+  assert.equal((await t.calcular_nota({ puntaje: 0, maximo: 100 })).nota, 1);
+  assert.equal((await t.calcular_nota({ puntaje: 80, maximo: 100 })).nota, 5.5);
+  assert.equal((await t.calcular_nota({ puntaje: 30, maximo: 100 })).nota, 2.5);
+  assert.equal((await t.calcular_nota({ puntaje: 50, maximo: 100, exigencia: 0.5 })).nota, 4);
+  await assert.rejects(() => t.calcular_nota({ puntaje: 120, maximo: 100 }), ErrorDeUso);
+});

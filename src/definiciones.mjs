@@ -220,13 +220,115 @@ export const DEFINICIONES = [
     inputSchema: { type: 'object', properties: { id: { type: 'integer' } }, required: ['id'] },
   },
   {
+    name: 'cargar_documento',
+    description:
+      'Carga un PDF que el estudiante tiene de SU examen: cedulario o temario, reglamento, examen anterior o pauta de corrección. ' +
+      'Así el tutor se adapta a una universidad que no está cargada, o a un cedulario más nuevo. Devuelve el comienzo del texto ' +
+      'y qué hacer después según el tipo (transcribir y guardar el cedulario, extraer el formato del examen o de la pauta).',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        ruta: { type: 'string', description: 'Ruta al PDF en el computador del estudiante.' },
+        tipo: { type: 'string', enum: ['cedulario', 'temario', 'reglamento', 'examen_anterior', 'pauta', 'apuntes', 'otro'] },
+        titulo: { type: 'string' },
+        rama: RAMA,
+      },
+      required: ['ruta', 'tipo'],
+    },
+  },
+  {
+    name: 'leer_documento',
+    description: 'Lee las páginas de un documento cargado (hasta ~12 por llamada). Úsala para transcribir un cedulario o analizar un examen o pauta.',
+    inputSchema: {
+      type: 'object',
+      properties: { id: { type: 'integer' }, desde: { type: 'integer' }, hasta: { type: 'integer' } },
+      required: ['id'],
+    },
+  },
+  {
+    name: 'listar_documentos',
+    description: 'Documentos que el estudiante ha cargado (cedularios, reglamentos, exámenes anteriores, pautas).',
+    inputSchema: { type: 'object', properties: { tipo: { type: 'string' } } },
+  },
+  {
+    name: 'quitar_documento',
+    description: 'Quita un documento cargado.',
+    inputSchema: { type: 'object', properties: { id: { type: 'integer' } }, required: ['id'] },
+  },
+  {
+    name: 'guardar_cedulario',
+    description:
+      'Guarda el cedulario del estudiante (transcrito de un documento que subió) para un ramo. Reemplaza al oficial en el índice, ' +
+      'el plan y los simulacros. Cada cédula: número, tema, contenido literal y `temas` = ids del temario a los que corresponde ' +
+      '(búscalos con buscar_temario). Confirma la transcripción con el estudiante antes de guardar. `borrar: true` vuelve al oficial.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        rama: RAMA,
+        fuente: { type: 'string', description: 'Qué documento es (p. ej. "Cedulario Derecho Civil, U. X, 2025").' },
+        cedulas: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              numero: { type: 'integer' },
+              seccion: { type: 'string' },
+              subseccion: { type: 'string' },
+              tema: { type: 'string' },
+              contenido: { type: 'string' },
+              excluidas: { type: 'string' },
+              temas: { type: 'array', items: { type: 'string' } },
+            },
+            required: ['tema', 'temas'],
+          },
+        },
+        borrar: { type: 'boolean' },
+      },
+      required: ['rama'],
+    },
+  },
+  {
+    name: 'guardar_perfil_examen',
+    description:
+      'Guarda cómo es el examen del estudiante según SUS documentos o relato: modalidad, partes, duración, instrucciones, estilo de la ' +
+      'comisión, formato de la pauta de corrección, calificación y exigencia. Se combina con el perfil oficial (lo aportado queda marcado). ' +
+      'Exige `fuente`.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        universidad_nombre: { type: 'string', description: 'Si la universidad no está en la lista.' },
+        nombre_examen: { type: 'string' },
+        modalidad: { type: 'string', enum: ['oral', 'escrita', 'mixta'] },
+        partes: { type: 'array', items: { type: 'object', properties: { titulo: { type: 'string' }, detalle: { type: 'string' } } } },
+        duracion_minutos: { type: 'number' },
+        instrucciones: { type: 'string', description: 'Instrucciones que da el examen (qué se exige en cada respuesta).' },
+        estilo: { type: 'array', items: { type: 'string' }, description: 'Cómo pregunta la comisión o qué premia la corrección.' },
+        formato_pauta: { type: 'string', description: 'Cómo es la pauta oficial: ítems, pesos, bonus, alternativas.' },
+        calificacion: { type: 'string' },
+        exigencia: { type: 'number', description: 'Fracción del puntaje para el 4,0 (0,6 = 60 %).' },
+        notas: { type: 'string' },
+        fuente: { type: 'string' },
+      },
+      required: ['fuente'],
+    },
+  },
+  {
+    name: 'calcular_nota',
+    description: 'Convierte un puntaje a nota chilena de 1,0 a 7,0 con exigencia (60 % por defecto o la del perfil). Úsala al corregir con pauta, en vez de calcular a mano.',
+    inputSchema: {
+      type: 'object',
+      properties: { puntaje: { type: 'number' }, maximo: { type: 'number' }, exigencia: { type: 'number' } },
+      required: ['puntaje', 'maximo'],
+    },
+  },
+  {
     name: 'guardar_material',
     description: 'Guarda material que le sirvió al estudiante (ficha, cuadro, esquema, línea de tiempo, tarjetas) para volver a verlo.',
     inputSchema: {
       type: 'object',
       properties: {
         tema: TEMA,
-        tipo: { type: 'string', enum: ['ficha', 'cuadro', 'esquema', 'linea_de_tiempo', 'tarjetas', 'caso', 'otro'] },
+        tipo: { type: 'string', enum: ['ficha', 'cuadro', 'esquema', 'linea_de_tiempo', 'tarjetas', 'caso', 'pauta', 'otro'] },
         titulo: { type: 'string' },
         contenido: { type: 'string', description: 'En markdown.' },
       },

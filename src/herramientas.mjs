@@ -38,7 +38,8 @@ export class Tutor {
   async ctx() {
     const { temario, universidades } = await contenido();
     const est = this.almacen.estudiante(this.id);
-    const universidad = est?.universidad ? universidades.get(est.universidad) ?? null : null;
+    const base = est?.universidad ? universidades.get(est.universidad) ?? null : null;
+    const universidad = combinarUniversidad(base, this.almacen.perfilPropio(this.id), this.almacen.cedulariosPropios(this.id), est);
     return { temario, universidades, est, universidad, hoy: this.hoy() };
   }
 
@@ -61,8 +62,14 @@ export class Tutor {
   }
 
   async perfil_examen({ universidad } = {}) {
-    const { universidades, est } = await this.ctx();
+    const { universidades, est, universidad: propia } = await this.ctx();
     const id = universidad ?? est?.universidad;
+    // Sin universidad pedida explícitamente, el perfil del estudiante ya
+    // combina lo oficial con lo que él mismo aportó (reglamento, exámenes).
+    if (!universidad && propia) {
+      const { cedulario, ...perfil } = propia.perfil;
+      return { ...perfil, cedulario: Object.fromEntries(Object.entries(propia.cedularios).map(([r, c]) => [r, `${c.length} cédulas (${propia.origen_cedulario?.[r] ?? 'oficial'})`])), electivas: cedulario?.electivas };
+    }
     if (!id) throw new ErrorDeUso('Indica la universidad o configura primero al estudiante.');
     const u = universidades.get(id);
     if (!u) return { universidad: id, conocida: false, nota: 'Universidad sin perfil. Usa lo que el estudiante cuente de su examen (guardado en `notas`).', notas_estudiante: est?.notas ?? null };
@@ -455,6 +462,129 @@ export class Tutor {
     };
   }
 
+  // — Documentos que sube el estudiante ——————————————————————————————
+
+  async cargar_documento({ ruta, tipo, titulo, rama } = {}) {
+    if (!ruta || !tipo) throw new ErrorDeUso('Indica `ruta` (PDF) y `tipo`.');
+    if (!TIPOS_DOCUMENTO[tipo]) throw new ErrorDeUso(`tipo debe ser uno de: ${Object.keys(TIPOS_DOCUMENTO).join(', ')}.`);
+    const abs = await rutaPdf(ruta);
+    const { paginas, total, sinTexto } = await extraerPaginas(abs);
+    if (sinTexto === total) {
+      return {
+        cargado: false,
+        motivo:
+          'El PDF no tiene capa de texto (está escaneado). Pídele al estudiante que lo adjunte directamente en la conversación ' +
+          'para leerlo como imagen, o que lo pase por OCR y lo cargue de nuevo.',
+      };
+    }
+    const nombre = titulo || abs.split('/').pop().replace(/\.pdf$/i, '');
+    const id = this.almacen.agregarDocumento(this.id, { tipo, titulo: nombre, rama, ruta: abs, paginas, agregado: this.hoy() });
+    let vista = '';
+    for (const p of paginas) {
+      if (vista.length > 3500) break;
+      vista += `\n[pág. ${p.numero}]\n${p.texto}`;
+    }
+    return {
+      cargado: true,
+      id,
+      tipo,
+      titulo: nombre,
+      paginas: total,
+      ...(sinTexto ? { advertencia: `${sinTexto} páginas sin texto (escaneadas).` } : {}),
+      comienzo: vista.slice(0, 3800),
+      siguiente: TIPOS_DOCUMENTO[tipo],
+    };
+  }
+
+  async leer_documento({ id, desde = 1, hasta } = {}) {
+    const doc = this.almacen.documento(this.id, Number(id));
+    if (!doc) throw new ErrorDeUso(`No hay documento ${id}. Usa listar_documentos.`);
+    const ini = Math.max(1, Number(desde));
+    const fin = Math.min(doc.paginas, Number(hasta ?? ini + 11));
+    const paginas = [];
+    let largo = 0;
+    for (const p of this.almacen.paginasDocumento(doc.id, ini, fin)) {
+      if (largo > 45000) break;
+      paginas.push(p);
+      largo += p.texto.length;
+    }
+    const ultima = paginas.at(-1)?.pagina ?? ini - 1;
+    return {
+      documento: { id: doc.id, tipo: doc.tipo, titulo: doc.titulo, paginas: doc.paginas },
+      paginas,
+      ...(ultima < doc.paginas ? { continua: `Quedan páginas: pide desde ${ultima + 1}.` } : { fin: true }),
+    };
+  }
+
+  async listar_documentos({ tipo } = {}) {
+    return { documentos: this.almacen.documentos(this.id, tipo) };
+  }
+
+  async quitar_documento({ id } = {}) {
+    return { quitado: this.almacen.quitarDocumento(this.id, Number(id)) };
+  }
+
+  async guardar_cedulario({ rama, fuente, cedulas, borrar = false } = {}) {
+    const { temario, hoy } = await this.ctx();
+    if (!['civil', 'procesal'].includes(rama)) throw new ErrorDeUso('rama: civil o procesal.');
+    if (borrar) {
+      this.almacen.borrarCedularioPropio(this.id, rama);
+      return { borrado: true, nota: 'Vuelve a usarse el cedulario oficial de la universidad, si lo hay.' };
+    }
+    if (!Array.isArray(cedulas) || !cedulas.length) throw new ErrorDeUso('`cedulas` debe ser una lista no vacía.');
+    const limpias = [];
+    const vistos = new Set();
+    for (const [i, c] of cedulas.entries()) {
+      const numero = Number.isInteger(c.numero) ? c.numero : i + 1;
+      if (vistos.has(numero)) throw new ErrorDeUso(`Número de cédula repetido: ${numero}.`);
+      vistos.add(numero);
+      if (!c.tema?.trim()) throw new ErrorDeUso(`La cédula ${numero} no tiene tema.`);
+      const temas = await this.resolverTemas(c.temas ?? []);
+      if (!temas.length) throw new ErrorDeUso(`La cédula ${numero} ("${c.tema}") no está enlazada a ningún tema del temario. Usa buscar_temario para encontrar los ids.`);
+      const otraRama = temas.find((t) => temario.temas.get(t).rama !== rama);
+      if (otraRama) throw new ErrorDeUso(`La cédula ${numero} de ${rama} está enlazada a ${otraRama}, que es de otra rama.`);
+      limpias.push({
+        numero,
+        seccion: c.seccion ?? 'Cedulario del estudiante',
+        subseccion: c.subseccion ?? '',
+        tema: c.tema.trim(),
+        contenido: (c.contenido ?? '').trim(),
+        ...(c.excluidas ? { excluidas: c.excluidas } : {}),
+        temas,
+      });
+    }
+    this.almacen.guardarCedularioPropio(this.id, rama, { fuente, cedulas: limpias }, hoy);
+    const cubiertos = new Set(limpias.flatMap((c) => c.temas));
+    return {
+      guardado: true,
+      rama,
+      cedulas: limpias.length,
+      temas_cubiertos: cubiertos.size,
+      nota: 'Desde ahora el índice, el plan y los simulacros usan este cedulario. Revisa con `ver_indice`.',
+    };
+  }
+
+  async guardar_perfil_examen(datos = {}) {
+    const { hoy } = await this.ctx();
+    const permitidos = ['universidad_nombre', 'nombre_examen', 'modalidad', 'partes', 'duracion_minutos', 'instrucciones', 'estilo', 'formato_pauta', 'calificacion', 'exigencia', 'notas', 'fuente'];
+    const desconocidos = Object.keys(datos).filter((k) => !permitidos.includes(k));
+    if (desconocidos.length) throw new ErrorDeUso(`Campos desconocidos: ${desconocidos.join(', ')}. Permitidos: ${permitidos.join(', ')}.`);
+    if (datos.modalidad && !['oral', 'escrita', 'mixta'].includes(datos.modalidad)) throw new ErrorDeUso('modalidad: oral, escrita o mixta.');
+    if (!datos.fuente) throw new ErrorDeUso('Indica `fuente`: de dónde sale esta información (reglamento, examen de tal fecha, lo que contó el estudiante…).');
+    const previo = this.almacen.perfilPropio(this.id) ?? {};
+    delete previo.actualizado;
+    const nuevo = { ...previo, ...datos, fuentes: [...new Set([...(previo.fuentes ?? []), datos.fuente])] };
+    delete nuevo.fuente;
+    this.almacen.guardarPerfilPropio(this.id, nuevo, hoy);
+    return { guardado: true, perfil: await this.perfil_examen() };
+  }
+
+  async calcular_nota({ puntaje, maximo, exigencia } = {}) {
+    const { universidad } = await this.ctx();
+    const e = Number(exigencia ?? universidad?.perfil.examen?.exigencia ?? 0.6);
+    return notaChilena(Number(puntaje), Number(maximo), e);
+  }
+
   // — Fuentes ——————————————————————————————————————————————————————
 
   async ver_articulo({ norma, articulo } = {}) {
@@ -469,13 +599,7 @@ export class Tutor {
 
   async agregar_manual({ ruta, titulo, autor, anio, rama } = {}) {
     if (!ruta || !titulo) throw new ErrorDeUso('Indica `ruta` (PDF) y `titulo`.');
-    const abs = resolverRuta(ruta.replace(/^~(?=\/|$)/, process.env.HOME ?? ''));
-    try {
-      if (!(await stat(abs)).isFile()) throw new Error();
-    } catch {
-      throw new ErrorDeUso(`No encuentro el archivo ${abs}.`);
-    }
-    if (!/\.pdf$/i.test(abs)) throw new ErrorDeUso('Por ahora sólo se indexan PDF.');
+    const abs = await rutaPdf(ruta);
     const { paginas, total, sinTexto } = await extraerPaginas(abs);
     if (sinTexto === total) {
       return { indexado: false, motivo: 'El PDF no tiene texto (parece escaneado). Hay que pasarlo por OCR antes de cargarlo.' };
@@ -525,6 +649,87 @@ export class Tutor {
   async ver_material({ tema, id } = {}) {
     return { material: this.almacen.material(this.id, { tema, id: id ? Number(id) : undefined }) };
   }
+}
+
+/** Qué hacer con cada tipo de documento que sube el estudiante. */
+export const TIPOS_DOCUMENTO = {
+  cedulario:
+    'Lee el documento completo (leer_documento). Transcribe cada cédula o tema TAL CUAL (número, título, contenido, exclusiones). ' +
+    'Enlaza cada una con los temas del temario (buscar_temario). Muéstrale al estudiante el resultado y, con su visto bueno, guardar_cedulario.',
+  temario: 'Igual que un cedulario: transcribe por capítulo o unidad, enlaza con el temario y guarda con guardar_cedulario.',
+  reglamento:
+    'Extrae modalidad (oral/escrita), partes, duración, comisión, calificación y exigencia, y guárdalo con guardar_perfil_examen (fuente: el reglamento).',
+  examen_anterior:
+    'Extrae el formato: instrucciones, tiempo, número de casos y preguntas, ponderaciones, tipo de preguntas. Guárdalo con guardar_perfil_examen ' +
+    'y úsalo como modelo para los simulacros. No lo uses como simulacro tal cual si el estudiante ya lo conoce.',
+  pauta:
+    'Extrae cómo se corrige: ítems por pregunta, puntaje o porcentaje por ítem, qué se exige citar, bonus, respuestas alternativas. ' +
+    'Guárdalo en formato_pauta con guardar_perfil_examen: las pautas de los simulacros deben seguir ese formato.',
+  apuntes: 'Para consultar al preparar clases. Si es material de estudio extenso, conviene cargarlo como manual (agregar_manual) para buscar con cita.',
+  otro: 'Léelo con leer_documento y úsalo según lo que el estudiante necesite.',
+};
+
+/** Nota chilena 1,0–7,0 con exigencia (60 % por defecto): el 4,0 se alcanza con `exigencia` del puntaje. */
+export function notaChilena(puntaje, maximo, exigencia = 0.6) {
+  if (!(maximo > 0)) throw new ErrorDeUso('`maximo` debe ser mayor que 0.');
+  if (!(puntaje >= 0) || puntaje > maximo) throw new ErrorDeUso('`puntaje` debe estar entre 0 y el máximo.');
+  if (!(exigencia > 0 && exigencia < 1)) throw new ErrorDeUso('`exigencia` va entre 0 y 1 (0,6 = 60 %).');
+  const corte = exigencia * maximo;
+  const nota = puntaje < corte ? 1 + (3 * puntaje) / corte : 4 + (3 * (puntaje - corte)) / (maximo - corte);
+  const redondeada = Math.round(nota * 10) / 10;
+  return { nota: redondeada, aprobado: redondeada >= 4, puntaje, maximo, exigencia, puntaje_para_el_4: Number(corte.toFixed(2)) };
+}
+
+async function rutaPdf(ruta) {
+  const abs = resolverRuta(String(ruta).replace(/^~(?=\/|$)/, process.env.HOME ?? ''));
+  try {
+    if (!(await stat(abs)).isFile()) throw new Error();
+  } catch {
+    throw new ErrorDeUso(`No encuentro el archivo ${abs}.`);
+  }
+  if (!/\.pdf$/i.test(abs)) throw new ErrorDeUso('Por ahora sólo se leen PDF.');
+  return abs;
+}
+
+/**
+ * Universidad efectiva del estudiante: la oficial (si la hay) con lo que él
+ * mismo aportó encima. Lo aportado por el estudiante no se mezcla en silencio:
+ * queda marcado, porque no pasó por la revisión del contenido oficial.
+ */
+export function combinarUniversidad(base, propio, cedulariosPropios, est) {
+  const hayPropio = propio || Object.keys(cedulariosPropios ?? {}).length;
+  if (!base && !hayPropio) return null;
+  const perfilBase = base?.perfil ?? {
+    id: est?.universidad ?? 'propia',
+    nombre: propio?.universidad_nombre ?? 'Universidad del estudiante',
+    sigla: propio?.universidad_nombre ?? 'Tu universidad',
+    examen: {},
+  };
+  const examen = { ...(perfilBase.examen ?? {}) };
+  if (propio) {
+    if (propio.nombre_examen) examen.nombre = propio.nombre_examen;
+    if (propio.modalidad) examen.modalidad = propio.modalidad;
+    if (propio.partes) examen.partes = propio.partes;
+    if (propio.duracion_minutos) examen.duracion_minutos = propio.duracion_minutos;
+    if (propio.instrucciones) examen.instrucciones = propio.instrucciones;
+    if (propio.formato_pauta) examen.formato_pauta = propio.formato_pauta;
+    if (propio.calificacion) examen.calificacion = propio.calificacion;
+    if (propio.exigencia) examen.exigencia = propio.exigencia;
+  }
+  const perfil = {
+    ...perfilBase,
+    ...(propio?.universidad_nombre && !base ? { nombre: propio.universidad_nombre, sigla: propio.universidad_nombre } : {}),
+    examen,
+    ...(propio?.estilo ? { estilo_comision: propio.estilo } : {}),
+    ...(propio ? { aportado_por_el_estudiante: { fuentes: propio.fuentes, notas: propio.notas, actualizado: propio.actualizado } } : {}),
+  };
+  const cedularios = { ...(base?.cedularios ?? {}) };
+  const origen = Object.fromEntries(Object.keys(cedularios).map((r) => [r, 'oficial']));
+  for (const [rama, c] of Object.entries(cedulariosPropios ?? {})) {
+    cedularios[rama] = c.cedulas;
+    origen[rama] = `subido por el estudiante${c.fuente ? `: ${c.fuente}` : ''}`;
+  }
+  return { perfil, cedularios, origen_cedulario: origen };
 }
 
 /** "Código Civil", "CC", "Ley 19.947", "matrimonio civil" → sigla. */
