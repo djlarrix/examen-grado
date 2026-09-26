@@ -19,7 +19,7 @@ Servidor MCP (Node, ESM, `.mjs`) + skill para preparar el examen de grado de Der
 Este material lo van a memorizar estudiantes que rinden ante una comisión. Un error aquí se repite en cada clase.
 
 1. **Artículos**: toda referencia del temario pasa `npm run verificar-articulos` y se revisa con `-- --texto` que el artículo trate de la materia (el error típico no es un número inexistente, sino uno que existe y trata de otra cosa).
-   **Plazos**: todo plazo pasa `npm run verificar-plazos`. No escribas plazos de memoria: varios cambiaron con reformas recientes (contestación 18 días, excepciones en el ejecutivo 8 días, nulidad penal 15 días).
+   **Plazos**: todo plazo pasa `npm run verificar-plazos`. No escribas plazos de memoria: varios cambiaron con reformas (contestación 18 días, excepciones en el ejecutivo 8 días, nulidad penal 15 días).
 2. **Cedularios**: transcripción fiel del documento oficial, con su URL en la cabecera. No se "mejora" la redacción.
 3. **Perfiles**: cada afirmación con fuente. Lo que no está en una fuente oficial va en `por_confirmar`.
 4. **Doctrina**: no va en los datos. Viene de los manuales que carga cada estudiante.
