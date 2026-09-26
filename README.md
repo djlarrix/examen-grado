@@ -1,5 +1,7 @@
 # Examen de Grado
 
+[![Pruebas](https://github.com/djlarrix/examen-grado/actions/workflows/ci.yml/badge.svg)](https://github.com/djlarrix/examen-grado/actions/workflows/ci.yml) [![Vigencia de normas y plazos](https://github.com/djlarrix/examen-grado/actions/workflows/vigencia.yml/badge.svg)](https://github.com/djlarrix/examen-grado/actions/workflows/vigencia.yml) [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
+
 Preparador del examen de grado de Derecho en Chile, en **Derecho Civil y Derecho Procesal**. Es un servidor MCP más una skill para Claude: da clases, hace repasar con repetición espaciada, simula la comisión (oral o escrita según la universidad), prepara material de estudio y responde dudas con fuentes que se pueden verificar.
 
 Creado por Joaquín Larraín Guimoye.
@@ -89,45 +91,68 @@ Además expone *prompts* (`empezar`, `diagnostico`, `clase`, `repaso`, `simulacr
 
 ## Instalación
 
+### Claude Desktop (recomendado)
+
+1. Descarga los dos archivos de la [última versión](https://github.com/djlarrix/examen-grado/releases/latest): `examen-grado-<versión>.mcpb` y `examen-grado-skill.zip`.
+2. Abre el `.mcpb` con doble clic: Claude Desktop lo instala como extensión.
+3. Sube `examen-grado-skill.zip` en **Configuración → Capacidades → Skills**.
+4. En una conversación nueva escribe: *"Quiero preparar mi examen de grado"*.
+
+Si tu plan no permite skills, funciona igual con los prompts del servidor (en el menú **+** de la conversación, sección *examen-grado*). Si la extensión avisa que falta Node.js, instala la versión LTS desde [nodejs.org](https://nodejs.org) y reinicia Claude.
+
+### Claude Code
+
+```
+/plugin marketplace add djlarrix/examen-grado
+/plugin install examen-grado@examen-grado
+```
+
+El plugin trae el servidor y la skill; la primera vez instala sus dependencias solo.
+
+### Desde el código
+
 Requiere Node.js 22.13 o superior (usa el SQLite incluido en Node; no hay nada que compilar).
 
 ```bash
-git clone <repo> ~/examen-grado
-cd ~/examen-grado
-npm install
+git clone https://github.com/djlarrix/examen-grado.git
+cd examen-grado && npm install
+claude mcp add examen-grado -- node "$PWD/src/arrancar.mjs"
+cp -R skills/examen-grado ~/.claude/skills/
 ```
 
-**Claude Code**: registra el servidor y copia la skill.
-
-```bash
-claude mcp add examen-grado -- node ~/examen-grado/src/index.mjs
-```
-
-```bash
-cp -R ~/examen-grado/skills/examen-grado ~/.claude/skills/
-```
-
-**Claude Desktop**: agrega el servidor a `claude_desktop_config.json` y agrega la skill `skills/examen-grado` (comprimida en .zip) desde la sección de Skills de la configuración.
+Para Claude Desktop sin la extensión, agrega el servidor a `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
-    "examen-grado": { "command": "node", "args": ["/Users/<tu-usuario>/examen-grado/src/index.mjs"] }
+    "examen-grado": { "command": "node", "args": ["/ruta/a/examen-grado/src/arrancar.mjs"] }
   }
 }
 ```
 
-La carpeta también es un plugin de Claude Code (`.claude-plugin/plugin.json`). Abierta como proyecto en Claude Code, `.mcp.json` levanta el servidor y `.claude/skills` expone la skill.
-
 ## Privacidad y derechos de autor
 
 - El progreso del estudiante vive en su computador, en `~/.examen-grado/estudio.sqlite` (se puede mover con `EXAMEN_GRADO_DIR`).
-- Los manuales no se distribuyen con el proyecto: cada estudiante carga los suyos. Los PDF no se suben a ningún servidor; se indexa su texto localmente y sólo los pasajes que se consultan pasan a la conversación con Claude.
+- Los manuales, exámenes y pautas no se distribuyen con el proyecto: cada estudiante carga los suyos. Los PDF no se suben a ningún servidor; se indexa su texto localmente y sólo los pasajes que se consultan pasan a la conversación con Claude.
+- Los cedularios y temarios de `datos/universidades/` son documentos de cada universidad, reproducidos con su fuente para fines de estudio.
+
+## Aviso
+
+Proyecto independiente: no es un producto oficial de ninguna universidad ni reemplaza las indicaciones de tu facultad. Los cedularios y formatos de examen vienen de documentos oficiales publicados, con su fuente y fecha de revisión, pero cambian: confirma con tu facultad antes de rendir. El tutor enseña; no presta asesoría legal.
+
+## Contribuir
+
+Errores de contenido, universidades que faltan o cedularios nuevos: [issues](https://github.com/djlarrix/examen-grado/issues) (hay plantillas) o ver [`CONTRIBUTING.md`](CONTRIBUTING.md). Cada lunes una revisión automática compara el temario y los plazos con Ley Chile y abre un issue si una reforma cambió algo.
+
+## Licencia
+
+Código y material propio del proyecto bajo [licencia MIT](LICENSE).
 
 ## Desarrollo
 
 ```bash
 npm test                       # pruebas (sin red)
+npm run empaquetar             # dist/: extensión .mcpb para Claude Desktop y skill .zip
 npm run validar                # consistencia de temario, cedularios y mapas
 npm run verificar-articulos    # cada artículo del temario contra Ley Chile (con red)
 npm run verificar-plazos       # cada plazo contra el texto vigente de su artículo (con red)

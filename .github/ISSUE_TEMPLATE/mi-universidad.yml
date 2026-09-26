@@ -1,0 +1,22 @@
+name: Agregar o actualizar mi universidad
+description: Tu facultad no está, o publicó un cedulario o reglamento nuevo.
+labels: [universidad]
+body:
+  - type: input
+    id: universidad
+    attributes:
+      label: Universidad y sede
+    validations:
+      required: true
+  - type: textarea
+    id: examen
+    attributes:
+      label: ¿Cómo es el examen?
+      description: Oral o escrito, partes, duración, comisión, cómo se califica. Lo que sepas.
+  - type: textarea
+    id: documentos
+    attributes:
+      label: Documentos oficiales
+      description: Links al cedulario de Civil y de Procesal y al reglamento (idealmente del sitio de la facultad). No subas exámenes ni pautas con derechos de terceros.
+    validations:
+      required: true

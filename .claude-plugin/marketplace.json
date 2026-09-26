@@ -1,0 +1,31 @@
+{
+  "name": "examen-grado",
+  "owner": {
+    "name": "Joaquín Larraín Guimoye"
+  },
+  "metadata": {
+    "description": "Preparador del examen de grado de Derecho en Chile (Civil y Procesal)."
+  },
+  "plugins": [
+    {
+      "name": "examen-grado",
+      "source": "./",
+      "description": "Preparador del examen de grado de Derecho en Chile (Civil y Procesal): clases, repaso espaciado, simulacros de comisión y material, adaptado al cedulario de cada universidad, con normas verificadas en Ley Chile.",
+      "version": "0.9.0",
+      "author": {
+        "name": "Joaquín Larraín Guimoye"
+      },
+      "homepage": "https://github.com/djlarrix/examen-grado",
+      "license": "MIT",
+      "keywords": [
+        "derecho",
+        "chile",
+        "examen de grado",
+        "licenciatura",
+        "cedulario",
+        "estudio"
+      ],
+      "category": "education"
+    }
+  ]
+}

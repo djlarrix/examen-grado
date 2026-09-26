@@ -2,7 +2,9 @@
   "mcpServers": {
     "examen-grado": {
       "command": "node",
-      "args": ["src/index.mjs"]
+      "args": [
+        "src/arrancar.mjs"
+      ]
     }
   }
 }

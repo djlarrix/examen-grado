@@ -1,0 +1,36 @@
+name: Error de contenido
+description: Un cedulario mal transcrito, un plazo o artículo equivocado, un tema mal enlazado, un perfil de examen desactualizado.
+labels: [contenido]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias: un error aquí se repite en cada sesión de estudio. Lo más útil es la **fuente** (link al documento oficial o el artículo de Ley Chile).
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: ¿Qué está mal?
+      options:
+        - Cedulario o temario de una universidad
+        - Formato del examen (perfil)
+        - Plazo
+        - Artículo o norma del temario
+        - Pedagogía / forma de enseñar
+        - Otro
+    validations:
+      required: true
+  - type: input
+    id: universidad
+    attributes:
+      label: Universidad (si aplica)
+  - type: textarea
+    id: detalle
+    attributes:
+      label: Qué dice el tutor y qué debería decir
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente oficial
+      description: Link al cedulario, reglamento o artículo en bcn.cl/leychile.

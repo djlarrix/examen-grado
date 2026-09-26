@@ -40,8 +40,8 @@ test('calendario .ics: sesiones en días de estudio y el examen', () => {
   // 1-oct-2026 es jueves: jue, vie, (sáb y dom no), lun… hasta el 14.
   assert.equal(c.sesiones, 10);
   assert.ok(c.simulacros >= 1);
-  assert.match(c.ics, /DTSTART;TZID=America\/Santiago:20261001T083000/);
-  assert.match(c.ics, /DTEND;TZID=America\/Santiago:20261001T100000/);
+  assert.match(c.ics, /DTSTART:20261001T083000/);
+  assert.match(c.ics, /DTEND:20261001T100000/);
   assert.match(c.ics, /DTSTART;VALUE=DATE:20261015/);
   assert.equal(calendarioIcs({ hoy: '2026-10-01', fechaExamen: '2026-09-01', fases, minutos: 60 }), null);
 });

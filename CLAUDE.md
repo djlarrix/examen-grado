@@ -8,7 +8,9 @@ Servidor MCP (Node, ESM, `.mjs`) + skill para preparar el examen de grado de Der
 - `datos/universidades/<id>/` — `perfil.yaml` (formato del examen, con fuente por afirmación), `cedulario-<rama>.yaml` (transcripción fiel; `exclusiones` para las que el documento declara para todo el ramo; `ejercicios` por cédula si la universidad examina por ejercicios, como la UNAB), `mapa-temas.yaml` (cédula → temas).
 - `datos/plazos.yaml` — plazos para practicar; cada uno con el artículo y las frases literales que `npm run verificar-plazos` busca en el texto vigente.
 - `datos/confusiones.yaml` — pares de instituciones que se confunden, con los ejes para compararlas (sólo ejes: el contenido lo construye el estudiante con la norma).
-- `src/herramientas.mjs` — las herramientas (clase `Tutor`); `src/definiciones.mjs` — sus esquemas; `src/index.mjs` — servidor MCP y prompts.
+- `src/arrancar.mjs` — punto de entrada: comprueba Node y node:sqlite, instala dependencias si faltan (plugin desde GitHub) y protege stdout. `src/index.mjs` — servidor MCP y prompts; `src/herramientas.mjs` — las herramientas (clase `Tutor`); `src/definiciones.mjs` — sus esquemas.
+- `scripts/empaquetar.mjs` — arma `dist/` (extensión `.mcpb` de Claude Desktop y skill `.zip`), con pruebas de humo del paquete. `.claude-plugin/` — plugin y marketplace de Claude Code.
+- `.github/workflows/` — pruebas en tres sistemas y dos versiones de Node; revisión semanal de artículos y plazos contra Ley Chile (abre un issue si algo cambió); publicación de Releases al crear un tag `vX.Y.Z`.
 - `src/repaso.mjs` (FSRS-4.5), `src/plan.mjs` (fases, sesión del día y su agenda), `src/didactica.mjs` (guion de exposición, Anki, .ics), `src/almacen.mjs` (SQLite, con migraciones en `migrar()`), `src/fuentes/leychile.mjs` (BCN).
 - `skills/examen-grado/` — la pedagogía. Los prompts MCP leen estos mismos archivos.
 
@@ -29,7 +31,11 @@ Este material lo van a memorizar estudiantes que rinden ante una comisión. Un e
 3. Convertir el cedulario con `node scripts/importar-cedulario.mjs <texto.txt> <formato> <rama> <salida.yaml> "<fuente>"`. Formatos: `puc`, `usach_seccion`, `uach`, `utalca`, `uai`, `pucv_civil`, `pucv_procesal`, `ucentral` (cédulas de dos temas), `numerado` (temario "1. / 1.1."), `udla` (numeración correlativa con ítems que reinician), `ucsh` (con limpieza de OCR), `unab` (funde los ejercicios EEG), y `referencia` (para un cedulario que reproduce otro ya cargado: se pasa el YAML de referencia en el último argumento y cada cédula queda con `_referencia` para heredar el mapa). Si ningún formato sirve, agregar uno en `FORMATOS`.
 4. Enlazar en `mapa-temas.yaml` leyendo cada cédula (`python3 scripts/dev/mapa.py` escribe el YAML a partir de ids cortos) (`node scripts/dev/compacto.mjs <cedulario.yaml>` muestra los ítems; `node scripts/sugerir-mapa.mjs <cedulario.yaml>` propone temas, sólo como pista). Si una cédula trata algo que el temario no tiene, agregar el tema al temario (con artículos verificados), no forzar el enlace.
 5. Si el examen excluye unidades completas y no hay cedulario de ese ramo, usar `alcance_excluye` en el perfil. Si la modalidad cambia por ramo, `examen.modalidad_por_ramo`.
-6. `npm run validar && npm test && npm run verificar-articulos`.
+6. `npm run validar && npm test && npm run verificar-articulos`, y `node scripts/probar-servidor.mjs` para el recorrido por el protocolo real.
+
+## Publicar una versión
+
+Subir `version` en `package.json` y `.claude-plugin/plugin.json` y `marketplace.json`, commit, `git tag vX.Y.Z && git push --tags`: el workflow `publicar.yml` prueba, empaqueta y crea la Release con el `.mcpb` y la skill.
 
 ## Estilo de código
 

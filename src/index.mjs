@@ -67,7 +67,8 @@ const PROMPTS = {
   },
 };
 
-const servidor = new Server({ name: 'examen-grado', version: '0.1.0' }, { capabilities: { tools: {}, prompts: {} }, instructions: INSTRUCCIONES });
+const { version } = JSON.parse(await readFile(join(raizProyecto(), 'package.json'), 'utf8'));
+const servidor = new Server({ name: 'examen-grado', version }, { capabilities: { tools: {}, prompts: {} }, instructions: INSTRUCCIONES });
 const tutor = new Tutor();
 
 servidor.setRequestHandler(ListToolsRequestSchema, async () => ({ tools: DEFINICIONES }));

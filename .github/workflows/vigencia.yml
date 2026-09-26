@@ -1,0 +1,45 @@
+# Cada lunes compara el temario y los plazos con el texto vigente de Ley Chile.
+# Si una reforma cambió un artículo o un plazo, abre un issue: nada desactualizado
+# debería llegar a un estudiante que va a repetirlo frente a una comisión.
+name: Vigencia de normas y plazos
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  vigencia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+          cache: npm
+      - run: npm ci
+      - name: Artículos del temario
+        id: articulos
+        continue-on-error: true
+        run: npm run --silent verificar-articulos > articulos.txt 2>&1
+      - name: Plazos
+        id: plazos
+        continue-on-error: true
+        run: npm run --silent verificar-plazos > plazos.txt 2>&1
+      - name: Abrir issue si algo cambió
+        if: steps.articulos.outcome == 'failure' || steps.plazos.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "La revisión semanal contra Ley Chile encontró diferencias. Revisar antes de que un estudiante estudie con texto antiguo."
+            echo
+            echo "### Plazos"; echo '```'; grep -v '^✓' plazos.txt | tail -60; echo '```'
+            echo "### Artículos"; echo '```'; tail -40 articulos.txt; echo '```'
+          } > cuerpo.md
+          gh issue create --title "Ley Chile: cambió un artículo o un plazo ($(date +%F))" --body-file cuerpo.md
+          exit 1

@@ -1,18 +1,39 @@
 {
   "name": "examen-grado",
-  "version": "0.1.0",
-  "description": "Preparador del examen de grado de Derecho en Chile: servidor MCP + skill.",
+  "version": "0.9.0",
+  "description": "Preparador del examen de grado de Derecho en Chile (Civil y Procesal): servidor MCP + skill para Claude, adaptado al cedulario de cada universidad.",
+  "author": "Joaquín Larraín Guimoye",
+  "license": "MIT",
+  "homepage": "https://github.com/djlarrix/examen-grado#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djlarrix/examen-grado.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djlarrix/examen-grado/issues"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "derecho",
+    "chile",
+    "examen de grado",
+    "licenciatura",
+    "cedulario",
+    "repeticion espaciada",
+    "fsrs"
+  ],
   "type": "module",
-  "private": true,
   "bin": {
-    "examen-grado": "src/index.mjs"
+    "examen-grado": "src/arrancar.mjs"
   },
   "scripts": {
-    "start": "node src/index.mjs",
+    "start": "node src/arrancar.mjs",
     "test": "node --test \"test/**/*.test.mjs\"",
     "validar": "node scripts/validar-datos.mjs",
     "verificar-articulos": "node scripts/verificar-articulos.mjs",
-    "verificar-plazos": "node scripts/verificar-plazos.mjs"
+    "verificar-plazos": "node scripts/verificar-plazos.mjs",
+    "empaquetar": "node scripts/empaquetar.mjs"
   },
   "engines": {
     "node": ">=22.13"

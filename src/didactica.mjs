@@ -28,14 +28,33 @@ const VINETA = /^\s*(?:\d+(?:\.\d+)*\s?[.)-]+-?|[a-zñ][.)]|[ivx]{1,4}\.|[•●
  * propio texto oficial (cada ítem numerado o viñeta; si no hay, cada oración).
  * Las líneas que continúan un ítem cortado por el PDF se unen al anterior.
  */
-export function puntosDeCedula(contenido, tema) {
+export function puntosDeCedula(contenido, tema, maximo = 12) {
   const lineas = (contenido ?? '').split('\n').map((l) => l.trim()).filter(Boolean);
+  // Profundidad de la numeración decimal ("1.3.1.1." = 4). Los ítems más
+  // profundos que el segundo nivel presente se funden con su ítem padre: en
+  // una exposición de minutos no se recorre cada sub-sub-ítem por separado.
+  const profundidad = (l) => (l.match(/^\s*(\d+(?:\.\d+)*)\.?\s/)?.[1].split('.').length ?? 0);
+  const prof = lineas.filter((l) => VINETA.test(l)).map(profundidad).filter(Boolean);
+  const tope = prof.length ? Math.min(...prof) + 1 : Infinity;
   const puntos = [];
+  let hijos = false;
   for (const l of lineas) {
-    if (VINETA.test(l) || !puntos.length) puntos.push(l.replace(VINETA, '').trim());
-    else puntos[puntos.length - 1] += ` ${l}`;
+    const p = profundidad(l);
+    if (VINETA.test(l) && puntos.length && p > tope) {
+      if (!hijos) puntos[puntos.length - 1] = puntos[puntos.length - 1].replace(/[.:;,\s]+$/, '');
+      puntos[puntos.length - 1] += `${hijos ? ';' : ':'} ${l.replace(VINETA, '').replace(/[.:;,]$/, '').trim()}`;
+      hijos = true;
+    } else if (VINETA.test(l) || !puntos.length) {
+      puntos.push(l.replace(VINETA, '').trim());
+      hijos = false;
+    } else puntos[puntos.length - 1] += ` ${l}`;
   }
-  const limpios = puntos.map((p) => p.replace(/\s+/g, ' ').replace(/[:;,]$/, '').trim()).filter((p) => p.length > 2);
+  let limpios = puntos.map((p) => p.replace(/\s+/g, ' ').replace(/::/g, ':').replace(/[:;,]$/, '').trim()).filter((p) => p.length > 2);
+  // Aún demasiados: se agrupan de a dos o tres para que cada bloque tenga tiempo real.
+  if (limpios.length > maximo) {
+    const k = Math.ceil(limpios.length / maximo);
+    limpios = Array.from({ length: Math.ceil(limpios.length / k) }, (_, i) => limpios.slice(i * k, i * k + k).join(' · '));
+  }
   if (limpios.length > 1) return limpios;
   const base = limpios[0] ?? tema ?? '';
   const oraciones = base.split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚÑ])/).map((o) => o.trim()).filter((o) => o.length > 2);
@@ -139,10 +158,12 @@ export function calendarioIcs({ hoy, fechaExamen, fases, minutos, diasSemana, ho
       descripcion: `${fase ? `${fase.nombre}: ${fase.proposito}\n` : ''}Abre el tutor y pide "sesión de hoy".`,
     });
   }
-  const lineas = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//examen-grado//plan de estudio//ES', 'CALSCALE:GREGORIAN', 'X-WR-TIMEZONE:America/Santiago'];
+  // Horas "flotantes" (sin zona): cada calendario las muestra en la hora local
+  // del estudiante. Una TZID sin su VTIMEZONE la rechazan algunos clientes.
+  const lineas = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//examen-grado//plan de estudio//ES', 'CALSCALE:GREGORIAN'];
   const sello = `${h.replace(/-/g, '')}T000000Z`;
   for (const e of eventos) {
-    lineas.push('BEGIN:VEVENT', `UID:${e.uid}`, `DTSTAMP:${sello}`, `DTSTART;TZID=America/Santiago:${e.inicio}`, `DTEND;TZID=America/Santiago:${e.fin}`, `SUMMARY:${escapar(e.titulo)}`, `DESCRIPTION:${escapar(e.descripcion)}`, 'END:VEVENT');
+    lineas.push('BEGIN:VEVENT', `UID:${e.uid}`, `DTSTAMP:${sello}`, `DTSTART:${e.inicio}`, `DTEND:${e.fin}`, `SUMMARY:${escapar(e.titulo)}`, `DESCRIPTION:${escapar(e.descripcion)}`, 'END:VEVENT');
   }
   lineas.push(
     'BEGIN:VEVENT',

@@ -1,0 +1,28 @@
+# Al crear un tag vX.Y.Z: pruebas, arma la extensión de Claude Desktop (.mcpb)
+# y la skill (.zip), y los publica en una Release de GitHub.
+name: Publicar versión
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run validar
+      - run: npm run empaquetar
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" dist/*.mcpb dist/*.zip --title "$GITHUB_REF_NAME" --generate-notes

@@ -1,5 +1,5 @@
 # Perfil del examen de grado — Universidad Adolfo Ibáñez.
-# Formato tomado de exámenes y pautas oficiales recientes aportados por el usuario
+# Formato tomado de exámenes y pautas oficiales recientes aportados por egresados
 # (Derecho Civil, octubre 2024; Derecho Procesal Civil, julio 2024 y enero 2025).
 # Esos documentos no se redistribuyen: el estudiante puede cargarlos con cargar_documento.
 id: uai
@@ -57,7 +57,7 @@ por_confirmar:
   - Si ambas secciones se rinden el mismo día y la nota mínima de aprobación de cada sección.
   - Uso de códigos durante la prueba.
 fuentes:
-  - titulo: Cedulario de Licenciatura Derecho Civil (UAI), copia aportada por el usuario
+  - titulo: Cedulario de Licenciatura Derecho Civil (UAI), documento institucional aportado por un egresado
   - titulo: Examen de Licenciatura, Sección Derecho Civil (octubre 2024) y su pauta de corrección
   - titulo: Examen de Licenciatura, Sección Derecho Procesal Civil (julio 2024) y pauta con respuesta magistral (enero 2025)
 revisado: 2026-09-25
