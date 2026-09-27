@@ -136,6 +136,7 @@ export class Tutor {
           'no está en la lista, configura "otra" y ofrécele subir su cedulario, reglamento y exámenes ' +
           'anteriores con `cargar_documento`.',
         universidades_disponibles: (await this.listar_universidades()).universidades.map((u) => `${u.id} (${u.nombre})`),
+        metodo: 'Si no tienes cargada la skill "examen-grado", llama a guia_del_tutor (modo "inicio") antes de seguir.',
       };
     }
     const progreso = this.almacen.progreso(this.id);
@@ -150,6 +151,7 @@ export class Tutor {
       sesion_de_hoy: sesion,
       racha_dias: this.racha(hoy),
       primera_vez: progreso.size === 0,
+      metodo: 'Si no tienes cargada la skill "examen-grado", pide el método con guia_del_tutor (modo "inicio" y el de cada actividad).',
     };
   }
 
