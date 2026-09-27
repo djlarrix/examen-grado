@@ -1,5 +1,7 @@
 # Examen de Grado
 
+<img src="recursos/icono.png" alt="" width="96" align="right">
+
 [![Pruebas](https://github.com/djlarrix/examen-grado/actions/workflows/ci.yml/badge.svg)](https://github.com/djlarrix/examen-grado/actions/workflows/ci.yml) [![Vigencia de normas y plazos](https://github.com/djlarrix/examen-grado/actions/workflows/vigencia.yml/badge.svg)](https://github.com/djlarrix/examen-grado/actions/workflows/vigencia.yml) [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
 
 Preparador del examen de grado de Derecho en Chile, en **Derecho Civil y Derecho Procesal**. Es un servidor MCP más una skill para Claude: da clases, hace repasar con repetición espaciada, simula la comisión (oral o escrita según la universidad), prepara material de estudio y responde dudas con fuentes que se pueden verificar.
@@ -46,7 +48,7 @@ Quince facultades: las presentes en el ranking QS de Law & Legal Studies 2025–
 | UDLA | Oral, por ramo en meses distintos (Civil; Procesal y Constitucional) | Civil 55 temas (2024), Procesal 55 (2023) |
 | UCSH | Oral y público (Res. 001/2020) | Civil 11 secciones, Procesal 8, con la lista oficial de exclusiones |
 
-**Si la universidad del estudiante no está, o tiene documentos más nuevos, los sube él.** El tutor lee su cedulario, lo transcribe literal, lo enlaza al temario y lo usa en el índice, el plan y los simulacros; de sus exámenes anteriores y pautas saca el formato (tiempo, instrucciones, tipo de preguntas, cómo se asigna el puntaje) para armar simulacros y pautas iguales. Todo queda en su computador.
+**Si la universidad del estudiante no está, o tiene documentos más nuevos, los adjunta en la conversación** (PDF, Word o fotos). El tutor lee su cedulario, lo transcribe literal, lo enlaza al temario y lo usa en el índice, el plan y los simulacros; de sus exámenes anteriores y pautas saca el formato (tiempo, instrucciones, tipo de preguntas, cómo se asigna el puntaje) para armar simulacros y pautas iguales. Todo queda en su computador.
 
 ## Cómo se usa
 
@@ -68,6 +70,7 @@ El estudiante sólo conversa. Al empezar, el tutor pregunta universidad, fecha d
 | Herramienta | Para qué |
 |---|---|
 | `estado_estudiante` | Punto de entrada: configuración, plan, racha y sesión sugerida |
+| `guia_del_tutor` | El método pedagógico de cada modo, para usar el tutor sin la skill |
 | `configurar_estudiante` | Universidad, fecha de examen, horas y días de estudio |
 | `sesion_de_hoy` / `plan_estudio` | Qué estudiar hoy; fases y ritmo hasta el examen, con advertencia si no alcanza |
 | `ver_indice` / `buscar_temario` / `elegir_temas` | Índice con estado, búsqueda y selección de contenidos |
@@ -76,13 +79,13 @@ El estudiante sólo conversa. Al empezar, el tutor pregunta universidad, fecha d
 | `diagnostico` | Un tema por unidad para el diagnóstico inicial; lo que no domina queda como foco |
 | `practicar_plazos` / `practicar_discriminacion` | Plazos verificados e instituciones que se confunden |
 | `preparar_exposicion` | Guion, puntos obligatorios y rúbrica para ensayar una exposición |
-| `exportar` | Tarjetas y plazos para Anki; plan de estudio en .ics |
+| `exportar` | Tarjetas y plazos para Anki; plan de estudio en .ics; respaldo del progreso (a la carpeta Descargas) |
 | `sortear_cedula` / `registrar_simulacro` | Simulacros por universidad |
 | `progreso` | Dominio por unidad, simulacros, temas que más se olvidan, errores y calibración |
 | `ver_articulo` | Texto vigente de un artículo desde Ley Chile |
 | `agregar_manual` / `buscar_en_manuales` / `listar_manuales` / `quitar_manual` | Manuales propios del estudiante, con búsqueda y cita de página |
 | `guardar_material` / `ver_material` | Material de estudio guardado (fichas, casos, pautas) |
-| `cargar_documento` / `leer_documento` / `listar_documentos` / `quitar_documento` | Documentos del estudiante: cedulario, reglamento, exámenes anteriores, pautas |
+| `cargar_documento` / `leer_documento` / `listar_documentos` / `quitar_documento` | Documentos del estudiante (adjuntos en la conversación o por ruta): cedulario, reglamento, exámenes anteriores, pautas |
 | `guardar_cedulario` / `guardar_perfil_examen` | Adaptar el tutor a su examen con esos documentos |
 | `calcular_nota` | Puntaje → nota chilena con exigencia |
 | `listar_universidades` / `perfil_examen` | Universidades y formato de su examen, con fuente |
@@ -91,14 +94,14 @@ Además expone *prompts* (`empezar`, `diagnostico`, `clase`, `repaso`, `simulacr
 
 ## Instalación
 
-### Claude Desktop (recomendado)
+### Claude Desktop (Mac o Windows): un minuto
 
-1. Descarga los dos archivos de la [última versión](https://github.com/djlarrix/examen-grado/releases/latest): `examen-grado-<versión>.mcpb` y `examen-grado-skill.zip`.
-2. Abre el `.mcpb` con doble clic: Claude Desktop lo instala como extensión.
-3. Sube `examen-grado-skill.zip` en **Configuración → Capacidades → Skills**.
-4. En una conversación nueva escribe: *"Quiero preparar mi examen de grado"*.
+1. Descarga **[examen-grado.mcpb](https://github.com/djlarrix/examen-grado/releases/latest/download/examen-grado.mcpb)** y ábrelo con doble clic → **Instalar**.
+2. En una conversación nueva escribe: *"Quiero preparar mi examen de grado"*.
 
-Si tu plan no permite skills, funciona igual con los prompts del servidor (en el menú **+** de la conversación, sección *examen-grado*). Si la extensión avisa que falta Node.js, instala la versión LTS desde [nodejs.org](https://nodejs.org) y reinicia Claude.
+No hay que instalar nada más: Claude Desktop trae el Node.js que usa la extensión. Opcional: sube también la skill **[examen-grado-skill.zip](https://github.com/djlarrix/examen-grado/releases/latest/download/examen-grado-skill.zip)** en **Configuración → Capacidades → Skills**; sin ella el tutor funciona igual, porque el método le llega por la extensión (`guia_del_tutor`).
+
+**[Guía para estudiantes](docs/GUIA.md)**: primera conversación, qué pedirle, cómo subir tu cedulario, respaldo del progreso y problemas frecuentes.
 
 ### Claude Code
 

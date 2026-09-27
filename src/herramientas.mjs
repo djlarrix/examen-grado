@@ -6,14 +6,15 @@
  * las normas viene de Ley Chile y el de la doctrina, de los manuales que el
  * propio estudiante cargó, con página.
  */
-import { resolve as resolverRuta, join } from 'node:path';
-import { stat, mkdir, writeFile } from 'node:fs/promises';
+import { resolve as resolverRuta, join, basename } from 'node:path';
+import { stat, mkdir, writeFile, readFile, rm } from 'node:fs/promises';
+import { homedir } from 'node:os';
 import { contenido } from './datos.mjs';
 import { Almacen } from './almacen.mjs';
 import { programar, dominio, DOMINIOS, recuperabilidadHoy, CALIFICACIONES, diasEntre } from './repaso.mjs';
 import { alcance, planGeneral, sesionDeHoy, minutosPorDia } from './plan.mjs';
 import { elegirPonderado, puntosDeCedula, guionDeExposicion, tarjetasDeTexto, textoAnki, calendarioIcs } from './didactica.mjs';
-import { directorioDatos } from './lib/rutas.mjs';
+import { directorioDatos, raizProyecto } from './lib/rutas.mjs';
 import { NORMAS, parsearReferencia, citaLegible } from './fuentes/normas.mjs';
 import { verArticulo } from './fuentes/leychile.mjs';
 import { extraerPaginas } from './lib/pdf.mjs';
@@ -23,6 +24,24 @@ const ORDEN_DOMINIO = ['sin_ver', 'debil', 'aprendiendo', 'consolidando', 'domin
 const icono = (d) => DOMINIOS[d].icono;
 
 const sinTildes = (s) => String(s ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+/**
+ * Dónde dejar lo exportado: la carpeta Descargas, que el estudiante encuentra
+ * (~/.examen-grado está oculta en macOS). Con EXAMEN_GRADO_DIR (pruebas,
+ * servidores) se usa esa carpeta.
+ */
+async function carpetaExportaciones() {
+  let dir = join(directorioDatos(), 'exportaciones');
+  if (!process.env.EXAMEN_GRADO_DIR) {
+    const descargas = join(homedir(), 'Downloads');
+    if (await stat(descargas).then((x) => x.isDirectory()).catch(() => false)) dir = descargas;
+  }
+  await mkdir(dir, { recursive: true });
+  return dir;
+}
+
+/** "Sección — Subsección", sin raya colgando cuando falta alguna. */
+const unirSeccion = (c) => [c.seccion, c.subseccion].filter((x) => x && String(x).trim()).join(' — ') || 'Cedulario';
 
 /** Error pensado para que Claude lo lea y corrija la llamada. */
 export class ErrorDeUso extends Error {}
@@ -173,6 +192,7 @@ export class Tutor {
 
   /** Dominio agregado de varios temas: el más bajo manda. */
   dominioDe(temas, progreso, hoy) {
+    if (!temas.length) return 'sin_ver';
     const ds = temas.map((t) => dominio(progreso.get(t), hoy));
     return ORDEN_DOMINIO[Math.min(...ds.map((d) => ORDEN_DOMINIO.indexOf(d)))];
   }
@@ -211,7 +231,7 @@ export class Tutor {
       let seccion = '';
       for (const c of cedulas) {
         if (unidad && !c.temas.some((t) => temario.temas.get(t)?.unidad === unidad)) continue;
-        const cab = `${c.seccion} — ${c.subseccion}`;
+        const cab = unirSeccion(c);
         if (cab !== seccion) {
           lineas.push(`## ${cab}`);
           seccion = cab;
@@ -332,7 +352,7 @@ export class Tutor {
               rama,
               numero: ced.numero,
               tema: ced.tema,
-              seccion: `${ced.seccion} — ${ced.subseccion}`,
+              seccion: unirSeccion(ced),
               contenido: ced.contenido || '(el cedulario no desglosa esta cédula)',
               ...(ced.excluidas ? { excluidas: ced.excluidas.trim() } : {}),
               ...(ced.bibliografia ? { bibliografia_recomendada: ced.bibliografia.trim() } : {}),
@@ -441,7 +461,7 @@ export class Tutor {
       return lista.find((_, i) => (x -= pesos[i]) <= 0) ?? lista.at(-1);
     };
     // Pesos para practicar debilidades: lo débil y lo no visto salen más.
-    const pesoTemas = (ts) => Math.max(...ts.map((t) => ({ sin_ver: 2, debil: 4, aprendiendo: 3, consolidando: 1.5, dominado: 1 })[dominio(progreso.get(t), hoy)]));
+    const pesoTemas = (ts) => (ts.length ? Math.max(...ts.map((t) => ({ sin_ver: 2, debil: 4, aprendiendo: 3, consolidando: 1.5, dominado: 1 })[dominio(progreso.get(t), hoy)])) : 1);
     // Modalidad por ramo: en la UDD, Civil es un caso escrito y Procesal es oral.
     const modalidadDe = (r) => universidad?.perfil.examen?.modalidad_por_ramo?.[r] ?? universidad?.perfil.examen?.modalidad;
     const formato = universidad?.perfil.examen?.formato_preguntas;
@@ -501,7 +521,7 @@ export class Tutor {
       prioridad,
       sorteo,
       como_seguir: sorteo.some((x) => x.modalidad === 'seleccion_multiple')
-        ? 'Arma los casos y preguntas según referencias/modos/simulacro.md (selección múltiple): alternativas plausibles, sin pistas. Corrige al final, explica cada alternativa, calcula la nota con `calcular_nota` y guarda con `registrar_simulacro`.'
+        ? 'Arma los casos y preguntas según el método de simulacro (guia_del_tutor, modo "simulacro"; sección selección múltiple): alternativas plausibles, sin pistas. Corrige al final, explica cada alternativa, calcula la nota con `calcular_nota` y guarda con `registrar_simulacro`.'
         : 'Simula la comisión según `perfil_examen` (estilo_comision). Al terminar, `registrar_simulacro` con una calificación por cada tema evaluado.',
     };
   }
@@ -509,11 +529,14 @@ export class Tutor {
   async registrar_simulacro({ nota, cedulas, rubrica, fortalezas, a_mejorar, temas_evaluados = [] } = {}) {
     const { temario, est, hoy } = await this.ctx();
     if (nota !== undefined && !(nota >= 1 && nota <= 7)) throw new ErrorDeUso('La nota va de 1,0 a 7,0.');
-    for (const te of temas_evaluados) if (!temario.temas.has(te.tema)) throw new ErrorDeUso(`Tema desconocido en temas_evaluados: ${te.tema}`);
+    for (const te of temas_evaluados) {
+      if (!temario.temas.has(te.tema)) throw new ErrorDeUso(`Tema desconocido en temas_evaluados: ${te.tema}`);
+      if (![1, 2, 3, 4].includes(Number(te.calificacion))) throw new ErrorDeUso(`Calificación inválida para ${te.tema}: usa 1, 2, 3 o 4.`);
+    }
     const id = this.almacen.guardarSimulacro(this.id, { fecha: hoy, universidad: est?.universidad, cedulas, nota, rubrica, fortalezas, a_mejorar });
     const actualizados = [];
     for (const te of temas_evaluados) {
-      actualizados.push(await this.registrar_respuesta({ tema: te.tema, calificacion: te.calificacion, modo: 'simulacro', pregunta: te.pregunta, error: te.error }));
+      actualizados.push(await this.registrar_respuesta({ tema: te.tema, calificacion: te.calificacion, modo: 'simulacro', pregunta: te.pregunta, error: te.error, confianza: te.confianza }));
     }
     const historial = this.almacen.simulacros(this.id, 10).map((s) => ({ fecha: s.fecha, nota: s.nota }));
     return { guardado: id, temas_actualizados: actualizados, historial_notas: historial };
@@ -587,12 +610,17 @@ export class Tutor {
     const ids = await this.enAlcance(rama, tema);
     const pool = plazos.filter((p) => ids.has(p.tema));
     if (!pool.length) throw new ErrorDeUso('No hay plazos cargados para ese filtro. Prueba sin `tema`, o con la otra rama.');
-    const peso = this.pesoPractica(this.almacen.progreso(this.id), hoy);
-    const elegidos = elegirPonderado(pool, Math.min(Number(cantidad) || 5, 15), (p) => peso(p.tema));
+    const progreso = this.almacen.progreso(this.id);
+    const peso = this.pesoPractica(progreso, hoy);
+    const n = Math.min(Number(cantidad) || 5, 15);
+    // Un plazo sin la institución detrás no se retiene: primero los de temas ya vistos.
+    const vistos = pool.filter((p) => progreso.has(p.tema));
+    const elegidos = vistos.length >= n || tema ? elegirPonderado(vistos.length >= n ? vistos : pool, n, (p) => peso(p.tema)) : [...elegirPonderado(vistos, n, (p) => peso(p.tema)), ...elegirPonderado(pool.filter((p) => !progreso.has(p.tema)), n - vistos.length, () => 1)];
     return {
       preguntas: elegidos.map((p, i) => ({
         n: i + 1,
         tema: p.tema,
+        tema_visto: progreso.has(p.tema),
         tema_titulo: temario.temas.get(p.tema).titulo,
         pregunta: p.pregunta,
         respuesta: p.respuesta,
@@ -700,8 +728,7 @@ export class Tutor {
 
   async exportar({ formato, hora = '19:00' } = {}) {
     const { temario, est, universidad, plazos, hoy } = await this.ctx();
-    const dir = join(directorioDatos(), 'exportaciones');
-    await mkdir(dir, { recursive: true });
+    const dir = await carpetaExportaciones();
     if (formato === 'anki') {
       const tarjetas = [];
       for (const m of this.almacen.material(this.id).filter((x) => x.tipo === 'tarjetas')) {
@@ -713,7 +740,7 @@ export class Tutor {
       for (const p of plazos.filter((x) => alc.has(x.tema))) {
         tarjetas.push({ frente: p.pregunta, reverso: `${p.respuesta}${p.precision ? `\n${p.precision}` : ''}\n(${citaLegible(p.articulo)})`, etiquetas: ['examen-grado', 'plazos', temario.temas.get(p.tema).rama] });
       }
-      const ruta = join(dir, `tarjetas-${hoy}.txt`);
+      const ruta = join(dir, `examen-grado-tarjetas-${hoy}.txt`);
       await writeFile(ruta, textoAnki(tarjetas));
       return {
         archivo: ruta,
@@ -730,7 +757,7 @@ export class Tutor {
       const plan = planGeneral({ temario, universidad, estudiante: est, progreso: this.almacen.progreso(this.id), simulacros: this.almacen.simulacros(this.id), hoy });
       const cal = calendarioIcs({ hoy, fechaExamen: est.fecha_examen, fases: plan.fases, minutos: minutosPorDia(est), diasSemana: est.dias_semana ?? 6, hora, universidad: universidad?.perfil.sigla });
       if (!cal) throw new ErrorDeUso('La fecha de examen ya pasó o es hoy.');
-      const ruta = join(dir, `plan-examen-grado-${hoy}.ics`);
+      const ruta = join(dir, `examen-grado-plan-${hoy}.ics`);
       await writeFile(ruta, cal.ics);
       return {
         archivo: ruta,
@@ -740,26 +767,72 @@ export class Tutor {
         como_importar: 'Ábrelo con doble clic (Calendario de macOS, Outlook) o impórtalo en Google Calendar (Configuración → Importar).',
       };
     }
-    throw new ErrorDeUso('formato: "anki" (tarjetas y plazos) o "calendario" (plan de sesiones .ics).');
+    if (formato === 'respaldo') {
+      const ruta = join(dir, `examen-grado-respaldo-${hoy}.sqlite`);
+      await rm(ruta, { force: true });
+      this.almacen.respaldar(ruta);
+      return {
+        archivo: ruta,
+        como_restaurar:
+          `En el otro computador, instala el tutor y copia este archivo como ${join('~', '.examen-grado', 'estudio.sqlite')} ` +
+          '(con Claude cerrado). Trae todo: progreso, respuestas, simulacros, material, manuales y documentos.',
+      };
+    }
+    throw new ErrorDeUso('formato: "anki" (tarjetas y plazos), "calendario" (plan de sesiones .ics) o "respaldo" (copia de todo tu progreso).');
+  }
+
+  // — Método (la skill, servida por el servidor) ———————————————————————
+
+  /**
+   * El método pedagógico completo vive en skills/examen-grado. Quien instala
+   * sólo la extensión (sin subir la skill) lo recibe igual por esta vía: así
+   * basta un paso para instalar el tutor.
+   */
+  async guia_del_tutor({ modo = 'inicio' } = {}) {
+    const archivos = GUIAS[modo];
+    if (!archivos) throw new ErrorDeUso(`modo: ${Object.keys(GUIAS).join(', ')}.`);
+    const dir = join(raizProyecto(), 'skills', 'examen-grado');
+    const textos = await Promise.all(archivos.map(async (f) => `<<${f}>>\n${(await readFile(join(dir, f), 'utf8')).replace(/^---[\s\S]*?---\n/, '')}`));
+    return {
+      modo,
+      metodo: textos.join('\n\n'),
+      nota: 'Sigue este método en lo que queda de la conversación. Las rutas "referencias/…" que mencione se piden con guia_del_tutor y el modo correspondiente.',
+    };
   }
 
   // — Documentos que sube el estudiante ——————————————————————————————
 
-  async cargar_documento({ ruta, tipo, titulo, rama } = {}) {
-    if (!ruta || !tipo) throw new ErrorDeUso('Indica `ruta` (PDF) y `tipo`.');
+  async cargar_documento({ ruta, texto, tipo, titulo, rama } = {}) {
+    if ((!ruta && !texto?.trim()) || !tipo) throw new ErrorDeUso('Indica `tipo` y el documento: `texto` (lo que leíste de un archivo adjunto en la conversación) o `ruta` (PDF, .txt o .md en el computador).');
     if (!TIPOS_DOCUMENTO[tipo]) throw new ErrorDeUso(`tipo debe ser uno de: ${Object.keys(TIPOS_DOCUMENTO).join(', ')}.`);
-    const abs = await rutaPdf(ruta);
-    const { paginas, total, sinTexto } = await extraerPaginas(abs);
-    if (sinTexto === total) {
-      return {
-        cargado: false,
-        motivo:
-          'El PDF no tiene capa de texto (está escaneado). Pídele al estudiante que lo adjunte directamente en la conversación ' +
-          'para leerlo como imagen, o que lo pase por OCR y lo cargue de nuevo.',
-      };
+    let abs = null;
+    let paginas;
+    let total;
+    let sinTexto = 0;
+    if (texto?.trim()) {
+      // El estudiante adjuntó el archivo (PDF, Word, foto) y Claude ya lo leyó:
+      // se guarda su texto para las sesiones siguientes, partido en "páginas".
+      if (!titulo) throw new ErrorDeUso('Con `texto`, indica también `titulo` (p. ej. "Cedulario Civil 2025").');
+      paginas = partirEnPaginas(texto);
+      total = paginas.length;
+    } else {
+      abs = await rutaDocumento(ruta);
+      if (/\.pdf$/i.test(abs)) ({ paginas, total, sinTexto } = await extraerPaginas(abs));
+      else {
+        paginas = partirEnPaginas(await readFile(abs, 'utf8'));
+        total = paginas.length;
+      }
+      if (sinTexto === total) {
+        return {
+          cargado: false,
+          motivo:
+            'El PDF no tiene capa de texto (está escaneado). Pídele al estudiante que lo adjunte en la conversación: léelo como imagen ' +
+            'y vuelve a llamar a cargar_documento con `texto` (tu transcripción fiel) y `titulo`.',
+        };
+      }
     }
-    const nombre = titulo || abs.split('/').pop().replace(/\.pdf$/i, '');
-    const id = this.almacen.agregarDocumento(this.id, { tipo, titulo: nombre, rama, ruta: abs, paginas, agregado: this.hoy() });
+    const nombre = titulo || basename(abs).replace(/\.(pdf|txt|md)$/i, '');
+    const id = this.almacen.agregarDocumento(this.id, { tipo, titulo: nombre, rama, ruta: abs ?? '(adjunto en la conversación)', paginas, agregado: this.hoy() });
     let vista = '';
     for (const p of paginas) {
       if (vista.length > 3500) break;
@@ -847,10 +920,12 @@ export class Tutor {
 
   async guardar_perfil_examen(datos = {}) {
     const { hoy } = await this.ctx();
-    const permitidos = ['universidad_nombre', 'nombre_examen', 'modalidad', 'partes', 'duracion_minutos', 'instrucciones', 'estilo', 'formato_pauta', 'calificacion', 'exigencia', 'notas', 'fuente'];
+    const permitidos = ['universidad_nombre', 'nombre_examen', 'modalidad', 'modalidad_por_ramo', 'formato_preguntas', 'exposicion_minutos', 'partes', 'duracion_minutos', 'instrucciones', 'estilo', 'formato_pauta', 'calificacion', 'exigencia', 'notas', 'fuente'];
     const desconocidos = Object.keys(datos).filter((k) => !permitidos.includes(k));
     if (desconocidos.length) throw new ErrorDeUso(`Campos desconocidos: ${desconocidos.join(', ')}. Permitidos: ${permitidos.join(', ')}.`);
     if (datos.modalidad && !['oral', 'escrita', 'mixta'].includes(datos.modalidad)) throw new ErrorDeUso('modalidad: oral, escrita o mixta.');
+    if (datos.formato_preguntas && !['desarrollo', 'caso', 'seleccion_multiple'].includes(datos.formato_preguntas)) throw new ErrorDeUso('formato_preguntas: desarrollo, caso o seleccion_multiple.');
+    for (const m of Object.values(datos.modalidad_por_ramo ?? {})) if (!['oral', 'escrita'].includes(m)) throw new ErrorDeUso('modalidad_por_ramo: {"civil": "oral"|"escrita", "procesal": …}.');
     if (!datos.fuente) throw new ErrorDeUso('Indica `fuente`: de dónde sale esta información (reglamento, examen de tal fecha, lo que contó el estudiante…).');
     const previo = this.almacen.perfilPropio(this.id) ?? {};
     delete previo.actualizado;
@@ -873,7 +948,15 @@ export class Tutor {
     const sigla = resolverSigla(norma);
     if (!sigla) throw new ErrorDeUso(`Norma no reconocida: "${norma}". Disponibles: ${Object.entries(NORMAS).map(([s, n]) => `${s} (${n.titulo})`).join('; ')}.`);
     const numero = String(articulo).replace(/^art(í|i)culo\s*|^art\.?\s*/i, '').replace(/[°º]/g, '').trim();
-    const r = await verArticulo(sigla, numero);
+    let r;
+    try {
+      r = await verArticulo(sigla, numero);
+    } catch (e) {
+      throw new ErrorDeUso(
+        `No pude traer el art. ${numero} desde Ley Chile (${e.message}). Probablemente no hay conexión o el sitio está caído. ` +
+          'No lo cites de memoria: dile al estudiante que lo verificarán cuando haya conexión, o que lo revise en bcn.cl/leychile.',
+      );
+    }
     if (!r.encontrado) return { ...r, mensaje: `No existe el artículo ${numero} en ${r.norma}. No lo cites.` };
     return r;
   }
@@ -932,6 +1015,22 @@ export class Tutor {
   }
 }
 
+/** Archivos de la skill que componen cada modo de `guia_del_tutor`. */
+export const GUIAS = {
+  inicio: ['SKILL.md', 'referencias/fuentes.md'],
+  diagnostico: ['referencias/modos/diagnostico.md', 'referencias/rubrica.md'],
+  clase: ['referencias/modos/clase.md', 'referencias/rubrica.md'],
+  repaso: ['referencias/modos/repaso.md', 'referencias/rubrica.md'],
+  simulacro: ['referencias/modos/simulacro.md', 'referencias/rubrica.md'],
+  plazos: ['referencias/modos/plazos.md'],
+  discriminacion: ['referencias/modos/discriminacion.md'],
+  exposicion: ['referencias/modos/exposicion.md', 'referencias/rubrica.md'],
+  material: ['referencias/modos/material.md'],
+  preguntas: ['referencias/modos/preguntas.md', 'referencias/fuentes.md'],
+  mi_examen: ['referencias/modos/mi-examen.md'],
+  metodologia: ['referencias/metodologia.md'],
+};
+
 /** Qué hacer con cada tipo de documento que sube el estudiante. */
 export const TIPOS_DOCUMENTO = {
   cedulario:
@@ -961,15 +1060,45 @@ export function notaChilena(puntaje, maximo, exigencia = 0.6) {
   return { nota: redondeada, aprobado: redondeada >= 4, puntaje, maximo, exigencia, puntaje_para_el_4: Number(corte.toFixed(2)) };
 }
 
-async function rutaPdf(ruta) {
-  const abs = resolverRuta(String(ruta).replace(/^~(?=\/|$)/, process.env.HOME ?? ''));
+async function rutaExistente(ruta) {
+  const abs = resolverRuta(String(ruta).trim().replace(/^["']|["']$/g, '').replace(/^~(?=[\\/]|$)/, homedir()));
   try {
     if (!(await stat(abs)).isFile()) throw new Error();
   } catch {
-    throw new ErrorDeUso(`No encuentro el archivo ${abs}.`);
+    throw new ErrorDeUso(`No encuentro el archivo ${abs}. Si el estudiante lo tiene a mano, lo más simple es que lo adjunte en la conversación.`);
   }
-  if (!/\.pdf$/i.test(abs)) throw new ErrorDeUso('Por ahora sólo se leen PDF.');
   return abs;
+}
+
+async function rutaPdf(ruta) {
+  const abs = await rutaExistente(ruta);
+  if (!/\.pdf$/i.test(abs)) throw new ErrorDeUso('Los manuales se cargan en PDF.');
+  return abs;
+}
+
+async function rutaDocumento(ruta) {
+  const abs = await rutaExistente(ruta);
+  if (!/\.(pdf|txt|md)$/i.test(abs)) {
+    throw new ErrorDeUso('Por ruta se leen PDF, .txt y .md. Para Word u otros formatos, que el estudiante adjunte el archivo en la conversación: léelo y usa `texto`.');
+  }
+  return abs;
+}
+
+/** Texto largo → "páginas" de ~3.000 caracteres, cortando en párrafos (o en saltos de página si los hay). */
+export function partirEnPaginas(texto, largo = 3000) {
+  const limpio = String(texto).replace(/\r\n?/g, '\n').trim();
+  const bloques = limpio.includes('\f') ? limpio.split('\f') : limpio.split(/\n{2,}/);
+  const paginas = [];
+  let actual = '';
+  for (const b of bloques) {
+    if (actual && actual.length + b.length > largo) {
+      paginas.push(actual.trim());
+      actual = '';
+    }
+    actual += (actual ? '\n\n' : '') + b;
+  }
+  if (actual.trim()) paginas.push(actual.trim());
+  return paginas.map((t, i) => ({ numero: i + 1, texto: t }));
 }
 
 /**
@@ -990,6 +1119,9 @@ export function combinarUniversidad(base, propio, cedulariosPropios, est) {
   if (propio) {
     if (propio.nombre_examen) examen.nombre = propio.nombre_examen;
     if (propio.modalidad) examen.modalidad = propio.modalidad;
+    if (propio.modalidad_por_ramo) examen.modalidad_por_ramo = propio.modalidad_por_ramo;
+    if (propio.formato_preguntas) examen.formato_preguntas = propio.formato_preguntas;
+    if (propio.exposicion_minutos) examen.exposicion_minutos = propio.exposicion_minutos;
     if (propio.partes) examen.partes = propio.partes;
     if (propio.duracion_minutos) examen.duracion_minutos = propio.duracion_minutos;
     if (propio.instrucciones) examen.instrucciones = propio.instrucciones;

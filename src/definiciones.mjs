@@ -7,6 +7,21 @@ const RAMA = { type: 'string', enum: ['civil', 'procesal'] };
 
 export const DEFINICIONES = [
   {
+    name: 'guia_del_tutor',
+    description:
+      'El método pedagógico del tutor (qué hacer y cómo enseñar en cada modo). Si NO tienes cargada la skill "examen-grado", llámala con modo "inicio" ' +
+      'al empezar la conversación y con el modo que corresponda antes de dar una clase, repasar, simular, practicar plazos, etc. Con la skill cargada no hace falta.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        modo: {
+          type: 'string',
+          enum: ['inicio', 'diagnostico', 'clase', 'repaso', 'simulacro', 'plazos', 'discriminacion', 'exposicion', 'material', 'preguntas', 'mi_examen', 'metodologia'],
+        },
+      },
+    },
+  },
+  {
     name: 'estado_estudiante',
     description:
       'PUNTO DE ENTRADA. Llámala al comenzar cada conversación. Dice si el estudiante está configurado, ' +
@@ -182,11 +197,11 @@ export const DEFINICIONES = [
   {
     name: 'exportar',
     description:
-      'Genera un archivo para usar fuera del chat: "anki" (tarjetas guardadas + plazos, listo para importar en Anki) o ' +
-      '"calendario" (.ics con una sesión por día de estudio, simulacros y el día del examen).',
+      'Genera un archivo (en la carpeta Descargas) para usar fuera del chat: "anki" (tarjetas guardadas + plazos, listo para importar en Anki), ' +
+      '"calendario" (.ics con una sesión por día de estudio, simulacros y el día del examen) o "respaldo" (copia de todo su progreso, para otro computador).',
     inputSchema: {
       type: 'object',
-      properties: { formato: { type: 'string', enum: ['anki', 'calendario'] }, hora: { type: 'string', description: 'Hora de las sesiones (HH:MM), para el calendario.' } },
+      properties: { formato: { type: 'string', enum: ['anki', 'calendario', 'respaldo'] }, hora: { type: 'string', description: 'Hora de las sesiones (HH:MM), para el calendario.' } },
       required: ['formato'],
     },
   },
@@ -277,18 +292,19 @@ export const DEFINICIONES = [
   {
     name: 'cargar_documento',
     description:
-      'Carga un PDF que el estudiante tiene de SU examen: cedulario o temario, reglamento, examen anterior o pauta de corrección. ' +
-      'Así el tutor se adapta a una universidad que no está cargada, o a un cedulario más nuevo. Devuelve el comienzo del texto ' +
-      'y qué hacer después según el tipo (transcribir y guardar el cedulario, extraer el formato del examen o de la pauta).',
+      'Guarda un documento de SU examen (cedulario o temario, reglamento, examen anterior, pauta de corrección) para usarlo en todas las sesiones. ' +
+      'Lo más simple: el estudiante adjunta el archivo en la conversación (PDF, Word, foto), tú lo lees y lo guardas con `texto` (transcripción fiel) y `titulo`. ' +
+      'También acepta `ruta` a un PDF, .txt o .md del computador. Devuelve el comienzo y qué hacer después según el tipo.',
     inputSchema: {
       type: 'object',
       properties: {
-        ruta: { type: 'string', description: 'Ruta al PDF en el computador del estudiante.' },
+        texto: { type: 'string', description: 'Contenido completo del documento adjunto, transcrito tal cual.' },
+        ruta: { type: 'string', description: 'Alternativa: ruta a un PDF, .txt o .md en el computador del estudiante.' },
         tipo: { type: 'string', enum: ['cedulario', 'temario', 'reglamento', 'examen_anterior', 'pauta', 'apuntes', 'otro'] },
         titulo: { type: 'string' },
         rama: RAMA,
       },
-      required: ['ruta', 'tipo'],
+      required: ['tipo'],
     },
   },
   {
@@ -354,6 +370,9 @@ export const DEFINICIONES = [
         universidad_nombre: { type: 'string', description: 'Si la universidad no está en la lista.' },
         nombre_examen: { type: 'string' },
         modalidad: { type: 'string', enum: ['oral', 'escrita', 'mixta'] },
+        modalidad_por_ramo: { type: 'object', description: 'Si cambia por ramo, p. ej. {"civil": "escrita", "procesal": "oral"}.' },
+        formato_preguntas: { type: 'string', enum: ['desarrollo', 'caso', 'seleccion_multiple'], description: 'Tipo de preguntas del examen escrito.' },
+        exposicion_minutos: { type: 'number', description: 'Duración de la exposición o disertación, si la hay.' },
         partes: { type: 'array', items: { type: 'object', properties: { titulo: { type: 'string' }, detalle: { type: 'string' } } } },
         duracion_minutos: { type: 'number' },
         instrucciones: { type: 'string', description: 'Instrucciones que da el examen (qué se exige en cada respuesta).' },

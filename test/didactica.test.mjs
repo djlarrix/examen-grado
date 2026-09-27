@@ -123,3 +123,67 @@ test('exportar: tarjetas para Anki y calendario del plan', async () => {
   assert.ok(c.sesiones > 40);
   assert.match(readFileSync(c.archivo, 'utf8'), /BEGIN:VCALENDAR/);
 });
+
+test('guía del tutor: el método llega por el servidor aunque no esté la skill', async () => {
+  const t = nuevoTutor();
+  const g = await t.guia_del_tutor({ modo: 'clase' });
+  assert.match(g.metodo, /Modo clase/);
+  assert.match(g.metodo, /Rúbrica|rúbrica|Calificación|calificación/);
+  const inicio = await t.guia_del_tutor();
+  assert.match(inicio.metodo, /Reglas que no se rompen/);
+  assert.doesNotMatch(inicio.metodo, /^---/m, 'sin el encabezado YAML de la skill');
+  await assert.rejects(t.guia_del_tutor({ modo: 'inexistente' }));
+});
+
+test('documento adjunto en la conversación: se guarda por texto y se lee por páginas', async () => {
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'otra' });
+  const largo = Array.from({ length: 12 }, (_, i) => `CÉDULA ${i + 1}\n${'Contenido de la cédula. '.repeat(40)}`).join('\n\n');
+  const r = await t.cargar_documento({ texto: largo, tipo: 'cedulario', titulo: 'Cedulario Civil 2026', rama: 'civil' });
+  assert.equal(r.cargado, true);
+  assert.ok(r.paginas >= 3);
+  const l = await t.leer_documento({ id: r.id });
+  assert.match(l.paginas[0].texto, /^CÉDULA 1/);
+  await assert.rejects(t.cargar_documento({ texto: 'algo', tipo: 'cedulario' }), /titulo/);
+  await assert.rejects(t.cargar_documento({ ruta: '/no/existe.docx', tipo: 'cedulario' }), /adjunte/);
+});
+
+test('perfil propio con selección múltiple: el simulacro se arma con alternativas', async () => {
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'otra' });
+  await t.guardar_perfil_examen({ universidad_nombre: 'U. Ejemplo', modalidad: 'escrita', formato_preguntas: 'seleccion_multiple', fuente: 'lo que contó el estudiante' });
+  const s = await t.sortear_cedula({});
+  assert.ok(s.sorteo.every((x) => x.modalidad === 'seleccion_multiple'));
+  await assert.rejects(t.guardar_perfil_examen({ formato_preguntas: 'oral', fuente: 'x' }));
+});
+
+test('índice sin raya colgando y simulacro que no queda a medias', async () => {
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'ucentral' });
+  const i = await t.ver_indice({ rama: 'civil' });
+  assert.ok(i.cedulas.some((l) => l === '## Cedulario de Derecho Civil 2025'));
+  assert.ok(!i.cedulas.some((l) => / — $/.test(l)));
+  await assert.rejects(t.registrar_simulacro({ nota: 5, temas_evaluados: [{ tema: 'civil.acto.error', calificacion: 3 }, { tema: 'civil.acto.dolo', calificacion: 9 }] }));
+  assert.equal((await t.progreso()).simulacros.length, 0, 'no se guardó nada');
+});
+
+test('plazos: primero los de temas ya vistos', async () => {
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'uchile' });
+  for (const tema of ['procesal.recursos.apelacion', 'procesal.ordinario.discusion', 'civil.acto.nulidad_relativa']) await t.registrar_respuesta({ tema, calificacion: 3 });
+  const p = await t.practicar_plazos({ cantidad: 3 });
+  assert.ok(p.preguntas.every((x) => x.tema_visto));
+  const mas = await t.practicar_plazos({ cantidad: 6 });
+  assert.equal(mas.preguntas.filter((x) => x.tema_visto).length, 3, 'los vistos primero, el resto se completa con temas nuevos');
+});
+
+test('respaldo: copia completa del progreso', async () => {
+  process.env.EXAMEN_GRADO_DIR = mkdtempSync(join(tmpdir(), 'eg-resp-'));
+  const t = nuevoTutor();
+  await t.configurar_estudiante({ universidad: 'puc' });
+  await t.registrar_respuesta({ tema: 'civil.acto.error', calificacion: 3 });
+  const r = await t.exportar({ formato: 'respaldo' });
+  const copia = new Almacen(r.archivo);
+  assert.equal(copia.progreso('prueba').size, 1);
+  copia.cerrar();
+});

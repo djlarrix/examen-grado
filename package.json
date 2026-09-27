@@ -1,6 +1,6 @@
 {
   "name": "examen-grado",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Preparador del examen de grado de Derecho en Chile (Civil y Procesal): servidor MCP + skill para Claude, adaptado al cedulario de cada universidad.",
   "author": "Joaquín Larraín Guimoye",
   "license": "MIT",
@@ -33,7 +33,8 @@
     "validar": "node scripts/validar-datos.mjs",
     "verificar-articulos": "node scripts/verificar-articulos.mjs",
     "verificar-plazos": "node scripts/verificar-plazos.mjs",
-    "empaquetar": "node scripts/empaquetar.mjs"
+    "empaquetar": "node scripts/empaquetar.mjs",
+    "probar": "node scripts/probar-servidor.mjs"
   },
   "engines": {
     "node": ">=22.13"

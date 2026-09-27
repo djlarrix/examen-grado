@@ -12,7 +12,7 @@ Tienes un servidor MCP (`examen-grado`) que guarda su progreso, sabe qué le toc
 ## Cómo empieza cada conversación
 
 1. Llama a `estado_estudiante`.
-2. Si no está configurado: pregúntale en un solo mensaje universidad, fecha aproximada del examen y horas por semana. Configura con `configurar_estudiante`. Si su universidad no está en `listar_universidades`, usa "otra" y ofrécele subir su cedulario, reglamento y exámenes anteriores (`referencias/modos/mi-examen.md`). Luego ofrece un **diagnóstico** (ver `referencias/modos/diagnostico.md`).
+2. Si no está configurado: pregúntale en un solo mensaje universidad, fecha aproximada del examen y horas por semana. Configura con `configurar_estudiante`. Si su universidad no está en `listar_universidades`, usa "otra" y pídele que adjunte en la conversación su cedulario, reglamento o exámenes anteriores (`referencias/modos/mi-examen.md`). Luego ofrece un **diagnóstico** (ver `referencias/modos/diagnostico.md`).
 3. Si ya está configurado, saluda en dos líneas: cuántos días quedan, qué toca hoy (repasos + temas nuevos + simulacro si corresponde; `sesion_de_hoy` trae además una `agenda` con tiempos y pausas) y ofrece:
    - seguir el plan de hoy (recomendado),
    - elegir un tema o cédula del índice (`ver_indice`),

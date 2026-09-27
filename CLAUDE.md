@@ -12,7 +12,8 @@ Servidor MCP (Node, ESM, `.mjs`) + skill para preparar el examen de grado de Der
 - `scripts/empaquetar.mjs` — arma `dist/` (extensión `.mcpb` de Claude Desktop y skill `.zip`), con pruebas de humo del paquete. `.claude-plugin/` — plugin y marketplace de Claude Code.
 - `.github/workflows/` — pruebas en tres sistemas y dos versiones de Node; revisión semanal de artículos y plazos contra Ley Chile (abre un issue si algo cambió); publicación de Releases al crear un tag `vX.Y.Z`.
 - `src/repaso.mjs` (FSRS-4.5), `src/plan.mjs` (fases, sesión del día y su agenda), `src/didactica.mjs` (guion de exposición, Anki, .ics), `src/almacen.mjs` (SQLite, con migraciones en `migrar()`), `src/fuentes/leychile.mjs` (BCN).
-- `skills/examen-grado/` — la pedagogía. Los prompts MCP leen estos mismos archivos.
+- `skills/examen-grado/` — la pedagogía. Los prompts MCP y la herramienta `guia_del_tutor` leen estos mismos archivos: quien instala sólo la extensión recibe el mismo método (mapa de modos en `GUIAS`, `src/herramientas.mjs`).
+- `docs/GUIA.md` — guía para estudiantes (instalación, uso, respaldo, problemas frecuentes). `recursos/icono.png` — ícono de la extensión (`scripts/dev/icono.mjs`).
 
 ## Reglas de contenido
 

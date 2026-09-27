@@ -2,7 +2,7 @@
 /**
  * Arma los dos archivos que instala un estudiante sin tocar la terminal:
  *
- *   dist/examen-grado-<versión>.mcpb     extensión de Claude Desktop (doble clic)
+ *   dist/examen-grado.mcpb               extensión de Claude Desktop (doble clic)
  *   dist/examen-grado-skill.zip          la skill, para Configuración → Capacidades
  *
  * El manifiesto de la extensión se genera desde package.json y desde las
@@ -32,6 +32,7 @@ await mkdir(paquete, { recursive: true });
 
 // 1. Lo que corre: código, datos y la pedagogía (los prompts leen la skill).
 for (const x of ['src', 'datos', 'skills', 'package.json', 'package-lock.json', 'README.md', 'LICENSE']) await cp(join(raiz, x), join(paquete, x), { recursive: true });
+await cp(join(raiz, 'recursos', 'icono.png'), join(paquete, 'icono.png'));
 correr(npm, ['ci', '--omit=dev', '--no-audit', '--no-fund'], paquete);
 // Fuera lo que no se usa: el canvas nativo (sólo sirve para dibujar páginas y
 // es un binario de una plataforma: el .mcpb armado en un Mac no le serviría a
@@ -52,7 +53,8 @@ const manifiesto = {
     '(oral, caso escrito, selección múltiple o mixto), agenda cada tema con repetición espaciada (FSRS), simula la comisión, arma casos con pauta ' +
     'y trae el texto vigente de las normas desde Ley Chile. Si tu universidad no está, sube tu cedulario y tus exámenes anteriores. ' +
     'Tu progreso queda en tu computador. Instala también la skill "examen-grado" para la experiencia completa.',
-  author: { name: pkg.author },
+  author: { name: pkg.author, url: 'https://github.com/djlarrix' },
+  icon: 'icono.png',
   homepage: pkg.homepage,
   repository: { type: 'git', url: pkg.repository.url.replace(/^git\+/, '') },
   support: pkg.bugs.url,
@@ -73,7 +75,7 @@ await writeFile(muestra, pdfConTexto(['Art. 1. Texto de prueba del paquete.']));
 const leido = execFileSync(process.execPath, ['--input-type=module', '-e', `const m = await import(${JSON.stringify(pathToFileURL(join(paquete, 'src/lib/pdf.mjs')).href)}); const r = await m.extraerPaginas(${JSON.stringify(muestra)}); process.stdout.write(r.paginas[0].texto);`], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
 if (!leido.includes('Texto de prueba')) throw new Error(`El paquete no extrae texto de PDF: "${leido}"`);
 const saludo = JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'initialize', params: { protocolVersion: '2025-06-18', capabilities: {}, clientInfo: { name: 'empaquetar', version: '1' } } });
-const respuesta = spawnSync(process.execPath, [join(paquete, 'src', 'arrancar.mjs')], { input: saludo + '\n', encoding: 'utf8', timeout: 20000, env: { ...process.env, EXAMEN_GRADO_DIR: join(dist, 'datos-prueba') } });
+const respuesta = spawnSync(process.execPath, [join(paquete, 'src', 'arrancar.mjs')], { input: saludo + '\n', encoding: 'utf8', timeout: 20000, env: { ...process.env, EXAMEN_GRADO_DIR: join(dist, 'datos-prueba'), EXAMEN_GRADO_SIN_PRECARGA: '1' } });
 if (!respuesta.stdout.includes('"serverInfo"')) throw new Error(`El servidor empaquetado no respondió: ${respuesta.stderr}`);
 await rm(muestra, { force: true });
 await rm(join(dist, 'datos-prueba'), { recursive: true, force: true });
@@ -81,7 +83,8 @@ console.log('Pruebas de humo del paquete: PDF y protocolo MCP, OK.');
 
 await writeFile(join(paquete, 'manifest.json'), JSON.stringify(manifiesto, null, 2) + '\n');
 correr(npx, ['-y', '@anthropic-ai/mcpb', 'validate', join(paquete, 'manifest.json')]);
-const mcpb = join(dist, `examen-grado-${pkg.version}.mcpb`);
+// Nombre estable: el README enlaza a releases/latest/download/examen-grado.mcpb.
+const mcpb = join(dist, 'examen-grado.mcpb');
 correr(npx, ['-y', '@anthropic-ai/mcpb', 'pack', paquete, mcpb]);
 
 // 2. La skill, como la pide Claude: un .zip con la carpeta de la skill adentro.

@@ -215,6 +215,11 @@ export class Almacen {
       .run(estudiante, tema, fecha, calificacion, modo ?? null, pregunta ?? null, error ?? null, confianza ?? null);
   }
 
+  /** Copia consistente de toda la base (aunque el servidor esté en uso), para respaldar o cambiar de computador. */
+  respaldar(destino) {
+    this.db.exec(`VACUUM INTO '${String(destino).replace(/'/g, "''")}'`);
+  }
+
   /** Aciertos por nivel de confianza declarada: ¿sabe lo que sabe? */
   calibracion(estudiante) {
     return this.db

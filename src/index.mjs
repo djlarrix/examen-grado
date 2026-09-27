@@ -15,17 +15,18 @@ import { CallToolRequestSchema, ListToolsRequestSchema, ListPromptsRequestSchema
 import { Tutor, ErrorDeUso } from './herramientas.mjs';
 import { DEFINICIONES } from './definiciones.mjs';
 import { raizProyecto } from './lib/rutas.mjs';
+import { verArticulo } from './fuentes/leychile.mjs';
 
 const INSTRUCCIONES = `Preparador del examen de grado de Derecho en Chile (Civil y Procesal).
 
-Al empezar una conversación sobre el examen de grado, llama a estado_estudiante. Si hay una skill "examen-grado" disponible, síguela; si no, usa los prompts de este servidor (empezar, clase, repaso, simulacro, diagnostico, plazos, confusiones, exposicion, mi_examen), que traen el método.
+Al empezar una conversación sobre el examen de grado, llama a estado_estudiante. Si hay una skill "examen-grado" disponible, síguela. Si no la tienes, llama a guia_del_tutor (modo "inicio") y, antes de cada actividad, a guia_del_tutor con su modo (clase, repaso, simulacro, diagnostico, plazos, discriminacion, exposicion, material, preguntas, mi_examen): ahí está el método completo.
 
 Reglas:
 - El estudiante repetirá lo que digas frente a una comisión. No afirmes el contenido de un artículo sin traerlo con ver_articulo en esta conversación: los códigos cambian y los manuales envejecen.
 - Doctrina atribuida a un autor, sólo desde buscar_en_manuales (con página). Sin manual, explica sin nombres de autores. No cites fallos de memoria.
 - El estudiante recupera, no escucha: pregunta después de cada bloque de explicación y termina cada tema con el estudiante explicándolo solo.
 - Registra cada respuesta evaluable con registrar_respuesta (1 otra vez, 2 difícil, 3 bien, 4 fácil; califica el primer intento y anota el error concreto), con la confianza que el estudiante declaró antes de la corrección. Sin registro no hay repaso espaciado.
-- Adapta preguntas y simulacros al formato de su universidad (perfil_examen): oral con repreguntas, escrito sobre un caso (con pauta al estilo de su universidad y calcular_nota), selección múltiple con casos (UNAB) o mixto. No enseñes lo que su universidad excluye. Si su universidad no está cargada, que suba sus documentos (cargar_documento).
+- Adapta preguntas y simulacros al formato de su universidad (perfil_examen): oral con repreguntas, escrito sobre un caso (con pauta al estilo de su universidad y calcular_nota), selección múltiple con casos (UNAB) o mixto. No enseñes lo que su universidad excluye. Si su universidad no está cargada, pídele que adjunte en la conversación su cedulario, reglamento o exámenes anteriores: léelos y guárdalos (cargar_documento con texto, guardar_cedulario, guardar_perfil_examen).
 - Español de Chile, de tú, cercano y exigente.`;
 
 const DIR_SKILL = join(raizProyecto(), 'skills', 'examen-grado');
@@ -113,3 +114,13 @@ servidor.setRequestHandler(GetPromptRequestSchema, async (req) => {
 });
 
 await servidor.connect(new StdioServerTransport());
+
+// Precarga en segundo plano de los códigos más consultados: la primera vez que
+// se descarga un código completo desde Ley Chile tarda varios segundos, y es
+// mejor que ocurra mientras el estudiante escribe y no en medio de una clase.
+// Queda en caché una semana; sin conexión, simplemente no hace nada.
+if (!process.env.EXAMEN_GRADO_SIN_PRECARGA) {
+  setTimeout(async () => {
+    for (const sigla of ['CC', 'CPC', 'CPP', 'COT']) await verArticulo(sigla, '1').catch(() => {});
+  }, 3000).unref();
+}

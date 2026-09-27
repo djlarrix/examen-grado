@@ -20,8 +20,10 @@ export const MINUTOS = { tema_nuevo: 30, repaso: 7, simulacro: 45 };
 
 /**
  * Temas que entran al examen del estudiante, en el orden en que conviene verlos.
- * Con cedulario: el orden del cedulario (que sigue el orden pedagógico clásico).
- * Sin cedulario: el orden del temario canónico.
+ * Qué temas: los del cedulario de su universidad (o todo el temario si no hay).
+ * En qué orden: el del temario canónico, que va de lo fundamental a lo
+ * derivado. No el del cedulario: hay cedularios de sorteo (U. Central) que
+ * juntan en una cédula "Personas" con "Responsabilidad contractual".
  */
 export function alcance(temario, universidad) {
   const porRama = { civil: [], procesal: [] };
@@ -34,7 +36,8 @@ export function alcance(temario, universidad) {
   const ced = universidad?.cedularios ?? {};
   for (const rama of ['civil', 'procesal']) {
     if (ced[rama]?.length) {
-      for (const c of ced[rama]) for (const t of c.temas) if (!vistos.has(t)) (vistos.add(t), porRama[rama].push(t));
+      const exigidos = new Set(ced[rama].flatMap((c) => c.temas));
+      for (const t of temario.temas.values()) if (exigidos.has(t.id) && !vistos.has(t.id)) (vistos.add(t.id), porRama[rama].push(t.id));
     } else {
       for (const t of temario.temas.values()) if (t.rama === rama && !vistos.has(t.id)) (vistos.add(t.id), porRama[rama].push(t.id));
     }
